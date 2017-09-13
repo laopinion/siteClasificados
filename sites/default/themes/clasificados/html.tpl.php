@@ -15,20 +15,21 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="<?php print base_path(); ?>sites/default/themes/clasificados/css/normalize.min.css">
+  <link rel="stylesheet" href="<?php print base_path(); ?>sites/default/themes/clasificados/css/style.css">
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php include("header.tpl.php"); ?>
+  <?php include("slides.tpl.php"); ?>
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <?php include("footer.tpl.php"); ?>
 
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/responsiveslides.min.js"></script>
-  <script src="js/app.js"></script>
+  <script src="<?php print base_path(); ?>sites/default/themes/clasificados/js/jquery-3.2.1.min.js"></script>
+  <script src="<?php print base_path(); ?>sites/default/themes/clasificados/js/responsiveslides.min.js"></script>
+  <script src="<?php print base_path(); ?>sites/default/themes/clasificados/js/app.js"></script>
 </body>
 
 </html>
