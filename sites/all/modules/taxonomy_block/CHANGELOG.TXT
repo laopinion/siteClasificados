@@ -1,0 +1,26 @@
+6.x-1.0-ALPHA1: First 6.x version for Taxonomy Block (now support multi languages)
+
+6.x-1.0-ALPHA2: Fixed: change taxonomy_block_i18n to taxonomy_block
+
+6.x-1.0-ALPHA3: Fixed: count child nodes
+
+6.x-1.0-ALPHA4: New: use dhtml_menu module for tree like navigation
+
+6.x-1.0-ALPHA5: Fixed: disable dhtml_menu support
+
+6.x-1.0-BETA1:  Fixed: check if i18n module available
+
+6.x-1.0-BETA2:  New: able to set maksimum term to display
+
+6.x-1.0-BETA3:  Fixed: Use taxonomy_term_path($t) to fetch term path, compability to taxonomy_redirect module
+                Fixed: Block title support multi-language
+                New: Order by name/weight in Ascending/Descending
+
+6.x-1.0-BETA4:  New: show vocabulary name instead vid in settings page
+
+6.x-1.0-BETA5:  Fixed: now only count Published node
+                Fixed: move package to "Taxonomy"
+								
+6.x-1.0-BETA6:  Fixed: wrong </li> position
+                Fixed: show node count by default
+								

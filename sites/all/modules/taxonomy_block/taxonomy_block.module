@@ -1,0 +1,175 @@
+<?php
+
+/**
+ * @file
+ * The taxonomy_block module used for displaying Site Counter.
+ */
+
+/**
+ * Implementation of hook_help().
+ */
+function taxonomy_block_help($section) {
+  switch ($section) {
+    case 'admin/help#taxonomy_block':
+      $output = "The taxonomy_block module used for displaying taxonomy in a block with i18n/multi-languages support";
+  return $output;
+    case 'admin/modules#description':
+      return 'The taxonomy_block module used for displaying taxonomy in a block with i18n/multi-languages support';
+  }
+}
+
+/**
+ * Implementation of hook_perm
+ */
+function taxonomy_block_perm() {
+  return array('access taxonomy_block', 'administer taxonomy_block');
+}
+ 
+/**
+ * Menu callback. Prints a listing of active nodes on the site.
+ */
+
+function taxonomy_block_menu() {
+  $items = array();
+
+  $items['admin/settings/taxonomy_block'] = array(
+    'title' => 'Taxonomy Block',
+    'description' => 'Show taxonomy in a block with i18n support',
+    'access arguments' => array('administer taxonomy_block'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('taxonomy_block_admin_settings'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'taxonomy_block.settings.inc',
+  );
+  
+  return $items;
+}
+
+/**
+ * Implementation of hook_block().
+ *
+ */
+function taxonomy_block_block($op = 'list', $delta = 0) {
+  if ($op == 'list') 
+  {
+    $blocks[0]['info'] = 'Taxonomy Block';
+  return $blocks;
+  }
+  
+  if ($op == 'view') 
+  {
+    $vid        = variable_get('taxonomy_block_settings_vid',1);
+    $node_count = variable_get('taxonomy_block_settings_node_count',1);
+    $num_term   = variable_get('taxonomy_block_settings_max_term',0);
+    
+    $order_by   = variable_get('taxonomy_block_settings_order_by', 0)==0 ? 'name' : 'weight';
+    $order_type = variable_get('taxonomy_block_settings_order_type', 0)==0 ? 'ASC' : 'DESC';
+    
+    switch($delta) {
+      case 0:
+        $block['subject'] = t('Taxonomy Block');    
+        
+        $output  = '';
+        
+    
+      //Check database
+
+      if ($num_term == 0) {
+        $sql = " SELECT td.tid, td.name, th.parent  from {term_data} td "
+            ." INNER JOIN {term_hierarchy} th ON th.tid=td.tid "
+            ." WHERE vid='%d' AND th.parent=0 ORDER BY %s %s";    
+      } else {
+        $sql = " SELECT td.tid, td.name, th.parent  from {term_data} td "
+            ." INNER JOIN {term_hierarchy} th ON th.tid=td.tid "
+            ." WHERE vid='%d' AND th.parent=0 ORDER BY %s %s LIMIT %d";  
+      }
+      
+      $term_parents = db_query($sql, $vid, $order_by, $order_type, $num_term );
+
+      $output .= '<ul class="menu">';
+      while ($term_parent = db_fetch_object($term_parents)) {
+        $tid_parent = $term_parent->tid;
+        $name_parent= $term_parent->name;
+      
+        $output .= '<li>';
+        $term_parent = taxonomy_get_term($tid_parent);
+        
+        if (module_exists("i18n")) {
+          $output .= l(tt("taxonomy:term:$tid_parent:name", $name_parent), taxonomy_term_path($term_parent));
+        } else {
+          //$output .= l(t($name_parent), "taxonomy/term/$tid_parent");  
+          $output .= l(t($name_parent), taxonomy_term_path($term_parent));  
+        }
+        if ($node_count) {
+          $sql_count_parents = " SELECT COUNT(tn.nid) FROM {term_node} tn "
+                              ." INNER JOIN {node} n ON n.nid = tn.nid "
+                              ." WHERE tid = %d AND n.status = 1";
+                              
+          $total_parent = db_result(db_query($sql_count_parents, $tid_parent));
+          $output .= " ($total_parent)"; 
+        }
+        
+        
+        $sql_count_childs = " SELECT count(td.tid) from {term_data} td "
+                           ." INNER JOIN {term_hierarchy} th ON th.tid=td.tid "
+                           ." INNER JOIN {term_node} tn ON tn.tid= td.tid"
+                           ." INNER JOIN {node} n ON n.nid = tn.nid"
+                           ." WHERE td.vid='%d' AND th.parent='%d' AND n.status=1";
+        $count_child = db_result(db_query($sql_count_childs, $vid, $tid_parent));
+        
+        if ($count_child) {
+          if ($num_term == 0) {
+            $sql_term_childs = " SELECT td.tid, td.name from {term_data} td "
+                              ." INNER JOIN {term_hierarchy} th ON th.tid=td.tid "
+                              ." WHERE vid='%d' AND th.parent='%d' ORDER BY %s %s";
+          } else {
+            $sql_term_childs = " SELECT td.tid, td.name from {term_data} td "
+                              ." INNER JOIN {term_hierarchy} th ON th.tid=td.tid "
+                              ." WHERE vid='%d' AND th.parent='%d' ORDER BY %s %s LIMIT %d";  
+          }                  
+          
+          $term_childs = db_query($sql_term_childs, $vid, $tid_parent, $order_by, $order_type, $num_term );
+          $output .= '<ul>';
+          while ($term_child = db_fetch_object($term_childs)) {
+            $tid_child = $term_child->tid;
+            $name_child = $term_child->name;
+            
+            $output .= '<li>';
+            $term_child = taxonomy_get_term($tid_child);
+
+            if (module_exists("i18n")) {
+              $output .= l(tt("taxonomy:term:$tid_child:name", $name_child), taxonomy_term_path($term_child));
+            } else {
+              $output .= l(t($name_child), taxonomy_term_path($term_child));  
+            }
+            if ($node_count) {
+              $sql_total_child = " SELECT COUNT(tn.nid) FROM {term_node} tn"
+                                ." INNER JOIN {node} n ON n.nid=tn.nid"
+                                ." WHERE n.status=1 AND tid = %d";
+              $total_child = db_result(db_query($sql_total_child, $tid_child));
+              $output .= " ($total_child)"; 
+            }
+            $output .= "</li>"; 
+          }
+          $output .= "</ul>"; //child
+					$output .= "</li>"; //parent
+        }
+      }
+    
+      $output .= "</ul>";
+      
+      //if(count($items)) {
+      //  return theme('item_list',$items);
+      //}
+            
+      $block['content'] = $output;
+        
+      break;  
+    }
+    
+    return $block;  
+  }
+    
+}
+
+?>

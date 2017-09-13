@@ -1,0 +1,238 @@
+.container
+  margin: 0 auto
+  width: 1000px
+#header
+  background-color: $rojo
+  #block1
+    background-color: $rojoOscuro
+    height: 25px
+    .container
+      .user
+        color: $blanco
+  #block2
+    height: 130px
+    margin-top: 10px
+    .container
+      display: flex
+      justify-content: center
+      align-items: flex-start
+      .fecha
+        color: $blanco
+        span
+          font-size: 1.4rem // 23px
+          font-weight: 700
+        p
+          margin: 0
+      .logo
+        background: url('../img/logo.svg') no-repeat
+        background-position: 50%
+        margin: 20px auto 0 auto
+        a
+          display: block
+          height: 80px
+          width: 280px
+  #block3
+    background-color: $rojoOscuro
+    height: 98px
+    margin-top: 30px
+    .container
+      display: flex
+      align-items: center
+      justify-content: space-between
+      height: 100%
+      .opts
+
+
+
+
+        display: flex
+        padding: 0
+        margin: 0
+        list-style: none
+        width: 500px
+        .opt
+          height: 98px
+          text-indent: -99999px
+          width: 124px
+          a
+            display: block
+            height: 100%
+        .empleos
+          background: url('../img/iconos/empleo.svg') no-repeat
+          background-position: 90% 100%
+        .autos
+          background: url('../img/iconos/vehiculo.svg') no-repeat
+          background-position: 90% 100%
+        .finca
+          background: url('../img/iconos/fincaRaiz.svg') no-repeat
+          background-position: 90% 100%
+        .varios
+          background: url('../img/iconos/varios.svg') no-repeat
+          background-position: 90% 100%
+    
+      .buscador
+        background: url('../img/iconos/cintilloBuscador.png') no-repeat
+        height: 100%
+        background-position-y: 15px
+        display: flex
+        align-items: center
+        width: 478px
+        .lupa
+          background: url('../img/iconos/lupa.svg') no-repeat
+          background-position: 8px 5px
+          height: 56px
+          width: 74px
+        form
+          height: 50px
+          border-left: 1px solid $rojoOscuro
+          margin-bottom: 5px
+          padding-left: 10px
+          width: 80%
+          input
+            border: none
+            background: transparent
+            color: $blanco
+            height: 100%
+            outline: 0
+            width: 100%
+          ::placeholder
+            color: #60020B
+            font-size: 0.8rem // 14px
+          
+
+#slider
+  width: 100%
+  .rslides
+    position: relative
+    list-style: none
+    overflow: hidden
+    padding: 0
+    margin: 0
+    li
+      -webkit-backface-visibility: hidden
+      backface-visibility: hidden
+      position: absolute
+      display: none
+      width: 100%
+      left: 0
+      top: 0
+      &:first-child
+        position: relative
+        display: block
+        float: left
+    img
+      display: block
+      height: auto
+      float: left
+      width: 100%
+      border: 0
+
+#footer
+  background-color: $rojo
+  width: 100%
+  #block-1
+    background-color: $rojoOscuro
+    height: 45px
+    .container
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 100%
+      h2
+        font-size: 1.6rem // 25px
+        font-weight: 400
+        color: $blanco
+        margin: 0
+  #block-2
+    height: 133px
+    .container
+      display: flex
+      justify-content: space-around
+      align-items: center
+      height: 100%
+      color: $blanco
+      i
+        display: block
+        height: 80px
+      .tel
+        width: 260px
+        .iconTel
+          background: url('../img/iconos/tel.svg') no-repeat
+          a
+            display: block
+            text-indent: -99999px
+            height: 100%
+      .office
+        display: flex
+        align-items: center
+        width: 200px
+        .iconOffice
+          background: url('../img/iconos/office.svg') no-repeat
+          width: 110px
+      .domic
+        display: flex
+        align-items: center
+        width: 270px
+        .iconDomic
+          background: url('../img/iconos/domicilios.svg') no-repeat
+          width: 160px
+      p   
+        margin: 0
+        font-size: 1.6rem // 25px
+      hr
+        margin: 0
+        height: 90px
+  #block-3
+    background-color: $rojoOscuro
+    height: 300px
+    padding-top: 10px
+    a
+      color: $blanco
+      display: block
+      height: 22px
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+    .container
+      display: flex
+      justify-content: space-around
+      align-items: flex-end
+      height: 62px
+      .title
+        color: $blanco
+        font-size: 1.5rem // 24px
+        border-right: 2px solid $rojo
+        border-left: 2px solid $rojo
+        border-bottom: 2px solid $rojo
+        height: 70%
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 300px
+    .opts
+      display: flex
+      justify-content: space-around
+      margin: 10px auto 0 auto
+      width: 1000px
+      .opt
+        display: flex
+        justify-content: center
+        width: 300px
+        ul
+          margin: 0
+          padding: 0
+          list-style: none
+    #derechos
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      color: #60020B
+      margin: 50px auto 0 auto
+      width: 1000px
+      p
+        margin: 0
+        text-align: center
+        font-size: 0.8rem // 14px
+      span
+        margin-top: 20px
+        font-size: 0.7rem // 12px

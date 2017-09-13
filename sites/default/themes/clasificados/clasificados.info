@@ -1,0 +1,19 @@
+name = Clasificados
+description = Template para clasificados de la opinión.
+screenshot = screen.png
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = style.css
+
+regions[header]         = Header
+regions[navigation]     = Navigation
+regions[content]        = Content
+regions[footer]         = Footer
+
+
+; Information added by drupal.org packaging script on 2011-11-02
+version = "7.x-3.6"
+core = "7.x"
+project = "clasificados"
+datestamp = "1320214533"
+
