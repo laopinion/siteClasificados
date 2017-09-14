@@ -1,11 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const extractSass = new ExtractTextPlugin({
-    filename: '[name].css',
-    fallback: "style-loader"
-});
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 // Además, necesitaré el compilador SaSS de node 
 // npm install node-sass --save-dev
@@ -16,23 +12,17 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
-  devtool: 'source-map',
+  devtool: 'source-map', // Eliminar cuando sea para prod 
   module: {
     rules: [
       {
         test: /\.(sass|scss)$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: "style-loader" // creates style nodes from JS strings
-          }, 
-          {
-            loader: "css-loader" // translates CSS into CommonJS
-          }, 
-          {
-            loader: "sass-loader", // compiles Sass to CSS
-          }
-        ]
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader'],
+          publicPath: '/dist'
+        }) // [ 'style-loader', 'css-loader', 'sass-loader']
       },
       {
         test: /\.jsx?$/,
@@ -46,21 +36,56 @@ const config = {
         }
       },
       {
-        test: /\.(jpg|png|gif|svg)$/i,
+        test: /\.(jp?g|png|gif|svg)$/i,
         exclude: /node_modules/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[path][name].[ext]',
-            publicPath: 'sites/default/themes/clasificados/'
-          }  
-        }
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+              publicPath: '', // Recordar que se puede agregar la ruta donde van a estar las images
+              outputPath: 'images/'
+            }  
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              gifsicle: {
+                interlaced: false,
+              },
+              optipng: {
+                optimizationLevel: 7,
+              },
+              pngquant: {
+                quality: '65-90',
+                speed: 4
+              },
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              svgo: {
+                progressive: true,
+                quality: 65
+              },
+              // Specifying webp here will create a WEBP version of your JPG/PNG images
+              // se comento por errores 
+              // webp: {
+              //   quality: 75
+              // }
+            }
+          }
+        ]
       }
     ]
   },
   plugins: [
-      extractSass,
-      new webpack.optimize.UglifyJsPlugin()
+    new ExtractTextPlugin({
+      filename: 'app.css',
+      disable: false,
+      allChunks: true
+    }),
+    new webpack.optimize.UglifyJsPlugin()
   ]
 }
 

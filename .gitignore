@@ -11,7 +11,7 @@ node_modules/
 style.css.map
 sites/default/themes/*/css/style.css.map
 sites/default/themes/*/css/*
-sites/default/themes/*/dist/img/*
+sites/default/themes/*/dist/app.css.map
 stylesheets/
 .vscode/
 
