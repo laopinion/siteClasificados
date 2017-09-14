@@ -11,5 +11,11 @@
     "no-use-before-define": "warn",
     "spaced-comment": "warn"
   },
-  "extends": "eslint:recommended"
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false
+  }
 }

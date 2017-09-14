@@ -15,8 +15,6 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <link rel="stylesheet" href="<?php print base_path(); ?>sites/default/themes/clasificados/css/normalize.min.css">
-  <link rel="stylesheet" href="<?php print base_path(); ?>sites/default/themes/clasificados/css/style.css">
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
@@ -27,9 +25,9 @@
   <?php print $page_bottom; ?>
   <?php include("footer.tpl.php"); ?>
 
-  <script src="<?php print base_path(); ?>sites/default/themes/clasificados/js/jquery-3.2.1.min.js"></script>
-  <script src="<?php print base_path(); ?>sites/default/themes/clasificados/js/responsiveslides.min.js"></script>
-  <script src="<?php print base_path(); ?>sites/default/themes/clasificados/js/app.js"></script>
+  <!-- <script src="<?php print base_path(); ?>sites/default/themes/clasificados/dist/jquery-3.2.1.min.js"></script> -->
+  <!-- <script src="<?php print base_path(); ?>sites/default/themes/clasificados/dist/responsiveslides.min.js"></script> -->
+  <script src="<?php print base_path(); ?>sites/default/themes/clasificados/dist/bundle.js"></script>
 </body>
 
 </html>
