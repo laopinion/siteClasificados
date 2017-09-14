@@ -25,8 +25,6 @@
   <?php print $page_bottom; ?>
   <?php include("footer.tpl.php"); ?>
 
-  <!-- <script src="<?php print base_path(); ?>sites/default/themes/clasificados/dist/jquery-3.2.1.min.js"></script> -->
-  <!-- <script src="<?php print base_path(); ?>sites/default/themes/clasificados/dist/responsiveslides.min.js"></script> -->
   <script src="<?php print base_path(); ?>sites/default/themes/clasificados/dist/bundle.js"></script>
 </body>
 
