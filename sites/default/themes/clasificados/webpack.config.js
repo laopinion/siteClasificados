@@ -3,8 +3,8 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin({
-    filename: 'dist/[name].bundle.css',
-    allChunks: true,
+    filename: '[name].css',
+    fallback: "style-loader"
 });
 
 // Además, necesitaré el compilador SaSS de node 
@@ -27,10 +27,10 @@ const config = {
             loader: "style-loader" // creates style nodes from JS strings
           }, 
           {
-              loader: "css-loader" // translates CSS into CommonJS
+            loader: "css-loader" // translates CSS into CommonJS
           }, 
           {
-              loader: "sass-loader" // compiles Sass to CSS
+            loader: "sass-loader", // compiles Sass to CSS
           }
         ]
       },
@@ -52,7 +52,7 @@ const config = {
           loader: 'file-loader',
           options: {
             name: '[path][name].[ext]',
-            outputPath: 'sites/default/themes/clasificados/'
+            publicPath: 'sites/default/themes/clasificados/'
           }  
         }
       }

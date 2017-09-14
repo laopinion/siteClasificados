@@ -10,8 +10,8 @@ node_modules/
 .sass-cache/
 style.css.map
 sites/default/themes/*/css/style.css.map
-sites/default/themes/*/img/*
 sites/default/themes/*/css/*
+sites/default/themes/*/dist/img/*
 stylesheets/
 .vscode/
 
