@@ -9,8 +9,18 @@
     <section id="block2">
       <div class="container">
         <div class="fecha">
-          <span>Miércoles</span>
-          <p>03/02/2017</p>
+          <?php
+            $dia = date("l");
+            if ($dia=="Monday") $dia="Lunes";
+            if ($dia=="Tuesday") $dia="Martes";
+            if ($dia=="Wednesday") $dia="Miércoles";
+            if ($dia=="Thursday") $dia="Jueves";
+            if ($dia=="Friday") $dia="Viernes";
+            if ($dia=="Saturday") $dia="Sábado";
+            if ($dia=="Sunday") $dia="Domingo";
+          ?>
+          <span><?php print $dia; ?></span>
+          <p><?php print date("d").'/'.date("m").'/'.date("Y");?></p>
           <p>Cúcuta - Colombia</p>
         </div>
         <div class="logo">

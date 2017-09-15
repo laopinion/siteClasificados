@@ -405,6 +405,214 @@ table {
       width: 100%;
       border: 0; }
 
+#home {
+  margin: 0 auto;
+  width: 1000px; }
+  #home #destacados {
+    position: relative;
+    margin-top: 60px; }
+    #home #destacados hr {
+      border-color: #afafaf; }
+    #home #destacados .estrellas {
+      background: url(images/src/img/iconos/estrellas.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -30px; }
+    #home #destacados h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 182px; }
+    #home #destacados .view-id-home.view-display-id-block {
+      margin-top: 30px; }
+      #home #destacados .view-id-home.view-display-id-block .view-content {
+        display: flex;
+        justify-content: space-around; }
+        #home #destacados .view-id-home.view-display-id-block .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          width: 185px; }
+          #home #destacados .view-id-home.view-display-id-block .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #home #destacados .view-id-home.view-display-id-block .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #home #destacados .view-id-home.view-display-id-block .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #home #destacados .view-id-home.view-display-id-block .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #home #destacados .view-id-home.view-display-id-block .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #home #destacados .view-id-home.view-display-id-block .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #home #destacados .view-id-home.view-display-id-block .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #home #destacados .view-id-home.view-display-id-block .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #home #empleos {
+    position: relative;
+    margin-top: 50px; }
+    #home #empleos hr {
+      border-color: #afafaf; }
+    #home #empleos h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #ffb200;
+      width: 75px; }
+  #home #vehiculos {
+    position: relative;
+    margin-top: 50px; }
+    #home #vehiculos hr {
+      border-color: #afafaf; }
+    #home #vehiculos h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #ae230c;
+      width: 88px; }
+  #home #fincaRaiz {
+    position: relative;
+    margin-top: 50px; }
+    #home #fincaRaiz hr {
+      border-color: #afafaf; }
+    #home #fincaRaiz h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #bfcc03;
+      width: 92px; }
+  #home #varios {
+    position: relative;
+    margin: 50px 0 60px 0; }
+    #home #varios hr {
+      border-color: #afafaf; }
+    #home #varios h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #309ad8;
+      width: 60px; }
+  #home #empleos .view-id-home.view-display-id-block_1, #home #empleos .view-id-home.view-display-id-block_2, #home #empleos .view-id-home.view-display-id-block_3, #home #empleos .view-id-home.view-display-id-block_4, #home #vehiculos .view-id-home.view-display-id-block_1, #home #vehiculos .view-id-home.view-display-id-block_2, #home #vehiculos .view-id-home.view-display-id-block_3, #home #vehiculos .view-id-home.view-display-id-block_4, #home #fincaRaiz .view-id-home.view-display-id-block_1, #home #fincaRaiz .view-id-home.view-display-id-block_2, #home #fincaRaiz .view-id-home.view-display-id-block_3, #home #fincaRaiz .view-id-home.view-display-id-block_4, #home #varios .view-id-home.view-display-id-block_1, #home #varios .view-id-home.view-display-id-block_2, #home #varios .view-id-home.view-display-id-block_3, #home #varios .view-id-home.view-display-id-block_4 {
+    margin-top: 30px; }
+    #home #empleos .view-id-home.view-display-id-block_1 .view-content, #home #empleos .view-id-home.view-display-id-block_2 .view-content, #home #empleos .view-id-home.view-display-id-block_3 .view-content, #home #empleos .view-id-home.view-display-id-block_4 .view-content, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content, #home #varios .view-id-home.view-display-id-block_1 .view-content, #home #varios .view-id-home.view-display-id-block_2 .view-content, #home #varios .view-id-home.view-display-id-block_3 .view-content, #home #varios .view-id-home.view-display-id-block_4 .view-content {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around; }
+      #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row {
+        background-color: #efefef;
+        padding: 4px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        height: 154px;
+        width: 185px; }
+        #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row:hover, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row:hover, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row:hover, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row:hover, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row:hover, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row:hover, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row:hover, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row:hover, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row:hover, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row:hover, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row:hover, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row:hover, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row:hover, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row:hover, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row:hover, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row:hover {
+          height: auto; }
+        #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info {
+          margin: 10px auto;
+          width: 160px; }
+          #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .date, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .date, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .date, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .date, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .date, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .date, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .date, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .date, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .date, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .date, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .date, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .date, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .date, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .date, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .date, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .date {
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.8rem;
+            border-bottom: 1px solid #afafaf;
+            padding-bottom: 8px;
+            margin-bottom: 10px; }
+          #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title {
+            margin-bottom: 5px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden; }
+            #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title:hover, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title:hover, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title:hover, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title:hover, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title:hover, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title:hover, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title:hover, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title:hover, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title:hover, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title:hover, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title:hover, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title:hover, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title:hover, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title:hover, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title:hover, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title:hover {
+              white-space: initial;
+              overflow: visible; }
+            #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title a, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title a, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title a, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title a, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title a, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title a, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title a, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title a, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title a, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title a, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title a, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title a, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title a, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title a, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title a, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title a {
+              text-decoration: none;
+              color: #000000; }
+          #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .phone, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .phone, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .phone, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .phone, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .phone, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .phone, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .phone, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .phone, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .phone, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .phone, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .phone, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .phone, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .phone, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .phone, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .phone, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .phone {
+            font-weight: 700; }
+          #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .section, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .section, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .section, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .section, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .section, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .section, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .section, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .section, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .section, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .section, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .section, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .section, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .section, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .section, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .section, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .section {
+            margin-top: 25px;
+            font-weight: 700;
+            text-transform: uppercase; }
+            #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .section:before, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .section:before, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .section:before, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .section:before, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .section:before, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .section:before, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .section:before, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .section:before, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .section:before, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .section:before, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .section:before, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .section:before, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .section:before, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .section:before, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .section:before, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .section:before {
+              content: url(images/src/img/iconos/estrella.svg);
+              margin-right: 5px; }
+      #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row-6, #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row-7, #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row-8, #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row-9, #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row-10, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row-6, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row-7, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row-8, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row-9, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row-10, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row-6, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row-7, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row-8, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row-9, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row-10, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row-6, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row-7, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row-8, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row-9, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row-10, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row-6, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row-7, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row-8, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row-9, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row-10, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row-6, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row-7, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row-8, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row-9, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row-10, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row-6, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row-7, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row-8, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row-9, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row-10, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row-6, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row-7, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row-8, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row-9, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row-10, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row-6, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row-7, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row-8, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row-9, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row-10, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row-6, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row-7, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row-8, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row-9, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row-10, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row-6, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row-7, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row-8, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row-9, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row-10, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row-6, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row-7, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row-8, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row-9, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row-10, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row-6, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row-7, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row-8, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row-9, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row-10, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row-6, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row-7, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row-8, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row-9, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row-10, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row-6, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row-7, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row-8, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row-9, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row-10, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row-6, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row-7, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row-8, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row-9, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row-10 {
+        display: none; }
+      #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row-6.active, #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row-7.active, #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row-8.active, #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row-9.active, #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row-10.active, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row-6.active, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row-7.active, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row-8.active, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row-9.active, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row-10.active, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row-6.active, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row-7.active, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row-8.active, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row-9.active, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row-10.active, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row-6.active, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row-7.active, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row-8.active, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row-9.active, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row-10.active, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row-6.active, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row-7.active, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row-8.active, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row-9.active, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row-10.active, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row-6.active, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row-7.active, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row-8.active, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row-9.active, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row-10.active, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row-6.active, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row-7.active, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row-8.active, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row-9.active, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row-10.active, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row-6.active, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row-7.active, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row-8.active, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row-9.active, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row-10.active, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row-6.active, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row-7.active, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row-8.active, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row-9.active, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row-10.active, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row-6.active, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row-7.active, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row-8.active, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row-9.active, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row-10.active, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row-6.active, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row-7.active, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row-8.active, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row-9.active, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row-10.active, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row-6.active, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row-7.active, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row-8.active, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row-9.active, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row-10.active, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row-6.active, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row-7.active, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row-8.active, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row-9.active, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row-10.active, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row-6.active, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row-7.active, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row-8.active, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row-9.active, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row-10.active, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row-6.active, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row-7.active, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row-8.active, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row-9.active, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row-10.active, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row-6.active, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row-7.active, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row-8.active, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row-9.active, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row-10.active {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex; }
+  #home #empleos .flecha, #home #vehiculos .flecha, #home #fincaRaiz .flecha, #home #varios .flecha {
+    background: url(images/src/img/iconos/flechaDown.svg) no-repeat;
+    background-position: 50% 3px;
+    cursor: pointer;
+    height: 20px;
+    margin: 0 auto;
+    width: 70px; }
+  #home #empleos .flecha.down, #home #vehiculos .flecha.down, #home #fincaRaiz .flecha.down, #home #varios .flecha.down {
+    background: url(images/src/img/iconos/flechaDown.svg) no-repeat; }
+  #home #empleos .flecha.up, #home #vehiculos .flecha.up, #home #fincaRaiz .flecha.up, #home #varios .flecha.up {
+    background: url(images/src/img/iconos/flechaUp.svg) no-repeat; }
+
 #footer {
   background-color: #B92025;
   width: 100%; }
