@@ -32,12 +32,19 @@
       margin-top: 30px
       .view-content
         display: flex
+        display: -webkit-flex
+        display: -moz-flex
         justify-content: space-around
+        -webkit-justify-content: space-around
+        -moz-justify-content: space-around
         .views-row
           background-color: $grisClaro
           padding: 4px
           box-sizing: border-box
+          height: 270px
           width: 185px
+          &:hover
+            height: auto
           .anuncio
             .info
               margin: 10px auto

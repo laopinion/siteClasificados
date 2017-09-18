@@ -3,6 +3,11 @@
   font-size: 16px;
   font-weight: 400; }
 
+#tabs {
+  position: fixed;
+  left: 0;
+  top: 50%; }
+
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
  * HTML5 display definitions
@@ -298,8 +303,14 @@ table {
     margin-top: 10px; }
     #header #block2 .container {
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
       justify-content: center;
-      align-items: flex-start; }
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      align-items: flex-start;
+      -webkit-align-items: flex-start;
+      -moz-align-items: flex-start; }
       #header #block2 .container .fecha {
         color: #ffffff; }
         #header #block2 .container .fecha span {
@@ -321,11 +332,17 @@ table {
     margin-top: 30px; }
     #header #block3 .container {
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
       align-items: center;
       justify-content: space-between;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
       height: 100%; }
       #header #block3 .container .opts {
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
         padding: 0;
         margin: 0;
         list-style: none;
@@ -340,21 +357,37 @@ table {
         #header #block3 .container .opts .empleos {
           background: url(images/src/img/iconos/empleo.svg) no-repeat;
           background-position: 90% 100%; }
+          #header #block3 .container .opts .empleos:hover {
+            background: url(images/src/img/iconos/empleo-2.svg) no-repeat;
+            background-position: 90% 100%; }
         #header #block3 .container .opts .autos {
           background: url(images/src/img/iconos/vehiculo.svg) no-repeat;
           background-position: 90% 100%; }
+          #header #block3 .container .opts .autos:hover {
+            background: url(images/src/img/iconos/vehiculo-2.svg) no-repeat;
+            background-position: 90% 100%; }
         #header #block3 .container .opts .finca {
           background: url(images/src/img/iconos/fincaRaiz.svg) no-repeat;
           background-position: 90% 100%; }
+          #header #block3 .container .opts .finca:hover {
+            background: url(images/src/img/iconos/fincaRaiz-2.svg) no-repeat;
+            background-position: 90% 100%; }
         #header #block3 .container .opts .varios {
           background: url(images/src/img/iconos/varios.svg) no-repeat;
           background-position: 90% 100%; }
+          #header #block3 .container .opts .varios:hover {
+            background: url(images/src/img/iconos/varios-2.svg) no-repeat;
+            background-position: 90% 100%; }
       #header #block3 .container .buscador {
         background: url(images/src/img/iconos/cintilloBuscador.png) no-repeat;
         height: 100%;
         background-position-y: 15px;
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
         align-items: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
         width: 478px; }
         #header #block3 .container .buscador .lupa {
           background: url(images/src/img/iconos/lupa.svg) no-repeat;
@@ -439,12 +472,19 @@ table {
       margin-top: 30px; }
       #home #destacados .view-id-home.view-display-id-block .view-content {
         display: flex;
-        justify-content: space-around; }
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
         #home #destacados .view-id-home.view-display-id-block .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
           box-sizing: border-box;
+          height: 270px;
           width: 185px; }
+          #home #destacados .view-id-home.view-display-id-block .view-content .views-row:hover {
+            height: auto; }
           #home #destacados .view-id-home.view-display-id-block .view-content .views-row .anuncio .info {
             margin: 10px auto;
             width: 160px; }
@@ -613,6 +653,148 @@ table {
   #home #empleos .flecha.up, #home #vehiculos .flecha.up, #home #fincaRaiz .flecha.up, #home #varios .flecha.up {
     background: url(images/src/img/iconos/flechaUp.svg) no-repeat; }
 
+#pregunFrecuen {
+  margin: 50px auto;
+  width: 1000px; }
+  #pregunFrecuen h2 {
+    color: #4153A7;
+    font-size: 2rem;
+    font-weight: 700; }
+  #pregunFrecuen .pregunta h3 {
+    color: #B92025;
+    font-size: 1.5rem;
+    font-weight: 700; }
+  #pregunFrecuen .pregunta .respuesta p {
+    margin: 0; }
+    #pregunFrecuen .pregunta .respuesta p a {
+      text-decoration: none;
+      color: #A81822;
+      font-weight: 700; }
+      #pregunFrecuen .pregunta .respuesta p a:hover {
+        text-decoration: underline; }
+  #pregunFrecuen .pregunta .respuesta .letrica {
+    font-size: 0.8rem;
+    font-style: italic; }
+  #pregunFrecuen .pregunta .respuesta ul {
+    padding: 0;
+    list-style: none; }
+    #pregunFrecuen .pregunta .respuesta ul a {
+      text-decoration: none;
+      color: #A81822;
+      font-weight: 700; }
+      #pregunFrecuen .pregunta .respuesta ul a:hover {
+        text-decoration: underline; }
+
+#domicilios {
+  margin: 50px auto;
+  width: 1000px; }
+  #domicilios h2 {
+    color: #4153A7;
+    font-size: 2rem;
+    font-weight: 700; }
+  #domicilios .lista ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    #domicilios .lista ul li {
+      margin-bottom: 20px; }
+      #domicilios .lista ul li .icono {
+        display: block;
+        padding-right: 20px;
+        height: 30px;
+        width: 30px; }
+    #domicilios .lista ul .tel {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      align-items: flex-end;
+      -webkit-align-items: flex-end;
+      -moz-align-items: flex-end; }
+      #domicilios .lista ul .tel .icono {
+        background: url(images/src/img/iconos/llamar.png) no-repeat;
+        background-size: 30px; }
+    #domicilios .lista ul .det {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      align-items: flex-end;
+      -webkit-align-items: flex-end;
+      -moz-align-items: flex-end; }
+      #domicilios .lista ul .det .icono {
+        background: url(images/src/img/iconos/pedir.png) no-repeat;
+        background-size: 30px; }
+    #domicilios .lista ul .domi {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      align-items: flex-end;
+      -webkit-align-items: flex-end;
+      -moz-align-items: flex-end; }
+      #domicilios .lista ul .domi .icono {
+        background: url(images/src/img/iconos/moto.png) no-repeat;
+        background-size: 30px; }
+    #domicilios .lista ul .publi {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      align-items: flex-end;
+      -webkit-align-items: flex-end;
+      -moz-align-items: flex-end; }
+      #domicilios .lista ul .publi .icono {
+        background: url(images/src/img/iconos/ver.png) no-repeat;
+        background-size: 30px; }
+    #domicilios .lista ul a {
+      text-decoration: none;
+      color: #A81822;
+      font-weight: 700;
+      margin-left: 5px; }
+      #domicilios .lista ul a:hover {
+        text-decoration: underline; }
+  #domicilios .lista p {
+    font-size: 0.75rem;
+    font-style: italic;
+    margin: 0;
+    width: 470px; }
+
+#oficinas {
+  margin: 50px auto;
+  height: 100%;
+  width: 1000px; }
+  #oficinas h2 {
+    color: #4153A7;
+    font-size: 2rem;
+    font-weight: 700; }
+  #oficinas #sedePrincipal {
+    margin-bottom: 100px;
+    width: 70%; }
+    #oficinas #sedePrincipal h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #A81822;
+      margin: 0 0 10px 0; }
+    #oficinas #sedePrincipal p {
+      margin: 0;
+      color: #B92025; }
+    #oficinas #sedePrincipal img {
+      float: right;
+      position: relative;
+      top: -100px; }
+  #oficinas #sedeAtalaya {
+    margin-bottom: 100px;
+    width: 70%; }
+    #oficinas #sedeAtalaya h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #A81822;
+      margin: 0 0 10px 0; }
+    #oficinas #sedeAtalaya p {
+      margin: 0;
+      color: #B92025; }
+    #oficinas #sedeAtalaya img {
+      float: right;
+      position: relative;
+      top: -100px; }
+
 #footer {
   background-color: #B92025;
   width: 100%; }
@@ -665,6 +847,9 @@ table {
       #footer #block-2 .container p {
         margin: 0;
         font-size: 1.6rem; }
+        #footer #block-2 .container p a {
+          text-decoration: none;
+          color: #ffffff; }
       #footer #block-2 .container hr {
         margin: 0;
         height: 90px;

@@ -1,3 +1,5 @@
+<!-- Slides imagen destacadas -->
+<?php include("slides.tpl.php"); ?>
 <section id="home">
   <div id="destacados">
     <hr>

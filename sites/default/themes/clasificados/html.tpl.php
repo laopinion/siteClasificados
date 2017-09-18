@@ -19,7 +19,6 @@
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php include("header.tpl.php"); ?>
-  <?php include("slides.tpl.php"); ?>
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>

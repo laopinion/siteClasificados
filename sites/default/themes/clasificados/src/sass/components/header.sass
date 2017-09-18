@@ -14,8 +14,14 @@
     margin-top: 10px
     .container
       display: flex
+      display: -webkit-flex
+      display: -moz-flex
       justify-content: center
+      -webkit-justify-content: center
+      -moz-justify-content: center
       align-items: flex-start
+      -webkit-align-items: flex-start
+      -moz-align-items: flex-start
       .fecha
         color: $blanco
         span
@@ -37,15 +43,17 @@
     margin-top: 30px
     .container
       display: flex
+      display: -webkit-flex
+      display: -moz-flex
       align-items: center
       justify-content: space-between
+      -webkit-justify-content: space-between
+      -moz-justify-content: space-between
       height: 100%
       .opts
-
-
-
-
         display: flex
+        display: -webkit-flex
+        display: -moz-flex
         padding: 0
         margin: 0
         list-style: none
@@ -60,22 +68,37 @@
         .empleos
           background: url('../img/iconos/empleo.svg') no-repeat
           background-position: 90% 100%
+          &:hover
+            background: url('../img/iconos/empleo-2.svg') no-repeat
+            background-position: 90% 100%
         .autos
           background: url('../img/iconos/vehiculo.svg') no-repeat
           background-position: 90% 100%
+          &:hover
+            background: url('../img/iconos/vehiculo-2.svg') no-repeat
+            background-position: 90% 100%
         .finca
           background: url('../img/iconos/fincaRaiz.svg') no-repeat
           background-position: 90% 100%
+          &:hover
+            background: url('../img/iconos/fincaRaiz-2.svg') no-repeat
+            background-position: 90% 100%
         .varios
           background: url('../img/iconos/varios.svg') no-repeat
           background-position: 90% 100%
-    
+          &:hover
+            background: url('../img/iconos/varios-2.svg') no-repeat
+            background-position: 90% 100%
       .buscador
         background: url('../img/iconos/cintilloBuscador.png') no-repeat
         height: 100%
         background-position-y: 15px
         display: flex
+        display: -webkit-flex
+        display: -moz-flex
         align-items: center
+        -webkit-align-items: center
+        -moz-align-items: center
         width: 478px
         .lupa
           background: url('../img/iconos/lupa.svg') no-repeat
