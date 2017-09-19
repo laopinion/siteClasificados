@@ -13,12 +13,16 @@
       </div>
       <hr>
       <div class="office">
-        <i class="iconOffice"></i>
+        <a href="<?php print base_path(); ?>oficinas">
+          <i class="iconOffice"></i>
+        </a>
         <p> <a href="<?php print base_path(); ?>oficinas">Oficinas</a> </p>
       </div>
       <hr>
       <div class="domic">
-        <i class="iconDomic"></i>
+        <a href="<?php print base_path(); ?>domicilios">
+          <i class="iconDomic"></i>
+        </a>
         <p> <a href="<?php print base_path(); ?>domicilios">Domicilios</a> </p>
       </div>
     </div>
@@ -28,14 +32,28 @@
       <div class="title">
         <span>Ayuda</span>
       </div>
+      <div class="opt movil">
+        <a href="<?php print base_path(); ?>preguntas-frecuentes">Preguntas frecuentes</a>
+      </div>
       <div class="title">
         <span>Anuncios</span>
+      </div>
+      <div class="opt movil">
+        <ul>
+          <li><a href="#empleos">Empleos</a></li>
+          <li><a href="#vehiculos">Vehículos</a></li>
+          <li><a href="#finca">Finca raíz</a></li>
+          <li><a href="#varios">Varios</a></li>
+        </ul>
       </div>
       <div class="title">
         <span>Términos Legales</span>
       </div>
+      <div class="opt movil">
+        <a href="http://www.sic.gov.co/" target="_blank">Superintedencia de <br> Industria y Comercio</a>
+      </div>
     </div>
-    <div class="opts">
+    <div class="opts desktop">
         <div class="opt">
           <a href="<?php print base_path(); ?>preguntas-frecuentes">Preguntas frecuentes</a>
         </div>

@@ -798,13 +798,25 @@ table {
 #footer {
   background-color: #B92025;
   width: 100%; }
+  #footer .movil {
+    display: none; }
+  #footer .desktop {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex; }
   #footer #block-1 {
     background-color: #A81822;
     height: 45px; }
     #footer #block-1 .container {
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
       align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
       justify-content: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
       height: 100%; }
       #footer #block-1 .container h2 {
         font-size: 1.6rem;
@@ -815,8 +827,14 @@ table {
     height: 133px; }
     #footer #block-2 .container {
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
       justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around;
       align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
       height: 100%;
       color: #ffffff; }
       #footer #block-2 .container i {
@@ -832,14 +850,22 @@ table {
             height: 100%; }
       #footer #block-2 .container .office {
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
         align-items: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
         width: 200px; }
         #footer #block-2 .container .office .iconOffice {
           background: url(images/src/img/iconos/office.svg) no-repeat;
           width: 110px; }
       #footer #block-2 .container .domic {
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
         align-items: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
         width: 270px; }
         #footer #block-2 .container .domic .iconDomic {
           background: url(images/src/img/iconos/domicilios.svg) no-repeat;
@@ -867,8 +893,14 @@ table {
         text-decoration: underline; }
     #footer #block-3 .container {
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
       justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around;
       align-items: flex-end;
+      -webkit-align-items: flex-end;
+      -moz-align-items: flex-end;
       height: 62px; }
       #footer #block-3 .container .title {
         color: #ffffff;
@@ -878,17 +910,31 @@ table {
         border-bottom: 2px solid #B92025;
         height: 70%;
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
         align-items: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
         justify-content: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
         width: 300px; }
     #footer #block-3 .opts {
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
       justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around;
       margin: 10px auto 0 auto;
       width: 1000px; }
       #footer #block-3 .opts .opt {
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
         justify-content: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
         width: 300px; }
         #footer #block-3 .opts .opt ul {
           margin: 0;
@@ -896,8 +942,14 @@ table {
           list-style: none; }
     #footer #block-3 #derechos {
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
       flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
       justify-content: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
       color: #60020B;
       margin: 50px auto 0 auto;
       width: 1000px; }
@@ -908,5 +960,117 @@ table {
       #footer #block-3 #derechos span {
         margin-top: 20px;
         font-size: 0.7rem; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%; }
+  #header #block1 .container {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center; }
+  #header #block2 {
+    height: auto; }
+    #header #block2 .container {
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center; }
+  #header #block3 {
+    height: auto;
+    padding-bottom: 20px; }
+    #header #block3 .container {
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center; }
+      #header #block3 .container .buscador {
+        height: 98px; } }
+
+@media screen and (max-width: 768px) {
+  #home {
+    width: 100%; }
+    #home #destacados .view-id-home.view-display-id-block .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #home #destacados .view-id-home.view-display-id-block .view-content .views-row {
+        margin-bottom: 10px; } }
+
+@media screen and (max-width: 768px) {
+  #footer .movil {
+    display: block; }
+    #footer .movil ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+  #footer #block-2 {
+    height: auto; }
+    #footer #block-2 .container {
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      padding: 20px 0; }
+      #footer #block-2 .container hr {
+        display: none; }
+      #footer #block-2 .container .tel, #footer #block-2 .container .office {
+        margin-bottom: 20px; }
+  #footer #block-3 {
+    height: auto; }
+    #footer #block-3 .container {
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      height: auto; }
+    #footer #block-3 .title {
+      margin: 20px 0; }
+    #footer #block-3 .opts.desktop {
+      display: none; }
+    #footer #block-3 #derechos {
+      padding: 0 20px 20px 20px;
+      box-sizing: border-box;
+      width: 100%; } }
+
+@media screen and (max-width: 580px) {
+  #header #block3 .container .opts {
+    justify-content: center;
+    width: 96%; }
+    #header #block3 .container .opts .opt {
+      width: 100px; }
+    #header #block3 .container .opts .empleos {
+      background-position: 18px 100%; }
+      #header #block3 .container .opts .empleos:hover {
+        background-position: 18px 100%; }
+    #header #block3 .container .opts .autos {
+      background-position: 15px 100%; }
+      #header #block3 .container .opts .autos:hover {
+        background-position: 15px 100%; }
+    #header #block3 .container .opts .finca {
+      background-position: 18px 100%; }
+      #header #block3 .container .opts .finca:hover {
+        background-position: 18px 100%; }
+    #header #block3 .container .opts .varios {
+      background-position: 22px 100%; }
+      #header #block3 .container .opts .varios:hover {
+        background-position: 22px 100%; }
+  #header #block3 .container .buscador {
+    width: 96%; } }
+
+@media screen and (max-width: 380px) {
+  #header #block3 .container .opts {
+    flex-wrap: wrap;
+    width: 250px; } }
 
 /*# sourceMappingURL=app.css.map*/
