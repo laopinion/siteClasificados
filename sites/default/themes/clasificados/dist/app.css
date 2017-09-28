@@ -438,6 +438,36 @@ table {
       width: 100%;
       border: 0; }
 
+#slider-anuncio {
+  width: 678px; }
+  #slider-anuncio .rslides-anuncio {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0; }
+    #slider-anuncio .rslides-anuncio li {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      position: absolute;
+      display: none;
+      width: 100%;
+      left: 0;
+      top: 0; }
+      #slider-anuncio .rslides-anuncio li:first-child {
+        position: relative;
+        display: block;
+        float: left; }
+    #slider-anuncio .rslides-anuncio img {
+      display: block;
+      height: auto;
+      float: left;
+      width: 100%;
+      border: 0; }
+  #slider-anuncio .rslides_tabs img {
+    height: 121px;
+    width: 163px; }
+
 #home {
   margin: 0 auto;
   width: 1000px; }
@@ -652,6 +682,13 @@ table {
     background: url(images/src/img/iconos/flechaDown.svg) no-repeat; }
   #home #empleos .flecha.up, #home #vehiculos .flecha.up, #home #fincaRaiz .flecha.up, #home #varios .flecha.up {
     background: url(images/src/img/iconos/flechaUp.svg) no-repeat; }
+
+#anuncio .anuncioNota {
+  display: flex; }
+  #anuncio .anuncioNota .galeria {
+    width: 676px; }
+  #anuncio .anuncioNota .info {
+    width: 312px; }
 
 #pregunFrecuen {
   margin: 50px auto;
