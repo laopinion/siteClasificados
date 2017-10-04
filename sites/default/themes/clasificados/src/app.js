@@ -51,7 +51,18 @@ $(function() {
     let alt = $(`#slider-anuncio .rslides-anuncio #rslides1_s${element} img`).attr('alt');
     let html = `<img src=${src} alt=${alt}/>`
     $(`#slider-anuncio .rslides_tabs .rslides1_s${i} a`).html(html);
+    $(`#slider-fullScream .rslides_tabs .rslides2_s${i} a`).html(html);
     i++;
+  });
+
+  $('#slider-anuncio #fullScream').click(() => {
+    $('.backgroundAnuncio').show();
+    $('#slider-fullScream').show();
+  });
+
+  $('.backgroundAnuncio').click(() => {
+    $('.backgroundAnuncio').hide();
+    $('#slider-fullScream').hide();
   });
 
 });

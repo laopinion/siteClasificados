@@ -26,8 +26,75 @@
       border: 0
 
 #slider-anuncio
+  position: relative
   width: 678px
+  .rslides_tabs
+    padding: 0
+    list-style: none
+    display: flex
+    display: -webkit-flex
+    display: -moz-flex
+    justify-content: space-between
+    -webkit-justify-content: space-between
+    -moz-justify-content: space-between
+  #fullScream
+    position: absolute
+    background: url('../img/iconos/fullScream.svg') no-repeat
+    height: 30px
+    width: 30px
+    right: 5px
+    bottom: 150px
+    z-index: 2
+    cursor: pointer
   .rslides-anuncio
+    height: 520px
+    position: relative
+    list-style: none
+    overflow: hidden
+    padding: 0
+    margin: 0
+    li
+      -webkit-backface-visibility: hidden
+      backface-visibility: hidden
+      position: absolute
+      display: none
+      width: 100%
+      left: 0
+      top: 0
+      &:first-child
+        position: relative
+        display: block
+        float: left
+    img
+      display: block
+      height: auto
+      float: left
+      width: 100%
+      border: 0
+  .rslides_tabs
+    img
+      height: 121px
+      width: 163px
+
+#slider-fullScream
+  position: absolute
+  width: 678px
+  top: 0
+  left: 0
+  right: 0
+  margin: 0 auto
+  z-index: 5
+  .rslides_tabs
+    padding: 0
+    list-style: none
+    display: flex
+    display: -webkit-flex
+    display: -moz-flex
+    justify-content: space-between
+    -webkit-justify-content: space-between
+    -moz-justify-content: space-between
+  .rslides-anuncio
+    height: 520px
     position: relative
     list-style: none
     overflow: hidden
