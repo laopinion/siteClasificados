@@ -15,15 +15,16 @@
               foreach($node->field_image['und'] as $imagen) {
                 $foto = substr($content['field_image'][$i]['#item']['uri'],8);
                 print "
-                    <li>
-                      <img u=image src='".base_path()."sites/default/files".$foto."' alt='".render($content['field_image'][$i]['#item']['alt'])."'/>
-                    </li>
+                <li>
+                <img u=image src='".base_path()."sites/default/files".$foto."' alt='".render($content['field_image'][$i]['#item']['alt'])."'/>
+                </li>
                 ";
                 $i++;
               }
             }
-          ?>
+            ?>
         </ul>
+        <div id="countImg"></div>
         <aside id="fullScream"></aside>
       </div>
     </div>
@@ -62,6 +63,21 @@
       </article>
     </div>
   </article>
+
+  <div id="destacados">
+    <hr>
+    <aside class="estrellas"></aside>
+    <h3>También te puede interesar</h3>
+    <?php $view = views_get_view('anuncios'); print $view->preview('block'); ?>
+  </div>
+
+  <div class="pauta"></div>
+
+  <div id="noticias">
+    <hr>
+    <h3>Noticias</h3>
+    <?php $view = views_get_view('anuncios'); print $view->preview('block_1'); ?>
+  </div>
 
   <div id="slider-fullScream">
     <ul class="rslides-anuncio">

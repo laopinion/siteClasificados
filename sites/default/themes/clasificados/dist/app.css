@@ -459,6 +459,24 @@ table {
     bottom: 150px;
     z-index: 2;
     cursor: pointer; }
+  #slider-anuncio #countImg {
+    position: absolute;
+    color: #ffffff;
+    left: 5px;
+    bottom: 150px;
+    z-index: 3;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    width: 80px; }
+    #slider-anuncio #countImg:before {
+      content: url(images/src/img/iconos/cam.svg);
+      height: 30px;
+      margin-right: 5px;
+      width: 40px; }
   #slider-anuncio .rslides-anuncio {
     height: 520px;
     position: relative;
@@ -471,6 +489,7 @@ table {
       backface-visibility: hidden;
       position: absolute;
       display: none;
+      height: 520px;
       width: 100%;
       left: 0;
       top: 0; }
@@ -480,10 +499,11 @@ table {
         float: left; }
     #slider-anuncio .rslides-anuncio img {
       display: block;
-      height: auto;
+      height: 520px;
       float: left;
-      width: 100%;
-      border: 0; }
+      border: 0;
+      object-fit: cover;
+      width: 100%; }
   #slider-anuncio .rslides_tabs img {
     height: 121px;
     width: 163px; }
@@ -526,7 +546,7 @@ table {
         float: left; }
     #slider-fullScream .rslides-anuncio img {
       display: block;
-      height: auto;
+      height: 520px;
       float: left;
       width: 100%;
       border: 0; }
@@ -798,7 +818,8 @@ table {
     justify-content: space-between;
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-bottom: 70px; }
     #anuncio .anuncioNota .galeria {
       width: 676px; }
     #anuncio .anuncioNota .info {
@@ -884,6 +905,129 @@ table {
           #anuncio .anuncioNota .info .container .comparte .redes_sociales .wp {
             background: url(images/src/img/iconos/wp.svg) no-repeat;
             background-position-x: -1px; }
+  #anuncio #destacados {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 65px; }
+    #anuncio #destacados hr {
+      border-color: #afafaf; }
+    #anuncio #destacados .estrellas {
+      background: url(images/src/img/iconos/estrellas.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -30px; }
+    #anuncio #destacados h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 230px; }
+    #anuncio #destacados .view-id-anuncios.view-display-id-block {
+      margin-top: 30px; }
+      #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row:hover {
+            height: auto; }
+          #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #anuncio .pauta {
+    background-color: #000000;
+    height: 90px;
+    margin: 0 auto 60px auto;
+    width: 728px; }
+  #anuncio #noticias {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 65px; }
+    #anuncio #noticias hr {
+      border-color: #afafaf; }
+    #anuncio #noticias h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 85px; }
+    #anuncio #noticias .view-id-anuncios.view-display-id-block_1 {
+      margin-top: 30px;
+      margin-bottom: 100px; }
+      #anuncio #noticias .view-id-anuncios.view-display-id-block_1 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between; }
+        #anuncio #noticias .view-id-anuncios.view-display-id-block_1 .view-content .views-row {
+          width: 240px; }
+          #anuncio #noticias .view-id-anuncios.view-display-id-block_1 .view-content .views-row .noticia {
+            width: 240px; }
+            #anuncio #noticias .view-id-anuncios.view-display-id-block_1 .view-content .views-row .noticia a {
+              display: block; }
+            #anuncio #noticias .view-id-anuncios.view-display-id-block_1 .view-content .views-row .noticia .title {
+              margin-bottom: 5px;
+              font-size: 20px;
+              line-height: 22px;
+              font-weight: 700; }
+              #anuncio #noticias .view-id-anuncios.view-display-id-block_1 .view-content .views-row .noticia .title a {
+                text-decoration: none;
+                color: #000000; }
 
 #pregunFrecuen {
   margin: 50px auto;

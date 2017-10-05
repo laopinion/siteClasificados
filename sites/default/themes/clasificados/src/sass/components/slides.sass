@@ -46,6 +46,24 @@
     bottom: 150px
     z-index: 2
     cursor: pointer
+  #countImg
+    position: absolute
+    color: $blanco
+    left: 5px
+    bottom: 150px
+    z-index: 3
+    display: flex
+    display: -webkit-flex
+    display: -moz-flex
+    align-items: center
+    -webkit-align-items: center
+    -moz-align-items: center
+    width: 80px
+    &:before
+      content: url('../img/iconos/cam.svg')
+      height: 30px
+      margin-right: 5px
+      width: 40px
   .rslides-anuncio
     height: 520px
     position: relative
@@ -58,6 +76,7 @@
       backface-visibility: hidden
       position: absolute
       display: none
+      height: 520px
       width: 100%
       left: 0
       top: 0
@@ -67,10 +86,11 @@
         float: left
     img
       display: block
-      height: auto
+      height: 520px
       float: left
-      width: 100%
       border: 0
+      object-fit: cover
+      width: 100%
   .rslides_tabs
     img
       height: 121px
@@ -114,7 +134,7 @@
         float: left
     img
       display: block
-      height: auto
+      height: 520px
       float: left
       width: 100%
       border: 0
