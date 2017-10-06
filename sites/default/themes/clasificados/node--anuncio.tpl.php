@@ -96,6 +96,7 @@
         }
       ?>
     </ul>
+    <aside id="cerrarGaleria">X</aside>
   </div>
 
 </section>

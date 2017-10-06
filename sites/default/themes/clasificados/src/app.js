@@ -66,7 +66,7 @@ $(function() {
     $('#slider-fullScream').show();
   });
 
-  $('.backgroundAnuncio').click(() => {
+  $('.backgroundAnuncio, #slider-fullScream #cerrarGaleria').click(() => {
     $('.backgroundAnuncio').hide();
     $('#slider-fullScream').hide();
   });
