@@ -360,24 +360,36 @@ table {
           #header #block3 .container .opts .empleos:hover {
             background: url(images/src/img/iconos/empleo-2.svg) no-repeat;
             background-position: 90% 100%; }
+        #header #block3 .container .opts .empleo.active {
+          background: url(images/src/img/iconos/empleo-2.svg) no-repeat;
+          background-position: 90% 100%; }
         #header #block3 .container .opts .autos {
           background: url(images/src/img/iconos/vehiculo.svg) no-repeat;
           background-position: 90% 100%; }
           #header #block3 .container .opts .autos:hover {
             background: url(images/src/img/iconos/vehiculo-2.svg) no-repeat;
             background-position: 90% 100%; }
+        #header #block3 .container .opts .autos.active {
+          background: url(images/src/img/iconos/vehiculo-2.svg) no-repeat;
+          background-position: 90% 100%; }
         #header #block3 .container .opts .finca {
           background: url(images/src/img/iconos/fincaRaiz.svg) no-repeat;
           background-position: 90% 100%; }
           #header #block3 .container .opts .finca:hover {
             background: url(images/src/img/iconos/fincaRaiz-2.svg) no-repeat;
             background-position: 90% 100%; }
+        #header #block3 .container .opts .finca.active {
+          background: url(images/src/img/iconos/fincaRaiz-2.svg) no-repeat;
+          background-position: 90% 100%; }
         #header #block3 .container .opts .varios {
           background: url(images/src/img/iconos/varios.svg) no-repeat;
           background-position: 90% 100%; }
           #header #block3 .container .opts .varios:hover {
             background: url(images/src/img/iconos/varios-2.svg) no-repeat;
             background-position: 90% 100%; }
+        #header #block3 .container .opts .varios.active {
+          background: url(images/src/img/iconos/varios-2.svg) no-repeat;
+          background-position: 90% 100%; }
       #header #block3 .container .buscador {
         background: url(images/src/img/iconos/cintilloBuscador.png) no-repeat;
         height: 100%;
@@ -410,6 +422,68 @@ table {
           #header #block3 .container .buscador form ::placeholder {
             color: #60020B;
             font-size: 0.8rem; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%; }
+  #header #block1 .container {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center; }
+  #header #block2 {
+    height: auto; }
+    #header #block2 .container {
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center; }
+  #header #block3 {
+    height: auto;
+    padding-bottom: 20px; }
+    #header #block3 .container {
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center; }
+      #header #block3 .container .buscador {
+        height: 98px; } }
+
+@media screen and (max-width: 580px) {
+  #header #block3 .container .opts {
+    justify-content: center;
+    width: 96%; }
+    #header #block3 .container .opts .opt {
+      width: 100px; }
+    #header #block3 .container .opts .empleos {
+      background-position: 18px 100%; }
+      #header #block3 .container .opts .empleos:hover {
+        background-position: 18px 100%; }
+    #header #block3 .container .opts .autos {
+      background-position: 15px 100%; }
+      #header #block3 .container .opts .autos:hover {
+        background-position: 15px 100%; }
+    #header #block3 .container .opts .finca {
+      background-position: 18px 100%; }
+      #header #block3 .container .opts .finca:hover {
+        background-position: 18px 100%; }
+    #header #block3 .container .opts .varios {
+      background-position: 22px 100%; }
+      #header #block3 .container .opts .varios:hover {
+        background-position: 22px 100%; }
+  #header #block3 .container .buscador {
+    width: 96%; } }
+
+@media screen and (max-width: 380px) {
+  #header #block3 .container .opts {
+    flex-wrap: wrap;
+    width: 250px; } }
 
 #slider {
   width: 100%; }
@@ -771,7 +845,7 @@ table {
         background-color: #efefef;
         padding: 4px;
         box-sizing: border-box;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         height: 154px;
         width: 185px; }
         #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row:hover, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row:hover, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row:hover, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row:hover, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row:hover, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row:hover, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row:hover, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row:hover, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row:hover, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row:hover, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row:hover, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row:hover, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row:hover, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row:hover, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row:hover, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row:hover {
@@ -823,6 +897,16 @@ table {
     background: url(images/src/img/iconos/flechaDown.svg) no-repeat; }
   #home #empleos .flecha.up, #home #vehiculos .flecha.up, #home #fincaRaiz .flecha.up, #home #varios .flecha.up {
     background: url(images/src/img/iconos/flechaUp.svg) no-repeat; }
+
+@media screen and (max-width: 768px) {
+  #home {
+    width: 100%; }
+    #home #destacados .view-id-home.view-display-id-block .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #home #destacados .view-id-home.view-display-id-block .view-content .views-row {
+        margin-bottom: 20px; } }
 
 .backgroundAnuncio {
   background-color: rgba(0, 0, 0, 0.8);
@@ -1110,7 +1194,11 @@ table {
         -webkit-flex-wrap: wrap;
         -moz-flex-wrap: wrap; }
         #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row {
-          margin-bottom: 10px; }
+          margin-bottom: 20px;
+          height: auto; }
+          #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info .title {
+            white-space: initial;
+            overflow: initial; }
     #anuncio .pauta {
       width: 100%; }
     #anuncio #noticias {
@@ -1123,7 +1211,7 @@ table {
         -webkit-justify-content: space-around;
         -moz-justify-content: space-around; }
         #anuncio #noticias .view-id-anuncios.view-display-id-block_1 .view-content .views-row {
-          margin-bottom: 10px; } }
+          margin-bottom: 20px; } }
 
 @media screen and (max-width: 600px) {
   #anuncio .anuncioNota .info {
@@ -1137,6 +1225,325 @@ table {
   #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info .title {
     white-space: initial;
     overflow: initial; } }
+
+#vehiculos {
+  margin-bottom: 50px; }
+  #vehiculos #portada img {
+    width: 100%; }
+  #vehiculos #noticias {
+    position: relative;
+    margin-top: 60px; }
+    #vehiculos #noticias hr {
+      border-color: #afafaf; }
+    #vehiculos #noticias h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 85px; }
+    #vehiculos #noticias .view-id-categorias.view-display-id-block_3 {
+      margin-top: 30px; }
+      #vehiculos #noticias .view-id-categorias.view-display-id-block_3 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between; }
+        #vehiculos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
+          width: 240px; }
+          #vehiculos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia {
+            width: 240px; }
+            #vehiculos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia a {
+              display: block; }
+            #vehiculos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia .title {
+              margin-bottom: 5px;
+              font-size: 20px;
+              line-height: 22px;
+              font-weight: 700; }
+              #vehiculos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia .title a {
+                text-decoration: none;
+                color: #000000; }
+  #vehiculos #destacados {
+    position: relative;
+    margin-top: 60px; }
+    #vehiculos #destacados hr {
+      border-color: #afafaf; }
+    #vehiculos #destacados .estrellas {
+      background: url(images/src/img/iconos/estrellas.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -30px; }
+    #vehiculos #destacados h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 182px; }
+    #vehiculos #destacados .view-id-categorias.view-display-id-block_2 {
+      margin-top: 30px; }
+      #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row:hover {
+            height: auto; }
+          #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #vehiculos #anunciosVehiculos {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    #vehiculos #anunciosVehiculos hr {
+      border-color: #afafaf; }
+    #vehiculos #anunciosVehiculos h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 85px; }
+    #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 {
+      margin-top: 30px; }
+      #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+          height: 270px;
+          width: 185px; }
+          #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content .views-row:hover {
+            height: auto; }
+          #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #vehiculos .pauta {
+    background-color: #000000;
+    height: 90px;
+    margin: 0 auto 60px auto;
+    width: 728px; }
+  #vehiculos #masVehiculos {
+    position: relative;
+    margin-top: 60px; }
+    #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 {
+      margin-top: 30px; }
+      #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+          height: 270px;
+          width: 185px; }
+          #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content .views-row:hover {
+            height: auto; }
+          #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #vehiculos #otrosAnuncios {
+    position: relative;
+    margin-top: 60px; }
+    #vehiculos #otrosAnuncios hr {
+      border-color: #afafaf; }
+    #vehiculos #otrosAnuncios .estrellas {
+      background: url(images/src/img/iconos/estrellas.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -30px; }
+    #vehiculos #otrosAnuncios h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 235px; }
+    #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 {
+      margin-top: 30px; }
+      #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row:hover {
+            height: auto; }
+          #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
 
 #pregunFrecuen {
   margin: 50px auto;
@@ -1447,48 +1854,6 @@ table {
         font-size: 0.7rem; }
 
 @media screen and (max-width: 768px) {
-  .container {
-    width: 100%; }
-  #header #block1 .container {
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    align-items: center;
-    -webkit-align-items: center;
-    -moz-align-items: center; }
-  #header #block2 {
-    height: auto; }
-    #header #block2 .container {
-      flex-direction: column;
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      align-items: center;
-      -webkit-align-items: center;
-      -moz-align-items: center; }
-  #header #block3 {
-    height: auto;
-    padding-bottom: 20px; }
-    #header #block3 .container {
-      flex-direction: column;
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      align-items: center;
-      -webkit-align-items: center;
-      -moz-align-items: center; }
-      #header #block3 .container .buscador {
-        height: 98px; } }
-
-@media screen and (max-width: 768px) {
-  #home {
-    width: 100%; }
-    #home #destacados .view-id-home.view-display-id-block .view-content {
-      flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-      -moz-flex-wrap: wrap; }
-      #home #destacados .view-id-home.view-display-id-block .view-content .views-row {
-        margin-bottom: 10px; } }
-
-@media screen and (max-width: 768px) {
   #footer .movil {
     display: block; }
     #footer .movil ul {
@@ -1527,35 +1892,5 @@ table {
       padding: 0 20px 20px 20px;
       box-sizing: border-box;
       width: 100%; } }
-
-@media screen and (max-width: 580px) {
-  #header #block3 .container .opts {
-    justify-content: center;
-    width: 96%; }
-    #header #block3 .container .opts .opt {
-      width: 100px; }
-    #header #block3 .container .opts .empleos {
-      background-position: 18px 100%; }
-      #header #block3 .container .opts .empleos:hover {
-        background-position: 18px 100%; }
-    #header #block3 .container .opts .autos {
-      background-position: 15px 100%; }
-      #header #block3 .container .opts .autos:hover {
-        background-position: 15px 100%; }
-    #header #block3 .container .opts .finca {
-      background-position: 18px 100%; }
-      #header #block3 .container .opts .finca:hover {
-        background-position: 18px 100%; }
-    #header #block3 .container .opts .varios {
-      background-position: 22px 100%; }
-      #header #block3 .container .opts .varios:hover {
-        background-position: 22px 100%; }
-  #header #block3 .container .buscador {
-    width: 96%; } }
-
-@media screen and (max-width: 380px) {
-  #header #block3 .container .opts {
-    flex-wrap: wrap;
-    width: 250px; } }
 
 /*# sourceMappingURL=app.css.map*/

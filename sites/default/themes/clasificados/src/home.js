@@ -1,11 +1,13 @@
 import $ from './jquery';
 
 class Home {
-  constructor() {
+  constructor(autos, empleo) {
     this.name = 'John serrano';
+    this.autos = autos;
+    this.empleo = empleo;
   }
   
-  verMas (){
+  verMas () {
     $('#home #empleos .flecha').click(function() {
       const activo = $(this).data('activo');
       if(activo == 0){
@@ -67,8 +69,11 @@ class Home {
     });
   }
 
-  get hola (){
-    console.log(this.name);
+  slides () {
+    // Cargamos las images del slider
+    $('#autos').attr('src', `sites/default/themes/clasificados/dist/${this.autos}`);
+    $('#empleos').attr('src', `sites/default/themes/clasificados/dist/${this.empleo}`);
+    // console.log(this.name);
   }
 }
 

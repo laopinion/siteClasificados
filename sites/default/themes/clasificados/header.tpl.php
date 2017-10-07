@@ -31,10 +31,10 @@
   <section id="block3">
     <div class="container">
       <ul class="opts">
-        <li class="empleos opt"><a href="#empleos">Empleo</a></li>
-        <li class="autos opt"> <a href="#autos">Autos</a> </li>
-        <li class="finca opt"> <a href="#finca-raiz">Finca raiz</a> </li>
-        <li class="varios opt"> <a href="#varios">Varios</a> </li>
+        <li class="empleos opt"><a href="<?php print base_path(); ?>empleos">Empleo</a></li>
+        <li class="autos opt"> <a href="<?php print base_path(); ?>vehiculos">Autos</a> </li>
+        <li class="finca opt"> <a href="<?php print base_path(); ?>finca-raiz">Finca raiz</a> </li>
+        <li class="varios opt"> <a href="<?php print base_path(); ?>varios">Varios</a> </li>
       </ul>
       <div class="buscador">
         <aside class="lupa"></aside>
