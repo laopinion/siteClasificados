@@ -16,19 +16,23 @@
   position: relative
   hr
     border-color: $gris
-  .vehiculos
-    color: $vehiculos
+  .Vehículos
     width: 88px
-  .empleos
-    color: $empleos
+    a
+      color: $vehiculos
+  .Empleos, .empleos
     width: 75px
-  .fincaRaiz
-    color: $fincaRaiz
+    a
+      color: $empleos
+  .Finca.Raíz
     width: 92px
-  .varios
-    color: $varios
+    a
+      color: $fincaRaiz
+  .Varios, .Varios
     width: 60px
-  h3.vehiculos, h3.empleos, h3.fincaRaiz, h3.varios
+    a
+      color: $varios
+  h3.Vehículos, h3.Empleos, h3.Finca.Raíz, h3.Varios
     position: absolute
     margin: 0 auto
     background-color: $blanco
@@ -38,6 +42,8 @@
     font-size: 1.1rem // 18/16 = 1.1rem -> 18px
     font-weight: 700
     text-align: center
+    a
+      text-decoration: none
   .anuncioNota
     display: flex
     display: -webkit-flex

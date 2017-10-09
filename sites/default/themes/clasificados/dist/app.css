@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);body {
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);@charset "UTF-8";
+body {
   font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   font-weight: 400; }
@@ -927,19 +928,23 @@ table {
   position: relative; }
   #anuncio hr {
     border-color: #afafaf; }
-  #anuncio .vehiculos {
-    color: #ae230c;
+  #anuncio .Vehículos {
     width: 88px; }
-  #anuncio .empleos {
-    color: #ffb200;
+    #anuncio .Vehículos a {
+      color: #ae230c; }
+  #anuncio .Empleos, #anuncio .empleos {
     width: 75px; }
-  #anuncio .fincaRaiz {
-    color: #bfcc03;
+    #anuncio .Empleos a, #anuncio .empleos a {
+      color: #ffb200; }
+  #anuncio .Finca.Raíz {
     width: 92px; }
-  #anuncio .varios {
-    color: #309ad8;
+    #anuncio .Finca.Raíz a {
+      color: #bfcc03; }
+  #anuncio .Varios, #anuncio .Varios {
     width: 60px; }
-  #anuncio h3.vehiculos, #anuncio h3.empleos, #anuncio h3.fincaRaiz, #anuncio h3.varios {
+    #anuncio .Varios a, #anuncio .Varios a {
+      color: #309ad8; }
+  #anuncio h3.Vehículos, #anuncio h3.Empleos, #anuncio h3.Finca.Raíz, #anuncio h3.Varios {
     position: absolute;
     margin: 0 auto;
     background-color: #ffffff;
@@ -949,6 +954,8 @@ table {
     font-size: 1.1rem;
     font-weight: 700;
     text-align: center; }
+    #anuncio h3.Vehículos a, #anuncio h3.Empleos a, #anuncio h3.Finca.Raíz a, #anuncio h3.Varios a {
+      text-decoration: none; }
   #anuncio .anuncioNota {
     display: flex;
     display: -webkit-flex;
@@ -1270,6 +1277,47 @@ table {
               #vehiculos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia .title a {
                 text-decoration: none;
                 color: #000000; }
+  #vehiculos #concesionarios {
+    position: relative;
+    margin-top: 60px;
+    -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16); }
+    #vehiculos #concesionarios .right {
+      position: absolute;
+      background-color: #ffffff;
+      top: 2px;
+      right: -15px;
+      height: 112px;
+      width: 15px; }
+    #vehiculos #concesionarios .left {
+      position: absolute;
+      background-color: #ffffff;
+      top: 2px;
+      left: -15px;
+      height: 112px;
+      width: 15px; }
+    #vehiculos #concesionarios hr {
+      border-color: #afafaf; }
+    #vehiculos #concesionarios h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 145px; }
+    #vehiculos #concesionarios .view-id-usuarios.view-display-id-block .view-content {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around; }
   #vehiculos #destacados {
     position: relative;
     margin-top: 60px; }

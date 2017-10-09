@@ -4,7 +4,7 @@
   </div>
   <hr>
   <!-- Nota imprimir el name de la taxonomia -->
-  <h3 class="vehiculos">Vehículos</h3>
+  <h3 class="categoria"><?php print render($content['field_categoria']) ?></h3>
   <article class="anuncioNota">
     <div class="galeria">
       <div id="slider-anuncio" class="imgDestacada">

@@ -13,6 +13,14 @@
     <?php $view = views_get_view('categorias'); print $view->preview('block_3'); ?>
   </article>
 
+  <article id="concesionarios" class="container">
+    <div class="left"></div>
+    <hr>
+    <h3>Concesionarios</h3>
+    <?php $view = views_get_view('usuarios'); print $view->preview('block'); ?>
+    <div class="right"></div>
+  </article>
+
   <article id="destacados" class="container">
     <hr>
     <aside class="estrellas"></aside>
