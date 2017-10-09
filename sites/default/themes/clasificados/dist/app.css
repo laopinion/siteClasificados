@@ -361,7 +361,7 @@ table {
           #header #block3 .container .opts .empleos:hover {
             background: url(images/src/img/iconos/empleo-2.svg) no-repeat;
             background-position: 90% 100%; }
-        #header #block3 .container .opts .empleo.active {
+        #header #block3 .container .opts .empleos.active {
           background: url(images/src/img/iconos/empleo-2.svg) no-repeat;
           background-position: 90% 100%; }
         #header #block3 .container .opts .autos {
@@ -1590,6 +1590,325 @@ table {
               font-weight: 700;
               text-transform: uppercase; }
               #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+
+#empleos {
+  margin-bottom: 50px; }
+  #empleos #portada img {
+    width: 100%; }
+  #empleos #noticias {
+    position: relative;
+    margin-top: 60px; }
+    #empleos #noticias hr {
+      border-color: #afafaf; }
+    #empleos #noticias h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 85px; }
+    #empleos #noticias .view-id-categorias.view-display-id-block_3 {
+      margin-top: 30px; }
+      #empleos #noticias .view-id-categorias.view-display-id-block_3 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between; }
+        #empleos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
+          width: 240px; }
+          #empleos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia {
+            width: 240px; }
+            #empleos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia a {
+              display: block; }
+            #empleos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia .title {
+              margin-bottom: 5px;
+              font-size: 20px;
+              line-height: 22px;
+              font-weight: 700; }
+              #empleos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia .title a {
+                text-decoration: none;
+                color: #000000; }
+  #empleos #destacados {
+    position: relative;
+    margin-top: 60px; }
+    #empleos #destacados hr {
+      border-color: #afafaf; }
+    #empleos #destacados .estrellas {
+      background: url(images/src/img/iconos/estrellas.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -30px; }
+    #empleos #destacados h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 182px; }
+    #empleos #destacados .view-id-categorias.view-display-id-block_7 {
+      margin-top: 30px; }
+      #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row:hover {
+            height: auto; }
+          #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #empleos #anunciosEmpleos {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    #empleos #anunciosEmpleos hr {
+      border-color: #afafaf; }
+    #empleos #anunciosEmpleos h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 75px; }
+    #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 {
+      margin-top: 30px; }
+      #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+          height: 270px;
+          width: 185px; }
+          #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row:hover {
+            height: auto; }
+          #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #empleos .pauta {
+    background-color: #000000;
+    height: 90px;
+    margin: 0 auto 60px auto;
+    width: 728px; }
+  #empleos #masEmpleos {
+    position: relative;
+    margin-top: 60px; }
+    #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 {
+      margin-top: 30px; }
+      #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+          height: 270px;
+          width: 185px; }
+          #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row:hover {
+            height: auto; }
+          #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #empleos #otrosAnuncios {
+    position: relative;
+    margin-top: 60px; }
+    #empleos #otrosAnuncios hr {
+      border-color: #afafaf; }
+    #empleos #otrosAnuncios .estrellas {
+      background: url(images/src/img/iconos/estrellas.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -30px; }
+    #empleos #otrosAnuncios h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 235px; }
+    #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 {
+      margin-top: 30px; }
+      #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row:hover {
+            height: auto; }
+          #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
 

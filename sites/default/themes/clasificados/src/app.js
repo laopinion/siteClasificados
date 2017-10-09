@@ -10,12 +10,13 @@ import sedeAtalaya from './img/images/fachada-atalaya.jpg';
 import Home from './home';
 import Anuncios from './anuncios';
 import Vehiculos from './vehiculos';
-
+import Empleos from './empleos';
 
 $(function() {
   const home = new Home(autos, empleo);
   const anuncios = new Anuncios();
   const vehiculos = new Vehiculos(autos);
+  const empleos = new Empleos(empleo);
   
   $('#pregunFrecuen .pregunta-1 .respuesta img').attr('src', `sites/default/themes/clasificados/dist/${compartir}`);
   $('#oficinas #sedePrincipal img').attr('src', `sites/default/themes/clasificados/dist/${sedePrincipal}`);
@@ -31,5 +32,8 @@ $(function() {
 
   vehiculos.activeCategoria();
   vehiculos.portada();
+
+  empleos.portada();
+  empleos.activeCategoria();
 
 });

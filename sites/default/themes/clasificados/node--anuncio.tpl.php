@@ -24,8 +24,14 @@
             }
             ?>
         </ul>
-        <div id="countImg"></div>
-        <aside id="fullScream"></aside>
+        <?php 
+          if ($i > 1) {
+            print "
+              <div id=countImg></div>
+              <aside id=fullScream></aside>
+            ";
+          }
+        ?>
       </div>
     </div>
     <div class="info">

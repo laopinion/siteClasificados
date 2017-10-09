@@ -3,6 +3,9 @@ import $ from './jquery';
 class Anuncios {
   constructor () {
     this.arrayGaleria = [0, 1, 2, 3];
+    
+    const clase = $('#anuncio .categoria .field-item a').text();
+    $('#anuncio .categoria').addClass(clase);
   }
 
   configGaleria () {

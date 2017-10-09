@@ -7,12 +7,10 @@ class Vehiculos {
 
   activeCategoria () {
     const path = window.location.href;
-    if(path == 'http://localhost/siteClasificados/vehiculos' || path == 'https://clasificados.laopinion.com.co' ) {
+    if(path == 'http://localhost/siteClasificados/vehiculos' || path == 'https://clasificados.laopinion.com.co/vehiculos' ) {
       $('#header #block3 .container .opts .autos').addClass('active');
     }
 
-    const clase = $('#anuncio .categoria .field-item a').text();
-    $('#anuncio .categoria').addClass(clase)
   }
 
   portada () {
