@@ -1912,6 +1912,250 @@ table {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
 
+#seccionGeneral {
+  margin-bottom: 50px; }
+  #seccionGeneral #portada img {
+    width: 100%; }
+  #seccionGeneral #noticias {
+    position: relative;
+    margin-top: 60px; }
+    #seccionGeneral #noticias hr {
+      border-color: #afafaf; }
+    #seccionGeneral #noticias h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 85px; }
+    #seccionGeneral #noticias .view-id-categorias.view-display-id-block_3 {
+      margin-top: 30px; }
+      #seccionGeneral #noticias .view-id-categorias.view-display-id-block_3 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between; }
+        #seccionGeneral #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
+          width: 240px; }
+          #seccionGeneral #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia {
+            width: 240px; }
+            #seccionGeneral #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia a {
+              display: block; }
+            #seccionGeneral #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia .title {
+              margin-bottom: 5px;
+              font-size: 20px;
+              line-height: 22px;
+              font-weight: 700; }
+              #seccionGeneral #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia .title a {
+                text-decoration: none;
+                color: #000000; }
+  #seccionGeneral #anunciosGeneral {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    #seccionGeneral #anunciosGeneral hr {
+      border-color: #afafaf; }
+    #seccionGeneral #anunciosGeneral h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 75px; }
+    #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block {
+      margin-top: 30px; }
+      #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+          height: 270px;
+          width: 185px; }
+          #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row:hover {
+            height: auto; }
+          #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #seccionGeneral .pauta {
+    background-color: #000000;
+    height: 90px;
+    margin: 0 auto 60px auto;
+    width: 728px; }
+  #seccionGeneral #masGeneral {
+    position: relative;
+    margin-top: 60px; }
+    #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 {
+      margin-top: 30px; }
+      #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+          height: 270px;
+          width: 185px; }
+          #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row:hover {
+            height: auto; }
+          #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #seccionGeneral #otrosAnuncios {
+    position: relative;
+    margin-top: 60px; }
+    #seccionGeneral #otrosAnuncios hr {
+      border-color: #afafaf; }
+    #seccionGeneral #otrosAnuncios .estrellas {
+      background: url(images/src/img/iconos/estrellas.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -30px; }
+    #seccionGeneral #otrosAnuncios h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 235px; }
+    #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 {
+      margin-top: 30px; }
+      #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row:hover {
+            height: auto; }
+          #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+
 #pregunFrecuen {
   margin: 50px auto;
   width: 1000px; }
