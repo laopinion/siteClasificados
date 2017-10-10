@@ -2157,6 +2157,32 @@ table {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
 
+#profile {
+  margin: 50px auto; }
+  #profile #profileInfo {
+    position: relative; }
+    #profile #profileInfo hr {
+      border-color: #afafaf; }
+    #profile #profileInfo h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 148px; }
+    #profile #profileInfo .descripcion {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center; }
+
 #pregunFrecuen {
   margin: 50px auto;
   width: 1000px; }
