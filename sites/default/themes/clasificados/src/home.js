@@ -72,7 +72,7 @@ class Home {
   slides () {
     // Cargamos las images del slider
     $('#autos').attr('src', `sites/default/themes/clasificados/dist/${this.autos}`);
-    $('#empleos').attr('src', `sites/default/themes/clasificados/dist/${this.empleo}`);
+    $('#empleosPortada').attr('src', `sites/default/themes/clasificados/dist/${this.empleo}`);
     // console.log(this.name);
   }
 }
