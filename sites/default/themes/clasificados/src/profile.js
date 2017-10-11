@@ -5,8 +5,11 @@ class Profile {
 
   }
 
-  texto () {
-
+  proyectos () {
+    const type = $('#profile #profileInfo h3 .field-item').text();
+    if (type == 'Inmobiliarias') {
+      $('#profile #proyectos').show();
+    }
   }
 }
 

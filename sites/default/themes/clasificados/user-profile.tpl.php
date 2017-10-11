@@ -10,6 +10,13 @@
       <div class="right"></div>
     </article>
   </article>
+ 
+  <article id="proyectos">
+    <aside class="triangulo"></aside>
+    <aside class="estrellas"></aside>
+    <h3>Proyectos</h3>
+    <?php $view = views_get_view('profiles'); print $view->preview('block_3'); ?>
+  </article>
 
   <article id="anuncios-1">
     <hr>

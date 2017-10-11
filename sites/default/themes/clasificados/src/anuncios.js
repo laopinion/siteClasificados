@@ -2,8 +2,14 @@ import $ from './jquery';
 
 class Anuncios {
   constructor () {
-    this.arrayGaleria = [0, 1, 2, 3];
-    
+    let array = [];
+    this.cantidad = $('#slider-anuncio li').each(function(index) {
+      array.push(index);
+      return index + 1;
+    });
+
+    this.arrayGaleria = array;
+
     const clase = $('#anuncio .categoria .field-item a').text();
     $('#anuncio .categoria').addClass(clase);
   }
@@ -30,6 +36,7 @@ class Anuncios {
   }
 
   galeriaAnuncios () {
+    const cantidad = this.cantidad.length;
 
     this.configGaleria();
 
@@ -40,13 +47,13 @@ class Anuncios {
       let html = `<img src=${src} alt=${alt}/>`
       $(`#slider-anuncio .rslides_tabs .rslides1_s${index} a`).html(html);
       $(`#slider-anuncio .rslides_tabs .rslides1_s${index}`).attr('data-count', index);
-      $(`#slider-anuncio #countImg`).html('1/4');
+      $(`#slider-anuncio #countImg`).html(`1/${cantidad}`);
       $(`#slider-fullScream .rslides_tabs .rslides2_s${index} a`).html(html);
     });
   
     $(`#slider-anuncio .rslides_tabs .rslides1_s1, #slider-anuncio .rslides_tabs .rslides1_s2, #slider-anuncio .rslides_tabs .rslides1_s3, #slider-anuncio .rslides_tabs .rslides1_s4`).click(function() {
       const count = $(this).data('count');
-      $(`#slider-anuncio #countImg`).html(`${count}/4`);
+      $(`#slider-anuncio #countImg`).html(`${count}/${cantidad}`);
     })
   
     $('#slider-anuncio #fullScream').click(() => {

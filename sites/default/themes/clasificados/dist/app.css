@@ -1991,7 +1991,7 @@ table {
       text-align: center;
       color: #454e9b;
       width: 145px; }
-    #fincaRaiz #inmobiliarias .view-id-usuarios.view-display-id-block .view-content {
+    #fincaRaiz #inmobiliarias .view-id-usuarios.view-display-id-block_2 .view-content {
       display: flex;
       display: -webkit-flex;
       display: -moz-flex;
@@ -2273,6 +2273,325 @@ table {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
 
+#varios {
+  margin-bottom: 50px; }
+  #varios #portada img {
+    width: 100%; }
+  #varios #noticias {
+    position: relative;
+    margin-top: 60px; }
+    #varios #noticias hr {
+      border-color: #afafaf; }
+    #varios #noticias h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 85px; }
+    #varios #noticias .view-id-categorias.view-display-id-block_3 {
+      margin-top: 30px; }
+      #varios #noticias .view-id-categorias.view-display-id-block_3 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between; }
+        #varios #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
+          width: 240px; }
+          #varios #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia {
+            width: 240px; }
+            #varios #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia a {
+              display: block; }
+            #varios #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia .title {
+              margin-bottom: 5px;
+              font-size: 20px;
+              line-height: 22px;
+              font-weight: 700; }
+              #varios #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia .title a {
+                text-decoration: none;
+                color: #000000; }
+  #varios #destacados {
+    position: relative;
+    margin-top: 60px; }
+    #varios #destacados hr {
+      border-color: #afafaf; }
+    #varios #destacados .estrellas {
+      background: url(images/src/img/iconos/estrellas.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -30px; }
+    #varios #destacados h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 182px; }
+    #varios #destacados .view-id-categorias.view-display-id-block_14 {
+      margin-top: 30px; }
+      #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row:hover {
+            height: auto; }
+          #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #varios #anunciosVarios {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    #varios #anunciosVarios hr {
+      border-color: #afafaf; }
+    #varios #anunciosVarios h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #309ad8;
+      width: 92px; }
+    #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 {
+      margin-top: 30px; }
+      #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+          height: 270px;
+          width: 185px; }
+          #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row:hover {
+            height: auto; }
+          #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #varios .pauta {
+    background-color: #000000;
+    height: 90px;
+    margin: 0 auto 60px auto;
+    width: 728px; }
+  #varios #masVarios {
+    position: relative;
+    margin-top: 60px; }
+    #varios #masVarios .view-id-categorias.view-display-id-block_16 {
+      margin-top: 30px; }
+      #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+          height: 270px;
+          width: 185px; }
+          #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row:hover {
+            height: auto; }
+          #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #varios #otrosAnuncios {
+    position: relative;
+    margin-top: 60px; }
+    #varios #otrosAnuncios hr {
+      border-color: #afafaf; }
+    #varios #otrosAnuncios .estrellas {
+      background: url(images/src/img/iconos/estrellas.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -30px; }
+    #varios #otrosAnuncios h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 235px; }
+    #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 {
+      margin-top: 30px; }
+      #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row:hover {
+            height: auto; }
+          #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+
 #seccionGeneral {
   margin-bottom: 50px; }
   #seccionGeneral #portada img {
@@ -2520,7 +2839,8 @@ table {
 #profile {
   margin: 50px auto; }
   #profile #profileInfo {
-    position: relative; }
+    position: relative;
+    margin-bottom: 80px; }
     #profile #profileInfo hr {
       border-color: #afafaf; }
     #profile #profileInfo h3 {
@@ -2572,8 +2892,77 @@ table {
         background-color: #ffffff;
         height: 202px;
         width: 20px; }
+  #profile #proyectos {
+    background-color: #d06435;
+    position: relative;
+    display: none; }
+    #profile #proyectos .triangulo {
+      position: absolute;
+      top: -50px;
+      height: 0;
+      right: 0;
+      left: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 50px solid #d06435;
+      margin: 0 auto;
+      width: 0; }
+    #profile #proyectos .estrellas {
+      background: url(images/src/img/iconos/estrellasProyectos.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -15px; }
+    #profile #proyectos h3 {
+      margin: 0 auto;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #feffff;
+      width: 230px; }
+    #profile #proyectos .view-id-profiles.view-display-id-block_3 {
+      margin-top: 30px;
+      padding-bottom: 15px; }
+      #profile #proyectos .view-id-profiles.view-display-id-block_3 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #profile #proyectos .view-id-profiles.view-display-id-block_3 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 260px;
+          width: 185px; }
+          #profile #proyectos .view-id-profiles.view-display-id-block_3 .view-content .views-row:hover {
+            height: auto; }
+          #profile #proyectos .view-id-profiles.view-display-id-block_3 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            height: 115px;
+            position: relative;
+            width: 160px; }
+            #profile #proyectos .view-id-profiles.view-display-id-block_3 .view-content .views-row .anuncio .info a {
+              text-decoration: none;
+              color: #000000; }
+            #profile #proyectos .view-id-profiles.view-display-id-block_3 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px; }
+            #profile #proyectos .view-id-profiles.view-display-id-block_3 .view-content .views-row .anuncio .info .section {
+              position: absolute;
+              bottom: 0;
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #profile #proyectos .view-id-profiles.view-display-id-block_3 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
   #profile #anuncios-1 {
-    margin: 50px 0; }
+    margin: 30px 0; }
     #profile #anuncios-1 .view-id-profiles.view-display-id-block {
       margin-top: 20px; }
       #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content {
