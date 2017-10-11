@@ -1410,7 +1410,7 @@ table {
       font-size: 1.1rem;
       font-weight: 700;
       text-align: center;
-      color: #454e9b;
+      color: #ae230c;
       width: 85px; }
     #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 {
       margin-top: 30px; }
@@ -1729,7 +1729,7 @@ table {
       font-size: 1.1rem;
       font-weight: 700;
       text-align: center;
-      color: #454e9b;
+      color: #ffb200;
       width: 75px; }
     #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 {
       margin-top: 30px; }
@@ -1910,6 +1910,366 @@ table {
               font-weight: 700;
               text-transform: uppercase; }
               #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+
+#fincaRaiz {
+  margin-bottom: 50px; }
+  #fincaRaiz #portada img {
+    width: 100%; }
+  #fincaRaiz #noticias {
+    position: relative;
+    margin-top: 60px; }
+    #fincaRaiz #noticias hr {
+      border-color: #afafaf; }
+    #fincaRaiz #noticias h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 85px; }
+    #fincaRaiz #noticias .view-id-categorias.view-display-id-block_3 {
+      margin-top: 30px; }
+      #fincaRaiz #noticias .view-id-categorias.view-display-id-block_3 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between; }
+        #fincaRaiz #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
+          width: 240px; }
+          #fincaRaiz #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia {
+            width: 240px; }
+            #fincaRaiz #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia a {
+              display: block; }
+            #fincaRaiz #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia .title {
+              margin-bottom: 5px;
+              font-size: 20px;
+              line-height: 22px;
+              font-weight: 700; }
+              #fincaRaiz #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia .title a {
+                text-decoration: none;
+                color: #000000; }
+  #fincaRaiz #inmobiliarias {
+    position: relative;
+    margin-top: 60px;
+    -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16); }
+    #fincaRaiz #inmobiliarias .right {
+      position: absolute;
+      background-color: #ffffff;
+      top: 2px;
+      right: -15px;
+      height: 112px;
+      width: 15px; }
+    #fincaRaiz #inmobiliarias .left {
+      position: absolute;
+      background-color: #ffffff;
+      top: 2px;
+      left: -15px;
+      height: 112px;
+      width: 15px; }
+    #fincaRaiz #inmobiliarias hr {
+      border-color: #afafaf; }
+    #fincaRaiz #inmobiliarias h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 145px; }
+    #fincaRaiz #inmobiliarias .view-id-usuarios.view-display-id-block .view-content {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around; }
+  #fincaRaiz #destacados {
+    position: relative;
+    margin-top: 60px; }
+    #fincaRaiz #destacados hr {
+      border-color: #afafaf; }
+    #fincaRaiz #destacados .estrellas {
+      background: url(images/src/img/iconos/estrellas.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -30px; }
+    #fincaRaiz #destacados h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 182px; }
+    #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 {
+      margin-top: 30px; }
+      #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content .views-row:hover {
+            height: auto; }
+          #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #fincaRaiz #anunciosFincaRaiz {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    #fincaRaiz #anunciosFincaRaiz hr {
+      border-color: #afafaf; }
+    #fincaRaiz #anunciosFincaRaiz h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #bfcc03;
+      width: 92px; }
+    #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 {
+      margin-top: 30px; }
+      #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+          height: 270px;
+          width: 185px; }
+          #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content .views-row:hover {
+            height: auto; }
+          #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #fincaRaiz .pauta {
+    background-color: #000000;
+    height: 90px;
+    margin: 0 auto 60px auto;
+    width: 728px; }
+  #fincaRaiz #masFincaRaiz {
+    position: relative;
+    margin-top: 60px; }
+    #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 {
+      margin-top: 30px; }
+      #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+          height: 270px;
+          width: 185px; }
+          #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content .views-row:hover {
+            height: auto; }
+          #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #fincaRaiz #otrosAnuncios {
+    position: relative;
+    margin-top: 60px; }
+    #fincaRaiz #otrosAnuncios hr {
+      border-color: #afafaf; }
+    #fincaRaiz #otrosAnuncios .estrellas {
+      background: url(images/src/img/iconos/estrellas.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -30px; }
+    #fincaRaiz #otrosAnuncios h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 235px; }
+    #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 {
+      margin-top: 30px; }
+      #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row:hover {
+            height: auto; }
+          #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
 
@@ -2176,12 +2536,222 @@ table {
       color: #454e9b;
       width: 148px; }
     #profile #profileInfo .descripcion {
+      -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
       display: flex;
       display: -webkit-flex;
       display: -moz-flex;
       align-items: center;
       -webkit-align-items: center;
-      -moz-align-items: center; }
+      -moz-align-items: center;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between; }
+      #profile #profileInfo .descripcion .field-item {
+        font-size: 0.8rem;
+        width: 640px; }
+      #profile #profileInfo .descripcion .top {
+        position: absolute;
+        top: 7px;
+        background-color: white;
+        width: 100%;
+        height: 15px;
+        z-index: 0; }
+      #profile #profileInfo .descripcion .right {
+        position: absolute;
+        right: -20px;
+        top: 2px;
+        background-color: #ffffff;
+        height: 202px;
+        width: 20px; }
+      #profile #profileInfo .descripcion .left {
+        position: absolute;
+        left: -20px;
+        top: 2px;
+        background-color: #ffffff;
+        height: 202px;
+        width: 20px; }
+  #profile #anuncios-1 {
+    margin: 50px 0; }
+    #profile #anuncios-1 .view-id-profiles.view-display-id-block {
+      margin-top: 20px; }
+      #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content .views-row:hover {
+            height: auto; }
+          #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content .views-row .anuncio .info a {
+              text-decoration: none;
+              color: #000000; }
+            #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #profile .pauta {
+    background-color: #000000;
+    height: 90px;
+    margin: 0 auto 60px auto;
+    width: 728px; }
+  #profile #anuncios-2 {
+    margin: 50px 0; }
+    #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 {
+      margin-top: 20px; }
+      #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 .view-content .views-row:hover {
+            height: auto; }
+          #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 .view-content .views-row .anuncio .info a {
+              text-decoration: none;
+              color: #000000; }
+            #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #profile #otrosAnuncios {
+    position: relative;
+    margin-top: 60px; }
+    #profile #otrosAnuncios hr {
+      border-color: #afafaf; }
+    #profile #otrosAnuncios .estrellas {
+      background: url(images/src/img/iconos/estrellas.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -30px; }
+    #profile #otrosAnuncios h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 235px; }
+    #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 {
+      margin-top: 30px; }
+      #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around; }
+        #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 .view-content .views-row:hover {
+            height: auto; }
+          #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 .view-content .views-row .anuncio .info .date {
+              text-align: center;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px; }
+            #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 .view-content .views-row .anuncio .info a {
+              text-decoration: none;
+              color: #000000; }
+            #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
 
 #pregunFrecuen {
   margin: 50px auto;

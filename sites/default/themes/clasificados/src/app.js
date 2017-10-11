@@ -11,12 +11,16 @@ import Home from './home';
 import Anuncios from './anuncios';
 import Vehiculos from './vehiculos';
 import Empleos from './empleos';
+import FincaRaiz from './fincaRaiz';
+// import Profile from './profile';
 
 $(function() {
   const home = new Home(autos, empleo);
   const anuncios = new Anuncios();
   const vehiculos = new Vehiculos(autos);
   const empleos = new Empleos(empleo);
+  const finca = new FincaRaiz(autos);
+  // const profile = new Profile();
   
   $('#pregunFrecuen .pregunta-1 .respuesta img').attr('src', `sites/default/themes/clasificados/dist/${compartir}`);
   $('#oficinas #sedePrincipal img').attr('src', `sites/default/themes/clasificados/dist/${sedePrincipal}`);
@@ -35,5 +39,8 @@ $(function() {
 
   empleos.portada();
   empleos.activeCategoria();
+
+  finca.portada();
+  finca.activeCategoria();
 
 });
