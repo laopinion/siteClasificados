@@ -537,8 +537,9 @@ table {
         float: left; }
     #slider-proyecto .rslides-proyecto img {
       display: block;
-      height: auto;
       float: left;
+      height: 600px;
+      object-fit: cover;
       width: 100%;
       border: 0; }
 
