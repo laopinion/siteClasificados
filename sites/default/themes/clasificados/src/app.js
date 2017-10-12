@@ -14,6 +14,7 @@ import Empleos from './empleos';
 import FincaRaiz from './fincaRaiz';
 import Varios from './varios';
 import Profile from './profile';
+import Proyectos from './proyectos';
 
 $(function() {
   const home = new Home(autos, empleo);
@@ -23,6 +24,7 @@ $(function() {
   const finca = new FincaRaiz(autos);
   const varios = new Varios(autos);
   const profile = new Profile();
+  const proyectos = new Proyectos();
   
   $('#pregunFrecuen .pregunta-1 .respuesta img').attr('src', `sites/default/themes/clasificados/dist/${compartir}`);
   $('#oficinas #sedePrincipal img').attr('src', `sites/default/themes/clasificados/dist/${sedePrincipal}`);
@@ -50,4 +52,6 @@ $(function() {
 
   profile.proyectos();
 
+  proyectos.slides();
+  
 });

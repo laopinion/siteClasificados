@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Allows url query parameters to be used as contextual filter arguments
+ */
+
+/**
+ * Implements hook_views_api().
+ */
+function views_contextual_filter_query_views_api() {
+  return array(
+    'api' => 3,
+  );
+}

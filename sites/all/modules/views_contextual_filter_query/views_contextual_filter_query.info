@@ -1,0 +1,15 @@
+name = Views Contextual Filter Query
+description = Allows url query values to be used as contextual filter arguments
+package = Views
+core = 7.x
+dependencies[] = views
+
+; Views plugins
+files[] = plugins/views/views_plugin_argument_default_query.inc
+
+; Information added by Drupal.org packaging script on 2016-07-19
+version = "7.x-1.2"
+core = "7.x"
+project = "views_contextual_filter_query"
+datestamp = "1468924746"
+

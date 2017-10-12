@@ -514,6 +514,34 @@ table {
       width: 100%;
       border: 0; }
 
+#slider-proyecto {
+  width: 100%; }
+  #slider-proyecto .rslides-proyecto {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0; }
+    #slider-proyecto .rslides-proyecto li {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      position: absolute;
+      display: none;
+      width: 100%;
+      left: 0;
+      top: 0; }
+      #slider-proyecto .rslides-proyecto li:first-child {
+        position: relative;
+        display: block;
+        float: left; }
+    #slider-proyecto .rslides-proyecto img {
+      display: block;
+      height: auto;
+      float: left;
+      width: 100%;
+      border: 0; }
+
 #slider-anuncio {
   position: relative;
   width: 678px; }
@@ -1106,14 +1134,14 @@ table {
               border-bottom: 1px solid #afafaf;
               padding-bottom: 8px;
               margin-bottom: 10px; }
+            #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info a {
+              text-decoration: none;
+              color: #000000; }
             #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info .title {
               margin-bottom: 5px;
               text-overflow: ellipsis;
               white-space: nowrap;
               overflow: hidden; }
-              #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info .title a {
-                text-decoration: none;
-                color: #000000; }
               #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info .title:hover {
                 white-space: initial;
                 overflow: visible;
@@ -2591,6 +2619,50 @@ table {
               #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
+
+#proyecto {
+  margin-top: 35px; }
+  #proyecto #inmobiliarias {
+    position: relative;
+    margin-bottom: 35px; }
+    #proyecto #inmobiliarias hr {
+      border-color: #afafaf; }
+    #proyecto #inmobiliarias h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 145px; }
+    #proyecto #inmobiliarias .logo {
+      background: url(images/src/img/iconos/proyecto-fondo.svg) no-repeat;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      height: 160px;
+      width: 170px;
+      z-index: 3; }
+      #proyecto #inmobiliarias .logo .field-item {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        height: 160px; }
+        #proyecto #inmobiliarias .logo .field-item img {
+          height: 90px;
+          width: 145px; }
+  #proyecto #textProyecto {
+    margin: 60px auto; }
 
 #seccionGeneral {
   margin-bottom: 50px; }
