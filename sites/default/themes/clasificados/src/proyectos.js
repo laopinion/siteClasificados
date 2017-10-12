@@ -1,14 +1,18 @@
 import $ from './jquery';
 
 class Proyectos {
-  constructor(autos, empleo) {
-    this.name = 'John serrano';
-    this.autos = autos;
-    this.empleo = empleo;
+  constructor() {
+
+  }
+
+  getInfo() {
+    
   }
 
   slides () {
-    $('.rslides-proyecto').responsiveSlides()
+    $('.rslides-proyecto').responsiveSlides();
+    const ruta = $('#proyecto #formularioProyecto .info .sitio .field-item').text();
+    $('#proyecto #formularioProyecto .info .sitio a').attr('href', ruta);
   }
 }
 

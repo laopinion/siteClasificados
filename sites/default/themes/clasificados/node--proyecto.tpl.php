@@ -33,11 +33,24 @@
     <?php print render($content['body']) ?>
   </article>
 
-  <article id="formularioProyecto">
-    <div class="formulario"></div>
+  <article id="formularioProyecto" class="container">
     <div class="info">
-      <?php print render($content['field_autor']) ?>
+      <aside class="title">
+        <?php print render($content['field_autor']); ?>
+      </aside>
+      <aside class="sitio">
+        <a href="" target="_blank"><?php print render($content['field_sitio_web']); ?></a>
+      </aside>
+      <div class="formulario">
+        <?php $block = module_invoke('webform', 'block_view', 'client-block-14');print render($block['content']); ?>
+      </div>
     </div>
   </article>
+
+  <div id="noticias" class="container">
+    <hr>
+    <h3>Noticias</h3>
+    <?php $view = views_get_view('anuncios'); print $view->preview('block_1'); ?>
+  </div>
 
 </section>

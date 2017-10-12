@@ -53,5 +53,5 @@ $(function() {
   profile.proyectos();
 
   proyectos.slides();
-  
+
 });
