@@ -1,0 +1,12 @@
+name = Taxonomy menu block
+description = Make menu blocks out of your taxonomies
+core = 7.x
+dependencies[] = taxonomy
+dependencies[] = block
+
+; Information added by Drupal.org packaging script on 2014-10-10
+version = "7.x-1.4"
+core = "7.x"
+project = "taxonomy_menu_block"
+datestamp = "1412948036"
+

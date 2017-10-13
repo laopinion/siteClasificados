@@ -1,10 +1,11 @@
 <section id="anuncio" class="container">
   <div class="categorias">
-  
+    <?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); $taxtmprender = _block_render_blocks(array($taxonomy_menu_block)); $taxtmprender2 = _block_get_renderable_array($taxtmprender); print drupal_render($taxtmprender2); ?>
   </div>
-  <hr>
-  <!-- Nota imprimir el name de la taxonomia -->
-  <h3 class="categoria"><?php print render($content['field_categoria']) ?></h3>
+  <span id="anuncioTitle">
+    <hr>
+    <h3 class="categoria"><?php print render($content['field_categoria']) ?></h3>
+  </span>
   <article class="anuncioNota">
     <div class="galeria">
       <div id="slider-anuncio" class="imgDestacada">

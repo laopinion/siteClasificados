@@ -10,7 +10,7 @@ class Anuncios {
 
     this.arrayGaleria = array;
 
-    const clase = $('#anuncio .categoria .field-item a').text();
+    const clase = $('#anuncio .categorias .menu_seccion #titleCategoria #nameCategoria').text();
     $('#anuncio .categoria').addClass(clase);
   }
 

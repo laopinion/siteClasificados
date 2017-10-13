@@ -953,39 +953,125 @@ table {
   z-index: 4; }
 
 #anuncio {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 100px;
   position: relative; }
-  #anuncio hr {
-    border-color: #afafaf; }
-  #anuncio .Vehículos {
-    width: 88px; }
-    #anuncio .Vehículos a {
+  #anuncio .categorias {
+    margin-bottom: 50px; }
+    #anuncio .categorias #titleCategoria {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex; }
+      #anuncio .categorias #titleCategoria .nameCategorias {
+        height: 30px;
+        position: relative;
+        margin-right: 25px; }
+        #anuncio .categorias #titleCategoria .nameCategorias:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          right: -18px;
+          top: 4px;
+          width: 10px; }
+    #anuncio .categorias .submenu {
+      -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16); }
+      #anuncio .categorias .submenu ul:first-child {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center; }
+        #anuncio .categorias .submenu ul:first-child .first {
+          padding: 0 10px;
+          box-sizing: border-box;
+          width: 500px; }
+          #anuncio .categorias .submenu ul:first-child .first a {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #000000; }
+          #anuncio .categorias .submenu ul:first-child .first ul {
+            border-right: 2px solid #afafaf;
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; }
+            #anuncio .categorias .submenu ul:first-child .first ul li {
+              margin-bottom: 15px;
+              padding: 0;
+              width: 220px; }
+              #anuncio .categorias .submenu ul:first-child .first ul li a {
+                display: flex;
+                justify-content: flex-start;
+                text-decoration: none;
+                font-size: 1rem;
+                font-weight: 400;
+                color: #afafaf; }
+                #anuncio .categorias .submenu ul:first-child .first ul li a:hover {
+                  text-decoration: underline; }
+        #anuncio .categorias .submenu ul:first-child .last {
+          padding: 0 10px;
+          box-sizing: border-box;
+          width: 500px; }
+          #anuncio .categorias .submenu ul:first-child .last a {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #000000; }
+          #anuncio .categorias .submenu ul:first-child .last ul {
+            list-style: none;
+            margin-top: 20px;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; }
+            #anuncio .categorias .submenu ul:first-child .last ul li {
+              margin-bottom: 15px;
+              padding: 0;
+              width: 220px; }
+              #anuncio .categorias .submenu ul:first-child .last ul li a {
+                display: flex;
+                justify-content: flex-start;
+                text-decoration: none;
+                font-size: 1rem;
+                font-weight: 400;
+                color: #afafaf; }
+                #anuncio .categorias .submenu ul:first-child .last ul li a:hover {
+                  text-decoration: underline; }
+  #anuncio #anuncioTitle {
+    position: relative;
+    display: block; }
+    #anuncio #anuncioTitle hr {
+      border-color: #afafaf; }
+    #anuncio #anuncioTitle .Vehículos a {
       color: #ae230c; }
-  #anuncio .Empleos, #anuncio .empleos {
-    width: 75px; }
-    #anuncio .Empleos a, #anuncio .empleos a {
+    #anuncio #anuncioTitle .Empleos a {
       color: #ffb200; }
-  #anuncio .Finca.Raíz {
-    width: 92px; }
-    #anuncio .Finca.Raíz a {
+    #anuncio #anuncioTitle .Finca.Raíz a {
       color: #bfcc03; }
-  #anuncio .Varios, #anuncio .Varios {
-    width: 60px; }
-    #anuncio .Varios a, #anuncio .Varios a {
+    #anuncio #anuncioTitle .Varios a {
       color: #309ad8; }
-  #anuncio h3.Vehículos, #anuncio h3.Empleos, #anuncio h3.Finca.Raíz, #anuncio h3.Varios {
-    position: absolute;
-    margin: 0 auto;
-    background-color: #ffffff;
-    left: 0;
-    right: 0;
-    top: -11px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-align: center; }
-    #anuncio h3.Vehículos a, #anuncio h3.Empleos a, #anuncio h3.Finca.Raíz a, #anuncio h3.Varios a {
-      text-decoration: none; }
+    #anuncio #anuncioTitle h3.Vehículos, #anuncio #anuncioTitle h3.Empleos, #anuncio #anuncioTitle h3.Finca.Raíz, #anuncio #anuncioTitle h3.Varios {
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: -12px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center; }
+      #anuncio #anuncioTitle h3.Vehículos a, #anuncio #anuncioTitle h3.Empleos a, #anuncio #anuncioTitle h3.Finca.Raíz a, #anuncio #anuncioTitle h3.Varios a {
+        text-decoration: none;
+        background-color: #ffffff;
+        padding: 0 10px; }
   #anuncio .anuncioNota {
     display: flex;
     display: -webkit-flex;
