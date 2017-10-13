@@ -10,6 +10,7 @@
     <?php print render($title_suffix); ?>
       <div class="submenu">
         <?php print $content ?>
+        <div class="banda"></div>
       </div>
   </div>
 </div>

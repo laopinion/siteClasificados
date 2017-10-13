@@ -957,11 +957,28 @@ table {
   margin-bottom: 100px;
   position: relative; }
   #anuncio .categorias {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    position: relative; }
+    #anuncio .categorias .right {
+      position: absolute;
+      right: -18px;
+      bottom: 0;
+      height: 100%;
+      background-color: #ffffff;
+      width: 18px; }
+    #anuncio .categorias .left {
+      position: absolute;
+      left: -18px;
+      bottom: 0;
+      height: 100%;
+      background-color: #ffffff;
+      width: 18px;
+      z-index: 1; }
     #anuncio .categorias #titleCategoria {
       display: flex;
       display: -webkit-flex;
-      display: -moz-flex; }
+      display: -moz-flex;
+      margin-bottom: 10px; }
       #anuncio .categorias #titleCategoria .nameCategorias {
         height: 30px;
         position: relative;
@@ -973,79 +990,195 @@ table {
           right: -18px;
           top: 4px;
           width: 10px; }
-    #anuncio .categorias .submenu {
+    #anuncio .categorias .vehículos .submenu, #anuncio .categorias .empleos .submenu {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
       -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
       -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
       box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16); }
-      #anuncio .categorias .submenu ul:first-child {
+      #anuncio .categorias .vehículos .submenu .active, #anuncio .categorias .empleos .submenu .active {
+        position: relative; }
+        #anuncio .categorias .vehículos .submenu .active:after, #anuncio .categorias .empleos .submenu .active:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          left: -15px;
+          top: 0;
+          width: 10px;
+          z-index: 1; }
+      #anuncio .categorias .vehículos .submenu .banda, #anuncio .categorias .empleos .submenu .banda {
+        position: absolute;
+        top: -10px;
+        height: 15px;
+        background-color: #ffffff;
+        width: 100%; }
+      #anuncio .categorias .vehículos .submenu ul, #anuncio .categorias .empleos .submenu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 700px; }
+        #anuncio .categorias .vehículos .submenu ul li, #anuncio .categorias .empleos .submenu ul li {
+          margin-bottom: 15px;
+          width: 200px; }
+        #anuncio .categorias .vehículos .submenu ul a, #anuncio .categorias .empleos .submenu ul a {
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 400;
+          color: #afafaf; }
+          #anuncio .categorias .vehículos .submenu ul a:hover, #anuncio .categorias .empleos .submenu ul a:hover {
+            text-decoration: underline; }
+    #anuncio .categorias .empleos .submenu {
+      height: 110px; }
+    #anuncio .categorias .finca.raíz .submenu {
+      -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16); }
+      #anuncio .categorias .finca.raíz .submenu .active {
+        position: relative; }
+        #anuncio .categorias .finca.raíz .submenu .active:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          left: 200px;
+          top: -13px;
+          width: 10px; }
+      #anuncio .categorias .finca.raíz .submenu ul:first-child {
         margin: 0;
         padding: 0;
         list-style: none;
         display: flex;
-        justify-content: center; }
-        #anuncio .categorias .submenu ul:first-child .first {
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center; }
+        #anuncio .categorias .finca.raíz .submenu ul:first-child li {
+          margin-bottom: 15px;
+          padding: 0;
+          width: 220px; }
+          #anuncio .categorias .finca.raíz .submenu ul:first-child li a {
+            position: static;
+            text-align: left;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: flex-start;
+            -webkit-justify-content: flex-start;
+            -moz-justify-content: flex-start;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #afafaf; }
+            #anuncio .categorias .finca.raíz .submenu ul:first-child li a:hover {
+              text-decoration: underline; }
+        #anuncio .categorias .finca.raíz .submenu ul:first-child .first {
           padding: 0 10px;
+          position: relative;
           box-sizing: border-box;
           width: 500px; }
-          #anuncio .categorias .submenu ul:first-child .first a {
-            display: flex;
-            justify-content: center;
+          #anuncio .categorias .finca.raíz .submenu ul:first-child .first a {
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: -15px;
+            background-color: #ffffff;
+            text-align: center;
+            display: block;
             text-decoration: none;
             font-size: 1.125rem;
             font-weight: 700;
             color: #000000; }
-          #anuncio .categorias .submenu ul:first-child .first ul {
+          #anuncio .categorias .finca.raíz .submenu ul:first-child .first ul {
             border-right: 2px solid #afafaf;
             margin-top: 20px;
             list-style: none;
             padding: 0;
             display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
             flex-wrap: wrap;
-            justify-content: space-around; }
-            #anuncio .categorias .submenu ul:first-child .first ul li {
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around; }
+            #anuncio .categorias .finca.raíz .submenu ul:first-child .first ul li {
               margin-bottom: 15px;
               padding: 0;
               width: 220px; }
-              #anuncio .categorias .submenu ul:first-child .first ul li a {
+              #anuncio .categorias .finca.raíz .submenu ul:first-child .first ul li a {
+                position: static;
+                text-align: left;
                 display: flex;
+                display: -webkit-flex;
+                display: -moz-flex;
                 justify-content: flex-start;
+                -webkit-justify-content: flex-start;
+                -moz-justify-content: flex-start;
                 text-decoration: none;
                 font-size: 1rem;
                 font-weight: 400;
                 color: #afafaf; }
-                #anuncio .categorias .submenu ul:first-child .first ul li a:hover {
+                #anuncio .categorias .finca.raíz .submenu ul:first-child .first ul li a:hover {
                   text-decoration: underline; }
-        #anuncio .categorias .submenu ul:first-child .last {
+        #anuncio .categorias .finca.raíz .submenu ul:first-child .last {
           padding: 0 10px;
           box-sizing: border-box;
           width: 500px; }
-          #anuncio .categorias .submenu ul:first-child .last a {
-            display: flex;
-            justify-content: center;
+          #anuncio .categorias .finca.raíz .submenu ul:first-child .last a {
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: -15px;
+            background-color: #ffffff;
+            text-align: center;
+            display: block;
             text-decoration: none;
             font-size: 1.125rem;
             font-weight: 700;
             color: #000000; }
-          #anuncio .categorias .submenu ul:first-child .last ul {
+          #anuncio .categorias .finca.raíz .submenu ul:first-child .last ul {
             list-style: none;
             margin-top: 20px;
             padding: 0;
             display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
             flex-wrap: wrap;
-            justify-content: space-between; }
-            #anuncio .categorias .submenu ul:first-child .last ul li {
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            justify-content: space-between;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between; }
+            #anuncio .categorias .finca.raíz .submenu ul:first-child .last ul li {
               margin-bottom: 15px;
               padding: 0;
               width: 220px; }
-              #anuncio .categorias .submenu ul:first-child .last ul li a {
+              #anuncio .categorias .finca.raíz .submenu ul:first-child .last ul li a {
+                position: static;
+                text-align: left;
                 display: flex;
+                display: -webkit-flex;
+                display: -moz-flex;
                 justify-content: flex-start;
+                -webkit-justify-content: flex-start;
+                -moz-justify-content: flex-start;
                 text-decoration: none;
                 font-size: 1rem;
                 font-weight: 400;
                 color: #afafaf; }
-                #anuncio .categorias .submenu ul:first-child .last ul li a:hover {
+                #anuncio .categorias .finca.raíz .submenu ul:first-child .last ul li a:hover {
                   text-decoration: underline; }
+      #anuncio .categorias .finca.raíz .submenu .banda {
+        display: none; }
   #anuncio #anuncioTitle {
     position: relative;
     display: block; }
