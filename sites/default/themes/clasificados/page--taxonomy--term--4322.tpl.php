@@ -4,7 +4,11 @@
   </div>
 
   <article id="categorias" class="container">
-    <h4>Cateogiras</h4>
+    <div class="categorias">
+      <div class="left"></div> 
+      <?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); $taxtmprender = _block_render_blocks(array($taxonomy_menu_block)); $taxtmprender2 = _block_get_renderable_array($taxtmprender); print drupal_render($taxtmprender2); ?>
+      <div class="right"></div>
+    </div>
   </article>
 
   <article id="noticias" class="container">

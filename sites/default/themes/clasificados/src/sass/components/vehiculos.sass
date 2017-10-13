@@ -3,6 +3,85 @@
   #portada 
     img
       width: 100%
+  #categorias
+    .categorias
+      margin-bottom: 50px
+      position: relative
+      .right
+        position: absolute
+        right: -18px
+        bottom: 0
+        height: 100%
+        background-color: $blanco
+        width: 18px
+      .left
+        position: absolute
+        left: -18px
+        bottom: 0
+        height: 100%
+        background-color: $blanco
+        width: 18px
+        z-index: 1
+      #titleCategoria
+        display: flex
+        display: -webkit-flex
+        display: -moz-flex
+        margin-bottom: 10px
+        .nameCategorias
+          height: 30px
+          position: relative
+          margin-right: 25px
+          &:after
+            content: url('../img/iconos/flechaCategorias.svg')
+            height: 20px
+            position: absolute
+            right: -18px
+            top: 4px
+            width: 10px
+      .vehículos
+        .submenu
+          position: relative
+          display: flex
+          justify-content: center
+          align-items: center
+          height: 70px
+          -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16)
+          -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16)
+          box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16)
+          .active
+            position: relative
+            &:after
+              content: url('../img/iconos/flechaCategorias.svg')
+              height: 20px
+              position: absolute
+              left: -15px
+              top: 0
+              width: 10px
+              z-index: 1
+          .banda
+            position: absolute
+            top: -10px
+            height: 15px
+            background-color: $blanco
+            width: 100%
+          ul
+            list-style: none
+            padding: 0
+            margin: 0
+            display: flex
+            justify-content: space-around
+            flex-wrap: wrap
+            width: 700px
+            li
+              margin-bottom: 15px
+              width: 200px
+            a
+              text-decoration: none
+              font-size: 1rem // 18px
+              font-weight: 400
+              color: $gris
+              &:hover
+                text-decoration: underline
   #noticias
     position: relative
     margin-top: 60px

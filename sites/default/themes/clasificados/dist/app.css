@@ -1109,6 +1109,15 @@ table {
             justify-content: space-around;
             -webkit-justify-content: space-around;
             -moz-justify-content: space-around; }
+            #anuncio .categorias .finca.raíz .submenu ul:first-child .first ul .active {
+              position: relative; }
+              #anuncio .categorias .finca.raíz .submenu ul:first-child .first ul .active:after {
+                content: url(images/src/img/iconos/flechaCategorias.svg);
+                height: 20px;
+                position: absolute;
+                left: -15px;
+                top: 0px;
+                width: 10px; }
             #anuncio .categorias .finca.raíz .submenu ul:first-child .first ul li {
               margin-bottom: 15px;
               padding: 0;
@@ -1130,6 +1139,7 @@ table {
                   text-decoration: underline; }
         #anuncio .categorias .finca.raíz .submenu ul:first-child .last {
           padding: 0 10px;
+          position: relative;
           box-sizing: border-box;
           width: 500px; }
           #anuncio .categorias .finca.raíz .submenu ul:first-child .last a {
@@ -1158,6 +1168,15 @@ table {
             justify-content: space-between;
             -webkit-justify-content: space-between;
             -moz-justify-content: space-between; }
+            #anuncio .categorias .finca.raíz .submenu ul:first-child .last ul .active {
+              position: relative; }
+              #anuncio .categorias .finca.raíz .submenu ul:first-child .last ul .active:after {
+                content: url(images/src/img/iconos/flechaCategorias.svg);
+                height: 20px;
+                position: absolute;
+                left: -15px;
+                top: 0px;
+                width: 10px; }
             #anuncio .categorias .finca.raíz .submenu ul:first-child .last ul li {
               margin-bottom: 15px;
               padding: 0;
@@ -1486,6 +1505,83 @@ table {
   margin-bottom: 50px; }
   #vehiculos #portada img {
     width: 100%; }
+  #vehiculos #categorias .categorias {
+    margin-bottom: 50px;
+    position: relative; }
+    #vehiculos #categorias .categorias .right {
+      position: absolute;
+      right: -18px;
+      bottom: 0;
+      height: 100%;
+      background-color: #ffffff;
+      width: 18px; }
+    #vehiculos #categorias .categorias .left {
+      position: absolute;
+      left: -18px;
+      bottom: 0;
+      height: 100%;
+      background-color: #ffffff;
+      width: 18px;
+      z-index: 1; }
+    #vehiculos #categorias .categorias #titleCategoria {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      margin-bottom: 10px; }
+      #vehiculos #categorias .categorias #titleCategoria .nameCategorias {
+        height: 30px;
+        position: relative;
+        margin-right: 25px; }
+        #vehiculos #categorias .categorias #titleCategoria .nameCategorias:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          right: -18px;
+          top: 4px;
+          width: 10px; }
+    #vehiculos #categorias .categorias .vehículos .submenu {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16); }
+      #vehiculos #categorias .categorias .vehículos .submenu .active {
+        position: relative; }
+        #vehiculos #categorias .categorias .vehículos .submenu .active:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          left: -15px;
+          top: 0;
+          width: 10px;
+          z-index: 1; }
+      #vehiculos #categorias .categorias .vehículos .submenu .banda {
+        position: absolute;
+        top: -10px;
+        height: 15px;
+        background-color: #ffffff;
+        width: 100%; }
+      #vehiculos #categorias .categorias .vehículos .submenu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 700px; }
+        #vehiculos #categorias .categorias .vehículos .submenu ul li {
+          margin-bottom: 15px;
+          width: 200px; }
+        #vehiculos #categorias .categorias .vehículos .submenu ul a {
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 400;
+          color: #afafaf; }
+          #vehiculos #categorias .categorias .vehículos .submenu ul a:hover {
+            text-decoration: underline; }
   #vehiculos #noticias {
     position: relative;
     margin-top: 60px; }
@@ -1846,6 +1942,83 @@ table {
   margin-bottom: 50px; }
   #empleos #portada img {
     width: 100%; }
+  #empleos #categorias .categorias {
+    margin-bottom: 50px;
+    position: relative; }
+    #empleos #categorias .categorias .right {
+      position: absolute;
+      right: -18px;
+      bottom: 0;
+      height: 100%;
+      background-color: #ffffff;
+      width: 18px; }
+    #empleos #categorias .categorias .left {
+      position: absolute;
+      left: -18px;
+      bottom: 0;
+      height: 100%;
+      background-color: #ffffff;
+      width: 18px;
+      z-index: 1; }
+    #empleos #categorias .categorias #titleCategoria {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      margin-bottom: 10px; }
+      #empleos #categorias .categorias #titleCategoria .nameCategorias {
+        height: 30px;
+        position: relative;
+        margin-right: 25px; }
+        #empleos #categorias .categorias #titleCategoria .nameCategorias:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          right: -18px;
+          top: 4px;
+          width: 10px; }
+    #empleos #categorias .categorias .empleos .submenu {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 110px;
+      -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16); }
+      #empleos #categorias .categorias .empleos .submenu .active {
+        position: relative; }
+        #empleos #categorias .categorias .empleos .submenu .active:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          left: -15px;
+          top: 0;
+          width: 10px;
+          z-index: 1; }
+      #empleos #categorias .categorias .empleos .submenu .banda {
+        position: absolute;
+        top: -10px;
+        height: 15px;
+        background-color: #ffffff;
+        width: 100%; }
+      #empleos #categorias .categorias .empleos .submenu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 700px; }
+        #empleos #categorias .categorias .empleos .submenu ul li {
+          margin-bottom: 15px;
+          width: 200px; }
+        #empleos #categorias .categorias .empleos .submenu ul a {
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 400;
+          color: #afafaf; }
+          #empleos #categorias .categorias .empleos .submenu ul a:hover {
+            text-decoration: underline; }
   #empleos #noticias {
     position: relative;
     margin-top: 60px; }
@@ -2165,6 +2338,185 @@ table {
   margin-bottom: 50px; }
   #fincaRaiz #portada img {
     width: 100%; }
+  #fincaRaiz #categorias .categorias {
+    margin-bottom: 50px;
+    position: relative; }
+    #fincaRaiz #categorias .categorias .right {
+      position: absolute;
+      right: -18px;
+      bottom: 0;
+      height: 100%;
+      background-color: #ffffff;
+      width: 18px; }
+    #fincaRaiz #categorias .categorias .left {
+      position: absolute;
+      left: -18px;
+      bottom: 0;
+      height: 100%;
+      background-color: #ffffff;
+      width: 18px;
+      z-index: 1; }
+    #fincaRaiz #categorias .categorias #titleCategoria {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      margin-bottom: 10px; }
+      #fincaRaiz #categorias .categorias #titleCategoria .nameCategorias {
+        height: 30px;
+        position: relative;
+        margin-right: 25px; }
+        #fincaRaiz #categorias .categorias #titleCategoria .nameCategorias:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          right: -18px;
+          top: 4px;
+          width: 10px; }
+  #fincaRaiz #categorias .finca.raíz .submenu {
+    -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16); }
+    #fincaRaiz #categorias .finca.raíz .submenu .active {
+      position: relative; }
+      #fincaRaiz #categorias .finca.raíz .submenu .active:after {
+        content: url(images/src/img/iconos/flechaCategorias.svg);
+        height: 20px;
+        position: absolute;
+        left: 200px;
+        top: -13px;
+        width: 10px; }
+    #fincaRaiz #categorias .finca.raíz .submenu ul:first-child {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      justify-content: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center; }
+      #fincaRaiz #categorias .finca.raíz .submenu ul:first-child li {
+        margin-bottom: 15px;
+        padding: 0;
+        width: 220px; }
+        #fincaRaiz #categorias .finca.raíz .submenu ul:first-child li a {
+          position: static;
+          text-align: left;
+          display: flex;
+          display: -webkit-flex;
+          display: -moz-flex;
+          justify-content: flex-start;
+          -webkit-justify-content: flex-start;
+          -moz-justify-content: flex-start;
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 400;
+          color: #afafaf; }
+          #fincaRaiz #categorias .finca.raíz .submenu ul:first-child li a:hover {
+            text-decoration: underline; }
+      #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .first {
+        padding: 0 10px;
+        position: relative;
+        box-sizing: border-box;
+        width: 500px; }
+        #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .first a {
+          position: absolute;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          top: -15px;
+          background-color: #ffffff;
+          text-align: center;
+          display: block;
+          text-decoration: none;
+          font-size: 1.125rem;
+          font-weight: 700;
+          color: #000000; }
+        #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .first ul {
+          border-right: 2px solid #afafaf;
+          margin-top: 20px;
+          list-style: none;
+          padding: 0;
+          display: flex;
+          display: -webkit-flex;
+          display: -moz-flex;
+          flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+          -moz-flex-wrap: wrap;
+          justify-content: space-around;
+          -webkit-justify-content: space-around;
+          -moz-justify-content: space-around; }
+          #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .first ul li {
+            margin-bottom: 15px;
+            padding: 0;
+            width: 220px; }
+            #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .first ul li a {
+              position: static;
+              text-align: left;
+              display: flex;
+              display: -webkit-flex;
+              display: -moz-flex;
+              justify-content: flex-start;
+              -webkit-justify-content: flex-start;
+              -moz-justify-content: flex-start;
+              text-decoration: none;
+              font-size: 1rem;
+              font-weight: 400;
+              color: #afafaf; }
+              #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .first ul li a:hover {
+                text-decoration: underline; }
+      #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .last {
+        padding: 0 10px;
+        position: relative;
+        box-sizing: border-box;
+        width: 500px; }
+        #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .last a {
+          position: absolute;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          top: -15px;
+          background-color: #ffffff;
+          text-align: center;
+          display: block;
+          text-decoration: none;
+          font-size: 1.125rem;
+          font-weight: 700;
+          color: #000000; }
+        #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .last ul {
+          list-style: none;
+          margin-top: 20px;
+          padding: 0;
+          display: flex;
+          display: -webkit-flex;
+          display: -moz-flex;
+          flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+          -moz-flex-wrap: wrap;
+          justify-content: space-between;
+          -webkit-justify-content: space-between;
+          -moz-justify-content: space-between; }
+          #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .last ul li {
+            margin-bottom: 15px;
+            padding: 0;
+            width: 220px; }
+            #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .last ul li a {
+              position: static;
+              text-align: left;
+              display: flex;
+              display: -webkit-flex;
+              display: -moz-flex;
+              justify-content: flex-start;
+              -webkit-justify-content: flex-start;
+              -moz-justify-content: flex-start;
+              text-decoration: none;
+              font-size: 1rem;
+              font-weight: 400;
+              color: #afafaf; }
+              #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .last ul li a:hover {
+                text-decoration: underline; }
+    #fincaRaiz #categorias .finca.raíz .submenu .banda {
+      display: none; }
   #fincaRaiz #noticias {
     position: relative;
     margin-top: 60px; }
@@ -2965,6 +3317,248 @@ table {
   margin-bottom: 50px; }
   #seccionGeneral #portada img {
     width: 100%; }
+  #seccionGeneral #categorias .categorias {
+    margin-bottom: 50px;
+    position: relative; }
+    #seccionGeneral #categorias .categorias .right {
+      position: absolute;
+      right: -18px;
+      bottom: 0;
+      height: 100%;
+      background-color: #ffffff;
+      width: 18px; }
+    #seccionGeneral #categorias .categorias .left {
+      position: absolute;
+      left: -18px;
+      bottom: 0;
+      height: 100%;
+      background-color: #ffffff;
+      width: 18px;
+      z-index: 1; }
+    #seccionGeneral #categorias .categorias #titleCategoria {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      margin-bottom: 10px; }
+      #seccionGeneral #categorias .categorias #titleCategoria .nameCategorias {
+        height: 30px;
+        position: relative;
+        margin-right: 25px; }
+        #seccionGeneral #categorias .categorias #titleCategoria .nameCategorias:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          right: -18px;
+          top: 4px;
+          width: 10px; }
+    #seccionGeneral #categorias .categorias .vehículos .submenu, #seccionGeneral #categorias .categorias .empleos .submenu {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16); }
+      #seccionGeneral #categorias .categorias .vehículos .submenu .active, #seccionGeneral #categorias .categorias .empleos .submenu .active {
+        position: relative; }
+        #seccionGeneral #categorias .categorias .vehículos .submenu .active:after, #seccionGeneral #categorias .categorias .empleos .submenu .active:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          left: -15px;
+          top: 0;
+          width: 10px;
+          z-index: 1; }
+      #seccionGeneral #categorias .categorias .vehículos .submenu .banda, #seccionGeneral #categorias .categorias .empleos .submenu .banda {
+        position: absolute;
+        top: -10px;
+        height: 15px;
+        background-color: #ffffff;
+        width: 100%; }
+      #seccionGeneral #categorias .categorias .vehículos .submenu ul, #seccionGeneral #categorias .categorias .empleos .submenu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 700px; }
+        #seccionGeneral #categorias .categorias .vehículos .submenu ul li, #seccionGeneral #categorias .categorias .empleos .submenu ul li {
+          margin-bottom: 15px;
+          width: 200px; }
+        #seccionGeneral #categorias .categorias .vehículos .submenu ul a, #seccionGeneral #categorias .categorias .empleos .submenu ul a {
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 400;
+          color: #afafaf; }
+          #seccionGeneral #categorias .categorias .vehículos .submenu ul a:hover, #seccionGeneral #categorias .categorias .empleos .submenu ul a:hover {
+            text-decoration: underline; }
+    #seccionGeneral #categorias .categorias .empleos .submenu {
+      height: 110px; }
+    #seccionGeneral #categorias .categorias .finca.raíz .submenu {
+      -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16); }
+      #seccionGeneral #categorias .categorias .finca.raíz .submenu .active {
+        position: relative; }
+        #seccionGeneral #categorias .categorias .finca.raíz .submenu .active:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          left: 200px;
+          top: -13px;
+          width: 10px; }
+      #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center; }
+        #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child li {
+          margin-bottom: 15px;
+          padding: 0;
+          width: 220px; }
+          #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child li a {
+            position: static;
+            text-align: left;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: flex-start;
+            -webkit-justify-content: flex-start;
+            -moz-justify-content: flex-start;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #afafaf; }
+            #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child li a:hover {
+              text-decoration: underline; }
+        #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .first {
+          padding: 0 10px;
+          position: relative;
+          box-sizing: border-box;
+          width: 500px; }
+          #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .first a {
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: -15px;
+            background-color: #ffffff;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #000000; }
+          #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .first ul {
+            border-right: 2px solid #afafaf;
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around; }
+            #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .first ul .active {
+              position: relative; }
+              #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .first ul .active:after {
+                content: url(images/src/img/iconos/flechaCategorias.svg);
+                height: 20px;
+                position: absolute;
+                left: -15px;
+                top: 0px;
+                width: 10px; }
+            #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .first ul li {
+              margin-bottom: 15px;
+              padding: 0;
+              width: 220px; }
+              #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .first ul li a {
+                position: static;
+                text-align: left;
+                display: flex;
+                display: -webkit-flex;
+                display: -moz-flex;
+                justify-content: flex-start;
+                -webkit-justify-content: flex-start;
+                -moz-justify-content: flex-start;
+                text-decoration: none;
+                font-size: 1rem;
+                font-weight: 400;
+                color: #afafaf; }
+                #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .first ul li a:hover {
+                  text-decoration: underline; }
+        #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .last {
+          padding: 0 10px;
+          position: relative;
+          box-sizing: border-box;
+          width: 500px; }
+          #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .last a {
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: -15px;
+            background-color: #ffffff;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #000000; }
+          #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .last ul {
+            list-style: none;
+            margin-top: 20px;
+            padding: 0;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            justify-content: space-between;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between; }
+            #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .last ul .active {
+              position: relative; }
+              #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .last ul .active:after {
+                content: url(images/src/img/iconos/flechaCategorias.svg);
+                height: 20px;
+                position: absolute;
+                left: -15px;
+                top: 0px;
+                width: 10px; }
+            #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .last ul li {
+              margin-bottom: 15px;
+              padding: 0;
+              width: 220px; }
+              #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .last ul li a {
+                position: static;
+                text-align: left;
+                display: flex;
+                display: -webkit-flex;
+                display: -moz-flex;
+                justify-content: flex-start;
+                -webkit-justify-content: flex-start;
+                -moz-justify-content: flex-start;
+                text-decoration: none;
+                font-size: 1rem;
+                font-weight: 400;
+                color: #afafaf; }
+                #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .last ul li a:hover {
+                  text-decoration: underline; }
+      #seccionGeneral #categorias .categorias .finca.raíz .submenu .banda {
+        display: none; }
   #seccionGeneral #noticias {
     position: relative;
     margin-top: 60px; }
