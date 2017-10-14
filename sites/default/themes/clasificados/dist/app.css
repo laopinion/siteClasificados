@@ -640,8 +640,8 @@ table {
 
 #slider-fullScream {
   display: none;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 20vh;
   left: 0;
   right: 0;
   margin: 0 auto;

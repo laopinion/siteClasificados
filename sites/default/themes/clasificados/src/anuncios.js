@@ -59,11 +59,13 @@ class Anuncios {
     $('#slider-anuncio #fullScream').click(() => {
       $('.backgroundAnuncio').show();
       $('#slider-fullScream').show();
+      $('body').css('overflow-y', 'hidden')
     });
-  
+    
     $('.backgroundAnuncio, #slider-fullScream #cerrarGaleria').click(() => {
       $('.backgroundAnuncio').hide();
       $('#slider-fullScream').hide();
+      $('body').css('overflow-y', 'initial')
     });
   }
 
