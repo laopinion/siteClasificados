@@ -1035,6 +1035,65 @@ table {
             text-decoration: underline; }
     #anuncio .categorias .empleos .submenu {
       height: 110px; }
+    #anuncio .categorias .varios .submenu {
+      position: relative;
+      -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16); }
+      #anuncio .categorias .varios .submenu .active {
+        position: relative; }
+        #anuncio .categorias .varios .submenu .active:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          left: -15px;
+          top: 0px;
+          width: 10px; }
+      #anuncio .categorias .varios .submenu .banda {
+        position: absolute;
+        top: -10px;
+        height: 15px;
+        background-color: #ffffff;
+        width: 100%; }
+      #anuncio .categorias .varios .submenu ul:first-child {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        #anuncio .categorias .varios .submenu ul:first-child li {
+          margin-bottom: 15px;
+          padding: 0;
+          width: 255px; }
+          #anuncio .categorias .varios .submenu ul:first-child li a {
+            text-align: left;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: flex-start;
+            -webkit-justify-content: flex-start;
+            -moz-justify-content: flex-start;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #000000; }
+            #anuncio .categorias .varios .submenu ul:first-child li a:hover {
+              text-decoration: underline; }
+          #anuncio .categorias .varios .submenu ul:first-child li ul {
+            list-style: none;
+            padding: 0; }
+            #anuncio .categorias .varios .submenu ul:first-child li ul li a {
+              text-decoration: none;
+              font-size: 1rem;
+              font-weight: 400;
+              color: #afafaf; }
+              #anuncio .categorias .varios .submenu ul:first-child li ul li a:hover {
+                text-decoration: underline; }
     #anuncio .categorias .finca.raíz .submenu {
       -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
       -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
@@ -1462,6 +1521,16 @@ table {
         padding: 5px 0; }
         #anuncio .anuncioNota .info .pauta {
           order: 2; }
+    #anuncio .categorias .right {
+      display: none; }
+    #anuncio .categorias .left {
+      display: none; }
+    #anuncio .categorias .vehículos .submenu, #anuncio .categorias .empleos .submenu {
+      height: auto; }
+    #anuncio .categorias .varios .submenu ul:first-child li {
+      width: 180px; }
+      #anuncio .categorias .varios .submenu ul:first-child li a {
+        text-align: left; }
     #anuncio #destacados {
       width: 100%; }
       #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content {
@@ -1494,12 +1563,25 @@ table {
     -webkit-flex-direction: column;
     -moz-flex-direction: column; }
     #anuncio .anuncioNota .info .pauta {
-      order: 0; } }
+      order: 0; }
+  #anuncio .categorias .vehículos .submenu ul li, #anuncio .categorias .empleos .submenu ul li {
+    width: 150px; }
+  #anuncio .categorias .varios .submenu ul:first-child li {
+    width: 150px; }
+  #anuncio .categorias .finca.raíz .submenu ul:first-child {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap; }
+    #anuncio .categorias .finca.raíz .submenu ul:first-child .first ul {
+      border: none; } }
 
 @media screen and (max-width: 380px) {
-  #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info .title {
-    white-space: initial;
-    overflow: initial; } }
+  #anuncio .categorias .vehículos .submenu ul li {
+    width: 100px; }
+  #anuncio .categorias .empleos .submenu ul li {
+    width: 130px; }
+  #anuncio .categorias .finca.raíz .submenu ul:first-child .first, #anuncio .categorias .finca.raíz .submenu ul:first-child .last {
+    width: 265px; } }
 
 #vehiculos {
   margin-bottom: 50px; }
@@ -1938,6 +2020,78 @@ table {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
 
+@media screen and (max-width: 768px) {
+  #vehiculos #noticias {
+    width: 96%; }
+    #vehiculos #noticias .view-id-categorias.view-display-id-block_3 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around; }
+      #vehiculos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
+        margin-bottom: 20px; }
+  #vehiculos #categorias .categorias #titleCategoria {
+    margin: 0 auto 10px auto;
+    width: 96%; }
+  #vehiculos #categorias .categorias .right {
+    display: none; }
+  #vehiculos #categorias .categorias .left {
+    display: none; }
+  #vehiculos #categorias .categorias .vehículos .submenu {
+    height: auto;
+    padding: 0 10px;
+    box-sizing: content-box; }
+    #vehiculos #categorias .categorias .vehículos .submenu ul {
+      width: 100%; }
+  #vehiculos #concesionarios {
+    width: 96%; }
+    #vehiculos #concesionarios .right {
+      display: none; }
+    #vehiculos #concesionarios .left {
+      display: none; }
+    #vehiculos #concesionarios view-id-usuarios.view-display-id-block .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #vehiculos #concesionarios view-id-usuarios.view-display-id-block .view-content .views-row {
+        margin-bottom: 20px; }
+  #vehiculos #destacados {
+    width: 96%; }
+    #vehiculos #destacados .view-id-categorias.view-display-id-block_7 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #vehiculos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row {
+        margin-bottom: 20px; }
+  #vehiculos .pauta {
+    width: 96%; }
+  #vehiculos #anunciosVehiculos {
+    width: 96%; }
+    #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_8 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+  #vehiculos #masVehiculos {
+    width: 96%; }
+    #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_8 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+  #vehiculos #otrosAnuncios {
+    width: 96%; }
+    #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
+        margin-bottom: 20px; } }
+
+@media screen and (max-width: 540px) {
+  #empleos #categorias .categorias .empleos .submenu ul li {
+    width: 110px; } }
+
 #empleos {
   margin-bottom: 50px; }
   #empleos #portada img {
@@ -2333,6 +2487,86 @@ table {
               #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
+
+@media screen and (max-width: 768px) {
+  #empleos #noticias {
+    width: 96%; }
+    #empleos #noticias .view-id-categorias.view-display-id-block_3 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around; }
+      #empleos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
+        margin-bottom: 20px; }
+  #empleos #categorias .categorias #titleCategoria {
+    margin: 0 auto 10px auto;
+    width: 96%; }
+  #empleos #categorias .categorias .right {
+    display: none; }
+  #empleos #categorias .categorias .left {
+    display: none; }
+  #empleos #categorias .categorias .empleos .submenu {
+    height: auto;
+    padding: 0 10px;
+    box-sizing: content-box; }
+    #empleos #categorias .categorias .empleos .submenu ul {
+      width: 100%; }
+      #empleos #categorias .categorias .empleos .submenu ul li {
+        width: 150px; }
+  #empleos #destacados {
+    width: 96%; }
+    #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row {
+        margin-bottom: 20px;
+        height: auto; }
+        #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; }
+  #empleos .pauta {
+    width: 96%; }
+  #empleos #anunciosEmpleos {
+    width: 96%; }
+    #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row {
+        height: auto; }
+        #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; }
+  #empleos #masEmpleos {
+    width: 96%; }
+    #empleos #masEmpleos .view-id-categorias.view-display-id-block_8 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #empleos #masEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row {
+        height: auto; }
+        #empleos #masEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; }
+  #empleos #otrosAnuncios {
+    width: 96%; }
+    #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
+        margin-bottom: 20px;
+        height: auto; }
+        #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; } }
+
+@media screen and (max-width: 540px) {
+  #empleos #categorias .categorias .empleos .submenu ul li {
+    width: 110px; } }
 
 #fincaRaiz {
   margin-bottom: 50px; }
@@ -2917,6 +3151,99 @@ table {
               #varios #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia .title a {
                 text-decoration: none;
                 color: #000000; }
+  #varios #categorias .categorias {
+    margin-bottom: 50px;
+    position: relative; }
+    #varios #categorias .categorias .right {
+      position: absolute;
+      right: -18px;
+      bottom: 0;
+      height: 100%;
+      background-color: #ffffff;
+      width: 18px; }
+    #varios #categorias .categorias .left {
+      position: absolute;
+      left: -18px;
+      bottom: 0;
+      height: 100%;
+      background-color: #ffffff;
+      width: 18px;
+      z-index: 1; }
+    #varios #categorias .categorias #titleCategoria {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      margin-bottom: 10px; }
+      #varios #categorias .categorias #titleCategoria .nameCategorias {
+        height: 30px;
+        position: relative;
+        margin-right: 25px; }
+        #varios #categorias .categorias #titleCategoria .nameCategorias:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          right: -18px;
+          top: 4px;
+          width: 10px; }
+  #varios #categorias .varios .submenu {
+    position: relative;
+    -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16); }
+    #varios #categorias .varios .submenu .active {
+      position: relative; }
+      #varios #categorias .varios .submenu .active:after {
+        content: url(images/src/img/iconos/flechaCategorias.svg);
+        height: 20px;
+        position: absolute;
+        left: -15px;
+        top: 0px;
+        width: 10px; }
+    #varios #categorias .varios .submenu .banda {
+      position: absolute;
+      top: -10px;
+      height: 15px;
+      background-color: #ffffff;
+      width: 100%; }
+    #varios #categorias .varios .submenu ul:first-child {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      #varios #categorias .varios .submenu ul:first-child li {
+        margin-bottom: 15px;
+        padding: 0;
+        width: 255px; }
+        #varios #categorias .varios .submenu ul:first-child li a {
+          text-align: left;
+          display: flex;
+          display: -webkit-flex;
+          display: -moz-flex;
+          justify-content: flex-start;
+          -webkit-justify-content: flex-start;
+          -moz-justify-content: flex-start;
+          text-align: center;
+          text-decoration: none;
+          font-size: 1.125rem;
+          font-weight: 700;
+          margin-bottom: 15px;
+          color: #000000; }
+          #varios #categorias .varios .submenu ul:first-child li a:hover {
+            text-decoration: underline; }
+        #varios #categorias .varios .submenu ul:first-child li ul {
+          list-style: none;
+          padding: 0; }
+          #varios #categorias .varios .submenu ul:first-child li ul li a {
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #afafaf; }
+            #varios #categorias .varios .submenu ul:first-child li ul li a:hover {
+              text-decoration: underline; }
   #varios #destacados {
     position: relative;
     margin-top: 60px; }

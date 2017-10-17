@@ -20,6 +20,19 @@
         padding: 5px 0
         .pauta
           order: 2
+    .categorias
+      .right
+        display: none
+      .left
+        display: none
+      .vehículos, .empleos
+        .submenu
+          height: auto
+      .varios .submenu ul:first-child 
+        li
+          width: 180px
+          a
+            text-align: left
     #destacados
       width: 100%
       .view-id-anuncios.view-display-id-block .view-content
@@ -45,3 +58,46 @@
         -moz-justify-content: space-around
         .views-row
           margin-bottom: 20px
+
+@media screen and (max-width: 600px)
+  #anuncio 
+    .anuncioNota 
+      .info
+        flex-direction: column
+        -webkit-flex-direction: column
+        -moz-flex-direction: column
+        .pauta
+          order: 0
+    .categorias
+      .vehículos, .empleos
+        .submenu 
+          ul 
+            li
+              width: 150px
+      .varios .submenu ul:first-child li
+        width: 150px
+      .finca.raíz 
+        .submenu 
+          ul:first-child
+            flex-wrap: wrap
+            -webkit-flex-wrap: wrap
+            -moz-flex-wrap: wrap
+            .first ul
+              border: none
+
+@media screen and (max-width: 380px)
+  #anuncio 
+    .categorias 
+      .vehículos
+        .submenu 
+          ul 
+            li
+              width: 100px
+      .empleos 
+        .submenu 
+          ul 
+            li
+              width: 130px
+      .finca.raíz .submenu ul:first-child 
+        .first, .last
+          width: 265px
