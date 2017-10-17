@@ -32,7 +32,7 @@
         display: none
       .left
         display: none
-      view-id-usuarios.view-display-id-block .view-content
+      .view-id-usuarios.view-display-id-block .view-content
         flex-wrap: wrap
         -webkit-flex-wrap: wrap
         -moz-flex-wrap: wrap
@@ -40,26 +40,40 @@
           margin-bottom: 20px
     #destacados
       width: 96%
-      .view-id-categorias.view-display-id-block_7 .view-content
+      .view-id-categorias.view-display-id-block_2 .view-content
         flex-wrap: wrap
         -webkit-flex-wrap: wrap
         -moz-flex-wrap: wrap
         .views-row
           margin-bottom: 20px
+          height: auto
+          .anuncio .info .title
+            white-space: initial
+            overflow: initial
     .pauta
       width: 96%
     #anunciosVehiculos
       width: 96%
-      .view-id-categorias.view-display-id-block_8 .view-content
+      .view-id-categorias.view-display-id-block_1 .view-content
         flex-wrap: wrap
         -webkit-flex-wrap: wrap
         -moz-flex-wrap: wrap
+        .views-row
+          height: auto
+          .anuncio .info .title
+            white-space: initial
+            overflow: initial
     #masVehiculos
       width: 96%
-      .view-id-categorias.view-display-id-block_8 .view-content
+      .view-id-categorias.view-display-id-block_4 .view-content
         flex-wrap: wrap
         -webkit-flex-wrap: wrap
         -moz-flex-wrap: wrap
+        .views-row
+          height: auto
+          .anuncio .info .title
+            white-space: initial
+            overflow: initial
     #otrosAnuncios
       width: 96%
       .view-id-categorias.view-display-id-block_5 .view-content
@@ -68,8 +82,21 @@
         -moz-flex-wrap: wrap
         .views-row
           margin-bottom: 20px
+          height: auto
+          .anuncio .info .title
+            white-space: initial
+            overflow: initial
 
-@media screen and (max-width: 540px)
-  #empleos
-    #categorias .categorias .empleos .submenu ul li
-      width: 110px
+@media screen and (max-width: 600px)
+  #vehiculos 
+    #categorias .categorias
+      .vehículos
+        .submenu 
+          ul 
+            li
+              width: 150px
+
+@media screen and (max-width: 380px)
+  #vehiculos
+    #categorias .categorias .vehículos .submenu ul li
+      width: 100px

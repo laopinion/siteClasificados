@@ -10,7 +10,7 @@
       <div class="right"></div>
     </article>
   </article>
- 
+  
   <article id="proyectos">
     <aside class="triangulo"></aside>
     <aside class="estrellas"></aside>

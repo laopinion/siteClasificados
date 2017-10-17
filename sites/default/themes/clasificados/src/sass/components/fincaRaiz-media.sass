@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px)
-  #empleos 
+  #fincaRaiz 
     #noticias
       width: 96%
       .view-id-categorias.view-display-id-block_3 .view-content
@@ -20,17 +20,27 @@
           display: none
         .left
           display: none
-        .empleos .submenu
+        .vehículos .submenu
           height: auto
           padding: 0 10px
           box-sizing: content-box
           ul
             width: 100%
-            li
-              width: 150px
+    #inmobiliarias
+      width: 96%
+      .right
+        display: none
+      .left
+        display: none
+      .view-id-usuarios.view-display-id-block_2 .view-content
+        flex-wrap: wrap
+        -webkit-flex-wrap: wrap
+        -moz-flex-wrap: wrap
+        .views-row
+          margin-bottom: 20px
     #destacados
       width: 96%
-      .view-id-categorias.view-display-id-block_7 .view-content
+      .view-id-categorias.view-display-id-block_11 .view-content
         flex-wrap: wrap
         -webkit-flex-wrap: wrap
         -moz-flex-wrap: wrap
@@ -42,9 +52,9 @@
             overflow: initial
     .pauta
       width: 96%
-    #anunciosEmpleos
+    #anunciosFincaRaiz
       width: 96%
-      .view-id-categorias.view-display-id-block_8 .view-content
+      .view-id-categorias.view-display-id-block_12 .view-content
         flex-wrap: wrap
         -webkit-flex-wrap: wrap
         -moz-flex-wrap: wrap
@@ -53,9 +63,9 @@
           .anuncio .info .title
             white-space: initial
             overflow: initial
-    #masEmpleos
+    #masFincaRaiz
       width: 96%
-      .view-id-categorias.view-display-id-block_8 .view-content
+      .view-id-categorias.view-display-id-block_13 .view-content
         flex-wrap: wrap
         -webkit-flex-wrap: wrap
         -moz-flex-wrap: wrap
@@ -78,11 +88,21 @@
             overflow: initial
 
 @media screen and (max-width: 600px)
-  #empleos
-    #categorias .categorias .empleos .submenu ul li
-      width: 150px
+  #fincaRaiz
+    #categorias
+      .categorias
+        .finca.raíz
+          .submenu 
+            ul:first-child
+              flex-wrap: wrap
+              -webkit-flex-wrap: wrap
+              -moz-flex-wrap: wrap
+              .first ul
+                border-right: none
 
 @media screen and (max-width: 380px)
-  #empleos
-    #categorias .categorias .empleos .submenu ul li
-      width: 130px
+  #fincaRaiz
+    #categorias
+      .finca.raíz .submenu ul:first-child 
+        .first, .last
+          width: 265px

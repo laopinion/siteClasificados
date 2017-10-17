@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px)
-  #empleos 
+  #varios 
     #noticias
       width: 96%
       .view-id-categorias.view-display-id-block_3 .view-content
@@ -20,17 +20,14 @@
           display: none
         .left
           display: none
-        .empleos .submenu
-          height: auto
-          padding: 0 10px
-          box-sizing: content-box
-          ul
-            width: 100%
-            li
-              width: 150px
+        .varios .submenu ul:first-child 
+          li
+            width: 180px
+            a
+              text-align: left
     #destacados
       width: 96%
-      .view-id-categorias.view-display-id-block_7 .view-content
+      .view-id-categorias.view-display-id-block_14 .view-content
         flex-wrap: wrap
         -webkit-flex-wrap: wrap
         -moz-flex-wrap: wrap
@@ -42,9 +39,9 @@
             overflow: initial
     .pauta
       width: 96%
-    #anunciosEmpleos
+    #anunciosVarios
       width: 96%
-      .view-id-categorias.view-display-id-block_8 .view-content
+      .view-id-categorias.view-display-id-block_15 .view-content
         flex-wrap: wrap
         -webkit-flex-wrap: wrap
         -moz-flex-wrap: wrap
@@ -53,9 +50,9 @@
           .anuncio .info .title
             white-space: initial
             overflow: initial
-    #masEmpleos
+    #masVarios
       width: 96%
-      .view-id-categorias.view-display-id-block_8 .view-content
+      .view-id-categorias.view-display-id-block_16 .view-content
         flex-wrap: wrap
         -webkit-flex-wrap: wrap
         -moz-flex-wrap: wrap
@@ -78,11 +75,15 @@
             overflow: initial
 
 @media screen and (max-width: 600px)
-  #empleos
-    #categorias .categorias .empleos .submenu ul li
-      width: 150px
+  #fincaRaiz
+    #categorias
+      .categorias
+        .varios .submenu ul:first-child li
+          width: 150px
 
 @media screen and (max-width: 380px)
-  #empleos
-    #categorias .categorias .empleos .submenu ul li
-      width: 130px
+  #fincaRaiz
+    #categorias
+      .finca.raíz .submenu ul:first-child 
+        .first, .last
+          width: 265px

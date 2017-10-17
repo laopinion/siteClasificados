@@ -13,7 +13,7 @@ class Home {
       if(activo == 0){
         $('#home #empleos .views-row-6, #home #empleos .views-row-7, #home #empleos .views-row-8, #home #empleos .views-row-9, #home #empleos .views-row-10').slideDown("slow");
         $(this).data('activo', 1);
-        $(this).removeClass('down');
+        $(this).removeClass('down');// En la clase down esta la imagen al igual que la clase up
         $(this).addClass('up');
       }else{
         $('#home #empleos .views-row-6, #home #empleos .views-row-7, #home #empleos .views-row-8, #home #empleos .views-row-9, #home #empleos .views-row-10').slideUp("slow");
