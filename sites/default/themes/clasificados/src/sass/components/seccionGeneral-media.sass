@@ -1,5 +1,33 @@
 @media screen and (max-width: 768px)
-  #fincaRaiz 
+  #seccionGeneral
+    #categorias
+      .categorias
+        #titleCategoria
+          margin: 0 auto 10px auto
+          width: 96%
+        .right
+          display: none
+        .left
+          display: none
+        .vehículos .submenu
+          height: auto
+          padding: 0 10px
+          box-sizing: content-box
+          ul
+            width: 100%
+        .varios .submenu ul:first-child 
+          li
+            width: 180px
+            a
+              text-align: left
+        .empleos .submenu
+          height: auto
+          padding: 0 10px
+          box-sizing: content-box
+          ul
+            width: 100%
+            li
+              width: 150px
     #noticias
       width: 96%
       .view-id-categorias.view-display-id-block_3 .view-content
@@ -11,30 +39,13 @@
         -moz-justify-content: space-around
         .views-row
           margin-bottom: 20px
-    #categorias
-      .categorias
-        #titleCategoria
-          margin: 0 auto 10px auto
-          width: 96%
-        .right
-          display: none
-        .left
-          display: none
-    #inmobiliarias
+          height: auto
+          .anuncio .info .title
+            white-space: initial
+            overflow: initial
+    #anunciosGeneral
       width: 96%
-      .right
-        display: none
-      .left
-        display: none
-      .view-id-usuarios.view-display-id-block_2 .view-content
-        flex-wrap: wrap
-        -webkit-flex-wrap: wrap
-        -moz-flex-wrap: wrap
-        .views-row
-          margin-bottom: 20px
-    #destacados
-      width: 96%
-      .view-id-categorias.view-display-id-block_11 .view-content
+      .view-id-categorias.view-display-id-block_10 .view-content
         flex-wrap: wrap
         -webkit-flex-wrap: wrap
         -moz-flex-wrap: wrap
@@ -45,25 +56,15 @@
             white-space: initial
             overflow: initial
     .pauta
+      width: 96%    
+    #masGeneral
       width: 96%
-    #anunciosFincaRaiz
-      width: 96%
-      .view-id-categorias.view-display-id-block_12 .view-content
+      .view-id-categorias.view-display-id-block_10 .view-content
         flex-wrap: wrap
         -webkit-flex-wrap: wrap
         -moz-flex-wrap: wrap
         .views-row
-          height: auto
-          .anuncio .info .title
-            white-space: initial
-            overflow: initial
-    #masFincaRaiz
-      width: 96%
-      .view-id-categorias.view-display-id-block_13 .view-content
-        flex-wrap: wrap
-        -webkit-flex-wrap: wrap
-        -moz-flex-wrap: wrap
-        .views-row
+          margin-bottom: 20px
           height: auto
           .anuncio .info .title
             white-space: initial
@@ -82,21 +83,37 @@
             overflow: initial
 
 @media screen and (max-width: 600px)
-  #fincaRaiz
+  #seccionGeneral
     #categorias
       .categorias
         .finca.raíz
-          .submenu
+          .submenu 
             ul:first-child
               flex-wrap: wrap
               -webkit-flex-wrap: wrap
               -moz-flex-wrap: wrap
               .first ul
                 border-right: none
-
+        .empleos .submenu ul li
+          width: 150px
+        .varios .submenu ul:first-child li
+          width: 150px
+        .vehículos
+          .submenu 
+            ul 
+              li
+                width: 150px
+          
 @media screen and (max-width: 380px)
-  #fincaRaiz
+  #seccionGeneral
     #categorias
-      .finca.raíz .submenu ul:first-child 
-        .first, .last
+      .categorias
+        .finca.raíz .submenu ul:first-child 
+          .first, .last
+            width: 265px
+        .vehículos .submenu ul li
+          width: 100px
+        .varios .submenu ul:first-child li
           width: 265px
+        .empleos .submenu ul li
+          width: 130px

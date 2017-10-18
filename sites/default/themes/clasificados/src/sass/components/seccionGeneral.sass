@@ -85,6 +85,67 @@
       .empleos
         .submenu
           height: 110px
+      .varios
+        .submenu
+          position: relative
+          -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16)
+          -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16)
+          box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16)
+          .active
+            position: relative
+            &:after
+              content: url('../img/iconos/flechaCategorias.svg')
+              height: 20px
+              position: absolute
+              left: -15px
+              top: 0px
+              width: 10px
+          .banda
+            position: absolute
+            top: -10px
+            height: 15px
+            background-color: $blanco
+            width: 100%
+          ul:first-child
+            margin: 0
+            padding: 0
+            list-style: none
+            display: flex
+            display: -webkit-flex
+            display: -moz-flex
+            flex-wrap: wrap
+            justify-content: center
+            li
+              margin-bottom: 15px
+              padding: 0
+              width: 255px
+              a
+                text-align: left
+                display: flex
+                display: -webkit-flex
+                display: -moz-flex
+                justify-content: flex-start
+                -webkit-justify-content: flex-start
+                -moz-justify-content: flex-start
+                text-align: center
+                text-decoration: none
+                font-size: 1.125rem // 18px
+                font-weight: 700
+                margin-bottom: 15px
+                color: $negro
+                &:hover
+                  text-decoration: underline
+              ul
+                list-style: none
+                padding: 0
+                li
+                  a
+                    text-decoration: none
+                    font-size: 1rem // 18px
+                    font-weight: 400
+                    color: $gris
+                    &:hover
+                      text-decoration: underline
       .finca.raíz
         .submenu
           -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16)
@@ -216,9 +277,9 @@
                 flex-wrap: wrap
                 -webkit-flex-wrap: wrap
                 -moz-flex-wrap: wrap
-                justify-content: space-between
-                -webkit-justify-content: space-between
-                -moz-justify-content: space-between
+                justify-content: space-around
+                -webkit-justify-content: space-around
+                -moz-justify-content: space-around
                 .active
                   position: relative
                   &:after

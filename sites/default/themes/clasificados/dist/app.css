@@ -2753,9 +2753,9 @@ table {
           flex-wrap: wrap;
           -webkit-flex-wrap: wrap;
           -moz-flex-wrap: wrap;
-          justify-content: space-between;
-          -webkit-justify-content: space-between;
-          -moz-justify-content: space-between; }
+          justify-content: space-around;
+          -webkit-justify-content: space-around;
+          -moz-justify-content: space-around; }
           #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .last ul li {
             margin-bottom: 15px;
             padding: 0;
@@ -3152,12 +3152,6 @@ table {
     display: none; }
   #fincaRaiz #categorias .categorias .left {
     display: none; }
-  #fincaRaiz #categorias .categorias .vehículos .submenu {
-    height: auto;
-    padding: 0 10px;
-    box-sizing: content-box; }
-    #fincaRaiz #categorias .categorias .vehículos .submenu ul {
-      width: 100%; }
   #fincaRaiz #inmobiliarias {
     width: 96%; }
     #fincaRaiz #inmobiliarias .right {
@@ -3716,11 +3710,11 @@ table {
           overflow: initial; } }
 
 @media screen and (max-width: 600px) {
-  #fincaRaiz #categorias .categorias .varios .submenu ul:first-child li {
+  #varios #categorias .categorias .varios .submenu ul:first-child li {
     width: 150px; } }
 
 @media screen and (max-width: 380px) {
-  #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .first, #fincaRaiz #categorias .finca.raíz .submenu ul:first-child .last {
+  #varios #categorias .categorias .varios .submenu ul:first-child li {
     width: 265px; } }
 
 #proyecto {
@@ -3927,6 +3921,65 @@ table {
             text-decoration: underline; }
     #seccionGeneral #categorias .categorias .empleos .submenu {
       height: 110px; }
+    #seccionGeneral #categorias .categorias .varios .submenu {
+      position: relative;
+      -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16); }
+      #seccionGeneral #categorias .categorias .varios .submenu .active {
+        position: relative; }
+        #seccionGeneral #categorias .categorias .varios .submenu .active:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          left: -15px;
+          top: 0px;
+          width: 10px; }
+      #seccionGeneral #categorias .categorias .varios .submenu .banda {
+        position: absolute;
+        top: -10px;
+        height: 15px;
+        background-color: #ffffff;
+        width: 100%; }
+      #seccionGeneral #categorias .categorias .varios .submenu ul:first-child {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        #seccionGeneral #categorias .categorias .varios .submenu ul:first-child li {
+          margin-bottom: 15px;
+          padding: 0;
+          width: 255px; }
+          #seccionGeneral #categorias .categorias .varios .submenu ul:first-child li a {
+            text-align: left;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: flex-start;
+            -webkit-justify-content: flex-start;
+            -moz-justify-content: flex-start;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #000000; }
+            #seccionGeneral #categorias .categorias .varios .submenu ul:first-child li a:hover {
+              text-decoration: underline; }
+          #seccionGeneral #categorias .categorias .varios .submenu ul:first-child li ul {
+            list-style: none;
+            padding: 0; }
+            #seccionGeneral #categorias .categorias .varios .submenu ul:first-child li ul li a {
+              text-decoration: none;
+              font-size: 1rem;
+              font-weight: 400;
+              color: #afafaf; }
+              #seccionGeneral #categorias .categorias .varios .submenu ul:first-child li ul li a:hover {
+                text-decoration: underline; }
     #seccionGeneral #categorias .categorias .finca.raíz .submenu {
       -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
       -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
@@ -4057,9 +4110,9 @@ table {
             flex-wrap: wrap;
             -webkit-flex-wrap: wrap;
             -moz-flex-wrap: wrap;
-            justify-content: space-between;
-            -webkit-justify-content: space-between;
-            -moz-justify-content: space-between; }
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around; }
             #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .last ul .active {
               position: relative; }
               #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .last ul .active:after {
@@ -4329,6 +4382,110 @@ table {
               #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
+
+@media screen and (max-width: 768px) {
+  #seccionGeneral #categorias .categorias #titleCategoria {
+    margin: 0 auto 10px auto;
+    width: 96%; }
+  #seccionGeneral #categorias .categorias .right {
+    display: none; }
+  #seccionGeneral #categorias .categorias .left {
+    display: none; }
+  #seccionGeneral #categorias .categorias .vehículos .submenu {
+    height: auto;
+    padding: 0 10px;
+    box-sizing: content-box; }
+    #seccionGeneral #categorias .categorias .vehículos .submenu ul {
+      width: 100%; }
+  #seccionGeneral #categorias .categorias .varios .submenu ul:first-child li {
+    width: 180px; }
+    #seccionGeneral #categorias .categorias .varios .submenu ul:first-child li a {
+      text-align: left; }
+  #seccionGeneral #categorias .categorias .empleos .submenu {
+    height: auto;
+    padding: 0 10px;
+    box-sizing: content-box; }
+    #seccionGeneral #categorias .categorias .empleos .submenu ul {
+      width: 100%; }
+      #seccionGeneral #categorias .categorias .empleos .submenu ul li {
+        width: 150px; }
+  #seccionGeneral #noticias {
+    width: 96%; }
+    #seccionGeneral #noticias .view-id-categorias.view-display-id-block_3 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around; }
+      #seccionGeneral #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
+        margin-bottom: 20px;
+        height: auto; }
+        #seccionGeneral #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; }
+  #seccionGeneral #anunciosGeneral {
+    width: 96%; }
+    #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block_10 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row {
+        margin-bottom: 20px;
+        height: auto; }
+        #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; }
+  #seccionGeneral .pauta {
+    width: 96%; }
+  #seccionGeneral #masGeneral {
+    width: 96%; }
+    #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row {
+        margin-bottom: 20px;
+        height: auto; }
+        #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; }
+  #seccionGeneral #otrosAnuncios {
+    width: 96%; }
+    #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
+        margin-bottom: 20px;
+        height: auto; }
+        #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; } }
+
+@media screen and (max-width: 600px) {
+  #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap; }
+    #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .first ul {
+      border-right: none; }
+  #seccionGeneral #categorias .categorias .empleos .submenu ul li {
+    width: 150px; }
+  #seccionGeneral #categorias .categorias .varios .submenu ul:first-child li {
+    width: 150px; }
+  #seccionGeneral #categorias .categorias .vehículos .submenu ul li {
+    width: 150px; } }
+
+@media screen and (max-width: 380px) {
+  #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .first, #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child .last {
+    width: 265px; }
+  #seccionGeneral #categorias .categorias .vehículos .submenu ul li {
+    width: 100px; }
+  #seccionGeneral #categorias .categorias .varios .submenu ul:first-child li {
+    width: 265px; }
+  #seccionGeneral #categorias .categorias .empleos .submenu ul li {
+    width: 130px; } }
 
 #profile {
   margin: 50px auto; }
