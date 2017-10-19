@@ -4964,7 +4964,9 @@ table {
       margin: 0 0 10px 0; }
       #search .informacion .search-results.node-results .search-result .title a {
         text-decoration: none;
-        color: #000000; }
+        color: #B92025; }
+      #search .informacion .search-results.node-results .search-result .title:hover {
+        text-decoration: underline; }
     #search .informacion .search-results.node-results .search-result .search-snippet-info {
       padding: 0; }
       #search .informacion .search-results.node-results .search-result .search-snippet-info .search-info a {
