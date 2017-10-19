@@ -38,9 +38,10 @@
       </ul>
       <div class="buscador">
         <aside class="lupa"></aside>
-        <form action="">
+        <?php $bloque_busqueda = module_invoke('search', 'block_view', 'search'); print render($bloque_busqueda);?>
+        <!-- <form action="">
           <input type="text" placeholder="Escriba aqui su busqueda">
-        </form>
+        </form> -->
       </div>
     </div>
   </section>

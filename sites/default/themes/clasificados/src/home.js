@@ -5,6 +5,7 @@ class Home {
     this.name = 'John serrano';
     this.autos = autos;
     this.empleo = empleo;
+    $('#header #block3 .container .buscador form .container-inline input').attr('placeholder', 'Escriba lo que quiere buscar.');
   }
   
   verMas () {

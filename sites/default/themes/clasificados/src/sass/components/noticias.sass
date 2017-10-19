@@ -1,8 +1,70 @@
 #noticia
+  margin-bottom: 50px
   #noticiaPortada
+    margin-bottom: 20px
     height: 600px
     width: 100%
     img
       height: 600px
       object-fit: cover
       width: 100%
+  #noticiaTitle
+    max-width: 1000px
+    width: 96%
+    font-size: 2rem // 32px
+    font-weight: 700
+    line-height: 2.125rem
+    margin-bottom: 5px
+  #noticiaFecha
+    max-width: 1000px
+    width: 96%
+    font-size: 0.8rem
+    font-weight: 700
+    color: $gris
+  #noticiaBody
+    max-width: 1000px
+    width: 96%
+    img
+      max-width: 1000px
+      height: auto
+      width: 100%
+  #noticias
+    position: relative
+    margin-top: 60px
+    hr
+      border-color: $gris
+    h3
+      position: absolute
+      margin: 0 auto
+      background-color: $blanco
+      left: 0
+      right: 0
+      top: -11px
+      font-size: 1.1rem // 18/16 = 1.1rem -> 18px
+      font-weight: 700
+      text-align: center
+      color: $destacados
+      width: 85px
+    .view-id-anuncios.view-display-id-block_1
+      margin-top: 30px
+      .view-content
+        display: flex
+        display: -webkit-flex
+        display: -moz-flex
+        justify-content: space-between
+        -webkit-justify-content: space-between
+        -moz-justify-content: space-between
+        .views-row
+          width: 240px
+          .noticia
+            width: 240px
+            a
+              display: block
+            .title
+              margin-bottom: 5px
+              font-size: 20px
+              line-height: 22px
+              font-weight: 700
+              a
+                text-decoration: none
+                color: $negro
