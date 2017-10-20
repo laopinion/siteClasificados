@@ -91,7 +91,7 @@
 
     <!--RESUMEN-->
     <?php if ($snippet): ?>
-      <div class="resumen"><?php print strip_tags(truncate_utf8(trim(decode_entities(strip_tags($node->body['und'][0]['value']))), 80, TRUE)); ?> ...</div>
+      <div class="resumen"><?php //print strip_tags(truncate_utf8(trim(decode_entities(strip_tags($node->body['und'][0]['value']))), 80, TRUE)); ?> ...</div>
     <?php endif; ?>
 
   </li>
