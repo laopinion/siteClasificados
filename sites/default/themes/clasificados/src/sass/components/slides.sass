@@ -122,7 +122,11 @@
       object-fit: cover
       width: 100%
   .rslides_tabs
+    .rslides_here
+      img
+        filter: initial
     img
+      filter: opacity(0.5)
       height: 121px
       width: 163px
 
@@ -155,11 +159,12 @@
 #slider-fullScream
   display: none
   position: fixed
-  top: 20vh
+  top: 20px
   left: 0
   right: 0
   margin: 0 auto
-  width: 678px
+  // width: 678px
+  width: 70%
   z-index: 5
   #cerrarGaleria
     display: none
@@ -169,11 +174,12 @@
     display: flex
     display: -webkit-flex
     display: -moz-flex
-    justify-content: space-between
-    -webkit-justify-content: space-between
-    -moz-justify-content: space-between
+    justify-content: space-evenly
+    -webkit-justify-content: space-evenly
+    -moz-justify-content: space-evenly
   .rslides-anuncio
-    height: 520px
+    height: 80vh
+    // height: auto
     position: relative
     list-style: none
     overflow: hidden
@@ -193,17 +199,26 @@
         float: left
     img
       display: block
-      height: 520px
+      // height: 520px
+      object-fit: cover
       float: left
       width: 100%
       border: 0
   .rslides_tabs
+    .rslides_here
+      img
+        filter: initial
     img
+      filter: opacity(0.5)
       height: 121px
       width: 163px
 
 @media screen and (max-width: 768px)
+  body
+    overflow-y: initial!important
   #slider-fullScream
+    position: absolute
+    top: 0
     width: 100%
     #cerrarGaleria
       display: block

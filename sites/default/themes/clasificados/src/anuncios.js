@@ -66,7 +66,8 @@ class Anuncios {
       $('.backgroundAnuncio').hide();
       $('#slider-fullScream').hide();
       $('body').css('overflow-y', 'initial')
-    });
+    });   
+
   }
 
 }
