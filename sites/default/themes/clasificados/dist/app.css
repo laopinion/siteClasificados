@@ -497,6 +497,7 @@ table {
     width: 250px; } }
 
 #slider {
+  position: relative;
   width: 100%; }
   #slider .rslides {
     position: relative;
@@ -523,6 +524,34 @@ table {
       float: left;
       width: 100%;
       border: 0; }
+  #slider #publicarAnuncio {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    box-sizing: border-box;
+    height: 60px;
+    position: absolute;
+    background-color: #ffe000;
+    margin: 0 auto;
+    left: 0;
+    bottom: -40px;
+    right: -50%;
+    width: 200px;
+    z-index: 3; }
+    #slider #publicarAnuncio h3 {
+      margin: 0;
+      text-align: center; }
+      #slider #publicarAnuncio h3 a {
+        text-decoration: none;
+        color: #000000;
+        padding: 10px 20px;
+        text-transform: capitalize; }
 
 #slider-proyecto {
   width: 100%; }
@@ -4982,6 +5011,96 @@ table {
       #search .informacion .search-results.node-results .search-result .search-snippet-info .search-info a {
         text-decoration: none;
         color: #000000; }
+
+#login {
+  margin: 100px 0;
+  width: 100%; }
+  #login #tabs {
+    display: none; }
+  #login h2 {
+    text-align: center; }
+  #login #inicio_sesion {
+    margin: 0 auto;
+    width: 320px; }
+    #login #inicio_sesion #user-login-form .form-item label {
+      margin-bottom: 5px; }
+    #login #inicio_sesion #user-login-form .form-item input {
+      border: 1px solid #cecece;
+      background-color: #efefef;
+      height: 30px;
+      width: 100%; }
+    #login #inicio_sesion .item-list ul {
+      list-style: none;
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around; }
+      #login #inicio_sesion .item-list ul li {
+        text-align: center; }
+      #login #inicio_sesion .item-list ul a {
+        text-decoration: none;
+        color: #B92025; }
+        #login #inicio_sesion .item-list ul a:hover {
+          text-decoration: underline; }
+    #login #inicio_sesion .form-actions.form-wrapper {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      margin: 30px 0; }
+      #login #inicio_sesion .form-actions.form-wrapper input {
+        border: 1px solid #cecece;
+        background-color: #efefef;
+        border-radius: 5px;
+        font-weight: 700;
+        height: 50px;
+        margin: 0 auto;
+        width: 50%; }
+
+#registrar {
+  margin: 100px 0;
+  width: 100%; }
+  #registrar h2 {
+    text-align: center; }
+  #registrar #registrar_user {
+    margin: 0 auto;
+    width: 320px; }
+    #registrar #registrar_user #user-register-form--2 .form-item label {
+      margin-bottom: 5px; }
+    #registrar #registrar_user #user-register-form--2 .form-item input {
+      border: 1px solid #cecece;
+      background-color: #efefef;
+      height: 30px;
+      width: 100%; }
+    #registrar #registrar_user .item-list ul {
+      list-style: none;
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around; }
+      #registrar #registrar_user .item-list ul li {
+        text-align: center; }
+      #registrar #registrar_user .item-list ul a {
+        text-decoration: none;
+        color: #B92025; }
+        #registrar #registrar_user .item-list ul a:hover {
+          text-decoration: underline; }
+    #registrar #registrar_user .form-actions.form-wrapper {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      margin: 30px 0; }
+      #registrar #registrar_user .form-actions.form-wrapper input {
+        border: 1px solid #cecece;
+        background-color: #efefef;
+        border-radius: 5px;
+        font-weight: 700;
+        height: 50px;
+        margin: 0 auto;
+        width: 50%; }
 
 #pregunFrecuen {
   margin: 50px auto;
