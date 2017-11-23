@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * 
+ * Implementation of hook_node_access().
+ */
+function node_access_rules_node_access($node, $op, $account) {
+  $type = is_string($node) ? $node : $node->type;
+
+  if (in_array($type, node_permissions_get_configured_types())) {
+  	
+    if ($op == 'create') {
+	  global $node_access_rules;
+	  rules_invoke_event('node_access_rules_create', $node);
+      return $node_access_rules;
+    }
+  	
+  	if ($op == 'view') {
+	  global $node_access_rules;
+	  rules_invoke_event('node_access_rules_view', $node);
+      return $node_access_rules;
+    }
+
+    if ($op == 'update') {
+	  global $node_access_rules;
+	  rules_invoke_event('node_access_rules_edit', $node);
+      return $node_access_rules;
+    }
+
+    if ($op == 'delete') {
+	  global $node_access_rules;
+	  rules_invoke_event('node_access_rules_delete', $node);
+      return $node_access_rules;
+    }
+  }
+
+}
+
+

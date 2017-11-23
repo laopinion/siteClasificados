@@ -1,0 +1,12 @@
+name = Node Access rules
+description = Rules intgration for node access
+package = Node Access
+core = 7.x
+dependencies[] = rules
+dependencies[] = node
+; Information added by drupal.org packaging script on 2013-10-01
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "node_access_rules"
+datestamp = "1380594034"
+
