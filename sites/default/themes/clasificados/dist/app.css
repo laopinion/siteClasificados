@@ -1632,6 +1632,42 @@ table {
   #anuncio .categorias .finca.raíz .submenu ul:first-child .first, #anuncio .categorias .finca.raíz .submenu ul:first-child .last {
     width: 265px; } }
 
+.view-administrar-anuncios {
+  margin: 100px auto;
+  width: 1000px; }
+  .view-administrar-anuncios .view-header {
+    margin-bottom: 50px; }
+    .view-administrar-anuncios .view-header h2 {
+      text-align: center; }
+  .view-administrar-anuncios .view-content {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around; }
+    .view-administrar-anuncios .view-content .views-row {
+      margin-bottom: 30px;
+      padding: 5px 20px;
+      box-sizing: content-box;
+      background-color: #f9f9f9; }
+      .view-administrar-anuncios .view-content .views-row a {
+        text-decoration: none;
+        color: #0074BD; }
+        .view-administrar-anuncios .view-content .views-row a:hover {
+          text-decoration: underline; }
+      .view-administrar-anuncios .view-content .views-row .views-field {
+        margin: 10px 0; }
+
+@media screen and (max-width: 768px) {
+  .view-administrar-anuncios {
+    margin: 100px 2%;
+    width: 96%; }
+    .view-administrar-anuncios .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; } }
+
 #vehiculos {
   margin-bottom: 50px; }
   #vehiculos #portada img {

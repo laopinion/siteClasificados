@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack -w --colors",
-    "prod": "webpack -p"
+    "prod": "webpack -p",
+    "start": "npm run dev"
   },
   "keywords": [],
   "author": "",
