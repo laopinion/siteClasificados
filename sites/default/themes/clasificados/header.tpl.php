@@ -2,7 +2,7 @@
   <section id="block1">
     <div class="container">
       <div class="user">
-        <span><i class="iconUser"></i> Ingresar</span>
+        <span><i class="iconUser"></i> <a href="<?php print base_path(); ?>user">Ingresar</a></span>
       </div>
     </div>
   </section>

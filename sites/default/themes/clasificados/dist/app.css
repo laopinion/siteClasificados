@@ -297,8 +297,9 @@ table {
   #header #block1 {
     background-color: #A81822;
     height: 25px; }
-    #header #block1 .container .user {
-      color: #ffffff; }
+    #header #block1 .container .user, #header #block1 .container a {
+      color: #ffffff;
+      text-decoration: none; }
   #header #block2 {
     height: 130px;
     margin-top: 10px; }
@@ -1645,12 +1646,16 @@ table {
     display: -moz-flex;
     justify-content: space-around;
     -webkit-justify-content: space-around;
-    -moz-justify-content: space-around; }
+    -moz-justify-content: space-around;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap; }
     .view-administrar-anuncios .view-content .views-row {
       margin-bottom: 30px;
       padding: 5px 20px;
       box-sizing: content-box;
-      background-color: #f9f9f9; }
+      background-color: #f9f9f9;
+      width: 300px; }
       .view-administrar-anuncios .view-content .views-row a {
         text-decoration: none;
         color: #0074BD; }
