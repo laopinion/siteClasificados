@@ -1907,6 +1907,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -1974,6 +1977,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -2031,6 +2037,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -2106,6 +2115,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -2397,6 +2409,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -2464,6 +2479,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -2521,6 +2539,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -2596,6 +2617,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -3020,6 +3044,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -3087,6 +3114,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -3144,6 +3174,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -3219,6 +3252,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -3524,6 +3560,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -3591,6 +3630,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -3648,6 +3690,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -3723,6 +3768,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
