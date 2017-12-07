@@ -5087,7 +5087,19 @@ table {
   #search .busquedas h2 {
     margin: 0; }
   #search .informacion .search-results.node-results {
-    padding: 0; }
+    padding: 0;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center; }
+    #search .informacion .search-results.node-results .resultado {
+      margin-bottom: 20px;
+      width: 300px; }
     #search .informacion .search-results.node-results .search-result .title {
       margin: 0 0 10px 0; }
       #search .informacion .search-results.node-results .search-result .title a {
@@ -5100,6 +5112,11 @@ table {
       #search .informacion .search-results.node-results .search-result .search-snippet-info .search-info a {
         text-decoration: none;
         color: #000000; }
+  #search .item-list a {
+    text-decoration: none;
+    color: #B92025; }
+    #search .item-list a:hover {
+      text-decoration: underline; }
 
 #login {
   margin: 100px 0;

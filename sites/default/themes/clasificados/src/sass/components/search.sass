@@ -9,6 +9,18 @@
   .informacion
     .search-results.node-results
       padding: 0
+      display: flex
+      display: -webkit-flex
+      display: -moz-flex
+      flex-wrap: wrap
+      -webkit-flex-wrap: wrap
+      -moz-flex-wrap: wrap
+      justify-content: center
+      -webkit-justify-content: center
+      -moz-justify-content: center
+      .resultado
+        margin-bottom: 20px
+        width: 300px
       .search-result
         .title
           margin: 0 0 10px 0
@@ -23,4 +35,10 @@
             a
               text-decoration: none
               color: $negro
+  .item-list
+    a
+      text-decoration: none
+      color: $rojo
+      &:hover
+        text-decoration: underline
   
