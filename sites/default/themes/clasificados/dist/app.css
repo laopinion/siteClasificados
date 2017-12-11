@@ -5,9 +5,33 @@ body {
   font-weight: 400; }
 
 #tabs {
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  padding: 10px;
   position: fixed;
-  left: 0;
-  top: 50%; }
+  right: 0px;
+  top: 250px;
+  z-index: 3; }
+  #tabs ul {
+    border-bottom: none !important;
+    padding: 10px !important; }
+  #tabs .primary li a {
+    border-color: #bbb;
+    border-style: solid solid none solid;
+    border-width: 1px;
+    height: auto;
+    margin-right: 0.5em;
+    padding: 0 1em;
+    text-decoration: none; }
+  #tabs li a {
+    background: none repeat scroll 0 0 #F8F8F8 !important;
+    border: 1px solid #DDD !important;
+    color: #666;
+    display: inline-block;
+    font: 10px/10px Arial;
+    padding: 5px !important;
+    text-align: center;
+    text-transform: uppercase; }
 
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -496,6 +520,150 @@ table {
   #header #block3 .container .opts {
     flex-wrap: wrap;
     width: 250px; } }
+
+#user-login {
+  margin: 90px auto;
+  width: 500px; }
+  #user-login .form-item {
+    margin-bottom: 40px; }
+    #user-login .form-item label {
+      color: #656160;
+      margin-bottom: 10px; }
+    #user-login .form-item input {
+      border: 1px solid #f1f1f1;
+      background-color: #f9f9f9;
+      height: 40px;
+      width: 100%; }
+  #user-login .item-list {
+    margin-bottom: 60px; }
+    #user-login .item-list ul {
+      list-style: none;
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around; }
+      #user-login .item-list ul li {
+        text-align: center;
+        margin: 0;
+        border: 1px solid #B92025;
+        border-top: none;
+        padding-bottom: 20px;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        align-items: flex-end;
+        -webkit-align-items: flex-end;
+        -moz-align-items: flex-end;
+        width: 250px; }
+      #user-login .item-list ul .first {
+        border-right: none; }
+      #user-login .item-list ul .last {
+        padding-right: 50px;
+        padding-left: 50px;
+        width: 150px; }
+      #user-login .item-list ul a {
+        text-decoration: none;
+        font-size: 0.875rem;
+        color: #656160; }
+        #user-login .item-list ul a:hover {
+          text-decoration: underline; }
+  #user-login .form-actions.form-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    margin: 30px 0; }
+    #user-login .form-actions.form-wrapper input {
+      border: none;
+      color: #ffffff;
+      background-color: #3099d7;
+      height: 62px;
+      font-weight: 700;
+      margin: 0 auto;
+      width: 100%; }
+
+#registrar {
+  margin: 100px 0;
+  width: 100%; }
+  #registrar #title {
+    position: relative; }
+    #registrar #title h3 {
+      font-size: 1.125rem;
+      color: #454e9b;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -12px;
+      background-color: #ffffff;
+      width: 145px;
+      margin: 0 auto; }
+    #registrar #title hr {
+      border-color: #afafaf; }
+  #registrar #registrar_user {
+    margin: 90px auto;
+    width: 500px; }
+    #registrar #registrar_user #user-register-form--2 .form-item {
+      margin-bottom: 60px; }
+      #registrar #registrar_user #user-register-form--2 .form-item label {
+        color: #656160;
+        margin-bottom: 10px; }
+      #registrar #registrar_user #user-register-form--2 .form-item input {
+        border: 1px solid #f1f1f1;
+        background-color: #f9f9f9;
+        height: 40px;
+        margin-bottom: 15px;
+        width: 100%; }
+      #registrar #registrar_user #user-register-form--2 .form-item .description {
+        font-size: 0.75rem;
+        color: #656160; }
+    #registrar #registrar_user .item-list ul {
+      list-style: none;
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around; }
+      #registrar #registrar_user .item-list ul li {
+        text-align: center; }
+      #registrar #registrar_user .item-list ul a {
+        text-decoration: none;
+        color: #B92025; }
+        #registrar #registrar_user .item-list ul a:hover {
+          text-decoration: underline; }
+    #registrar #registrar_user .form-actions.form-wrapper {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      margin: 30px 0; }
+      #registrar #registrar_user .form-actions.form-wrapper input {
+        border: none;
+        color: #ffffff;
+        background-color: #3099d7;
+        height: 62px;
+        font-weight: 700;
+        margin: 0 auto;
+        width: 100%; }
+
+@media screen and (max-width: 768px) {
+  #registrar {
+    margin: 100px auto;
+    width: 96%; }
+    #registrar #registrar_user {
+      width: 100%; }
+  #login {
+    margin: 100px auto;
+    width: 96%; }
+    #login #inicio_sesion {
+      width: 100%; }
+      #login #inicio_sesion .item-list ul .last {
+        padding: 0 0 20px 0;
+        width: 250px; } }
 
 #slider {
   position: relative;
@@ -5117,170 +5285,6 @@ table {
     color: #B92025; }
     #search .item-list a:hover {
       text-decoration: underline; }
-
-#login {
-  margin: 100px 0;
-  width: 100%; }
-  #login #tabs {
-    display: none; }
-  #login #title {
-    position: relative; }
-    #login #title h3 {
-      font-size: 1.125rem;
-      color: #454e9b;
-      text-align: center;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: -12px;
-      background-color: #ffffff;
-      width: 145px;
-      margin: 0 auto; }
-    #login #title hr {
-      border-color: #afafaf; }
-  #login #inicio_sesion {
-    margin: 90px auto;
-    width: 500px; }
-    #login #inicio_sesion #user-login-form .form-item {
-      margin-bottom: 40px; }
-      #login #inicio_sesion #user-login-form .form-item label {
-        color: #656160;
-        margin-bottom: 10px; }
-      #login #inicio_sesion #user-login-form .form-item input {
-        border: 1px solid #f1f1f1;
-        background-color: #f9f9f9;
-        height: 40px;
-        width: 100%; }
-    #login #inicio_sesion .item-list {
-      margin-bottom: 60px; }
-      #login #inicio_sesion .item-list ul {
-        list-style: none;
-        display: flex;
-        display: -webkit-flex;
-        display: -moz-flex;
-        justify-content: space-around;
-        -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
-        #login #inicio_sesion .item-list ul li {
-          text-align: center;
-          margin: 0;
-          border: 1px solid #B92025;
-          border-top: none;
-          padding-bottom: 20px;
-          display: flex;
-          display: -webkit-flex;
-          display: -moz-flex;
-          justify-content: center;
-          -webkit-justify-content: center;
-          -moz-justify-content: center;
-          align-items: flex-end;
-          -webkit-align-items: flex-end;
-          -moz-align-items: flex-end;
-          width: 250px; }
-        #login #inicio_sesion .item-list ul .first {
-          border-right: none; }
-        #login #inicio_sesion .item-list ul .last {
-          padding-right: 50px;
-          padding-left: 50px;
-          width: 150px; }
-        #login #inicio_sesion .item-list ul a {
-          text-decoration: none;
-          font-size: 0.875rem;
-          color: #656160; }
-          #login #inicio_sesion .item-list ul a:hover {
-            text-decoration: underline; }
-    #login #inicio_sesion .form-actions.form-wrapper {
-      display: flex;
-      display: -webkit-flex;
-      display: -moz-flex;
-      margin: 30px 0; }
-      #login #inicio_sesion .form-actions.form-wrapper input {
-        border: none;
-        color: #ffffff;
-        background-color: #3099d7;
-        height: 62px;
-        font-weight: 700;
-        margin: 0 auto;
-        width: 100%; }
-
-#registrar {
-  margin: 100px 0;
-  width: 100%; }
-  #registrar #title {
-    position: relative; }
-    #registrar #title h3 {
-      font-size: 1.125rem;
-      color: #454e9b;
-      text-align: center;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: -12px;
-      background-color: #ffffff;
-      width: 145px;
-      margin: 0 auto; }
-    #registrar #title hr {
-      border-color: #afafaf; }
-  #registrar #registrar_user {
-    margin: 90px auto;
-    width: 500px; }
-    #registrar #registrar_user #user-register-form--2 .form-item {
-      margin-bottom: 60px; }
-      #registrar #registrar_user #user-register-form--2 .form-item label {
-        color: #656160;
-        margin-bottom: 10px; }
-      #registrar #registrar_user #user-register-form--2 .form-item input {
-        border: 1px solid #f1f1f1;
-        background-color: #f9f9f9;
-        height: 40px;
-        margin-bottom: 15px;
-        width: 100%; }
-      #registrar #registrar_user #user-register-form--2 .form-item .description {
-        font-size: 0.75rem;
-        color: #656160; }
-    #registrar #registrar_user .item-list ul {
-      list-style: none;
-      display: flex;
-      display: -webkit-flex;
-      display: -moz-flex;
-      justify-content: space-around;
-      -webkit-justify-content: space-around;
-      -moz-justify-content: space-around; }
-      #registrar #registrar_user .item-list ul li {
-        text-align: center; }
-      #registrar #registrar_user .item-list ul a {
-        text-decoration: none;
-        color: #B92025; }
-        #registrar #registrar_user .item-list ul a:hover {
-          text-decoration: underline; }
-    #registrar #registrar_user .form-actions.form-wrapper {
-      display: flex;
-      display: -webkit-flex;
-      display: -moz-flex;
-      margin: 30px 0; }
-      #registrar #registrar_user .form-actions.form-wrapper input {
-        border: none;
-        color: #ffffff;
-        background-color: #3099d7;
-        height: 62px;
-        font-weight: 700;
-        margin: 0 auto;
-        width: 100%; }
-
-@media screen and (max-width: 768px) {
-  #registrar {
-    margin: 100px auto;
-    width: 96%; }
-    #registrar #registrar_user {
-      width: 100%; }
-  #login {
-    margin: 100px auto;
-    width: 96%; }
-    #login #inicio_sesion {
-      width: 100%; }
-      #login #inicio_sesion .item-list ul .last {
-        padding: 0 0 20px 0;
-        width: 250px; } }
 
 #pregunFrecuen {
   margin: 50px auto;
