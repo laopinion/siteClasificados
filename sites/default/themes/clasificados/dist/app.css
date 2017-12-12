@@ -4890,11 +4890,15 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap; }
         #profile #proyectos .view-id-profiles.view-display-id-block_3 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
           box-sizing: border-box;
+          margin-bottom: 20px;
           height: 260px;
           width: 185px; }
           #profile #proyectos .view-id-profiles.view-display-id-block_3 .view-content .views-row:hover {
@@ -4928,11 +4932,15 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap; }
         #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
           box-sizing: border-box;
+          margin-bottom: 20px;
           height: 270px;
           width: 185px; }
           #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content .views-row:hover {
@@ -4983,11 +4991,15 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap; }
         #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
           box-sizing: border-box;
+          margin-bottom: 20px;
           height: 270px;
           width: 185px; }
           #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 .view-content .views-row:hover {
@@ -5058,11 +5070,15 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap; }
         #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
           box-sizing: border-box;
+          margin-bottom: 20px;
           height: 270px;
           width: 185px; }
           #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 .view-content .views-row:hover {
