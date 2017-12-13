@@ -44,7 +44,7 @@
           print "<div class=fecha>".render($content['field_fecha'])."</div>";
           print "<div class=ubicacion>".render($content['field_ubicacion'])."</div>";
           print "<h2 class=titulo>".$title."</h2>";
-          print "<aside class=descripcion>Descripcion</aside>";
+          print "<aside class=descripcion>Descripción</aside>";
           print "<div class=body>". render($content['body'])."</div>";
           if($content['field_telefono']){
             print "<div class=telefono>". render($content['field_telefono'])."</div>";
