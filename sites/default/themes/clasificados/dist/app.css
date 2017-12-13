@@ -983,7 +983,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #home #destacados .view-id-home.view-display-id-block .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -1106,7 +1106,7 @@ table {
           margin: 10px auto;
           width: 160px; }
           #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .date, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .date, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .date, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .date, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .date, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .date, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .date, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .date, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .date, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .date, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .date, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .date, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .date, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .date, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .date, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .date {
-            text-align: center;
+            text-align: left;
             font-weight: 700;
             font-size: 0.8rem;
             border-bottom: 1px solid #afafaf;
@@ -1650,7 +1650,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #anuncio #destacados .view-id-anuncios.view-display-id-block .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -2057,7 +2057,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -2127,7 +2127,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -2187,7 +2187,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -2265,7 +2265,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -2559,7 +2559,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -2629,7 +2629,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -2689,7 +2689,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -2767,7 +2767,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -3194,7 +3194,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -3264,7 +3264,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -3324,7 +3324,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -3402,7 +3402,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -3710,7 +3710,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -3780,7 +3780,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -3840,7 +3840,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -3918,7 +3918,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -4535,7 +4535,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -4592,7 +4592,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -4667,7 +4667,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -4955,7 +4955,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #profile #anuncios-1 .view-id-profiles.view-display-id-block .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -5014,7 +5014,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #profile #anuncios-2 .view-id-profiles.view-display-id-block_1 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
@@ -5093,7 +5093,7 @@ table {
             margin: 10px auto;
             width: 160px; }
             #profile #otrosAnuncios .view-id-profiles.view-display-id-block_2 .view-content .views-row .anuncio .info .date {
-              text-align: center;
+              text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
               border-bottom: 1px solid #afafaf;
