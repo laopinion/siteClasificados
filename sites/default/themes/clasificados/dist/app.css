@@ -5286,10 +5286,20 @@ table {
     -moz-flex-wrap: wrap;
     justify-content: center;
     -webkit-justify-content: center;
-    -moz-justify-content: center; }
+    -moz-justify-content: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between; }
     #search .informacion .search-results.node-results .resultado {
       margin-bottom: 20px;
       width: 300px; }
+    #search .informacion .search-results.node-results .search-result .imagen {
+      height: 300px;
+      width: 300px; }
+      #search .informacion .search-results.node-results .search-result .imagen img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%; }
     #search .informacion .search-results.node-results .search-result .title {
       margin: 0 0 10px 0; }
       #search .informacion .search-results.node-results .search-result .title a {
