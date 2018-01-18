@@ -41,39 +41,8 @@
       <aside class="pauta"></aside>
       <article class="container">
         <?php
-          function get_timeago( $ptime ) {
-            $estimate_time = time() - $ptime;
-            if( $estimate_time < 1 ){
-              return 'hace menos de 1 segundo';
-            }
-            $condition = array( 
-              12 * 30 * 24 * 60 * 60  =>  'año',
-              30 * 24 * 60 * 60       =>  'mes',
-              24 * 60 * 60            =>  'día',
-              60 * 60                 =>  'hora',
-              60                      =>  'minuto',
-              1                       =>  'segundo'
-            );
-
-            $a_plural = array( 'año'   => 'años',
-                       'mes'  => 'meses',
-                       'día'    => 'días',
-                       'hora'   => 'horas',
-                       'minuto' => 'minutos',
-                       'segundo' => 'segundos'
-            );
-
-            foreach( $condition as $secs => $str ){
-              $d = $estimate_time / $secs;
-
-              if( $d >= 1 ){
-                  $r = round( $d );
-                  return 'Publicado hace ' . $r . ' ' . ( $r > 1 ? $a_plural[$str] : $str ) . ' ';
-              }
-            }
-          }
-          // $timeago = get_timeago(strtotime(format_date($node->created, 'corto', 'j M Y')));
-          $timeago = get_timeago(strtotime(format_date($node->created, 'tpl')));
+          require_once 'get_time_anuncio.php';
+          $timeago = get_timeago(strtotime(format_date($node->created, 'tpl'))); 
           print "<div class=fecha>".$timeago."</div>";
           print "<div class=ubicacion>".render($content['field_ubicacion'])."</div>";
           print "<h2 class=titulo>".$title."</h2>";

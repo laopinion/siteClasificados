@@ -3,4 +3,8 @@
 
 <div id="tabs"><?php print render($tabs); ?></div><?php endif; ?>
 
-<?php print render($page['content']); ?>
+<?php 
+  
+  print render($page['content']); 
+
+?>

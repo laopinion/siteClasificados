@@ -1,8 +1,10 @@
 import $ from './jquery';
 require('./responsiveslides');
 
-import autos from './img/autos.jpg';
-import empleo from './img/empleo.jpg';
+import autosImg from './img/autos.jpg';
+import empleoImg from './img/empleo.jpg';
+import fincaImg from './img/finca-raiz.jpg';
+import variosImg from './img/varios.jpg';
 import compartir from './img/images/compartir.jpg';
 import sedePrincipal from './img/images/fachada-laopinion.jpg';
 import sedeAtalaya from './img/images/fachada-atalaya.jpg';
@@ -17,12 +19,12 @@ import Profile from './profile';
 import Proyectos from './proyectos';
 
 $(function() {
-  const home = new Home(autos, empleo);
+  const home = new Home(autosImg, empleoImg, fincaImg, variosImg);
   const anuncios = new Anuncios();
-  const vehiculos = new Vehiculos(autos);
-  const empleos = new Empleos(empleo);
-  const finca = new FincaRaiz(autos);
-  const varios = new Varios(autos);
+  const vehiculos = new Vehiculos(autosImg);
+  const empleos = new Empleos(empleoImg);
+  const finca = new FincaRaiz(fincaImg);
+  const varios = new Varios(variosImg);
   const profile = new Profile();
   const proyectos = new Proyectos();
   
