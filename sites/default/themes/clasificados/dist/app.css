@@ -325,8 +325,9 @@ table {
       color: #ffffff;
       text-decoration: none; }
   #header #block2 {
-    height: 130px;
-    margin-top: 10px; }
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
     #header #block2 .container {
       display: flex;
       display: -webkit-flex;
@@ -354,8 +355,7 @@ table {
           width: 280px; }
   #header #block3 {
     background-color: #A81822;
-    height: 98px;
-    margin-top: 30px; }
+    height: 98px; }
     #header #block3 .container {
       display: flex;
       display: -webkit-flex;
