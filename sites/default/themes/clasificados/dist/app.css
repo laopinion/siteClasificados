@@ -348,6 +348,7 @@ table {
       #header #block2 .container .logo {
         background: url(images/src/img/logo.svg) no-repeat;
         background-position: 50%;
+        background-size: 290px;
         margin: 20px auto 0 auto; }
         #header #block2 .container .logo a {
           display: block;
@@ -469,6 +470,11 @@ table {
     align-items: center;
     -webkit-align-items: center;
     -moz-align-items: center; }
+    #header #block1 .container .user {
+      display: flex;
+      justify-content: flex-end; }
+      #header #block1 .container .user span {
+        margin-right: 5px; }
   #header #block2 {
     height: auto; }
     #header #block2 .container {
@@ -847,7 +853,9 @@ table {
       height: auto; }
     #slider-anuncio .rslides-anuncio img {
       height: auto;
-      object-fit: initial; } }
+      object-fit: initial; }
+  #slider #publicarAnuncio {
+    display: none; } }
 
 #slider-fullScream {
   display: none;
