@@ -1,7 +1,19 @@
 @media screen and (max-width: 768px)
   .container
     width: 100%
+  #header
+    .searchMovil
+      display: block
+      background: url('../img/iconos/lupa.svg') no-repeat
+      height: 38px
+      position: absolute
+      right: 5px
+      top: 5px
+      background-size: 40px
+      cursor: pointer
+      width: 45px
   #header #block1
+    height: 40px
     .container
       flex-direction: column
       -webkit-flex-direction: column
@@ -17,6 +29,7 @@
   #header #block2
     height: auto
     margin-bottom: 0
+    position: relative
     .container
       flex-direction: column
       -webkit-flex-direction: column
@@ -29,6 +42,8 @@
         justify-content: space-evenly
         flex-wrap: wrap
         align-items: center
+        position: absolute
+        top: -50px
         width: 150px
         p
           font-size: 0.8rem
@@ -36,8 +51,10 @@
           font-size: 1rem
       .logo
         margin-top: 0
+        background-size: 200px
         a
-          height: 70px
+          height: 50px
+          width: 192px
   #header #block3
     height: auto
     padding-bottom: 10px
@@ -48,15 +65,30 @@
       position: relative
       .buscador
         height: 98px
+        // display: none
+        position: absolute
+        top: 0px
+        height: 50px
+        left: -1000px
+        transition: .2s
+        background: #B92025
+        display: flex
+        z-index: 3
+        width: 100%
       .opts
         display: flex
+        justify-content: center
         position: absolute
-        top: 100px
+        top: 0
         background: #B92025
-        width: 100%
         z-index: 10
-        left: -410px
+        left: -1000px
+        width: 100%
+        background: #A81822
         transition: .2s
+        .opt
+          width: 78px
+          background-position: 8px 100%
     .hamburger
       padding: 15px 15px
       display: inline-block
@@ -71,6 +103,10 @@
       border: 0
       margin: 0
       overflow: visible
+      position: absolute
+      outline: none
+      left: -5px
+      top: -53px
       &:hover
         opacity: 0.7
       &.is-active
@@ -126,30 +162,30 @@
   #header #block3 
     .container 
       .opts
-        justify-content: center
+        // justify-content: center
         // width: 96%
-        .opt
-          width: 100px
-        .empleos
-          background-position: 18px 100%
-          &:hover
-            background-position: 18px 100%
-        .autos
-          background-position: 15px 100%
-          &:hover
-            background-position: 15px 100%
-        .finca
-          background-position: 18px 100%
-          &:hover
-            background-position: 18px 100%
-        .varios
-          background-position: 22px 100%
-          &:hover
-            background-position: 22px 100%
-      .buscador
-        width: 96%
+        // .opt
+        //   width: 100px
+        // .empleos
+        //   background-position: 18px 100%
+        //   &:hover
+        //     background-position: 18px 100%
+        // .autos
+        //   background-position: 15px 100%
+        //   &:hover
+        //     background-position: 15px 100%
+        // .finca
+        //   background-position: 18px 100%
+        //   &:hover
+        //     background-position: 18px 100%
+        // .varios
+        //   background-position: 22px 100%
+        //   &:hover
+        //     background-position: 22px 100%
+      // .buscador
+      //   width: 96%
 
-@media screen and (max-width: 380px)
-  #header #block3 .container .opts
-    flex-wrap: wrap
-    width: 250px
+// @media screen and (max-width: 380px)
+//   #header #block3 .container .opts
+//     flex-wrap: wrap
+//     width: 250px

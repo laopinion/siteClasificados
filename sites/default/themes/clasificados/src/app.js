@@ -37,6 +37,7 @@ $(function() {
   home.slides();
   home.verMas();
   home.hamburgerMenu();
+  home.handleSearch();
   // home.hola;
 
   anuncios.galeriaAnuncios();

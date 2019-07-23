@@ -84,11 +84,23 @@ class Home {
   hamburgerMenu () {
     $('#header #block3 .hamburger').click(function () {
       if ($(this).hasClass('is-active')) {
-        $('#header #block3 .opts').css({ 'left': '-410px'})
+        $('#header #block3 .opts').css({ 'left': '-1000px'})
         $(this).removeClass('is-active')
       } else {
         $('#header #block3 .opts').css({ 'left': '0'})
         $(this).addClass('is-active')
+      }
+    })
+  }
+
+  handleSearch() {
+    $('#header .searchMovil').click(function () {
+      if ($(this).hasClass('active'))  {
+        $('#header #block3 .buscador').css({ 'left': '-1000px'})
+        $(this).removeClass('active')
+      } else {
+        $('#header #block3 .buscador').css({ 'left': '0'})
+        $(this).addClass('active')
       }
     })
   }

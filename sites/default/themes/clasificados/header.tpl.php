@@ -26,6 +26,7 @@
       <div class="logo">
         <a href="<?php print base_path(); ?>"></a>
       </div>
+      <div class="searchMovil"></div>
     </div>
   </section>
   <section id="block3">
