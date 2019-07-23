@@ -36,6 +36,11 @@
         <li class="finca opt"> <a href="<?php print base_path(); ?>finca-raiz">Finca raiz</a> </li>
         <li class="varios opt"> <a href="<?php print base_path(); ?>varios">Varios</a> </li>
       </ul>
+      <button class="hamburger hamburger--arrow" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>  
       <div class="buscador">
         <aside class="lupa"></aside>
         <?php $bloque_busqueda = module_invoke('search', 'block_view', 'search'); print render($bloque_busqueda);?>

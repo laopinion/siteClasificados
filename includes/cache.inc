@@ -525,7 +525,7 @@ class DrupalDatabaseCache implements DrupalCacheInterface {
           // so we don't need to verify them first. This ensures that non-cache
           // tables cannot be truncated accidentally.
           if ($this->isValidBin()) {
-            db_truncate($this->bin)->execute();
+            db_delete($this->bin)->execute();
           }
           else {
             throw new Exception(t('Invalid or missing cache bin specified: %bin', array('%bin' => $this->bin)));

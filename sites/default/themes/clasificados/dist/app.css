@@ -357,6 +357,8 @@ table {
   #header #block3 {
     background-color: #A81822;
     height: 98px; }
+    #header #block3 .hamburger {
+      display: none; }
     #header #block3 .container {
       display: flex;
       display: -webkit-flex;
@@ -476,31 +478,111 @@ table {
       #header #block1 .container .user span {
         margin-right: 5px; }
   #header #block2 {
-    height: auto; }
+    height: auto;
+    margin-bottom: 0; }
     #header #block2 .container {
       flex-direction: column;
       -webkit-flex-direction: column;
       -moz-flex-direction: column;
-      align-items: center;
-      -webkit-align-items: center;
-      -moz-align-items: center; }
+      align-items: flex-start;
+      -webkit-align-items: flex-start;
+      -moz-align-items: flex-start; }
+      #header #block2 .container .fecha {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 150px; }
+        #header #block2 .container .fecha p {
+          font-size: 0.8rem; }
+        #header #block2 .container .fecha span {
+          font-size: 1rem; }
+      #header #block2 .container .logo {
+        margin-top: 0; }
+        #header #block2 .container .logo a {
+          height: 70px; }
   #header #block3 {
     height: auto;
-    padding-bottom: 20px; }
+    padding-bottom: 10px; }
     #header #block3 .container {
-      flex-direction: column;
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      align-items: center;
-      -webkit-align-items: center;
-      -moz-align-items: center; }
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      justify-items: center;
+      position: relative; }
       #header #block3 .container .buscador {
-        height: 98px; } }
+        height: 98px; }
+      #header #block3 .container .opts {
+        display: flex;
+        position: absolute;
+        top: 100px;
+        background: #B92025;
+        width: 100%;
+        z-index: 10;
+        left: -410px;
+        transition: .2s; }
+    #header #block3 .hamburger {
+      padding: 15px 15px;
+      display: inline-block;
+      cursor: pointer;
+      transition-property: opacity, filter;
+      transition-duration: 0.15s;
+      transition-timing-function: linear;
+      font: inherit;
+      color: inherit;
+      text-transform: none;
+      background-color: transparent;
+      border: 0;
+      margin: 0;
+      overflow: visible; }
+      #header #block3 .hamburger:hover {
+        opacity: 0.7; }
+      #header #block3 .hamburger.is-active:hover {
+        opacity: 0.7; }
+      #header #block3 .hamburger.is-active .hamburger-inner {
+        background-color: #ffffff; }
+        #header #block3 .hamburger.is-active .hamburger-inner::before, #header #block3 .hamburger.is-active .hamburger-inner::after {
+          background-color: #ffffff; }
+    #header #block3 .hamburger-box {
+      width: 40px;
+      height: 24px;
+      display: inline-block;
+      position: relative; }
+    #header #block3 .hamburger-inner {
+      display: block;
+      top: 50%;
+      margin-top: -2px;
+      width: 40px;
+      height: 4px;
+      background-color: #ffffff;
+      border-radius: 4px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease; }
+      #header #block3 .hamburger-inner::before, #header #block3 .hamburger-inner::after {
+        width: 40px;
+        height: 4px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease; }
+      #header #block3 .hamburger-inner::before, #header #block3 .hamburger-inner::after {
+        content: "";
+        display: block; }
+      #header #block3 .hamburger-inner::before {
+        top: -10px; }
+      #header #block3 .hamburger-inner::after {
+        bottom: -10px; }
+    #header #block3 .hamburger--arrow.is-active .hamburger-inner::before {
+      transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1); }
+    #header #block3 .hamburger--arrow.is-active .hamburger-inner::after {
+      transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1); } }
 
 @media screen and (max-width: 580px) {
   #header #block3 .container .opts {
-    justify-content: center;
-    width: 96%; }
+    justify-content: center; }
     #header #block3 .container .opts .opt {
       width: 100px; }
     #header #block3 .container .opts .empleos {
@@ -1177,7 +1259,27 @@ table {
       -webkit-flex-wrap: wrap;
       -moz-flex-wrap: wrap; }
       #home #destacados .view-id-home.view-display-id-block .view-content .views-row {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px;
+        padding: 10px;
+        height: auto;
+        width: 100%; }
+        #home #destacados .view-id-home.view-display-id-block .view-content .views-row img {
+          height: auto;
+          width: 100%; }
+        #home #destacados .view-id-home.view-display-id-block .view-content .views-row .anuncio .info, #home #destacados .view-id-home.view-display-id-block .view-content .views-row .anuncio .info .date {
+          width: 100%; }
+    #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row {
+      height: auto;
+      padding: 10px;
+      width: 100%; }
+      #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info {
+        width: 100%; }
+        #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .date, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .date, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .date, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .date, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .date, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .date, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .date, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .date, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .date, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .date, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .date, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .date, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .date, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .date, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .date, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .date {
+          width: 100%; }
+        #home #empleos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title, #home #empleos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title, #home #empleos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title, #home #empleos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title, #home #vehiculos .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title, #home #vehiculos .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title, #home #vehiculos .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title, #home #vehiculos .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title, #home #fincaRaiz .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title, #home #fincaRaiz .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title, #home #fincaRaiz .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title, #home #fincaRaiz .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title, #home #varios .view-id-home.view-display-id-block_1 .view-content .views-row .anuncio .info .title, #home #varios .view-id-home.view-display-id-block_2 .view-content .views-row .anuncio .info .title, #home #varios .view-id-home.view-display-id-block_3 .view-content .views-row .anuncio .info .title, #home #varios .view-id-home.view-display-id-block_4 .view-content .views-row .anuncio .info .title {
+          text-overflow: initial;
+          white-space: initial;
+          overflow: initial; } }
 
 .backgroundAnuncio {
   background-color: rgba(0, 0, 0, 0.8);
@@ -5732,17 +5834,29 @@ table {
   #footer #block-2 {
     height: auto; }
     #footer #block-2 .container {
-      flex-direction: column;
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      align-items: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
       padding: 20px 0; }
-      #footer #block-2 .container hr {
+      #footer #block-2 .container i {
+        height: 50px; }
+      #footer #block-2 .container hr, #footer #block-2 .container p {
         display: none; }
-      #footer #block-2 .container .tel, #footer #block-2 .container .office {
-        margin-bottom: 20px; }
+      #footer #block-2 .container .tel {
+        width: 160px; }
+        #footer #block-2 .container .tel .iconTel {
+          background: url(images/src/img/iconos/footerLogos.svg) no-repeat;
+          background-size: 390px;
+          background-position: -26px -20px; }
+      #footer #block-2 .container .office {
+        width: 150px; }
+        #footer #block-2 .container .office .iconOffice {
+          background: url(images/src/img/iconos/footerLogos.svg) no-repeat;
+          background-size: 330px;
+          background-position: -170px -8px;
+          width: 150px; }
+      #footer #block-2 .container .domic {
+        display: none; }
   #footer #block-3 {
     height: auto; }
     #footer #block-3 .container {

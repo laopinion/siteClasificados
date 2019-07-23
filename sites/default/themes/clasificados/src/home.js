@@ -74,11 +74,23 @@ class Home {
 
   slides () {
     // Cargamos las images del slider
-    $('#autosPortada').attr('src', `sites/default/themes/clasificados/dist/${this.autos}`);
+    // $('#autosPortada').attr('src', `sites/default/themes/clasificados/dist/${this.autos}`);
     $('#empleosPortada').attr('src', `sites/default/themes/clasificados/dist/${this.empleo}`);
     $('#fincaRaizPortada').attr('src', `sites/default/themes/clasificados/dist/${this.finca}`);
     $('#variosPortada').attr('src', `sites/default/themes/clasificados/dist/${this.varios}`);
     // console.log(this.name);
+  }
+
+  hamburgerMenu () {
+    $('#header #block3 .hamburger').click(function () {
+      if ($(this).hasClass('is-active')) {
+        $('#header #block3 .opts').css({ 'left': '-410px'})
+        $(this).removeClass('is-active')
+      } else {
+        $('#header #block3 .opts').css({ 'left': '0'})
+        $(this).addClass('is-active')
+      }
+    })
   }
 }
 
