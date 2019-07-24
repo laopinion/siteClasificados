@@ -5,11 +5,11 @@
  * Views hooks implemented for the Webform module.
  */
 
+/**
+ * Implements hook_views_data().
+ */
 function webform_views_data() {
-
-  /**
-   * Webform table definitions.
-   */
+  // Webform table definitions.
   $data['webform']['table']['group'] = t('Webform');
   $data['webform']['table']['base'] = array(
     'field' => 'nid',
@@ -24,7 +24,7 @@ function webform_views_data() {
     ),
   );
 
-  // NID
+  // NID.
   $data['webform']['nid'] = array(
     'title' => t('Node'),
     'help' => t('The node this webform is part of.'),
@@ -42,13 +42,14 @@ function webform_views_data() {
     ),
     'argument' => array(
       'handler' => 'views_handler_argument_node_nid',
-      'name field' => 'title', // the field to display in the summary.
+      // The field to display in the summary.
+      'name field' => 'title',
       'numeric' => TRUE,
       'validate type' => 'nid',
     ),
   );
 
-  // status
+  // Status.
   $data['webform']['status'] = array(
     'title' => t('Status'),
     'help' => t('The open or closed status of a webform.'),
@@ -66,9 +67,7 @@ function webform_views_data() {
     ),
   );
 
-  /**
-   * Submissions table definitions.
-   */
+  // Submissions table definitions.
   $data['webform_submissions']['table']['group'] = t('Webform submissions');
   $data['webform_submissions']['table']['base'] = array(
     'field' => 'sid',
@@ -129,7 +128,7 @@ function webform_views_data() {
     ),
   );
 
-  // Expanded to generate a field for every viewable component
+  // Expanded to generate a field for every viewable component.
   $data['webform_submissions']['webform_all_fields'] = array(
     'title' => t('All values'),
     'help' => t('Displays all values as submitted by a user.'),
@@ -160,7 +159,8 @@ function webform_views_data() {
     ),
     'argument' => array(
       'handler' => 'views_handler_argument_node_nid',
-      'name field' => 'title', // the field to display in the summary.
+      // The field to display in the summary.
+      'name field' => 'title',
       'numeric' => TRUE,
       'validate type' => 'nid',
     ),
@@ -202,20 +202,60 @@ function webform_views_data() {
       'handler' => 'webform_handler_filter_is_draft',
     ),
     'sort' => array(
-       'handler' => 'views_handler_sort',
+      'handler' => 'views_handler_sort',
     ),
   );
 
   // Submitted timestamp.
   $data['webform_submissions']['submitted'] = array(
     'title' => t('Submitted'),
-    'help' => t('The date this submission was submitted.'),
+    'help' => t('Timestamp when the form was first saved as draft or submitted.'),
     'field' => array(
       'handler' => 'views_handler_field_date',
       'click sortable' => TRUE,
     ),
     'filter' => array(
       'title' => t('Submitted'),
+      'handler' => 'views_handler_filter_date',
+    ),
+    'sort' => array(
+      'handler' => 'views_handler_sort_date',
+    ),
+    'argument' => array(
+      'handler' => 'views_handler_argument_date',
+    ),
+  );
+
+  // Completed timestamp.
+  $data['webform_submissions']['completed'] = array(
+    'title' => t('Completed'),
+    'help' => t('Timestamp when the form was submitted as complete (not draft).'),
+    'field' => array(
+      'handler' => 'views_handler_field_date',
+      'click sortable' => TRUE,
+    ),
+    'filter' => array(
+      'title' => t('Completed'),
+      'handler' => 'views_handler_filter_date',
+    ),
+    'sort' => array(
+      'handler' => 'views_handler_sort_date',
+    ),
+    'argument' => array(
+      'handler' => 'views_handler_argument_date',
+    ),
+  );
+
+  // Modified timestamp.
+  $data['webform_submissions']['modified'] = array(
+    'title' => t('Modified'),
+    'help' => t('Timestamp when the form was last saved (complete or draft).'),
+    'field' => array(
+      'handler' => 'views_handler_field_date',
+      'click sortable' => TRUE,
+    ),
+    'filter' => array(
+      'title' => t('Modified'),
       'handler' => 'views_handler_filter_date',
     ),
     'sort' => array(
@@ -302,9 +342,7 @@ function webform_views_data() {
     ),
   );
 
-  /**
-   * Submission data table definitions.
-   */
+  // Submission data table definitions.
   $data['webform_submitted_data']['table']['group'] = t('Webform submission data');
 
   // Raw access to the submitted values. This usually will only be used for
@@ -316,7 +354,8 @@ function webform_views_data() {
     'help' => t('The value of a component as submitted by a user.'),
     'real field' => 'data',
     'field' => array(
-      'title' => t('Value (raw)'), // Distinguish from the normal value handler.
+      // Distinguish from the normal value handler.
+      'title' => t('Value (raw)'),
       'help' => t('The raw value from the database as submitted by a user. Use only when needing to sort on a field value.'),
       'handler' => 'views_handler_field',
       'click sortable' => TRUE,
@@ -329,6 +368,31 @@ function webform_views_data() {
     ),
     'sort' => array(
       'handler' => 'views_handler_sort',
+    ),
+  );
+
+  // Same as 'data', but handled as numeric data.
+  $data['webform_submitted_data']['data_numeric'] = array(
+    'table' => 'webform_submitted_data',
+    'title' => t('Data field (numeric)'),
+    'help' => t('The numeric value of a component as submitted by a user.'),
+    'real field' => 'data',
+    'field' => array(
+      // Distinguish from the normal value handler.
+      'title' => t('Numeric value (raw)'),
+      'help' => t('The raw value from the database, cast to a number, as submitted by a user. Use only when needing to sort on a field value.'),
+      'handler' => 'webform_handler_field_numeric_data',
+      'click sortable' => TRUE,
+      'float' => TRUE,
+    ),
+    'argument' => array(
+      'handler' => 'views_handler_argument_numeric',
+    ),
+    'filter' => array(
+      'handler' => 'webform_handler_filter_numeric_data',
+    ),
+    'sort' => array(
+      'handler' => 'webform_handler_sort_numeric_data',
     ),
   );
 
@@ -385,7 +449,6 @@ function webform_views_data_alter(&$data) {
       'count_type' => 'node',
     ),
   );
-
 
   // Webform submission of user.
   $data['users']['webform_submission'] = array(
@@ -464,8 +527,6 @@ function webform_views_plugins() {
       ),
     ),
   );
-
-  return $plugins;
 }
 
 /**
@@ -481,9 +542,8 @@ function webform_views_pre_view($view, $display_id, $args) {
       ($node = node_load($args[0])) && isset($node->webform['components'])) {
     // This is a view/display that needs its fields expanded. It contains the
     // webform_all_fields field, has a nid argument to the webform_submission
-    // table that is a valid node.
-
-    // Retrieve the display's fields and remove any fields after the 'webform_all_fields' field.
+    // table that is a valid node. Retrieve the display's fields and remove any
+    // fields after the 'webform_all_fields' field.
     $fields = $view->get_items('field', $display_id);
     $prototype = $fields[$all_fields_id];
     $field_index = array_flip(array_keys($fields));
@@ -491,7 +551,6 @@ function webform_views_pre_view($view, $display_id, $args) {
     $fields = array_slice($fields, 0, $field_index[$all_fields_id], TRUE);
 
     // Remove any fields after the webform_add_fields field.
-
     $new_columns = array();
     foreach ($node->webform['components'] as $component) {
       if (webform_component_invoke($component['type'], 'table', $component, array('')) !== NULL) {
@@ -510,7 +569,7 @@ function webform_views_pre_view($view, $display_id, $args) {
         if (webform_component_implements($component['type'], 'view_field')) {
           $new_fields = webform_component_invoke($component['type'], 'view_field', $component, $new_fields);
         }
-        foreach($new_fields as $sub_id => $new_field) {
+        foreach ($new_fields as $sub_id => $new_field) {
           $field_id = $new_id . ($sub_id ? '_' . $sub_id : '');
           $fields[$field_id] = $new_field;
           $new_columns[$field_id] = $field_id;
@@ -521,13 +580,12 @@ function webform_views_pre_view($view, $display_id, $args) {
     // Add any trailing fields back in.
     $fields += $trailing_fields;
 
-
     // Store. Alas, there is no view::set_items() method.
     $display->handler->set_option('fields', $fields);
 
     // If this display's style is a table, add columns for click-sorting.
     // Note: Test for count($new_columns) is necessary because prior to PHP 5.6,
-    // array_fill requires a positve number of elements to insert.
+    // array_fill requires a positive number of elements to insert.
     if ($display->handler->get_option('style_plugin') == 'table' && count($new_columns)) {
       $style_options = $display->handler->get_option('style_options');
       $style_options['columns'] += $new_columns;
@@ -573,7 +631,6 @@ function _webform_view_find_id($view, $display_id, $type, $options) {
  * Menu callback; Provide a list of Webform nodes for use in autocomplete.
  */
 function webform_views_autocomplete($string = '') {
-  $matches = array();
   if ($string) {
     $or = db_or();
 

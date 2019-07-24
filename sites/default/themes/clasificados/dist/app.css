@@ -386,41 +386,37 @@ table {
             display: block;
             height: 100%; }
         #header #block3 .container .opts .empleos {
-          background: url(images/src/img/iconos/empleo.svg) no-repeat;
-          background-position: 90% 100%; }
+          background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
+          background-position: -73px -173px;
+          background-size: 650px; }
           #header #block3 .container .opts .empleos:hover {
-            background: url(images/src/img/iconos/empleo-2.svg) no-repeat;
-            background-position: 90% 100%; }
+            background-position-y: -8px; }
         #header #block3 .container .opts .empleos.active {
-          background: url(images/src/img/iconos/empleo-2.svg) no-repeat;
-          background-position: 90% 100%; }
+          background-position-y: -8px; }
         #header #block3 .container .opts .autos {
-          background: url(images/src/img/iconos/vehiculo.svg) no-repeat;
-          background-position: 90% 100%; }
+          background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
+          background-position: -198px -173px;
+          background-size: 650px; }
           #header #block3 .container .opts .autos:hover {
-            background: url(images/src/img/iconos/vehiculo-2.svg) no-repeat;
-            background-position: 90% 100%; }
+            background-position-y: -8px; }
         #header #block3 .container .opts .autos.active {
-          background: url(images/src/img/iconos/vehiculo-2.svg) no-repeat;
-          background-position: 90% 100%; }
+          background-position-y: -8px; }
         #header #block3 .container .opts .finca {
-          background: url(images/src/img/iconos/fincaRaiz.svg) no-repeat;
-          background-position: 90% 100%; }
+          background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
+          background-position: -328px -173px;
+          background-size: 650px; }
           #header #block3 .container .opts .finca:hover {
-            background: url(images/src/img/iconos/fincaRaiz-2.svg) no-repeat;
-            background-position: 90% 100%; }
+            background-position-y: -8px; }
         #header #block3 .container .opts .finca.active {
-          background: url(images/src/img/iconos/fincaRaiz-2.svg) no-repeat;
-          background-position: 90% 100%; }
+          background-position-y: -8px; }
         #header #block3 .container .opts .varios {
-          background: url(images/src/img/iconos/varios.svg) no-repeat;
-          background-position: 90% 100%; }
+          background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
+          background-position: -455px -173px;
+          background-size: 650px; }
           #header #block3 .container .opts .varios:hover {
-            background: url(images/src/img/iconos/varios-2.svg) no-repeat;
-            background-position: 90% 100%; }
+            background-position-y: -8px; }
         #header #block3 .container .opts .varios.active {
-          background: url(images/src/img/iconos/varios-2.svg) no-repeat;
-          background-position: 90% 100%; }
+          background-position-y: -8px; }
       #header #block3 .container .buscador {
         background: url(images/src/img/iconos/cintilloBuscador.png) no-repeat;
         height: 100%;
@@ -550,9 +546,14 @@ table {
         width: 100%;
         background: #A81822;
         transition: .2s; }
-        #header #block3 .container .opts .opt {
-          width: 78px;
-          background-position: 8px 100%; }
+        #header #block3 .container .opts .empleos {
+          background-position-x: -92px; }
+        #header #block3 .container .opts .autos {
+          background-position-x: -218px; }
+        #header #block3 .container .opts .finca {
+          background-position-x: -348px; }
+        #header #block3 .container .opts .varios {
+          background-position-x: -472px; }
     #header #block3 .hamburger {
       padding: 15px 15px;
       display: inline-block;
