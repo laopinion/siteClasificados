@@ -18,13 +18,6 @@
         </a>
         <p> <a href="<?php print base_path(); ?>oficinas">Oficinas</a> </p>
       </div>
-      <hr>
-      <div class="domic">
-        <a href="<?php print base_path(); ?>domicilios">
-          <i class="iconDomic"></i>
-        </a>
-        <p> <a href="<?php print base_path(); ?>domicilios">Domicilios</a> </p>
-      </div>
     </div>
   </section>
   <section id="block-3">
