@@ -322,12 +322,23 @@ table {
     display: none; }
   #header #block1 {
     background-color: #A81822;
-    height: 25px; }
-    #header #block1 .container {
+    padding: 2px 0; }
+    #header #block1 .container .fecha {
+      color: #ffffff; }
+      #header #block1 .container .fecha span {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-right: 5px; }
+      #header #block1 .container .fecha p {
+        margin: 0; }
+      #header #block1 .container .fecha .date {
+        display: flex;
+        align-items: center; }
+    #header #block1 .container .user {
       display: none; }
-      #header #block1 .container .user, #header #block1 .container a {
-        color: #ffffff;
-        text-decoration: none; }
+    #header #block1 .container .user, #header #block1 .container a {
+      color: #ffffff;
+      text-decoration: none; }
   #header #block2 {
     height: 100px;
     margin-bottom: 10px; }
@@ -479,8 +490,8 @@ table {
     cursor: pointer;
     width: 45px; }
   #header #block1 {
-    height: 40px;
     position: relative;
+    padding: 2px 10px;
     z-index: 10; }
     #header #block1 .container {
       flex-direction: column;
@@ -490,7 +501,7 @@ table {
       -webkit-align-items: center;
       -moz-align-items: center; }
       #header #block1 .container .user {
-        display: flex;
+        display: none;
         justify-content: flex-end; }
         #header #block1 .container .user span {
           margin-right: 5px; }
@@ -801,9 +812,7 @@ table {
       width: 100%;
       border: 0; }
   #slider #publicarAnuncio {
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
+    display: none;
     justify-content: center;
     -webkit-justify-content: center;
     -moz-justify-content: center;

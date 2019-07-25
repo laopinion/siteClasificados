@@ -1,13 +1,6 @@
 <header id="header">
   <section id="block1">
     <div class="container">
-      <div class="user">
-        <span><i class="iconUser"></i> <a href="<?php print base_path(); ?>user">Ingresar</a></span>
-      </div>
-    </div>
-  </section>
-  <section id="block2">
-    <div class="container">
       <div class="fecha">
         <?php
           $dia = date("l");
@@ -26,6 +19,13 @@
         </div>
         <p>Cúcuta - Colombia</p>
       </div>
+      <div class="user">
+        <span><i class="iconUser"></i> <a href="<?php print base_path(); ?>user">Ingresar</a></span>
+      </div>
+    </div>
+  </section>
+  <section id="block2">
+    <div class="container">
       <div class="logo">
         <a href="<?php print base_path(); ?>"></a>
       </div>
