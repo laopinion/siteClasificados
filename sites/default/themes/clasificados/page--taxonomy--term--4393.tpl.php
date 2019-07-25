@@ -1,6 +1,6 @@
 <section id="empleos">
   <div id="portada">
-    <img src="" alt="autos">
+    <img src="<?php print base_path(); ?>sites/default/themes/clasificados/dist/images/src/img/empleo.jpg" alt="Empleos">
   </div>
 
   <article id="categorias" class="container">

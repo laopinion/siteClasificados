@@ -1,7 +1,7 @@
 <section id="varios">
 
   <div id="portada">
-    <img src="" alt="autos">
+    <img src="<?php print base_path(); ?>sites/default/themes/clasificados/dist/images/src/img/varios.jpg" alt="Varios">
   </div>
 
   <article id="categorias" class="container">

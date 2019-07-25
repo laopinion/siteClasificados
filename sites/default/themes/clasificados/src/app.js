@@ -43,15 +43,15 @@ $(function() {
   anuncios.galeriaAnuncios();
 
   vehiculos.activeCategoria();
-  vehiculos.portada();
+  // vehiculos.portada();
 
-  empleos.portada();
+  // empleos.portada();
   empleos.activeCategoria();
 
-  finca.portada();
+  // finca.portada();
   finca.activeCategoria();
 
-  varios.portada();
+  // varios.portada();
   varios.activeCategoria();
 
   profile.proyectos();
