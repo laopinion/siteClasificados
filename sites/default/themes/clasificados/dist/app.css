@@ -323,12 +323,13 @@ table {
   #header #block1 {
     background-color: #A81822;
     height: 25px; }
-    #header #block1 .container .user, #header #block1 .container a {
-      color: #ffffff;
-      text-decoration: none; }
+    #header #block1 .container {
+      display: none; }
+      #header #block1 .container .user, #header #block1 .container a {
+        color: #ffffff;
+        text-decoration: none; }
   #header #block2 {
     height: 100px;
-    margin-top: 10px;
     margin-bottom: 10px; }
     #header #block2 .container {
       display: flex;
@@ -344,9 +345,13 @@ table {
         color: #ffffff; }
         #header #block2 .container .fecha span {
           font-size: 1.4rem;
-          font-weight: 700; }
+          font-weight: 700;
+          margin-right: 5px; }
         #header #block2 .container .fecha p {
           margin: 0; }
+        #header #block2 .container .fecha .date {
+          display: flex;
+          align-items: center; }
       #header #block2 .container .logo {
         background: url(images/src/img/logo.svg) no-repeat;
         background-position: 50%;
@@ -474,7 +479,9 @@ table {
     cursor: pointer;
     width: 45px; }
   #header #block1 {
-    height: 40px; }
+    height: 40px;
+    position: relative;
+    z-index: 10; }
     #header #block1 .container {
       flex-direction: column;
       -webkit-flex-direction: column;
@@ -490,7 +497,9 @@ table {
   #header #block2 {
     height: auto;
     margin-bottom: 0;
-    position: relative; }
+    position: relative;
+    background-color: #B92025;
+    z-index: 10; }
     #header #block2 .container {
       flex-direction: column;
       -webkit-flex-direction: column;
@@ -504,8 +513,8 @@ table {
         flex-wrap: wrap;
         align-items: center;
         position: absolute;
-        top: -50px;
-        width: 150px; }
+        top: -40px;
+        width: 200px; }
         #header #block2 .container .fecha p {
           font-size: 0.8rem; }
         #header #block2 .container .fecha span {
@@ -527,22 +536,22 @@ table {
       #header #block3 .container .buscador {
         height: 98px;
         position: absolute;
-        top: 0px;
+        top: -100px;
         height: 50px;
-        left: -1000px;
+        left: 0;
         transition: .2s;
-        background: #B92025;
+        background: #A81822;
         display: flex;
-        z-index: 3;
+        z-index: 9;
         width: 100%; }
       #header #block3 .container .opts {
         display: flex;
         justify-content: center;
         position: absolute;
         top: 0;
-        background: #B92025;
-        z-index: 10;
-        left: -1000px;
+        top: -100px;
+        z-index: 9;
+        left: 0;
         width: 100%;
         background: #A81822;
         transition: .2s; }
@@ -571,7 +580,8 @@ table {
       position: absolute;
       outline: none;
       left: -5px;
-      top: -53px; }
+      top: -53px;
+      z-index: 10; }
       #header #block3 .hamburger:hover {
         opacity: 0.7; }
       #header #block3 .hamburger.is-active:hover {

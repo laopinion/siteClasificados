@@ -14,6 +14,8 @@
       width: 45px
   #header #block1
     height: 40px
+    position: relative
+    z-index: 10
     .container
       flex-direction: column
       -webkit-flex-direction: column
@@ -30,6 +32,8 @@
     height: auto
     margin-bottom: 0
     position: relative
+    background-color: #B92025
+    z-index: 10
     .container
       flex-direction: column
       -webkit-flex-direction: column
@@ -43,8 +47,8 @@
         flex-wrap: wrap
         align-items: center
         position: absolute
-        top: -50px
-        width: 150px
+        top: -40px
+        width: 200px
         p
           font-size: 0.8rem
         span
@@ -67,22 +71,22 @@
         height: 98px
         // display: none
         position: absolute
-        top: 0px
+        top: -100px
         height: 50px
-        left: -1000px
+        left: 0
         transition: .2s
-        background: #B92025
+        background: #A81822
         display: flex
-        z-index: 3
+        z-index: 9
         width: 100%
       .opts
         display: flex
         justify-content: center
         position: absolute
         top: 0
-        background: #B92025
-        z-index: 10
-        left: -1000px
+        top: -100px
+        z-index: 9
+        left: 0
         width: 100%
         background: #A81822
         transition: .2s
@@ -112,6 +116,7 @@
       outline: none
       left: -5px
       top: -53px
+      z-index: 10
       &:hover
         opacity: 0.7
       &.is-active

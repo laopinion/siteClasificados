@@ -9,12 +9,13 @@
     background-color: $rojoOscuro
     height: 25px
     .container
+      display: none
       .user, a
         color: $blanco
         text-decoration: none
   #block2
     height: 100px
-    margin-top: 10px
+    // margin-top: 10px
     margin-bottom: 10px
     .container
       display: flex
@@ -31,8 +32,12 @@
         span
           font-size: 1.4rem // 23px
           font-weight: 700
+          margin-right: 5px
         p
           margin: 0
+        .date
+          display: flex
+          align-items: center
       .logo
         background: url('../img/logo.svg') no-repeat
         background-position: 50%

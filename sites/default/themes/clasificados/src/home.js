@@ -84,11 +84,16 @@ class Home {
   hamburgerMenu () {
     $('#header #block3 .hamburger').click(function () {
       if ($(this).hasClass('is-active')) {
-        $('#header #block3 .opts').css({ 'left': '-1000px'})
+        $('#header #block3 .opts').css({ 'top': '-100px' })
         $(this).removeClass('is-active')
       } else {
-        $('#header #block3 .opts').css({ 'left': '0'})
+        $('#header #block3 .opts').css({ 'top': '0' })
         $(this).addClass('is-active')
+
+        if ($('#header .searchMovil').hasClass('active')) {
+          $('#header #block3 .buscador').css({ 'top': '-100px'})
+          $('#header .searchMovil').removeClass('active')
+        }
       }
     })
   }
@@ -96,11 +101,16 @@ class Home {
   handleSearch() {
     $('#header .searchMovil').click(function () {
       if ($(this).hasClass('active'))  {
-        $('#header #block3 .buscador').css({ 'left': '-1000px'})
+        $('#header #block3 .buscador').css({ 'top': '-100px'})
         $(this).removeClass('active')
       } else {
-        $('#header #block3 .buscador').css({ 'left': '0'})
+        $('#header #block3 .buscador').css({ 'top': '0'})
         $(this).addClass('active')
+
+        if ($('#header #block3 .hamburger').hasClass('is-active')) {
+          $('#header #block3 .hamburger').removeClass('is-active')
+          $('#header #block3 .opts').css({ 'top': '-100px' })
+        }
       }
     })
   }

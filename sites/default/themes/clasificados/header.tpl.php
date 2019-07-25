@@ -18,9 +18,12 @@
           if ($dia=="Friday") $dia="Viernes";
           if ($dia=="Saturday") $dia="Sábado";
           if ($dia=="Sunday") $dia="Domingo";
+          $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
         ?>
-        <span><?php print $dia; ?></span>
-        <p><?php print date("d").'/'.date("m").'/'.date("Y");?></p>
+        <div class="date">
+          <span><?php print "$dia, "; ?></span>
+          <p><?php print date("d").' de '.$meses[date('n')-1].' de '.date("Y");?></p>
+        </div>
         <p>Cúcuta - Colombia</p>
       </div>
       <div class="logo">
