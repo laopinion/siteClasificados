@@ -462,8 +462,16 @@ function _user_resource_update($uid, $account) {
 
   // Prepare values for password.
   if (isset($account['pass'])) {
-    $form_state['values']['pass']['pass1'] = $account['pass'];
-    $form_state['values']['pass']['pass2'] = $account['pass'];
+    // For legacy usage, passwords come in as a single string. To match the
+    // actual form state value keys used by Drupal, we also can collect two
+    // passwords via an array.
+    if (is_array($account['pass'])) {
+      $form_state['values']['pass'] = $account['pass'];
+    }
+    else {
+      $form_state['values']['pass']['pass1'] = $account['pass'];
+      $form_state['values']['pass']['pass2'] = $account['pass'];
+    }
   }
 
   // If user is changing name, make sure they have permission.
@@ -472,8 +480,6 @@ function _user_resource_update($uid, $account) {
   }
 
   $form_state['values']['op'] = variable_get('services_user_save_button_resource_update', t('Save'));
-  $form_state['values']['#user_category'] = $category;
-  $form_state['values']['#account'] = $account_loaded;
   $form_state['programmed_bypass_access_check'] = FALSE;
   $ret = drupal_form_submit('user_profile_form', $form_state, $account_loaded, $category);
 
@@ -495,7 +501,7 @@ function _user_resource_update_services_user($uid, $time) {
   //If so that means we are updating it.
   $result = db_select('services_user', 'su')
     ->fields('su')
-    ->condition('uid', $uid,'=')
+    ->condition('uid', $uid, '=')
     ->execute()
     ->fetchAssoc();
   //check the result
@@ -514,6 +520,7 @@ function _user_resource_update_services_user($uid, $time) {
           'changed' => $time,
         )
       )
+      ->condition('uid', $uid, '=')
       ->execute();
   }
 }
@@ -659,12 +666,17 @@ function _user_resource_logout() {
 
   watchdog('user', 'Session closed for %name.', array('%name' => $user->name));
 
+  $original_session_state = drupal_save_session();
+  drupal_save_session(TRUE);
+
   // Destroy the current session.
   module_invoke_all('user_logout', $user);
   session_destroy();
 
   // Load the anonymous user.
   $user = drupal_anonymous_user();
+
+  drupal_save_session($original_session_state);
 
   return TRUE;
 }
@@ -692,12 +704,17 @@ function _user_resource_logout_1_1() {
 
   watchdog('user', 'Session closed for %name.', array('%name' => $user->name));
 
+  $original_session_state = drupal_save_session();
+  drupal_save_session(TRUE);
+
   // Destroy the current session.
   module_invoke_all('user_logout', $user);
   session_destroy();
 
   // Load the anonymous user.
   $user = drupal_anonymous_user();
+
+  drupal_save_session($original_session_state);
 
   return $user;
 }
@@ -853,7 +870,7 @@ function _user_resource_resend_welcome_email($uid) {
 }
 
 /**
- * Return an array of optionally paged uids baed on a set of criteria.
+ * Return an array of optionally paged uids based on a set of criteria.
  *
  * An example request might look like
  *

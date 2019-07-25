@@ -1,6 +1,22 @@
 autoassignole x.x-x.x, xxxx-xx-xx
 ---------------------------------------
 
+autoassignole 7.x-1.3, xxxx-xx-xx
+---------------------------------------
+
+
+autoassignole 7.x-1.2, 2018-10-25
+---------------------------------------
+Issue #3009037 by mike.davis: "Call to undefined function dbchange_field()" when updating to 7.x-1.1
+
+
+autoassignole 7.x-1.1, 2018-10-24
+---------------------------------------
+Issue #2611754 by ybabel, mike.davis: PDOException: SQLSTATE[HY000]: General error: 1 ESCAPE expression must be a single character
+Issue #1261208 by pramod_patil, lomasr: Manage display for User choice
+Issue #2853828 by mike.davis: Per role page error SQLSTATE[22001]
+
+
 autoassignole 7.x-1.0, 2015-11-04
 ---------------------------------------
 Issue #2333715 by alberto56, mike.davis: Make it possible to programmatically add user-selectable roles

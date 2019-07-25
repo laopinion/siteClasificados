@@ -37,7 +37,7 @@ function autoassignrole_uninstall() {
 }
 
 /**
- * Implementation of hook_schema().
+ * Implements of hook_schema().
  */
 function autoassignrole_schema() {
   $schema['autoassignrole_page'] = array(
@@ -256,4 +256,15 @@ function autoassignrole_update_7104() {
     );
     variable_set('autoassignrole_user_description', $defaults);
   }
+}
+
+/**
+ * Change the rids column from varchar to text.
+ */
+function autoassignrole_update_7105() {
+  db_change_field('autoassignrole_page', 'rids', 'rids', array(
+    'type' => 'text',
+    'not null' => TRUE,
+  ));
+  drupal_flush_all_caches();
 }
