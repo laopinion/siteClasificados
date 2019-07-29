@@ -1999,6 +1999,42 @@ table {
       -webkit-flex-wrap: wrap;
       -moz-flex-wrap: wrap; } }
 
+#Edictos .edicto__title {
+  background: #efefef;
+  text-align: center;
+  padding: 20px 20px 10px;
+  margin: 20px 0; }
+  #Edictos .edicto__title .fecha {
+    padding: 0 0 5px;
+    border-bottom: 1px solid #afafaf;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5rem; }
+  #Edictos .edicto__title .titulo {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.8rem; }
+
+#Edictos .edicto__body {
+  margin: 50px 0; }
+  #Edictos .edicto__body .descripcion {
+    border-bottom: 1px solid #afafaf;
+    padding-bottom: 5px; }
+    #Edictos .edicto__body .descripcion:before {
+      content: url(images/src/img/iconos/estrella.svg);
+      margin-right: 5px; }
+  #Edictos .edicto__body .body {
+    font-size: 16px;
+    line-height: 20px; }
+
+@media screen and (max-width: 768px) {
+  #Edictos {
+    width: 96%; }
+    #Edictos .logo img {
+      height: auto;
+      width: 100%; } }
+
 #vehiculos {
   margin-bottom: 50px; }
   #vehiculos #portada img {
