@@ -16,3 +16,5 @@ stylesheets/
 .vscode/
 
 .htaccess
+
+signature.php
