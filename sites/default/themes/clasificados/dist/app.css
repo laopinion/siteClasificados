@@ -5954,4 +5954,17 @@ table {
       box-sizing: border-box;
       width: 100%; } }
 
+.message__whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000; }
+
+.message__whatsapp .icon {
+  background: url(images/pagos/images/icono_whatsapp.svg) no-repeat;
+  display: block;
+  height: 60px;
+  width: 60px;
+  background-size: 100%; }
+
 /*# sourceMappingURL=app.css.map*/

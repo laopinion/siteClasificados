@@ -24,6 +24,10 @@
   <?php print $page_bottom; ?>
   <?php include("footer.tpl.php"); ?>
 
+  <div class="message__whatsapp">
+    <a title="Click para chatear" href="https://api.whatsapp.com/send?phone=573166941938&text=Me%20gustaría%20ordenar%20un%20aviso%20clasificado." target="_blank" rel="noopener"><i class="icon"></i></a>    
+  </div>
+
   <script src="<?php print base_path(); ?>sites/default/themes/clasificados/dist/bundle.js"></script>
 </body>
 
