@@ -19,7 +19,6 @@ function _webform_defaults_fieldset() {
       'collapsible' => 0,
       'collapsed' => 0,
       'description' => '',
-      'description_above' => FALSE,
       'private' => FALSE,
     ),
   );
@@ -52,7 +51,7 @@ function _webform_edit_fieldset($component) {
 /**
  * Implements _webform_render_component().
  */
-function _webform_render_fieldset($component, $value = NULL, $filter = TRUE, $submission = NULL) {
+function _webform_render_fieldset($component, $value = NULL, $filter = TRUE) {
   $node = isset($component['nid']) ? node_load($component['nid']) : NULL;
 
   $element = array(
@@ -83,7 +82,7 @@ function webform_fieldset_prerender($element) {
 /**
  * Implements _webform_display_component().
  */
-function _webform_display_fieldset($component, $value, $format = 'html', $submission = array()) {
+function _webform_display_fieldset($component, $value, $format = 'html') {
   if ($format == 'text') {
     $element = array(
       '#title' => $component['name'],

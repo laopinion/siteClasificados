@@ -66,7 +66,7 @@ function _webform_edit_pagebreak($component) {
 /**
  * Implements _webform_render_component().
  */
-function _webform_render_pagebreak($component, $value = NULL, $filter = TRUE, $submission = NULL) {
+function _webform_render_pagebreak($component, $value = NULL, $filter = TRUE) {
   $element = array(
     '#type' => 'hidden',
     '#value' => $component['name'],
@@ -76,9 +76,9 @@ function _webform_render_pagebreak($component, $value = NULL, $filter = TRUE, $s
 }
 
 /**
- * Implements _webform_display_component().
+ * Implements _webform_render_component().
  */
-function _webform_display_pagebreak($component, $value = NULL, $format = 'html', $submission = array()) {
+function _webform_display_pagebreak($component, $value = NULL, $format = 'html') {
   $element = array(
     '#theme' => 'webform_display_pagebreak',
     '#title' => $component['name'],

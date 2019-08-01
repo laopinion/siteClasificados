@@ -1,8 +1,7 @@
 <?php
-
 /**
  * @file
- * Display the progress bar for multipage forms.
+ * Display the progress bar for multipage forms
  *
  * Available variables:
  * - $node: The webform node.
@@ -10,9 +9,9 @@
  *   displayed.
  * - $progressbar_percent: TRUE if the percentage complete should be displayed.
  * - $progressbar_bar: TRUE if the bar should be displayed.
- * - $progressbar_pagebreak_labels: TRUE if the page break labels should be
+ * - $progressbar_pagebreak_labels: TRUE if the page break labels shoud be
  *   displayed.
- *
+
  * - $page_num: The current page number.
  * - $page_count: The total number of pages in this form.
  * - $page_labels: The labels for the pages. This typically includes a label for
@@ -26,14 +25,7 @@
     <div class="webform-progressbar-outer">
       <div class="webform-progressbar-inner" style="width: <?php print number_format($percent, 0); ?>%">&nbsp;</div>
       <?php for ($n = 1; $n <= $page_count; $n++): ?>
-        <span class="webform-progressbar-page<?php
-          if ($n < $page_num):
-            print ' completed';
-          endif;
-          if ($n == $page_num):
-            print ' current';
-          endif;
-        ?>" style="<?php print ($GLOBALS['language']->direction == 0) ? 'left' : 'right'; ?>: <?php print number_format(($n - 1) / ($page_count - 1), 4) * 100; ?>%">
+        <span class="webform-progressbar-page<?php if ($n < $page_num) { print ' completed'; }; ?><?php if ($n == $page_num) { print ' current'; }; ?>" style="<?php print ($GLOBALS['language']->direction == 0) ? 'left' : 'right'; ?>: <?php print number_format(($n - 1) / ($page_count - 1), 4) * 100; ?>%">
           <span class="webform-progressbar-page-number"><?php print $n; ?></span>
           <?php if ($progressbar_pagebreak_labels): ?>
           <span class="webform-progressbar-page-label">

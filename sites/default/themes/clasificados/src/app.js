@@ -17,6 +17,7 @@ import FincaRaiz from './fincaRaiz';
 import Varios from './varios';
 import Profile from './profile';
 import Proyectos from './proyectos';
+import Edictos from './edictos';
 
 $(function() {
   const home = new Home(autosImg, empleoImg, fincaImg, variosImg);
@@ -27,6 +28,7 @@ $(function() {
   const varios = new Varios(variosImg);
   const profile = new Profile();
   const proyectos = new Proyectos();
+  const ordenarEdictos = new Edictos('65000');
   
   $('#pregunFrecuen .pregunta-1 .respuesta img').attr('src', `sites/default/themes/clasificados/dist/${compartir}`);
   $('#oficinas #sedePrincipal img').attr('src', `sites/default/themes/clasificados/dist/${sedePrincipal}`);
@@ -57,5 +59,7 @@ $(function() {
   profile.proyectos();
 
   proyectos.slides();
+
+  ordenarEdictos.submit();
 
 });

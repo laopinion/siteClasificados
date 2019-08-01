@@ -1,17 +1,17 @@
 <?php
 
 /**
+ * @file
  * Views handler to display links to a submission.
- *
+ */
+
+/**
  * Field handler to present a link to the user.
  */
 class webform_handler_field_submission_link extends views_handler_field {
-  public $link_type;
+  var $link_type;
 
-  /**
-   * {@inheritdoc}
-   */
-  public function construct() {
+  function construct() {
     // We need to set this property before calling the construct() chain
     // as we use it in the option_definintion() call.
     $this->link_type = $this->definition['link_type'];
@@ -23,17 +23,11 @@ class webform_handler_field_submission_link extends views_handler_field {
     $this->additional_fields['is_draft'] = 'is_draft';
   }
 
-  /**
-   *
-   */
-  public function allow_advanced_render() {
+  function allow_advanced_render() {
     return FALSE;
   }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function option_definition() {
+  function option_definition() {
     $options = parent::option_definition();
     $options['label'] = array('default' => '', 'translatable' => TRUE);
     $options['text'] = array('default' => $this->link_type, 'translatable' => TRUE);
@@ -41,10 +35,7 @@ class webform_handler_field_submission_link extends views_handler_field {
     return $options;
   }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function options_form(&$form, &$form_state) {
+  function options_form(&$form, &$form_state) {
     parent::options_form($form, $form_state);
     $form['text'] = array(
       '#type' => 'textfield',
@@ -59,10 +50,7 @@ class webform_handler_field_submission_link extends views_handler_field {
     );
   }
 
-  /**
-   *
-   */
-  public function render($values) {
+  function render($values) {
     $sid = $values->{$this->aliases['sid']};
     $nid = $values->{$this->aliases['nid']};
     $serial = $values->{$this->aliases['serial']};
@@ -76,18 +64,15 @@ class webform_handler_field_submission_link extends views_handler_field {
         $text = !empty($text) ? $text : t('view');
         $link = l($text, "node/$nid/submission/$sid");
         break;
-
       case 'edit':
         $text = !empty($text) ? $text : t('edit');
         $link = l($text, "node/$nid/submission/$sid/edit");
         break;
-
       case 'delete':
         $text = !empty($text) ? $text : t('delete');
         $path = drupal_get_path_alias($_GET['q']);
         $link = l($text, "node/$nid/submission/$sid/delete", array('query' => array('destination' => $path)));
         break;
-
       default:
         return;
     }
@@ -103,5 +88,4 @@ class webform_handler_field_submission_link extends views_handler_field {
 
     return $link;
   }
-
 }

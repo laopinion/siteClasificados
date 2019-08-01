@@ -2,10 +2,11 @@
 
 /**
  * @file
- * View definition webform_submissions.
+ * webform_submissions view definition.
  */
 
-// --- Paste exported view below ---.
+// --- Paste exported view below ---
+
 $view = new view();
 $view->name = 'webform_submissions';
 $view->description = '';
@@ -106,7 +107,7 @@ $handler->display->display_options['empty']['area_text_custom']['id'] = 'area_te
 $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
 $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
 $handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
-$handler->display->display_options['empty']['area_text_custom']['content'] = t('There are no submissions for this form. <a href="!url!1">View this form</a>.', array('!url' => url('node/')));
+$handler->display->display_options['empty']['area_text_custom']['content'] = 'There are no submissions for this form. <a href="/node/!1">View this form</a>.';
 $handler->display->display_options['empty']['area_text_custom']['tokenize'] = TRUE;
 /* Relationship: Webform submissions: User */
 $handler->display->display_options['relationships']['uid']['id'] = 'uid';
@@ -207,5 +208,6 @@ $translatables['webform_submissions'] = array(
 );
 
 
-// --- Paste exported view above ---.
+// --- Paste exported view above ---
+
 $views[$view->name] = $view;

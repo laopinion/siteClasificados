@@ -1,25 +1,22 @@
 <?php
 
 /**
+ * @file
  * Views handler to display a results link for Webform submissions.
- *
+ */
+
+/**
  * Field handler to present a link node edit.
  */
 class webform_handler_field_node_link_results extends views_handler_field_node_link {
 
-  /**
-   * {@inheritdoc}
-   */
-  public function option_definition() {
+  function option_definition() {
     $options = parent::option_definition();
     $options['subpath'] = array('default' => '');
     return $options;
   }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function options_form(&$form, &$form_state) {
+  function options_form(&$form, &$form_state) {
     parent::options_form($form, $form_state);
     $form['subpath'] = array(
       '#type' => 'textfield',
@@ -32,10 +29,9 @@ class webform_handler_field_node_link_results extends views_handler_field_node_l
   /**
    * Renders the link.
    */
-  public function render_link($node, $values) {
-    // Ensure node is webform-enabled and the user has access node's webform
-    // results.
-    if (!in_array($node->type, webform_node_types()) || !webform_results_access($node)) {
+  function render_link($node, $values) {
+    // Ensure user has access to edit this node.
+    if (!webform_results_access($node)) {
       return;
     }
 
@@ -45,7 +41,7 @@ class webform_handler_field_node_link_results extends views_handler_field_node_l
     }
 
     $this->options['alter']['make_link'] = TRUE;
-    $this->options['alter']['path'] = "node/$node->nid/webform-results" .
+    $this->options['alter']['path'] = "node/$node->nid/webform-results".
                                       (strlen($this->options['subpath']) ? '/' . $this->options['subpath'] : '');
 
     $text = !empty($this->options['text']) ? $this->options['text'] : t('results');

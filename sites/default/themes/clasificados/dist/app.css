@@ -2035,6 +2035,16 @@ table {
       height: auto;
       width: 100%; } }
 
+#Ordenar__edicto .container {
+  margin: 0 auto;
+  max-width: 1000px; }
+
+#Ordenar__edicto #form-edicto {
+  display: none; }
+
+#Ordenar__edicto #webform-ajax-wrapper-34 .links, #Ordenar__edicto #webform-ajax-wrapper-34 .webform-component--referencia-de-pago {
+  display: none; }
+
 #vehiculos {
   margin-bottom: 50px; }
   #vehiculos #portada img {

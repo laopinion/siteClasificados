@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Template for rendering an individual component's analysis data.
@@ -11,7 +10,7 @@
  *   - table_header: If this table has more than a single column, an array
  *     of header labels.
  *   - table_rows: If this component has a table that should be rendered, an
- *     array of values.
+ *     array of values
  */
 ?>
 <div class="<?php print $classes; ?>">

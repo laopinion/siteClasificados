@@ -68,7 +68,7 @@ function _webform_edit_hidden($component) {
 /**
  * Implements _webform_render_component().
  */
-function _webform_render_hidden($component, $value = NULL, $filter = TRUE, $submission = NULL) {
+function _webform_render_hidden($component, $value = NULL, $filter = TRUE) {
   $node = isset($component['nid']) ? node_load($component['nid']) : NULL;
 
   $default_value = $filter ? webform_replace_tokens($component['value'], $node) : $component['value'];
@@ -103,7 +103,7 @@ function _webform_render_hidden($component, $value = NULL, $filter = TRUE, $subm
 /**
  * Implements _webform_display_component().
  */
-function _webform_display_hidden($component, $value, $format = 'html', $submission = array()) {
+function _webform_display_hidden($component, $value, $format = 'html') {
   $element = array(
     '#title' => $component['name'],
     '#markup' => isset($value[0]) ? $value[0] : NULL,
@@ -117,9 +117,6 @@ function _webform_display_hidden($component, $value, $format = 'html', $submissi
   return $element;
 }
 
-/**
- * Theme callback.
- */
 function theme_webform_display_hidden($variables) {
   $element = $variables['element'];
 
@@ -129,18 +126,14 @@ function theme_webform_display_hidden($variables) {
 /**
  * Implements _webform_analysis_component().
  */
-function _webform_analysis_hidden($component, $sids = array(), $single = FALSE, $join = NULL) {
+function _webform_analysis_hidden($component, $sids = array()) {
   $query = db_select('webform_submitted_data', 'wsd', array('fetch' => PDO::FETCH_ASSOC))
     ->fields('wsd', array('no', 'data'))
-    ->condition('wsd.nid', $component['nid'])
-    ->condition('wsd.cid', $component['cid']);
+    ->condition('nid', $component['nid'])
+    ->condition('cid', $component['cid']);
 
   if (count($sids)) {
-    $query->condition('wsd.sid', $sids, 'IN');
-  }
-
-  if ($join) {
-    $query->innerJoin($join, 'ws2_', 'wsd.sid = ws2_.sid');
+    $query->condition('sid', $sids, 'IN');
   }
 
   $nonblanks = 0;
@@ -158,10 +151,7 @@ function _webform_analysis_hidden($component, $sids = array(), $single = FALSE, 
 
   $rows[0] = array(t('Empty'), ($submissions - $nonblanks));
   $rows[1] = array(t('Non-empty'), $nonblanks);
-  $other[0] = array(
-    t('Average submission length in words (ex blanks)'),
-    $nonblanks != 0 ? number_format($wordcount / $nonblanks, 2) : '0',
-  );
+  $other[0] = array(t('Average submission length in words (ex blanks)'), ($nonblanks != 0 ? number_format($wordcount/$nonblanks, 2) : '0'));
 
   return array(
     'table_rows' => $rows,
@@ -174,14 +164,6 @@ function _webform_analysis_hidden($component, $sids = array(), $single = FALSE, 
  */
 function _webform_table_hidden($component, $value) {
   return check_plain(empty($value[0]) ? '' : $value[0]);
-}
-
-/**
- * Implements _webform_action_set_component().
- */
-function _webform_action_set_hidden($component, &$element, &$form_state, $value) {
-  $element['#value'] = $value;
-  form_set_value($element, $value, $form_state);
 }
 
 /**

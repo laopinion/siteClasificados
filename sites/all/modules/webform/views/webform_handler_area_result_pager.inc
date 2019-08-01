@@ -1,28 +1,25 @@
 <?php
 
 /**
+ * @file
  * Definition of views_handler_area_result.
- *
+ */
+
+/**
  * Views area handler to display some configurable result summary.
  *
  * @ingroup views_area_handlers
  */
 class webform_handler_area_result_pager extends views_handler_area_result {
 
-  /**
-   * {@inheritdoc}
-   */
-  public function option_definition() {
+  function option_definition() {
     $options = parent::option_definition();
     $options['content']['default'] = t('Displaying @start - @end of @total. @items_per_page_links');
     $options['tokenize'] = array('default' => FALSE, 'bool' => TRUE);
     return $options;
   }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function options_form(&$form, &$form_state) {
+  function options_form(&$form, &$form_state) {
     parent::options_form($form, $form_state);
     $form['content']['#description'] .= '<br/>' . t('Plus @items_per_page_links -- the list of links to change the items/page, with prompt');
 
@@ -33,10 +30,11 @@ class webform_handler_area_result_pager extends views_handler_area_result {
     );
   }
 
+
   /**
    * Find out the information to render.
    */
-  public function render($empty = FALSE) {
+  function render($empty = FALSE) {
     $output = parent::render($empty);
     if (is_string($output) && isset($this->view->query->pager)) {
       $output = str_replace('@items_per_page_links', $this->render_items_per_page($this->view->query->pager), $output);
@@ -48,10 +46,7 @@ class webform_handler_area_result_pager extends views_handler_area_result {
     return $output;
   }
 
-  /**
-   *
-   */
-  public function query() {
+  function query() {
     $view = $this->view;
     if (!empty($_GET['items_per_page']) && $_GET['items_per_page'] > 0) {
       $view->set_items_per_page($_GET['items_per_page']);
@@ -61,10 +56,7 @@ class webform_handler_area_result_pager extends views_handler_area_result {
     }
   }
 
-  /**
-   *
-   */
-  public function render_items_per_page($pager) {
+  function render_items_per_page($pager) {
     $sanitized_options = array();
     if (!empty($pager->options['expose']['items_per_page_options'])) {
       $options = explode(',', $pager->options['expose']['items_per_page_options']);
@@ -82,15 +74,13 @@ class webform_handler_area_result_pager extends views_handler_area_result {
       foreach ($sanitized_options as $items_per_page => &$label) {
         $selected = $pager->options['items_per_page'] == $items_per_page ||
                     ($items_per_page == 0 && $pager->total_items < intval($pager->options['items_per_page']));
-        $label = l($label, $_GET['q'], array(
-          'query' => array('items_per_page' => $label) + $url_query,
-          'attributes' => array(
-            'class' => $selected ? array('selected') : array(),
-          ),
-        ));
+        $label = l($label, $_GET['q'], array('query' => array('items_per_page' => $label) + $url_query,
+                                             'attributes' => array(
+                                                'class' => $selected ? array('selected') : array(),
+                                            )));
+
       }
-      // Drop PHP reference.
-      unset($label);
+      unset($label); // Drop PHP reference
 
       // Include CSS needed for 'selected' class.
       drupal_add_library('webform', 'admin');

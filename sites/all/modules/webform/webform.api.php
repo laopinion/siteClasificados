@@ -24,13 +24,12 @@
  * @see webform_options_example()
  * @see hook_webform_select_options_info_alter()
  *
- * @return array
+ * @return
  *   An array of callbacks that can be used for select list options. This array
  *   should be keyed by the "name" of the pre-defined list. The values should
  *   be an array with the following additional keys:
  *     - title: The translated title for this list.
- *     - options callback: The name of a function implementing
- *       callback_webform_options() that will return the list.
+ *     - options callback: The name of the function that will return the list.
  *     - options arguments: Any additional arguments to send to the callback.
  *     - file: Optional. The file containing the options callback, relative to
  *       the module root.
@@ -50,7 +49,7 @@ function hook_webform_select_options_info() {
 /**
  * Alter the list of select list options provided by Webform and other modules.
  *
- * @see hook_webform_select_options_info()
+ * @see hook_webform_select_options_info().
  */
 function hook_webform_select_options_info_alter(&$items) {
   // Remove the days of the week options.
@@ -58,9 +57,12 @@ function hook_webform_select_options_info_alter(&$items) {
 }
 
 /**
- * Define a list of options that Webform may use in a select component.
+ * This is an example function to demonstrate a webform options callback.
  *
- * Callback for hook_webform_select_options_info().
+ * This function returns a list of options that Webform may use in a select
+ * component. In order to be called, the function name
+ * ("webform_options_example" in this case), needs to be specified as a callback
+ * in hook_webform_select_options_info().
  *
  * @param $component
  *   The Webform component array for the select component being displayed.
@@ -71,12 +73,11 @@ function hook_webform_select_options_info_alter(&$items) {
  *   without the nesting.
  * @param $arguments
  *   The "options arguments" specified in hook_webform_select_options_info().
- *
- * @return array
+ * @return
  *   An array of key => value pairs suitable for a select list's #options
  *   FormAPI property.
  */
-function callback_webform_options($component, $flat, $arguments) {
+function webform_options_example($component, $flat, $arguments) {
   $options = array(
     'one' => t('Pre-built option one'),
     'two' => t('Pre-built option two'),
@@ -120,7 +121,7 @@ function hook_webform_submission_load(&$submissions) {
  *
  * @see webform_submission_create()
  */
-function hook_webform_submission_create_alter(&$submission, &$node, &$account, &$form_state) {
+function hook_webform_submission_create($submission, $node, $account, $form_state) {
   $submission->new_property = TRUE;
 }
 
@@ -213,12 +214,9 @@ function hook_webform_submission_delete($node, $submission) {
  *   The Webform node on which this submission was made.
  * @param $submission
  *   The Webform submission on which the actions may be performed.
- *
- * @return array
- *   List of action.
  */
 function hook_webform_submission_actions($node, $submission) {
-  $actions = array();
+  $actions= array();
 
   if (webform_results_access($node)) {
     $actions['myaction'] = array(
@@ -234,19 +232,19 @@ function hook_webform_submission_actions($node, $submission) {
 /**
  * Modify the draft to be presented for editing.
  *
- * When drafts are enabled for the webform, by default, a pre-existing draft is
+ * When drafts are enabled for the webform, by default, a pre-existig draft is
  * presented when the webform is displayed to that user. To allow multiple
  * drafts, implement this alter function to set the $sid to NULL, or use your
  * application's business logic to determine whether a new draft or which of
  * he pre-existing drafts should be presented.
  *
- * @param int $sid
- *   The id of the most recent submission to be presented for editing. Change
+ * @param integer $sid
+ *    The id of the most recent submission to be presented for editing. Change
  *    to a different draft's sid or set to NULL for a new draft.
  * @param array $context
- *   Array of context with indices 'nid' and 'uid'.
+ *    Array of context with indices 'nid' and 'uid'.
  */
-function hook_webform_draft_alter(&$sid, array $context) {
+function hook_webform_draft_alter(&$sid, $context) {
   if ($_GET['newdraft']) {
     $sid = NULL;
   }
@@ -256,7 +254,7 @@ function hook_webform_draft_alter(&$sid, array $context) {
  * Alter the display of a Webform submission.
  *
  * This function applies to both e-mails sent by Webform and normal display of
- * submissions when viewing through the administrative interface.
+ * submissions when viewing through the adminsitrative interface.
  *
  * @param $renderable
  *   The Webform submission in a renderable array, similar to FormAPI's
@@ -298,11 +296,11 @@ function hook_webform_component_load() {
  * automatically add data to the component based on the component form. Using
  * hook_form_alter() will be sufficient in most cases.
  *
- * @param $component
- *   The Webform component being saved.
- *
  * @see hook_form_alter()
  * @see webform_component_edit_form()
+ *
+ * @param $component
+ *   The Webform component being saved.
  */
 function hook_webform_component_presave(&$component) {
   $component['extra']['new_option'] = 'foo';
@@ -362,7 +360,7 @@ function hook_webform_component_delete($component) {
  *   - components: The list of analyses for each analysis-enabled component
  *     for the node. Each keyed by its component ID.
  */
-function hook_webform_analysis_alter(array &$analysis) {
+function hook_webform_analysis_alter(&$analysis) {
   $node = $analysis['#node'];
 
   // Add an additional piece of information to every component's analysis:
@@ -373,7 +371,6 @@ function hook_webform_analysis_alter(array &$analysis) {
     );
   }
 }
-
 /**
  * Alter data when displaying an analysis on that component.
  *
@@ -395,7 +392,7 @@ function hook_webform_analysis_alter(array &$analysis) {
  * @see _webform_analysis_component()
  * @see hook_webform_analysis_alter()
  */
-function hook_webform_analysis_component_data_alter(array &$data, $node, array $component) {
+function hook_webform_analysis_component_data_alter(&$data, $node, $component) {
   if ($component['type'] === 'textfield') {
     // Do not display rows that contain a zero value.
     foreach ($data as $row_number => $row_data) {
@@ -431,7 +428,7 @@ function hook_webform_csv_data_alter(&$data, $component, $submission) {
 /**
  * Define components to Webform.
  *
- * @return array
+ * @return
  *   An array of components, keyed by machine name. Required properties are
  *   "label" and "description". The "features" array defines which capabilities
  *   the component has, such as being displayed in e-mails or csv downloads.
@@ -446,7 +443,6 @@ function hook_webform_csv_data_alter(&$data, $component, $submission) {
  *     - conditional
  *     - spam_analysis
  *     - group
- *     - private
  *
  *   Note that most of these features do not indicate the default state, but
  *   determine if the component can have this property at all. Setting
@@ -477,8 +473,8 @@ function hook_webform_csv_data_alter(&$data, $component, $submission) {
  *     - csv_headers
  *     - csv_data
  *
- *   See the sample component implementation for details on each one of these
- *   callbacks.
+ * See the sample component implementation for details on each one of these
+ * callbacks.
  *
  * @see webform_components()
  */
@@ -533,7 +529,7 @@ function hook_webform_component_info() {
       // (like a fieldset or tabs). Defaults to FALSE.
       'group' => FALSE,
 
-      // If this component can be used for SPAM analysis.
+      // If this component can be used for SPAM analysis, usually with Mollom.
       'spam_analysis' => FALSE,
 
       // If this component saves a file that can be used as an e-mail
@@ -543,12 +539,6 @@ function hook_webform_component_info() {
       // If this component reflects a time range and should use labels such as
       // "Before" and "After" when exposed as filters in Views module.
       'views_range' => FALSE,
-
-      // Set this to FALSE if this component cannot be used as a private
-      // component. If this is not FALSE, in your implementation of
-      // _webform_defaults_COMPONENT(), set ['extra']['private'] property to
-      // TRUE or FALSE.
-      'private' => FALSE,
     ),
 
     // Specify the conditional behaviour of this component.
@@ -623,8 +613,7 @@ function hook_webform_component_defaults_alter(&$defaults, $type) {
  *   - "list"
  * @param $account
  *   A user account object.
- *
- * @return bool
+ * @return
  *   TRUE if the current user has access to submission,
  *   or FALSE otherwise.
  */
@@ -632,15 +621,16 @@ function hook_webform_submission_access($node, $submission, $op = 'view', $accou
   switch ($op) {
     case 'view':
       return TRUE;
-
+      break;
     case 'edit':
       return FALSE;
-
+      break;
     case 'delete':
       return TRUE;
-
+      break;
     case 'list':
       return TRUE;
+      break;
   }
 }
 
@@ -652,15 +642,14 @@ function hook_webform_submission_access($node, $submission, $op = 'view', $accou
  * Access via this hook is in addition (adds permission) to the standard
  * webform access.
  *
+ * @see webform_results_access().
+ *
  * @param $node
  *   The Webform node to check access on.
  * @param $account
  *   The user account to check access on.
- *
- * @return bool
+ * @return
  *   TRUE or FALSE if the user can access the webform results.
- *
- * @see webform_results_access()
  */
 function hook_webform_results_access($node, $account) {
   // Let editors view results of unpublished webforms.
@@ -678,23 +667,20 @@ function hook_webform_results_access($node, $account) {
  * Access via this hook is in addition (adds permission) to the standard
  * webform access (delete all webform submissions).
  *
- * @param object $node
+ * @see webform_results_clear_access().
+ *
+ * @param $node object
  *   The Webform node to check access on.
- * @param object $account
+ * @param $account object
  *   The user account to check access on.
- *
- * @return bool
+ * @return boolean
  *   TRUE or FALSE if the user can access the webform results.
- *
- * @see webform_results_clear_access()
  */
 function hook_webform_results_clear_access($node, $account) {
   return user_access('my additional access', $account);
 }
 
 /**
- * Overrides the node_access and user_access permissions.
- *
  * Overrides the node_access and user_access permission to access and edit
  * webform components, e-mails, conditions, and form settings.
  *
@@ -709,17 +695,16 @@ function hook_webform_results_clear_access($node, $account) {
  * access as this will be the only test. For example, 'return TRUE;' would grant
  * annonymous access to creating webform components, which seldom be desired.
  *
- * @param object $node
- *   The Webform node to check access on.
- * @param object $account
- *   The user account to check access on.
+ * @see webform_node_update_access().
  *
- * @return bool|null
+ * @param $node object
+ *   The Webform node to check access on.
+ * @param $account object
+ *   The user account to check access on.
+ * @return boolean|NULL
  *   TRUE or FALSE if the user can access the webform results, or NULL if
  *   access should be deferred to other implementations of this hook or
  *   node_access('update') plus user_access('edit webform components').
- *
- * @see webform_node_update_access()
  */
 function hook_webform_update_access($node, $account) {
   // Allow anyone who can see webform_editable_by_user nodes and who has
@@ -729,6 +714,7 @@ function hook_webform_update_access($node, $account) {
     return node_access('view', $node, $account) && user_access('my webform component edit access', $account);
   }
 }
+
 
 /**
  * Return an array of files associated with the component.
@@ -740,21 +726,19 @@ function hook_webform_update_access($node, $account) {
  * @param $value
  *   An array of information containing the submission result, directly
  *   correlating to the webform_submitted_data database schema.
- *
- * @return array
+ * @return
  *   An array of files, each file is an array with following keys:
  *     - filepath: The relative path to the file.
  *     - filename: The name of the file including the extension.
  *     - filemime: The mimetype of the file.
  *   This will result in an array looking something like this:
- *
- * @code
+ *   @code
  *   array[0] => array(
  *     'filepath' => '/sites/default/files/attachment.txt',
  *     'filename' => 'attachment.txt',
  *     'filemime' => 'text/plain',
  *   );
- * @endcode
+ *   @endcode
  */
 function _webform_attachments_component($component, $value) {
   $files = array();
@@ -762,23 +746,23 @@ function _webform_attachments_component($component, $value) {
   return $files;
 }
 
+
 /**
  * Alter default settings for a newly created webform node.
  *
  * @param array $defaults
- *   Default settings for a newly created webform node as defined by
- *   webform_node_defaults().
+ *   Default settings for a newly created webform node as defined by webform_node_defaults().
  *
  * @see webform_node_defaults()
  */
-function hook_webform_node_defaults_alter(array &$defaults) {
+function hook_webform_node_defaults_alter(&$defaults) {
   $defaults['allow_draft'] = '1';
 }
 
 /**
  * Add additional fields to submission data downloads.
  *
- * @return array
+ * @return
  *   Keys and titles for default submission information.
  *
  * @see hook_webform_results_download_submission_information_data()
@@ -797,7 +781,7 @@ function hook_webform_results_download_submission_information_info() {
  *   The name of the token being replaced.
  * @param $submission
  *   The data for an individual submission from webform_get_submissions().
- * @param array $options
+ * @param $options
  *   A list of options that define the output format. These are generally passed
  *   through from the GUI interface.
  * @param $serial_start
@@ -805,7 +789,7 @@ function hook_webform_results_download_submission_information_info() {
  * @param $row_count
  *   The number of the row being generated.
  *
- * @return string
+ * @return
  *   Value for requested submission information field.
  *
  * @see hook_webform_results_download_submission_information_info()
@@ -814,7 +798,6 @@ function hook_webform_results_download_submission_information_data($token, $subm
   switch ($token) {
     case 'field_key_1':
       return 'Field Value 1';
-
     case 'field_key_2':
       return 'Field Value 2';
   }
@@ -836,7 +819,7 @@ function hook_webform_results_download_submission_information_data($token, $subm
 /**
  * Specify the default properties of a component.
  *
- * @return array
+ * @return
  *   An array defining the default structure of a component.
  */
 function _webform_defaults_component() {
@@ -852,7 +835,6 @@ function _webform_defaults_component() {
       'optrand' => 0,
       'qrand' => 0,
       'description' => '',
-      'description_above' => FALSE,
       'private' => FALSE,
       'analysis' => TRUE,
     ),
@@ -868,19 +850,16 @@ function _webform_defaults_component() {
  * every component type and are not necessary to specify here (although they
  * may be overridden if desired).
  *
- * @param array $component
+ * @param $component
  *   A Webform component array.
- * @param array $form
- *   The form array.
- * @param array $form_state
- *   The form state array.
- *
- * @return array
+ * @return
  *   An array of form items to be displayed on the edit component page
  */
-function _webform_edit_component(array $component, array &$form, array &$form_state) {
+function _webform_edit_component($component) {
+  $form = array();
+
   // Disabling the description if not wanted.
-  $form['description']['#access'] = FALSE;
+  $form['description'] = array();
 
   // Most options are stored in the "extra" array, which stores any settings
   // unique to a particular component type.
@@ -911,17 +890,10 @@ function _webform_edit_component(array $component, array &$form, array &$form_st
  *   Whether or not to filter the contents of descriptions and values when
  *   rendering the component. Values need to be unfiltered to be editable by
  *   Form Builder.
- * @param $submission
- *   The submission from which this component is being rendered. Usually not
- *   needed. Used by _webform_render_date() to validate using the submission's
- *   completion date.
- *
- * @return array
- *   $form_item
  *
  * @see _webform_client_form_add_component()
  */
-function _webform_render_component($component, $value = NULL, $filter = TRUE, $submission = NULL) {
+function _webform_render_component($component, $value = NULL, $filter = TRUE) {
   $form_item = array(
     '#type' => 'textfield',
     '#title' => $filter ? webform_filter_xss($component['name']) : $component['name'],
@@ -929,7 +901,8 @@ function _webform_render_component($component, $value = NULL, $filter = TRUE, $s
     '#weight' => $component['weight'],
     '#description'   => $filter ? webform_filter_descriptions($component['extra']['description']) : $component['extra']['description'],
     '#default_value' => $filter ? webform_replace_tokens($component['value']) : $component['value'],
-    '#theme_wrappers' => array('webform_element'),
+    '#prefix' => '<div class="webform-component-textfield" id="webform-component-' . $component['form_key'] . '">',
+    '#suffix' => '</div>',
   );
 
   if (isset($value)) {
@@ -940,7 +913,7 @@ function _webform_render_component($component, $value = NULL, $filter = TRUE, $s
 }
 
 /**
- * Allow modules to modify a webform component that will be rendered in a form.
+ * Allow modules to modify a webform component that is going to be rendered in a form.
  *
  * @param array $element
  *   The display element as returned by _webform_render_component().
@@ -949,7 +922,7 @@ function _webform_render_component($component, $value = NULL, $filter = TRUE, $s
  *
  * @see _webform_render_component()
  */
-function hook_webform_component_render_alter(array &$element, array &$component) {
+function hook_webform_component_render_alter(&$element, &$component) {
   if ($component['cid'] == 10) {
     $element['#title'] = 'My custom title';
     $element['#default_value'] = 42;
@@ -971,10 +944,7 @@ function hook_webform_component_render_alter(array &$element, array &$component)
  *   Either 'html' or 'text'. Defines the format that the content should be
  *   returned as. Make sure that returned content is run through check_plain()
  *   or other filtering functions when returning HTML.
- * @param $submission
- *   The submission. Used to generate tokens.
- *
- * @return array
+ * @return
  *   A renderable element containing at the very least these properties:
  *    - #title
  *    - #weight
@@ -985,7 +955,7 @@ function hook_webform_component_render_alter(array &$element, array &$component)
  *   which will properly format the label and content for use within an e-mail
  *   (such as wrapping the text) or as HTML (ensuring consistent output).
  */
-function _webform_display_component($component, $value, $format = 'html', $submission = array()) {
+function _webform_display_component($component, $value, $format = 'html') {
   return array(
     '#title' => $component['name'],
     '#weight' => $component['weight'],
@@ -1010,32 +980,11 @@ function _webform_display_component($component, $value, $format = 'html', $submi
  *
  * @see _webform_display_component()
  */
-function hook_webform_component_display_alter(array &$element, array &$component) {
+function hook_webform_component_display_alter(&$element, &$component) {
   if ($component['cid'] == 10) {
     $element['#title'] = 'My custom title';
     $element['#default_value'] = 42;
   }
-}
-
-/**
- * Performs the conditional action set on an implemented component.
- *
- * Setting the form element allows form validation functions to see the value
- * that webform has set for the given component.
- *
- * @param array $component
- *   The webform component array whose value is being set for the currently-
- *   edited submission.
- * @param array $element
- *   The form element currently being set.
- * @param array $form_state
- *   The form's state.
- * @param string $value
- *   The value to be set, as defined in the conditional action.
- */
-function _webform_action_set_component(array $component, array &$element, array &$form_state, $value) {
-  $element['#value'] = $value;
-  form_set_value($element, $value, $form_state);
 }
 
 /**
@@ -1054,8 +1003,7 @@ function _webform_action_set_component(array $component, array &$element, array 
  *   A Webform component array.
  * @param $value
  *   The POST data associated with the user input.
- *
- * @return array
+ * @return
  *   An array of values to be saved into the database. Note that this should be
  *   a numerically keyed array.
  */
@@ -1142,11 +1090,7 @@ function _webform_theme_component() {
  *   Boolean flag determining if the details about a single component are being
  *   shown. May be used to provided detailed information about a single
  *   component's analysis, such as showing "Other" options within a select list.
- * @param $join
- *   An optional SelectQuery object to be used to join with the submissions
- *   table to restrict the submissions being analyzed.
- *
- * @return array
+ * @return
  *   An array containing one or more of the following keys:
  *   - table_rows: If this component has numeric data that can be represented in
  *     a grid, return the values here. This array assumes a 2-dimensional
@@ -1166,7 +1110,7 @@ function _webform_theme_component() {
  *
  * @see _webform_defaults_component()
  */
-function _webform_analysis_component($component, $sids = array(), $single = FALSE, $join = NULL) {
+function _webform_analysis_component($component, $sids = array(), $single = FALSE) {
   // Generate the list of options and questions.
   $options = _webform_select_options_from_text($component['extra']['options'], TRUE);
   $questions = _webform_select_options_from_text($component['extra']['questions'], TRUE);
@@ -1183,10 +1127,6 @@ function _webform_analysis_component($component, $sids = array(), $single = FALS
 
   if (count($sids)) {
     $query->condition('sid', $sids, 'IN');
-  }
-
-  if ($join) {
-    $query->innerJoin($join, 'ws2_', 'wsd.sid = ws2_.sid');
   }
 
   $result = $query->execute();
@@ -1234,8 +1174,7 @@ function _webform_analysis_component($component, $sids = array(), $single = FALS
  * @param $value
  *   An array of information containing the submission result, directly
  *   correlating to the webform_submitted_data database schema.
- *
- * @return string
+ * @return
  *   Textual output formatted for human reading.
  */
 function _webform_table_component($component, $value) {
@@ -1265,8 +1204,7 @@ function _webform_table_component($component, $value) {
  *   A Webform component array.
  * @param $export_options
  *   An array of options that may configure export of this field.
- *
- * @return array
+ * @return
  *   An array of data to be displayed in the first three rows of a CSV file, not
  *   including either prefixed or trailing commas.
  */
@@ -1303,8 +1241,7 @@ function _webform_csv_headers_component($component, $export_options) {
  * @param $value
  *   An array of information containing the submission result, directly
  *   correlating to the webform_submitted_data database schema.
- *
- * @return array
+ * @return
  *   An array of items to be added to the CSV file. Each value within the array
  *   will be another column within the file. This function is called once for
  *   every row of data.
@@ -1319,7 +1256,8 @@ function _webform_csv_data_component($component, $export_options, $value) {
 }
 
 /**
- * Fix the view field(s) that are automatically generated for number components.
+ * Adjusts the view field(s) that are automatically generated for number
+ * components.
  *
  * Provides each component the opportunity to adjust how this component is
  * displayed in a view as a field in a view table. For example, a component may
@@ -1327,15 +1265,14 @@ function _webform_csv_data_component($component, $export_options, $value) {
  * such as a grid component having a column for each question.
  *
  * @param array $component
- *   A Webform component array.
+ *   A Webform component array
  * @param array $fields
  *   An array of field-definition arrays. Will be passed one field definition,
  *   which may be modified. Additional fields may be added to the array.
- *
  * @return array
  *   The modified $fields array.
  */
-function _webform_view_field_component(array $component, array $fields) {
+function _webform_view_field_component($component, $fields) {
   foreach ($fields as &$field) {
     $field['webform_datatype'] = 'number';
   }
@@ -1353,17 +1290,17 @@ function _webform_view_field_component(array $component, array $fields) {
  * changes views by implementing this same views hook, the relative order of
  * execution of the two implementations will depend upon the module weights of
  * the two modules. Using hook_webform_view_alter instead guarantees an
- * opportunity to modify the view AFTER webform.
+ * opportuinty to modify the view AFTER webform.
  *
  * @param object $view
  *   The view object.
  * @param string $display_id
  *   The display_id that was expanded by webform.
  * @param array $args
- *   The arguments that were passed to the view.
+ *   The argumentst that were passed to the view.
  */
-function hook_webform_view_alter($view, $display_id, array $args) {
-  // Don't show component with cid == 4.
+function hook_webform_view_alter($view, $display_id, $args) {
+  // Don't show component with cid == 4
   $fields = $view->get_items('field', $display_id);
   foreach ($fields as $id => $field) {
     if (isset($field['webform_cid']) && $field['webform_cid'] == 4) {
@@ -1379,147 +1316,10 @@ function hook_webform_view_alter($view, $display_id, array $args) {
  * @param array &$systems
  *   An array of mail system class names.
  */
-function hook_webform_html_capable_mail_systems_alter(array &$systems) {
+function hook_webform_html_capable_mail_systems_alter(&$systems) {
   if (module_exists('my_module')) {
     $systems[] = 'MyModuleMailSystem';
   }
-}
-
-/**
- * Define a list of webform exporters.
- *
- * @return array
- *   A list of the available exporters provided by the module.
- *
- * @see webform_webform_exporters()
- */
-function hook_webform_exporters() {
-  $exporters = array(
-    'webform_exporter_custom' => array(
-      'title' => t('Webform exporter name'),
-      'description' => t('The description for this exporter.'),
-      'handler' => 'webform_exporter_custom',
-      'file' => drupal_get_path('module', 'yourmodule') . '/includes/webform_exporter_custom.inc',
-      'weight' => 10,
-    ),
-  );
-
-  return $exporters;
-}
-
-/**
- * Modify the list of webform exporters definitions.
- *
- * @param array &$exporters
- *   A list of all available webform exporters.
- */
-function hook_webform_exporters_alter(array &$exporters) {
-  $exporters['excel']['handler'] = 'customized_excel_exporter';
-  $exporters['excel']['file'] = drupal_get_path('module', 'yourmodule') . '/includes/customized_excel_exporter.inc';
-}
-
-/**
- * Declare conditional types and their operators.
- *
- * Each conditional type defined here may then be referenced in
- * hook_webform_component_info(). For each type this hook also declares a set of
- * operators that may be applied to a component of this conditional type in
- * conditionals.
- *
- * @return array
- *   A 2-dimensional array of operator configurations. The configurations are
- *   keyed first by their conditional type then by operator key. Each operator
- *   declaration is an array with the following keys:
- *   - label: Translated label for this operator that is shown in the UI.
- *   - comparison callback: A callback for server-side evaluation.
- *   - js comparison callback: A JavaScript callback for client-side evaluation.
- *     The callback will be looked for in the Drupal.webform object.
- *   - form callback (optional): A form callback that allows configuring
- *     additional parameters for this operator. Default:
- *     'webform_conditional_operator_text'.
- *
- * @see hook_webform_component_info()
- * @see callback_webform_conditional_comparision_operator()
- * @see callback_webform_conditional_rule_value_form()
- */
-function hook_webform_conditional_operator_info() {
-  $operators = array();
-  $operators['string']['not_equal'] = array(
-    'label' => t('is not'),
-    'comparison callback' => 'webform_conditional_operator_string_not_equal',
-    'js comparison callback' => 'conditionalOperatorStringNotEqual',
-  );
-  return $operators;
-}
-
-/**
- * Alter the list of operators and conditional types.
- *
- * @param array $operators
- *   A data structure as described in hook_webform_conditional_operator_info().
- *
- * @see hook_webform_conditional_operator_info()
- */
-function hook_webform_conditional_operators_alter(array &$operators) {
-  $operators['string']['not_equal']['label'] = t('not equal');
-}
-
-/**
- * Evaluate the operator for a given set of values.
- *
- * This function will be called two times with potentially different kinds of
- * values: Once in _webform_client_form_validate() before any of the validate
- * handlers or the _webform_submit_COMPONENT() callback is called, and once in
- * webform_client_form_pages() after those handlers have been called.
- *
- * @param array $input_values
- *   The values received from the browser.
- * @param mixed $rule_value
- *   The value as configured in the form callback.
- * @param array $component
- *   The component for which we are evaluating the operator.
- *
- * @return bool
- *   The operation result.
- */
-function callback_webfom_conditional_comparison_operator(array $input_values, $rule_value, array $component) {
-  foreach ($input_values as $value) {
-    if (strcasecmp($value, $rule_value)) {
-      return TRUE;
-    }
-  }
-  return FALSE;
-}
-
-/**
- * Define a form element that configures your operator.
- *
- * @param object $node
- *   The node for which the conditionals are being configured.
- *
- * @return string|string[]
- *   Either a single rendered form element or a rendered form element per
- *   component (keyed by cid). Make sure that none of the rendered strings
- *   contains any HTML IDs as the form element will be rendered multiple times.
- *   The JavaScript will take care of adding the appropriate name attributes.
- *
- * @see _webform_conditional_expand_value_forms()
- */
-function callback_webform_conditional_rule_value_form($node) {
-  $forms = [];
-  foreach ($node->webform['components'] as $cid => $component) {
-    if (webform_component_property($component['type'], 'conditional_type') == 'newsletter') {
-      $element = [
-        '#type' => 'select',
-        '#options' => [
-          'yes' => t('Opt-in'),
-          'no' => t('No opt-in'),
-        ],
-      ];
-      $forms[$cid] = drupal_render($element);
-    }
-  }
-  return $forms;
 }
 
 /**

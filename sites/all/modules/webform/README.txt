@@ -9,7 +9,6 @@ can optionally be mailed to e-mail addresses upon submission.
 Requirements
 ------------
 Drupal 7.x
-See https://www.drupal.org/project/webform for additional requirements.
 
 Installation
 ------------
@@ -50,3 +49,4 @@ Support
 -------
 Please use the issue queue for filing bugs with this module at
 http://drupal.org/project/issues/webform
+
