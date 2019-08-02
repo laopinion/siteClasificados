@@ -1,8 +1,8 @@
 
 $(document).ready(function() {
-  $(".submit").click(function() {
-    nombres = $("#nombres").val();
-    apellidos = $("#apellidos").val();
+  $("#form-anuncio").submit(function() {
+    var nombres = $("#nombres").val();
+    var apellidos = $("#apellidos").val();
     $("#payerFullName").val(nombres + " " + apellidos);
   });
 

@@ -201,7 +201,7 @@
   </div>
   <div id="formulario" style="display: none;">
     <h2>Datos personales</h2>
-    <form method="post" action="<?=$url?>">
+    <form id="form-anuncio" method="post" action="<?=$url?>">
       <input name="merchantId" type="hidden" value="<?=$merchantId?>" />
       <input name="accountId" type="hidden" value="<?=$accountId ?>" />
       <input

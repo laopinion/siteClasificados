@@ -2039,11 +2039,187 @@ table {
   margin: 0 auto;
   max-width: 1000px; }
 
-#Ordenar__edicto #form-edicto {
-  display: none; }
+#Ordenar__edicto .slide {
+  margin-bottom: 80px;
+  display: flex;
+  width: 100%; }
+  #Ordenar__edicto .slide img {
+    height: auto;
+    width: 100%; }
 
-#Ordenar__edicto #webform-ajax-wrapper-34 .links, #Ordenar__edicto #webform-ajax-wrapper-34 .webform-component--referencia-de-pago {
-  display: none; }
+#Ordenar__edicto .header__edicto h3 {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  border-bottom: 1px solid #afafaf;
+  padding: 0px 0px 20px;
+  margin: 0 auto;
+  width: 80%; }
+
+#Ordenar__edicto .header__edicto ul {
+  margin: 50px auto;
+  padding: 0;
+  width: 80%; }
+  #Ordenar__edicto .header__edicto ul li {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 10px; }
+
+#Ordenar__edicto .header__edicto h2 {
+  margin: 0 auto;
+  text-align: center;
+  color: #B92025;
+  border-bottom: 1px solid #afafaf;
+  width: 450px;
+  font-size: 2.5rem;
+  line-height: 2.8rem; }
+
+#Ordenar__edicto #webform__edicto {
+  margin-top: 30px;
+  margin-bottom: 180px; }
+  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .webform-confirmation {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px 0 0 0; }
+  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 label {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 10px; }
+  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 textarea {
+    border: none;
+    background: #eeeef0;
+    height: 150px; }
+  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0; }
+    #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-documento, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item select {
+      border: none;
+      height: 56px;
+      background: #eeeef0;
+      padding: 5px 5px 5px 10px;
+      outline: none;
+      color: #333333;
+      font-size: 16px;
+      box-sizing: border-box;
+      width: 100%; }
+  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-actions {
+    display: flex;
+    justify-content: center; }
+    #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-actions input {
+      border: none;
+      width: 295px;
+      height: 56px;
+      border-radius: 2px;
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+      background: #bc2024;
+      cursor: pointer;
+      transition: 0.5s;
+      outline: 0; }
+  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .links, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .webform-component--referencia-de-pago {
+    display: none; }
+
+#Ordenar__edicto #formulario {
+  margin: 80px 0 180px; }
+  #Ordenar__edicto #formulario h2 {
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    color: #bc2024;
+    margin: 0 0 70px; }
+
+#Ordenar__edicto .formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 30px;
+  grid-column-gap: 20px; }
+  #Ordenar__edicto .formulario label {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+    font-weight: bold; }
+  #Ordenar__edicto .formulario input, #Ordenar__edicto .formulario select {
+    border: none;
+    height: 56px;
+    background: #eeeef0;
+    padding: 5px 5px 5px 10px;
+    outline: none;
+    color: #333333;
+    font-size: 16px;
+    box-sizing: border-box; }
+  #Ordenar__edicto .formulario .terminos {
+    grid-column: 2/4;
+    justify-self: center;
+    flex-direction: initial !important; }
+    #Ordenar__edicto .formulario .terminos label {
+      font-size: 16px; }
+    #Ordenar__edicto .formulario .terminos input {
+      width: 32px;
+      margin: 0 10px; }
+    #Ordenar__edicto .formulario .terminos a {
+      text-decoration: none;
+      color: #bc2024; }
+      #Ordenar__edicto .formulario .terminos a:hover {
+        text-decoration: underline; }
+  #Ordenar__edicto .formulario .form-item {
+    display: flex;
+    flex-direction: column; }
+  #Ordenar__edicto .formulario .form-actions {
+    grid-column: 1/4;
+    justify-self: center;
+    overflow: hidden;
+    outline: 0; }
+    #Ordenar__edicto .formulario .form-actions .submit {
+      border: none;
+      width: 295px;
+      height: 56px;
+      border-radius: 2px;
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+      background: #bc2024;
+      cursor: pointer;
+      transition: 0.5s;
+      outline: 0; }
+    #Ordenar__edicto .formulario .form-actions:hover {
+      box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
+  #Ordenar__edicto .formulario .waves {
+    position: relative;
+    transition: all 0.3s ease-out; }
+  #Ordenar__edicto .formulario .waves-ripple {
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    transform: scale(0); }
+  #Ordenar__edicto .formulario .waves-animate {
+    animation: waves_ripple-animate 0.5s linear; }
+
+@keyframes waves_ripple-animate {
+  100% {
+    opacity: 0;
+    transform: scale(2.5); } }
+
+@media screen and (max-width: 768px) {
+  #Ordenar__edicto .container {
+    margin: 0 2%;
+    width: 96%; }
+  #Ordenar__edicto .header__edicto h2 {
+    width: 100%; }
+  #Ordenar__edicto .formulario {
+    grid-template-columns: 1fr; }
+    #Ordenar__edicto .formulario .terminos {
+      grid-column: auto; }
+    #Ordenar__edicto .formulario .form-actions {
+      grid-column: auto; }
+  #Ordenar__edicto .formulario .terminos input {
+    margin: 0 25px 0 10px;
+    width: 80px; } }
 
 #vehiculos {
   margin-bottom: 50px; }
