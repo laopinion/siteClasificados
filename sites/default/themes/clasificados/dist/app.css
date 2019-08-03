@@ -2077,26 +2077,26 @@ table {
 #Ordenar__edicto #webform__edicto {
   margin-top: 30px;
   margin-bottom: 180px; }
-  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .webform-confirmation {
+  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .webform-confirmation, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .webform-confirmation {
     font-size: 1.2rem;
     line-height: 1.5rem;
     font-weight: 700;
     text-align: center;
     margin: 50px 0 0 0; }
-  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 label {
+  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 label, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 label {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 10px; }
-  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 textarea {
+  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 textarea, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 textarea {
     border: none;
     background: #eeeef0;
     height: 150px; }
-  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item {
+  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item {
     display: flex;
     flex-direction: column;
     margin: 20px 0; }
-    #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-documento, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item select {
+    #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-documento, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item select, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item #edit-submitted-documento, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item select {
       border: none;
       height: 56px;
       background: #eeeef0;
@@ -2106,10 +2106,10 @@ table {
       font-size: 16px;
       box-sizing: border-box;
       width: 100%; }
-  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-actions {
+  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-actions, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-actions {
     display: flex;
     justify-content: center; }
-    #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-actions input {
+    #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-actions input, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-actions input {
       border: none;
       width: 295px;
       height: 56px;
@@ -2121,7 +2121,7 @@ table {
       cursor: pointer;
       transition: 0.5s;
       outline: 0; }
-  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .links, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .webform-component--referencia-de-pago {
+  #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .links, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .webform-component--referencia-de-pago, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .links, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .webform-component--referencia-de-pago {
     display: none; }
 
 #Ordenar__edicto #formulario {

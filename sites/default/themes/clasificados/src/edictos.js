@@ -17,6 +17,11 @@ class Edictos {
       $('#formulario').show('slow');
       $('#webform__edicto').css({ marginBottom: '50px' });
     });
+    // Form production
+    $('#edit-webform-ajax-submit-87').click(function () {
+      $('#formulario').show('slow');
+      $('#webform__edicto').css({ marginBottom: '50px' });
+    });
     
     $('#edit-submitted-documento').change(function () {     
       const cedula = $(this).val();
