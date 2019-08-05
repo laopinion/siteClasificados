@@ -7,7 +7,25 @@
   <?php print $head; ?>
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <meta name="robots" content="index, follow">
+  <meta itemprop="genre" content="Food" />
+  <meta itemprop="inLanguage" content="es-ES" />
+  <meta property="og:locale:alternate" content="es_CO" />
+  <meta property="og:locale" content="es_CO" />
+  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><?php print $head_title; ?></title>
+
+  <!--Icono precomposed-->
+  <link rel="apple-touch-icon-precomposed" href="<?php print base_path(); ?>sites/default/themes/clasificados/images/icon/touch-icon-iphone.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php print base_path(); ?>sites/default/themes/clasificados/images/icon/touch-icon-ipad.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php print base_path(); ?>sites/default/themes/clasificados/images/icon/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php print base_path(); ?>sites/default/themes/clasificados/images/icon/touch-icon-ipad-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="<?php print base_path(); ?>sites/default/themes/clasificados/images/icon/touch-icon-iphone-6-plus.png">
+  <!--FIN Icono precomposed-->
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <!-- IE Fix for HTML5 Tags -->
@@ -15,6 +33,36 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <link rel="stylesheet" href="<?php print base_path(); ?>sites/default/themes/clasificados/dist/app.css">
+
+  <meta name="description" content="Clasificados La Opinión cuenta con el mayor catálogo de anuncios clasificados en las categorias de empleo, venta y arriendo de vivienda, venta de carros, motos usadas, servicios y mucho más."/>
+  <meta name="keywords" content="avisos, clasificados, cúcuta, pamplona, villa del rosario, los patios, norte de santander, colombia, clasificados la opinión" />
+  <meta name="author" content="https://clasificados.laopinion.com.co" />
+  <meta name="ROBOTS" content="FOLLOW">
+  <link rel="canonical" href="https://clasificados.laopinion.com.co">
+  <link rel="image_src" href="https://clasificados.laopinion.com.co/sites/default/themes/clasificados/images/compartir.jpg" />
+
+  <meta name="twitter:widgets:csp" content="on">
+  <meta name="twitter:image" content="https://clasificados.laopinion.com.co/sites/default/themes/clasificados/images/compartir.jpg" />
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://clasificados.laopinion.com.co/" />
+  <meta property="og:description" content="Clasificados La Opinión cuenta con el mayor catálogo de anuncios clasificados en las categorias de empleo, venta y arriendo de vivienda, venta de carros, motos usadas, servicios y mucho más." />
+  <meta name="author" content="Clasificados La Opinión - Cúcuta"/>
+  <meta name="google" content="notranslate" />
+  <meta name="geo.region" content="CO" />
+  <meta name="geo.placename" content="Colombia" />
+  <meta name="language" content="spanish" />
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="Clasificados La Opinión cuenta con el mayor catálogo de anuncios clasificados en las categorias de empleo, venta y arriendo de vivienda, venta de carros, motos usadas, servicios y mucho más." />
+  <meta itemprop="description" name="description" content="Clasificados La Opinión cuenta con el mayor catálogo de anuncios clasificados en las categorias de empleo, venta y arriendo de vivienda, venta de carros, motos usadas, servicios y mucho más."/>
+  <meta itemprop="image" content="https://clasificados.laopinion.com.co/sites/default/themes/clasificados/images/compartir.jpg" />
+  <!-- twit card-->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="Clasificados La Opinión cuenta con el mayor catálogo de anuncios clasificados en las categorias de empleo, venta y arriendo de vivienda, venta de carros, motos usadas, servicios y mucho más.">
+  <meta name="twitter:url" content="https://clasificados.laopinion.com.co"> 
+  <meta name="twitter:site" content="@laopinioncucuta" />
+  <meta name="twitter:title" content="Anuncios clasificados empleos, finca raíz, vehículos, serivicios y más | Clasificados La Opinión - Cúcuta">
+  <meta name="twitter:creator" content="@laopinioncucuta"> 
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
