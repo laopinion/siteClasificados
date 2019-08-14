@@ -15,10 +15,10 @@
   </div>
   <div class="container">
     <header class="header__edicto">
-      <h3>Ahora podrás publicar aquí sus EDICTOS, remates y otros avisos judiciales por solo: $65.000</h3>
+      <h3>Ahora podra publicar aquí sus EDICTOS, remates y otros avisos judiciales por solo: $65.000</h3>
       <ul>
         <li>Cumplimos con las disposiciones del CGP. (Ley 1564 del 2012)</li>
-        <li>Permanencia del mensaje por 15 días calendario en el sitio web y 1 dia en medio impreso</li>
+        <li>Permanencia del mensaje por 15 días calendario en el sitio web y 1 día en medio impreso</li>
         <li>Certificado al finalizar el tiempo de publicación</li>
         <li>Facilidad en la búsqueda y en la consulta</li>
       </ul>

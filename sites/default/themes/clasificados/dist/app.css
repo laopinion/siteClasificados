@@ -5144,6 +5144,9 @@ table {
               #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
+              #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
 
 @media screen and (max-width: 768px) {
   #seccionGeneral #categorias .categorias #titleCategoria {
@@ -5801,37 +5804,35 @@ table {
     #search .item-list a:hover {
       text-decoration: underline; }
 
-#pregunFrecuen {
+@media screen and (max-width: 768px) {
+  #search {
+    width: 96%; }
+    #search .informacion .search-results.node-results {
+      flex-wrap: wrap; }
+      #search .informacion .search-results.node-results .resultado {
+        margin-bottom: 20px; } }
+
+#Preguntas__frecuentes {
   margin: 50px auto;
   width: 1000px; }
-  #pregunFrecuen h2 {
+  #Preguntas__frecuentes h2 {
     color: #4153A7;
     font-size: 2rem;
-    font-weight: 700; }
-  #pregunFrecuen .pregunta h3 {
-    color: #B92025;
-    font-size: 1.5rem;
-    font-weight: 700; }
-  #pregunFrecuen .pregunta .respuesta p {
-    margin: 0; }
-    #pregunFrecuen .pregunta .respuesta p a {
-      text-decoration: none;
-      color: #A81822;
+    font-weight: 700;
+    text-align: center; }
+  #Preguntas__frecuentes .preguntas {
+    padding: 0; }
+    #Preguntas__frecuentes .preguntas li {
+      list-style: none;
+      padding: 0; }
+    #Preguntas__frecuentes .preguntas h3 {
+      color: #B92025;
+      font-size: 1.5rem;
       font-weight: 700; }
-      #pregunFrecuen .pregunta .respuesta p a:hover {
-        text-decoration: underline; }
-  #pregunFrecuen .pregunta .respuesta .letrica {
-    font-size: 0.8rem;
-    font-style: italic; }
-  #pregunFrecuen .pregunta .respuesta ul {
-    padding: 0;
-    list-style: none; }
-    #pregunFrecuen .pregunta .respuesta ul a {
-      text-decoration: none;
-      color: #A81822;
-      font-weight: 700; }
-      #pregunFrecuen .pregunta .respuesta ul a:hover {
-        text-decoration: underline; }
+
+@media screen and (max-width: 768px) {
+  #Preguntas__frecuentes {
+    width: 96%; } }
 
 #domicilios {
   margin: 50px auto;

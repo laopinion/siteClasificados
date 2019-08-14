@@ -101,7 +101,9 @@ class Edictos {
       // console.log($ripple);
     }
 
-    $waves.addEventListener("click", wavesRipple);
+    if ($waves != null) {
+      $waves.addEventListener("click", wavesRipple);
+    }
   }
 
 }
