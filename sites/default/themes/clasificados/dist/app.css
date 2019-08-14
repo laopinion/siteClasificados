@@ -5737,26 +5737,59 @@ table {
     justify-content: center;
     -webkit-justify-content: center;
     -moz-justify-content: center;
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between; }
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around; }
     #search .informacion .search-results.node-results .resultado {
-      margin-bottom: 20px;
-      width: 300px; }
+      overflow: hidden;
+      background-color: #efefef;
+      padding: 4px;
+      box-sizing: border-box;
+      height: 270px;
+      width: 185px; }
+    #search .informacion .search-results.node-results .info {
+      margin: 10px auto;
+      width: 160px; }
+    #search .informacion .search-results.node-results .search-result .fecha {
+      text-align: left;
+      font-weight: 700;
+      font-size: 0.8rem;
+      border-bottom: 1px solid #afafaf;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 160px; }
     #search .informacion .search-results.node-results .search-result .imagen {
-      height: 300px;
-      width: 300px; }
+      width: 177px;
+      height: 112px; }
       #search .informacion .search-results.node-results .search-result .imagen img {
         object-fit: cover;
         height: 100%;
         width: 100%; }
+    #search .informacion .search-results.node-results .search-result .section {
+      margin-top: 25px;
+      font-weight: 700;
+      text-transform: uppercase; }
+      #search .informacion .search-results.node-results .search-result .section:before {
+        content: url(images/src/img/iconos/estrella.svg);
+        margin-right: 5px; }
+      #search .informacion .search-results.node-results .search-result .section a {
+        text-decoration: none;
+        color: #000000; }
     #search .informacion .search-results.node-results .search-result .title {
-      margin: 0 0 10px 0; }
+      margin-bottom: 5px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
       #search .informacion .search-results.node-results .search-result .title a {
         text-decoration: none;
-        color: #B92025; }
+        color: #000000; }
       #search .informacion .search-results.node-results .search-result .title:hover {
-        text-decoration: underline; }
+        white-space: initial;
+        overflow: visible;
+        width: auto; }
     #search .informacion .search-results.node-results .search-result .search-snippet-info {
       padding: 0; }
       #search .informacion .search-results.node-results .search-result .search-snippet-info .search-info a {

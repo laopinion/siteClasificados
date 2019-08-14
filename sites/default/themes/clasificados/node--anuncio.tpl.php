@@ -78,7 +78,7 @@
   <div id="destacados">
     <hr>
     <aside class="estrellas"></aside>
-    <h3>También te puede interesar</h3>
+    <h3>También le puede interesar</h3>
     <?php $view = views_get_view('anuncios'); print $view->preview('block'); ?>
   </div>
 
