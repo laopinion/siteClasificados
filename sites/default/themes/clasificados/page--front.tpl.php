@@ -7,6 +7,10 @@
     <h3>Anuncios Destacados</h3>
     <?php $view = views_get_view('home'); print $view->preview('block'); ?>
   </div>
+  <div class="pauta">
+    <?php include_once('dfp/728x90.php'); ?>
+    <?php include_once('dfp/320x50.php'); ?>
+  </div>
   <div id="empleos">
     <hr>
     <h3>Empleos</h3>

@@ -30,7 +30,10 @@
     <?php $view = views_get_view('categorias'); print $view->preview('block_8'); ?>
   </article>
 
-  <div class="pauta"></div>
+  <div class="pauta">
+    <?php include_once('dfp/728x90.php'); ?>
+    <?php include_once('dfp/320x50.php'); ?>
+  </div>
 
   <article id="masEmpleos" class="container">
     <?php $view = views_get_view('categorias'); print $view->preview('block_9'); ?>
