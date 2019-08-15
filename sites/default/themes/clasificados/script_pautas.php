@@ -45,15 +45,15 @@
     googletag.pubads().enableSingleRequest();
     googletag.pubads().collapseEmptyDivs();
 
-    window.googletag.pubads().setTargeting("ttLS", getTailTargetParam('LS'));
-    window.googletag.pubads().setTargeting("ttS", getTailTargetParam('S'));
-    window.googletag.pubads().setTargeting("ttT", getTailTargetParam('T'));
-    window.googletag.pubads().setTargeting("ttC", getTailTargetParam('C'));
-    window.googletag.pubads().setTargeting("ttU", getTailTargetParam('U'));
-    window.googletag.pubads().setTargeting("ttCA", getTailTargetParam('CA'));
-    window.googletag.pubads().setTargeting("ttE", getTailTargetParam('E'));
-    window.googletag.pubads().setTargeting("ttA", getTailTargetParam('A'))
-    window.googletag.pubads().setTargeting("ttG", getTailTargetParam('G'))
+    // window.googletag.pubads().setTargeting("ttLS", getTailTargetParam('LS'));
+    // window.googletag.pubads().setTargeting("ttS", getTailTargetParam('S'));
+    // window.googletag.pubads().setTargeting("ttT", getTailTargetParam('T'));
+    // window.googletag.pubads().setTargeting("ttC", getTailTargetParam('C'));
+    // window.googletag.pubads().setTargeting("ttU", getTailTargetParam('U'));
+    // window.googletag.pubads().setTargeting("ttCA", getTailTargetParam('CA'));
+    // window.googletag.pubads().setTargeting("ttE", getTailTargetParam('E'));
+    // window.googletag.pubads().setTargeting("ttA", getTailTargetParam('A'))
+    // window.googletag.pubads().setTargeting("ttG", getTailTargetParam('G'))
     
     googletag.enableServices();
   });
