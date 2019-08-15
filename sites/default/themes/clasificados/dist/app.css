@@ -1055,6 +1055,11 @@ table {
 #home {
   margin: 0 auto;
   width: 1000px; }
+  #home .pauta {
+    background-color: #dedede;
+    height: 90px;
+    max-width: 728px;
+    margin: 50px auto; }
   #home #destacados {
     position: relative;
     margin-top: 60px; }
@@ -1284,6 +1289,9 @@ table {
 @media screen and (max-width: 768px) {
   #home {
     width: 100%; }
+    #home .pauta {
+      height: auto;
+      width: 100%; }
     #home #destacados .view-id-home.view-display-id-block .view-content {
       flex-wrap: wrap;
       -webkit-flex-wrap: wrap;
@@ -1830,7 +1838,7 @@ table {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
   #anuncio .pauta {
-    background-color: #000000;
+    background-color: #dedede;
     height: 90px;
     margin: 0 auto 60px auto;
     width: 728px; }
@@ -2544,7 +2552,7 @@ table {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
   #vehiculos .pauta {
-    background-color: #000000;
+    background-color: #dedede;
     height: 90px;
     margin: 0 auto 60px auto;
     width: 728px; }
@@ -3067,7 +3075,7 @@ table {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
   #empleos .pauta {
-    background-color: #000000;
+    background-color: #dedede;
     height: 90px;
     margin: 0 auto 60px auto;
     width: 728px; }
@@ -3724,7 +3732,7 @@ table {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
   #fincaRaiz .pauta {
-    background-color: #000000;
+    background-color: #dedede;
     height: 90px;
     margin: 0 auto 60px auto;
     width: 728px; }
@@ -4261,7 +4269,7 @@ table {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
   #varios .pauta {
-    background-color: #000000;
+    background-color: #dedede;
     height: 90px;
     margin: 0 auto 60px auto;
     width: 728px; }

@@ -1,5 +1,4 @@
 <section id="proyecto">
-
   <article id="inmobiliarias" class="container">
     <hr>
     <h3>Inmobiliarias</h3>
