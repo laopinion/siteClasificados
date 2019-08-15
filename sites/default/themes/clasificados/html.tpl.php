@@ -62,7 +62,10 @@
   <meta name="twitter:url" content="https://clasificados.laopinion.com.co"> 
   <meta name="twitter:site" content="@laopinioncucuta" />
   <meta name="twitter:title" content="Anuncios clasificados empleos, finca raíz, vehículos, serivicios y más | Clasificados La Opinión - Cúcuta">
-  <meta name="twitter:creator" content="@laopinioncucuta"> 
+  <meta name="twitter:creator" content="@laopinioncucuta">
+  <?php include_once('script_pautas.php'); ?>
+  <!-- ANALYTICS CODE -->
+  <?php include_once("analyticstracking.php") ?>
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

@@ -406,33 +406,33 @@ table {
           background-position: -73px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .empleos:hover {
-            background-position-y: -8px; }
+            background-position-y: -9px; }
         #header #block3 .container .opts .empleos.active {
-          background-position-y: -8px; }
+          background-position-y: -9px; }
         #header #block3 .container .opts .autos {
           background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
           background-position: -198px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .autos:hover {
-            background-position-y: -8px; }
+            background-position-y: -9px; }
         #header #block3 .container .opts .autos.active {
-          background-position-y: -8px; }
+          background-position-y: -9px; }
         #header #block3 .container .opts .finca {
           background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
           background-position: -328px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .finca:hover {
-            background-position-y: -8px; }
+            background-position-y: -9px; }
         #header #block3 .container .opts .finca.active {
-          background-position-y: -8px; }
+          background-position-y: -9px; }
         #header #block3 .container .opts .varios {
           background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
           background-position: -455px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .varios:hover {
-            background-position-y: -8px; }
+            background-position-y: -9px; }
         #header #block3 .container .opts .varios.active {
-          background-position-y: -8px; }
+          background-position-y: -9px; }
       #header #block3 .container .buscador {
         background: url(images/src/img/iconos/cintilloBuscador.png) no-repeat;
         height: 100%;
@@ -2327,7 +2327,8 @@ table {
         display: -moz-flex;
         justify-content: space-between;
         -webkit-justify-content: space-between;
-        -moz-justify-content: space-between; }
+        -moz-justify-content: space-between;
+        flex-wrap: wrap; }
         #vehiculos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
           width: 240px; }
           #vehiculos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia {
@@ -2382,7 +2383,8 @@ table {
       display: -moz-flex;
       justify-content: space-around;
       -webkit-justify-content: space-around;
-      -moz-justify-content: space-around; }
+      -moz-justify-content: space-around;
+      flex-wrap: wrap; }
   #vehiculos #destacados {
     position: relative;
     margin-top: 60px; }
@@ -2418,7 +2420,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -2491,7 +2494,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #vehiculos #anunciosVehiculos .view-id-categorias.view-display-id-block_1 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -2555,7 +2559,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #vehiculos #masVehiculos .view-id-categorias.view-display-id-block_4 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -2638,7 +2643,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #vehiculos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -2886,7 +2892,8 @@ table {
         display: -moz-flex;
         justify-content: space-between;
         -webkit-justify-content: space-between;
-        -moz-justify-content: space-between; }
+        -moz-justify-content: space-between;
+        flex-wrap: wrap; }
         #empleos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
           width: 240px; }
           #empleos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia {
@@ -2936,7 +2943,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #empleos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -3009,7 +3017,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #empleos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -3073,7 +3082,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -3156,7 +3166,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #empleos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -3496,7 +3507,8 @@ table {
         display: -moz-flex;
         justify-content: space-between;
         -webkit-justify-content: space-between;
-        -moz-justify-content: space-between; }
+        -moz-justify-content: space-between;
+        flex-wrap: wrap; }
         #fincaRaiz #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
           width: 240px; }
           #fincaRaiz #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia {
@@ -3551,7 +3563,8 @@ table {
       display: -moz-flex;
       justify-content: space-around;
       -webkit-justify-content: space-around;
-      -moz-justify-content: space-around; }
+      -moz-justify-content: space-around;
+      flex-wrap: wrap; }
   #fincaRaiz #destacados {
     position: relative;
     margin-top: 60px; }
@@ -3587,7 +3600,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #fincaRaiz #destacados .view-id-categorias.view-display-id-block_11 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -3660,7 +3674,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #fincaRaiz #anunciosFincaRaiz .view-id-categorias.view-display-id-block_12 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -3724,7 +3739,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #fincaRaiz #masFincaRaiz .view-id-categorias.view-display-id-block_13 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -3807,7 +3823,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #fincaRaiz #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -3976,7 +3993,8 @@ table {
         display: -moz-flex;
         justify-content: space-between;
         -webkit-justify-content: space-between;
-        -moz-justify-content: space-between; }
+        -moz-justify-content: space-between;
+        flex-wrap: wrap; }
         #varios #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
           width: 240px; }
           #varios #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia {
@@ -4119,7 +4137,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -4192,7 +4211,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #varios #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -4256,7 +4276,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #varios #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -4339,7 +4360,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #varios #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
