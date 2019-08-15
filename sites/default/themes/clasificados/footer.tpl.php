@@ -8,7 +8,7 @@
     <div class="container">
       <div class="tel">
         <i class="iconTel">
-          <a href="tel:+57529999">Teléfono (57) 582 99 99 </a>
+          <a href="https://api.whatsapp.com/send?phone=573166941938&text=Me%20gustar%C3%ADa%20ordenar%20un%20aviso%20clasificado.">Teléfono (57) 3166941938</a>
         </i>
       </div>
       <hr>
@@ -17,13 +17,6 @@
           <i class="iconOffice"></i>
         </a>
         <p> <a href="<?php print base_path(); ?>oficinas">Oficinas</a> </p>
-      </div>
-      <hr>
-      <div class="domic">
-        <a href="<?php print base_path(); ?>domicilios">
-          <i class="iconDomic"></i>
-        </a>
-        <p> <a href="<?php print base_path(); ?>domicilios">Domicilios</a> </p>
       </div>
     </div>
   </section>
@@ -40,10 +33,10 @@
       </div>
       <div class="opt movil">
         <ul>
-          <li><a href="#empleos">Empleos</a></li>
-          <li><a href="#vehiculos">Vehículos</a></li>
-          <li><a href="#finca">Finca raíz</a></li>
-          <li><a href="#varios">Varios</a></li>
+          <li><a href="<?php print base_path(); ?>empleos">Empleos</a></li>
+          <li><a href="<?php print base_path(); ?>vehiculos">Vehículos</a></li>
+          <li><a href="<?php print base_path(); ?>finca">Finca raíz</a></li>
+          <li><a href="<?php print base_path(); ?>varios">Varios</a></li>
         </ul>
       </div>
       <div class="title">
@@ -59,10 +52,10 @@
         </div>
         <div class="opt">
           <ul>
-            <li><a href="#empleos">Empleos</a></li>
-            <li><a href="#vehiculos">Vehículos</a></li>
-            <li><a href="#finca">Finca raíz</a></li>
-            <li><a href="#varios">Varios</a></li>
+            <li><a href="<?php print base_path(); ?>empleos">Empleos</a></li>
+            <li><a href="<?php print base_path(); ?>vehiculos">Vehículos</a></li>
+            <li><a href="<?php print base_path(); ?>finca">Finca raíz</a></li>
+            <li><a href="<?php print base_path(); ?>varios">Varios</a></li>
           </ul>
         </div>
         <div class="opt">

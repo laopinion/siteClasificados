@@ -1,0 +1,39 @@
+.view-administrar-anuncios
+  margin: 100px auto
+  width: 1000px
+  .view-header
+    margin-bottom: 50px
+    h2
+      text-align: center
+  .view-content
+    display: flex
+    display: -webkit-flex
+    display: -moz-flex
+    justify-content: space-around
+    -webkit-justify-content: space-around
+    -moz-justify-content: space-around
+    flex-wrap: wrap
+    -webkit-flex-wrap: wrap
+    -moz-flex-wrap: wrap
+    .views-row
+      margin-bottom: 30px
+      padding: 5px 20px
+      box-sizing: content-box
+      background-color: #f9f9f9
+      width: 300px
+      a
+        text-decoration: none
+        color: #0074BD
+        &:hover
+          text-decoration: underline
+      .views-field
+        margin: 10px 0
+
+@media screen and (max-width: 768px)
+  .view-administrar-anuncios
+    margin: 100px 2%
+    width: 96%
+    .view-content
+      flex-wrap: wrap
+      -webkit-flex-wrap: wrap
+      -moz-flex-wrap: wrap

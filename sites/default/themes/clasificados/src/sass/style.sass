@@ -5,12 +5,21 @@
 @import 'components/header.sass'
 @import 'components/header-media.sass'
 
+@import 'components/login.sass'
+@import 'components/register.sass'
+@import 'components/user-media.sass'
+
 @import 'components/slides.sass'
 @import 'components/home.sass'
 @import 'components/home-768.sass'
 
 @import 'components/anuncio.sass'
 @import 'components/anuncio-media.sass'
+
+@import 'components/adminAnuncios.sass'
+
+@import 'components/edicto.sass'
+@import 'components/ordenar-edicto.sass'
 
 @import 'components/vehiculos.sass'
 @import 'components/vehiculos-media.sass'
@@ -37,13 +46,23 @@
 
 @import 'components/search.sass'
 
-@import 'components/login.sass'
-@import 'components/register.sass'
-@import 'components/user-media.sass'
-
 @import 'components/preguntas.sass'
 @import 'components/domicilios.sass'
 @import 'components/oficinas.sass'
 
 @import 'components/footer.sass'
 @import 'components/footer-768.sass'
+
+.message__whatsapp 
+  position: fixed
+  bottom: 30px
+  right: 30px
+  z-index: 1000
+
+
+.message__whatsapp .icon 
+  background: url('../../pagos/images/icono_whatsapp.svg') no-repeat
+  display: block
+  height: 60px
+  width: 60px
+  background-size: 100%

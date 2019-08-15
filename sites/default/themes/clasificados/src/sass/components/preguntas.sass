@@ -1,33 +1,21 @@
-#pregunFrecuen
+#Preguntas__frecuentes
   margin: 50px auto
   width: 1000px
   h2
     color: #4153A7
     font-size: 2rem // 32px
     font-weight: 700
-  .pregunta
+    text-align: center
+  .preguntas
+    padding: 0
+    li
+      list-style: none
+      padding: 0
     h3
       color: $rojo
       font-size: 1.5rem //25px
       font-weight: 700
-    .respuesta
-      p
-        margin: 0
-        a
-          text-decoration: none
-          color: $rojoOscuro
-          font-weight: 700
-          &:hover
-            text-decoration: underline
-      .letrica
-        font-size: 0.8rem // 14px
-        font-style: italic
-      ul
-        padding: 0
-        list-style: none
-        a
-          text-decoration: none
-          color: $rojoOscuro
-          font-weight: 700
-          &:hover
-            text-decoration: underline
+
+@media screen and (max-width: 768px)
+  #Preguntas__frecuentes
+    width: 96%

@@ -5,29 +5,30 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack -w --colors",
-    "prod": "webpack -p"
+    "prod": "webpack -p",
+    "start": "npm run dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.1.2",
-    "babel-preset-es2015": "^6.24.1",
-    "css-loader": "^0.28.7",
-    "eslint": "^3.19.0",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "file-loader": "^0.11.2",
-    "image-webpack-loader": "^3.4.2",
-    "node-sass": "^4.5.3",
-    "resolve-url-loader": "^2.1.0",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.18.2",
-    "webpack": "^3.5.6"
+    "babel-core": "6.26.0",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "7.1.2",
+    "babel-preset-es2015": "6.24.1",
+    "css-loader": "0.28.7",
+    "eslint": "3.19.0",
+    "extract-text-webpack-plugin": "3.0.0",
+    "file-loader": "0.11.2",
+    "image-webpack-loader": "3.4.2",
+    "node-sass": "4.5.3",
+    "resolve-url-loader": "2.1.0",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.18.2",
+    "webpack": "3.5.6"
   },
   "dependencies": {
-    "jquery": "^3.2.1",
-    "responsive-slides": "^1.55.0"
+    "jquery": "3.2.1",
+    "responsive-slides": "1.55.0"
   }
 }

@@ -85,6 +85,7 @@ function autoassignrole_auto_settings() {
  * @see system_settings_form()
  */
 function autoassignrole_user_settings() {
+  global $language;
   $form['autoassignrole_user_active'] = array(
     '#type' => 'radios',
     '#title' => t('User role assignment'),
@@ -215,6 +216,28 @@ function autoassignrole_user_settings() {
     ),
   );
 
+  $form['autoassignrole_user_fieldset_weight'] = array(
+    '#type' => 'textfield',
+    '#title' => t('User Role Fieldset weight'),
+    '#description' => t('The weight of the fieldset that contains role options.') . '<br>' .
+      t('To display this fieldset on top of the form, please specify weight less than -10. For Ex. -30.') . '<br>' .
+      t('To display at the bottom of the form, please specify weight greater than 15.') . '<br>' .
+      t('If the field is not appearing at desired position, please increase or decrease the weight that you have specified.'),
+    '#number_type' => 'integer',
+    '#field_name' => 'autoassignrole_user_fieldset_weight',
+    '#element_validate' => array('number_field_widget_validate'),
+    '#size' => 10,
+    '#maxlength' => 10,
+    '#field_parents' => array(),
+    '#language' => $language->language,
+    '#default_value' => variable_get('autoassignrole_user_fieldset_weight', 0),
+    '#states' => array(
+      'visible' => array(
+        ':input[name="autoassignrole_user_active"]' => array('value' => 1),
+      ),
+    ),
+  );
+
   return system_settings_form($form);
 }
 
@@ -331,7 +354,7 @@ function autoassignrole_page_form_validate($form_id, &$form_state) {
     else {
       $query = db_select('menu_links', 'm')
         ->fields('m', array('mlid'))
-        ->condition('link_path', $path, 'like');
+        ->condition('link_path', $path, 'LIKE');
       $count = $query->countQuery()->execute()->fetchField();
       if (drupal_lookup_path('source', $path) || $count > 0) {
         // The menu item exists so need to check if the path has something other

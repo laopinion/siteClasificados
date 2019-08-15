@@ -68,31 +68,38 @@
   <li class="<?php print $classes; ?>">
     
     <!--IMAGEN-->
-    <?php if (isset($node->field_image['und'][0]['uri'])): ?>
-      <div class="imagen"><?php print theme('image_style', array('style_name' => 'thumbnail', 'path' => $node->field_image['und'][0]['uri'],'alt'=>$title,'title'=>$title)); ?></div>
+    <?php if ($result['node']->field_image): 
+        $search_image_uri = $result['node']->field_image['und'][0]['uri'];
+        // assuming that the uri starts with "public://"
+        $search_image_filepath = file_create_url($search_image_uri);
+      ?>
+      <div class="imagen"> <a href="<?php print $url; ?>"><img src="<?php print $search_image_filepath; ?>" /></a> </div>
     <?php endif; ?>
 
-    <!--FECHA-->
-    <?php if ($snippet): ?>
-      <div class="fecha"><?php print format_date($result['node']->created,"custom","F d, Y");?></div>
-    <?php endif; ?>
+    <div class="info">
+      <!--FECHA-->
+      <?php if ($snippet): ?>
+      
+        <?php 
+          require_once 'get_time_anuncio.php';
+          $timeago = get_timeago(strtotime(format_date($result['node']->created, 'tpl'))); 
+        ?>
+        <div class="fecha"><?php print $timeago;?></div>
+      <?php endif; ?>
 
-    <!--Seccion-->
-    <?php if ($info): ?>
-      <?php //$tid = $node->field_categoria['und'][0]['tid']; ?>
-      <?php //$tax = taxonomy_term_load($tid) ?>
-      <div class="seccion">Sección: <a href="/taxonomy/term/<?php //echo $tid; ?>"><?php //print $tax->name; ?></a></div>
-    <?php endif; ?>
+      <!--TITULO-->
+      <h3 class="title">
+        <a href="<?php print $url; ?>"><?php print $title; ?></a>
+      </h3>
 
-    <!--TITULO-->
-    <h3 class="title">
-      <a href="<?php print $url; ?>"><?php print $title; ?></a>
-    </h3>
-
-    <!--RESUMEN-->
-    <?php if ($snippet): ?>
-      <div class="resumen"><?php //print strip_tags(truncate_utf8(trim(decode_entities(strip_tags($node->body['und'][0]['value']))), 80, TRUE)); ?> ...</div>
-    <?php endif; ?>
-
+      <div class="section">
+        <!--Seccion-->
+        <?php if ($info): ?>
+          <?php $tid = $result['node']->field_categoria['und'][0]['tid']; ?>
+          <?php $tax = taxonomy_term_load($tid) ?>
+          <a href="/taxonomy/term/<?php print $tid; ?>"><?php print $tax->name; ?></a>
+        <?php endif; ?>
+      </div>
+    </div>
   </li>
 </div>

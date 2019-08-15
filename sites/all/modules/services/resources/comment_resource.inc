@@ -245,13 +245,10 @@ function _comment_resource_create($comment) {
  *   The comment object
  */
 function _comment_resource_retrieve($cid) {
-
   $comment = comment_load($cid);
-
-  //Lets check field_permissions
-  $comment = services_field_permissions_clean('view', 'comment', $comment);
-
-  return $comment;
+  return $comment ?
+    services_field_permissions_clean('view', 'comment', $comment) :
+    services_error(t('Comment @cid not found', array('@cid' => $cid)), 404);
 }
 
 /**
@@ -279,7 +276,7 @@ function _comment_resource_update($cid, $comment) {
   $form_state['values']['op'] = variable_get('services_comment_save_button_resource_update', t('Save'));
   $form_state['comment'] = $old_comment;
   $form_state['programmed_bypass_access_check'] = FALSE;
-  
+
   drupal_form_submit('comment_form', $form_state, $old_comment);
 
   if ($errors = form_get_errors()) {
@@ -315,7 +312,7 @@ function _comment_resource_delete($cid) {
   return TRUE;
 }
 /**
- * Return an array of optionally paged cids baed on a set of criteria.
+ * Return an array of optionally paged cids based on a set of criteria.
  *
  * An example request might look like
  *

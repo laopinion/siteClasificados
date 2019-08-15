@@ -9,18 +9,90 @@
   .informacion
     .search-results.node-results
       padding: 0
+      display: flex
+      display: -webkit-flex
+      display: -moz-flex
+      flex-wrap: wrap
+      -webkit-flex-wrap: wrap
+      -moz-flex-wrap: wrap
+      justify-content: center
+      -webkit-justify-content: center
+      -moz-justify-content: center
+      justify-content: space-around
+      -webkit-justify-content: space-around
+      -moz-justify-content: space-around
+      .resultado
+        // margin-bottom: 20px
+        // width: 300px
+        overflow: hidden
+        background-color: #efefef
+        padding: 4px
+        box-sizing: border-box
+        height: 270px
+        width: 185px
+      .info
+        margin: 10px auto
+        width: 160px
       .search-result
-        .title
-          margin: 0 0 10px 0
+        .fecha
+          text-align: left
+          font-weight: 700
+          font-size: 0.8rem
+          border-bottom: 1px solid #afafaf
+          padding-bottom: 8px
+          margin-bottom: 10px
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+          width: 160px
+        .imagen
+          width: 177px
+          height: 112px
+          img
+            object-fit: cover
+            height: 100%
+            width: 100%
+        .section
+          margin-top: 25px
+          font-weight: 700
+          text-transform: uppercase
+          &:before
+            content: url('../img/iconos/estrella.svg')
+            margin-right: 5px
           a
             text-decoration: none
-            color: $rojo
+            color: #000000
+        .title
+          // margin: 0 0 10px 0
+          margin-bottom: 5px
+          text-overflow: ellipsis
+          white-space: nowrap
+          overflow: hidden
+          a
+            text-decoration: none
+            color: #000000
           &:hover
-            text-decoration: underline
+            white-space: initial
+            overflow: visible
+            width: auto
         .search-snippet-info
           padding: 0
           .search-info
             a
               text-decoration: none
               color: $negro
+  .item-list
+    a
+      text-decoration: none
+      color: $rojo
+      &:hover
+        text-decoration: underline
+
+@media screen and (max-width: 768px)
+  #search
+    width: 96%
+    .informacion .search-results.node-results
+      flex-wrap: wrap
+      .resultado
+        margin-bottom: 20px
   

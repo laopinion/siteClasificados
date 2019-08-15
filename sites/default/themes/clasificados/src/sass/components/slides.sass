@@ -27,9 +27,8 @@
       width: 100%
       border: 0
   #publicarAnuncio
-    display: flex
-    display: -webkit-flex
-    display: -moz-flex
+    // display: flex
+    display: none
     justify-content: center
     -webkit-justify-content: center
     -moz-justify-content: center
@@ -176,6 +175,8 @@
         margin-bottom: 10px
 
 @media screen and (max-width: 600px)
+  #slider
+    display: none
   #slider-anuncio 
     .rslides-anuncio 
       height: auto
@@ -184,6 +185,8 @@
       img
         height: auto
         object-fit: initial
+  #slider #publicarAnuncio
+    display: none
 
 #slider-fullScream
   display: none

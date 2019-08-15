@@ -1,0 +1,189 @@
+#Ordenar__edicto
+  .container
+    margin: 0 auto
+    max-width: 1000px
+  .slide
+    margin-bottom: 80px
+    display: flex
+    width: 100%
+    img
+      height: auto
+      width: 100%
+  .header__edicto
+    h3
+      text-align: center
+      font-size: 2rem
+      line-height: 2.5rem
+      border-bottom: 1px solid #afafaf
+      padding: 0px 0px 20px
+      margin: 0 auto
+      width: 80%
+    ul
+      margin: 50px auto
+      padding: 0
+      width: 80%
+      li
+        font-size: 1.5rem
+        line-height: 1.8rem
+        margin-bottom: 10px
+    h2
+      margin: 0 auto
+      text-align: center
+      color: $rojo
+      border-bottom: 1px solid #afafaf
+      width: 450px
+      font-size: 2.5rem
+      line-height: 2.8rem
+  #webform__edicto
+    margin-top: 30px
+    margin-bottom: 180px
+    #webform-ajax-wrapper-34, #webform-ajax-wrapper-87
+      .webform-confirmation
+        font-size: 1.2rem
+        line-height: 1.5rem
+        font-weight: 700
+        text-align: center
+        margin: 50px 0 0 0
+      label
+        text-align: center
+        font-size: 1.5rem
+        font-weight: 400
+        margin-bottom: 10px
+      textarea
+        border: none
+        background: #eeeef0
+        height: 150px
+      .form-item
+        display: flex
+        flex-direction: column
+        margin: 20px 0
+        #edit-submitted-documento, select
+          border: none
+          height: 56px
+          background: #eeeef0
+          padding: 5px 5px 5px 10px
+          outline: none
+          color: #333333
+          font-size: 16px
+          box-sizing: border-box
+          width: 100%
+      .form-actions
+        display: flex
+        justify-content: center
+        input
+          border: none
+          width: 295px
+          height: 56px
+          border-radius: 2px
+          font-size: 30px
+          font-weight: bold
+          color: white
+          background: #bc2024
+          cursor: pointer
+          transition: 0.5s
+          outline: 0
+      .links, .webform-component--referencia-de-pago
+        display: none
+  
+  // Formulario payu
+  #formulario
+    margin: 80px 0 180px
+    h2
+      font-size: 30px
+      line-height: 32px
+      text-align: center
+      color: #bc2024
+      margin: 0 0 70px
+
+  .formulario
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-row-gap: 30px
+    grid-column-gap: 20px
+    label
+      font-size: 16px
+      color: #333333
+      margin-bottom: 10px
+      font-weight: bold
+    input, select
+      border: none
+      height: 56px
+      background: #eeeef0
+      padding: 5px 5px 5px 10px
+      outline: none
+      color: #333333
+      font-size: 16px
+      box-sizing: border-box
+    .terminos
+      grid-column: 2/4
+      justify-self: center
+      flex-direction: initial !important
+      label
+        font-size: 16px
+      input
+        width: 32px
+        margin: 0 10px
+      a
+        text-decoration: none
+        color: #bc2024
+        &:hover
+          text-decoration: underline
+    .form-item
+      display: flex
+      flex-direction: column
+
+    .form-actions
+      grid-column: 1/4
+      justify-self: center
+      overflow: hidden
+      outline: 0
+      .submit
+        border: none
+        width: 295px
+        height: 56px
+        border-radius: 2px
+        font-size: 30px
+        font-weight: bold
+        color: white
+        background: #bc2024
+        cursor: pointer
+        transition: 0.5s
+        outline: 0
+      &:hover
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
+
+    .waves
+      position: relative
+      transition: all 0.3s ease-out
+
+    .waves-ripple
+      display: block
+      position: absolute
+      background: rgba(255, 255, 255, 0.5)
+      border-radius: 100%
+      transform: scale(0)
+
+    .waves-animate
+      animation: waves_ripple-animate 0.5s linear
+
+    @keyframes waves_ripple-animate
+      100%
+        opacity: 0
+        transform: scale(2.5)
+
+@media screen and (max-width: 768px)
+  #Ordenar__edicto .container
+    margin: 0 2%
+    width: 96%
+  #Ordenar__edicto .header__edicto h2
+    width: 100%
+  #Ordenar__edicto
+    .formulario
+      grid-template-columns: 1fr
+      .terminos
+        grid-column: auto
+      .form-actions
+        grid-column: auto
+    .formulario .terminos input
+      margin: 0 25px 0 10px
+      width: 80px

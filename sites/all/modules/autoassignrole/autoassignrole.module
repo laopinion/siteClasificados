@@ -241,6 +241,7 @@ function autoassignrole_form_user_register_form_alter(&$form, &$form_state) {
         '#title' => filter_xss(variable_get('autoassignrole_user_fieldset_title', t('User Roles'))),
         '#collapsible' => FALSE,
         '#collapsed' => FALSE,
+        '#weight' => variable_get('autoassignrole_user_fieldset_weight', 0),
       );
 
       // Sort the roles.

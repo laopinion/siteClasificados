@@ -1,6 +1,6 @@
 <section id="empleos">
   <div id="portada">
-    <img src="" alt="autos">
+    <img src="<?php print base_path(); ?>sites/default/themes/clasificados/dist/images/src/img/empleo.jpg" alt="Empleos">
   </div>
 
   <article id="categorias" class="container">
@@ -39,7 +39,7 @@
   <article id="otrosAnuncios" class="container">
     <hr>
     <aside class="estrellas"></aside>
-    <h3>También te puede interesar</h3>
+    <h3>También le puede interesar</h3>
     <?php $view = views_get_view('categorias'); print $view->preview('block_5'); ?>
   </article>
 

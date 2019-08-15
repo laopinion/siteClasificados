@@ -3,15 +3,32 @@
   width: 1000px
 #header
   background-color: $rojo
+  .searchMovil
+    display: none
   #block1
     background-color: $rojoOscuro
-    height: 25px
+    padding: 2px 0
     .container
-      .user
+      .fecha
         color: $blanco
+        span
+          font-size: 1.2rem // 19px
+          font-weight: 700
+          margin-right: 5px
+        p
+          margin: 0
+        .date
+          display: flex
+          align-items: center
+      .user
+        display: none
+      .user, a
+        color: $blanco
+        text-decoration: none
   #block2
-    height: 130px
-    margin-top: 10px
+    height: 100px
+    // margin-top: 10px
+    margin-bottom: 10px
     .container
       display: flex
       display: -webkit-flex
@@ -27,11 +44,16 @@
         span
           font-size: 1.4rem // 23px
           font-weight: 700
+          margin-right: 5px
         p
           margin: 0
+        .date
+          display: flex
+          align-items: center
       .logo
         background: url('../img/logo.svg') no-repeat
         background-position: 50%
+        background-size: 290px
         margin: 20px auto 0 auto
         a
           display: block
@@ -40,7 +62,8 @@
   #block3
     background-color: $rojoOscuro
     height: 98px
-    margin-top: 30px
+    .hamburger
+      display: none
     .container
       display: flex
       display: -webkit-flex
@@ -66,41 +89,37 @@
             display: block
             height: 100%
         .empleos
-          background: url('../img/iconos/empleo.svg') no-repeat
-          background-position: 90% 100%
+          background: url('../img/iconos/logosHeader.svg') no-repeat
+          background-position: -73px -173px
+          background-size: 650px
           &:hover
-            background: url('../img/iconos/empleo-2.svg') no-repeat
-            background-position: 90% 100%
+            background-position-y: -8px
         .empleos.active
-          background: url('../img/iconos/empleo-2.svg') no-repeat
-          background-position: 90% 100%
+          background-position-y: -8px
         .autos
-          background: url('../img/iconos/vehiculo.svg') no-repeat
-          background-position: 90% 100%
+          background: url('../img/iconos/logosHeader.svg') no-repeat
+          background-position: -198px -173px
+          background-size: 650px
           &:hover
-            background: url('../img/iconos/vehiculo-2.svg') no-repeat
-            background-position: 90% 100%
+            background-position-y: -8px
         .autos.active
-          background: url('../img/iconos/vehiculo-2.svg') no-repeat
-          background-position: 90% 100%
+          background-position-y: -8px
         .finca
-          background: url('../img/iconos/fincaRaiz.svg') no-repeat
-          background-position: 90% 100%
+          background: url('../img/iconos/logosHeader.svg') no-repeat
+          background-position: -328px -173px
+          background-size: 650px
           &:hover
-            background: url('../img/iconos/fincaRaiz-2.svg') no-repeat
-            background-position: 90% 100%
+            background-position-y: -8px
         .finca.active
-          background: url('../img/iconos/fincaRaiz-2.svg') no-repeat
-          background-position: 90% 100%
+          background-position-y: -8px
         .varios
-          background: url('../img/iconos/varios.svg') no-repeat
-          background-position: 90% 100%
+          background: url('../img/iconos/logosHeader.svg') no-repeat
+          background-position: -455px -173px
+          background-size: 650px
           &:hover
-            background: url('../img/iconos/varios-2.svg') no-repeat
-            background-position: 90% 100%
+            background-position-y: -8px
         .varios.active
-          background: url('../img/iconos/varios-2.svg') no-repeat
-          background-position: 90% 100%
+          background-position-y: -8px
       .buscador
         background: url('../img/iconos/cintilloBuscador.png') no-repeat
         height: 100%

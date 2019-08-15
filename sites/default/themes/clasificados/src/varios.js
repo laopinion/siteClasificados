@@ -6,8 +6,8 @@ class Varios {
   }
 
   activeCategoria () {
-    const path = window.location.href;
-    if(path == 'http://localhost/siteClasificados/varios' || path == 'https://clasificados.laopinion.com.co/varios' ) {
+    const path = window.location.pathname;
+    if(path == '/varios') {
       $('#header #block3 .container .opts .varios').addClass('active');
     }
 

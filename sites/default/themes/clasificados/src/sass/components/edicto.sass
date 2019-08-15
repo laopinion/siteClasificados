@@ -1,0 +1,35 @@
+#Edictos
+  .edicto__title
+    background: #efefef
+    text-align: center
+    padding: 20px 20px 10px
+    margin: 20px 0
+    .fecha
+      padding: 0 0 5px
+      border-bottom: 1px solid #afafaf
+      margin-bottom: 10px
+      font-size: 1.2rem
+      font-weight: 700
+      line-height: 1.5rem
+    .titulo
+      margin: 0
+      font-size: 1.5rem
+      line-height: 1.8rem
+  .edicto__body
+    margin: 50px 0
+    .descripcion
+      border-bottom: 1px solid #afafaf
+      padding-bottom: 5px
+      &:before
+        content: url('../img/iconos/estrella.svg')
+        margin-right: 5px
+    .body
+      font-size: 16px
+      line-height: 20px
+
+@media screen and (max-width: 768px)
+  #Edictos
+    width: 96%
+    .logo img
+      height: auto
+      width: 100%

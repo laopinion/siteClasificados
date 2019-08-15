@@ -9,17 +9,29 @@
     #block-2
       height: auto
       .container
-        flex-direction: column
-        -webkit-flex-direction: column
-        -moz-flex-direction: column
-        align-items: center
-        -webkit-align-items: center
-        -moz-align-items: center
+        display: grid
+        grid-template-columns: 1fr 1fr
+        justify-items: center
         padding: 20px 0
-        hr
+        i
+          height: 50px
+        hr, p
           display: none
-        .tel, .office
-          margin-bottom: 20px
+        .tel
+          width: 160px 
+          .iconTel
+            background: url('../img/iconos/footerLogos.svg') no-repeat
+            background-size: 390px
+            background-position: -26px -20px
+        .office 
+          width: 150px
+          .iconOffice
+            background: url('../img/iconos/footerLogos.svg') no-repeat
+            background-size: 330px
+            background-position: -170px -8px
+            width: 150px
+        .domic
+          display: none
     #block-3
       height: auto
       .container

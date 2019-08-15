@@ -1,13 +1,6 @@
 <header id="header">
   <section id="block1">
     <div class="container">
-      <div class="user">
-        <span><i class="iconUser"></i> Ingresar</span>
-      </div>
-    </div>
-  </section>
-  <section id="block2">
-    <div class="container">
       <div class="fecha">
         <?php
           $dia = date("l");
@@ -18,14 +11,25 @@
           if ($dia=="Friday") $dia="Viernes";
           if ($dia=="Saturday") $dia="Sábado";
           if ($dia=="Sunday") $dia="Domingo";
+          $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
         ?>
-        <span><?php print $dia; ?></span>
-        <p><?php print date("d").'/'.date("m").'/'.date("Y");?></p>
+        <div class="date">
+          <span><?php print "$dia, "; ?></span>
+          <p><?php print date("d").' de '.$meses[date('n')-1].' de '.date("Y");?></p>
+        </div>
         <p>Cúcuta - Colombia</p>
       </div>
+      <div class="user">
+        <span><i class="iconUser"></i> <a href="<?php print base_path(); ?>user">Ingresar</a></span>
+      </div>
+    </div>
+  </section>
+  <section id="block2">
+    <div class="container">
       <div class="logo">
         <a href="<?php print base_path(); ?>"></a>
       </div>
+      <div class="searchMovil"></div>
     </div>
   </section>
   <section id="block3">
@@ -36,6 +40,11 @@
         <li class="finca opt"> <a href="<?php print base_path(); ?>finca-raiz">Finca raiz</a> </li>
         <li class="varios opt"> <a href="<?php print base_path(); ?>varios">Varios</a> </li>
       </ul>
+      <button class="hamburger hamburger--arrow" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>  
       <div class="buscador">
         <aside class="lupa"></aside>
         <?php $bloque_busqueda = module_invoke('search', 'block_view', 'search'); print render($bloque_busqueda);?>

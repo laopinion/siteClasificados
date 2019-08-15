@@ -1,10 +1,12 @@
 import $ from './jquery';
 
 class Home {
-  constructor(autos, empleo) {
+  constructor(autos, empleo, finca, varios) {
     this.name = 'John serrano';
     this.autos = autos;
     this.empleo = empleo;
+    this.finca = finca;
+    this.varios = varios;
     $('#header #block3 .container .buscador form .container-inline input').attr('placeholder', 'Escriba lo que quiere buscar.');
   }
   
@@ -72,10 +74,47 @@ class Home {
 
   slides () {
     // Cargamos las images del slider
-    $('#autos').attr('src', `sites/default/themes/clasificados/dist/${this.autos}`);
+    // $('#autosPortada').attr('src', `sites/default/themes/clasificados/dist/${this.autos}`);
     $('#empleosPortada').attr('src', `sites/default/themes/clasificados/dist/${this.empleo}`);
+    $('#fincaRaizPortada').attr('src', `sites/default/themes/clasificados/dist/${this.finca}`);
+    $('#variosPortada').attr('src', `sites/default/themes/clasificados/dist/${this.varios}`);
     // console.log(this.name);
+  }
+
+  hamburgerMenu () {
+    $('#header #block3 .hamburger').click(function () {
+      if ($(this).hasClass('is-active')) {
+        $('#header #block3 .opts').css({ 'top': '-100px' })
+        $(this).removeClass('is-active')
+      } else {
+        $('#header #block3 .opts').css({ 'top': '0' })
+        $(this).addClass('is-active')
+
+        if ($('#header .searchMovil').hasClass('active')) {
+          $('#header #block3 .buscador').css({ 'top': '-100px'})
+          $('#header .searchMovil').removeClass('active')
+        }
+      }
+    })
+  }
+
+  handleSearch() {
+    $('#header .searchMovil').click(function () {
+      if ($(this).hasClass('active'))  {
+        $('#header #block3 .buscador').css({ 'top': '-100px'})
+        $(this).removeClass('active')
+      } else {
+        $('#header #block3 .buscador').css({ 'top': '0'})
+        $(this).addClass('active')
+
+        if ($('#header #block3 .hamburger').hasClass('is-active')) {
+          $('#header #block3 .hamburger').removeClass('is-active')
+          $('#header #block3 .opts').css({ 'top': '-100px' })
+        }
+      }
+    })
   }
 }
 
-module.exports = Home;
+// module.exports = Home; 
+export default Home; // Esto es otra forma de exportar modules
