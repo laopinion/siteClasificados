@@ -405,7 +405,7 @@ table {
             display: block;
             height: 100%; }
         #header #block3 .container .opts .empleos {
-          background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
+          background: url(images/src/img/iconos/logosHeader_2.svg) no-repeat;
           background-position: -15px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .empleos:hover {
@@ -413,7 +413,7 @@ table {
         #header #block3 .container .opts .empleos.active {
           background-position-y: -9px; }
         #header #block3 .container .opts .autos {
-          background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
+          background: url(images/src/img/iconos/logosHeader_2.svg) no-repeat;
           background-position: -142px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .autos:hover {
@@ -421,7 +421,7 @@ table {
         #header #block3 .container .opts .autos.active {
           background-position-y: -9px; }
         #header #block3 .container .opts .finca {
-          background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
+          background: url(images/src/img/iconos/logosHeader_2.svg) no-repeat;
           background-position: -273px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .finca:hover {
@@ -429,7 +429,7 @@ table {
         #header #block3 .container .opts .finca.active {
           background-position-y: -9px; }
         #header #block3 .container .opts .varios {
-          background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
+          background: url(images/src/img/iconos/logosHeader_2.svg) no-repeat;
           background-position: -398px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .varios:hover {
@@ -437,7 +437,7 @@ table {
         #header #block3 .container .opts .varios.active {
           background-position-y: -9px; }
         #header #block3 .container .opts .edictos {
-          background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
+          background: url(images/src/img/iconos/logosHeader_2.svg) no-repeat;
           background-position: -505px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .edictos:hover {
