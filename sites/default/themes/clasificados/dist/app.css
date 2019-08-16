@@ -330,10 +330,13 @@ table {
         font-weight: 700;
         margin-right: 5px; }
       #header #block1 .container .fecha p {
-        margin: 0; }
+        margin: 0;
+        display: none; }
       #header #block1 .container .fecha .date {
         display: flex;
         align-items: center; }
+        #header #block1 .container .fecha .date p {
+          display: block; }
     #header #block1 .container .user {
       display: none; }
     #header #block1 .container .user, #header #block1 .container a {
@@ -403,7 +406,7 @@ table {
             height: 100%; }
         #header #block3 .container .opts .empleos {
           background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
-          background-position: -85px -173px;
+          background-position: -15px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .empleos:hover {
             background-position-y: -9px; }
@@ -411,7 +414,7 @@ table {
           background-position-y: -9px; }
         #header #block3 .container .opts .autos {
           background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
-          background-position: -211px -173px;
+          background-position: -142px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .autos:hover {
             background-position-y: -9px; }
@@ -419,7 +422,7 @@ table {
           background-position-y: -9px; }
         #header #block3 .container .opts .finca {
           background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
-          background-position: -342px -173px;
+          background-position: -273px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .finca:hover {
             background-position-y: -9px; }
@@ -427,7 +430,7 @@ table {
           background-position-y: -9px; }
         #header #block3 .container .opts .varios {
           background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
-          background-position: -468px -173px;
+          background-position: -398px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .varios:hover {
             background-position-y: -9px; }
@@ -435,12 +438,12 @@ table {
           background-position-y: -9px; }
         #header #block3 .container .opts .edictos {
           background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
-          background-position: -468px -173px;
+          background-position: -505px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .edictos:hover {
-            background-position-y: -9px; }
+            background-position-y: -12px; }
         #header #block3 .container .opts .edictos.active {
-          background-position-y: -9px; }
+          background-position-y: -12px; }
       #header #block3 .container .buscador {
         background: url(images/src/img/iconos/cintilloBuscador.png) no-repeat;
         height: 100%;
@@ -562,6 +565,7 @@ table {
         transition: .2s;
         background: #A81822;
         display: flex;
+        padding: 0;
         z-index: 9;
         width: 100%; }
       #header #block3 .container .opts {
@@ -821,7 +825,7 @@ table {
       width: 100%;
       border: 0; }
   #slider #publicarAnuncio {
-    display: none;
+    display: flex;
     justify-content: center;
     -webkit-justify-content: center;
     -moz-justify-content: center;
@@ -2682,6 +2686,86 @@ table {
               #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
+
+@media screen and (max-width: 768px) {
+  #Varios__edictos #noticias {
+    width: 96%; }
+    #Varios__edictos #noticias .view-id-categorias.view-display-id-block_3 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around; }
+      #Varios__edictos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
+        margin-bottom: 20px; }
+  #Varios__edictos #categorias .categorias #titleCategoria {
+    margin: 0 auto 10px auto;
+    width: 96%; }
+  #Varios__edictos #categorias .categorias .right {
+    display: none; }
+  #Varios__edictos #categorias .categorias .left {
+    display: none; }
+  #Varios__edictos #categorias .categorias .varios .submenu ul:first-child li {
+    width: 180px; }
+    #Varios__edictos #categorias .categorias .varios .submenu ul:first-child li a {
+      text-align: left; }
+  #Varios__edictos #destacados {
+    width: 96%; }
+    #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row {
+        margin-bottom: 20px;
+        height: auto; }
+        #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; }
+  #Varios__edictos .pauta {
+    width: 96%; }
+  #Varios__edictos #anunciosVarios {
+    width: 96%; }
+    #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row {
+        height: auto; }
+        #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; }
+  #Varios__edictos #masVarios {
+    width: 96%; }
+    #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row {
+        height: auto; }
+        #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; }
+  #Varios__edictos #otrosAnuncios {
+    width: 96%; }
+    #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
+        margin-bottom: 20px;
+        height: auto; }
+        #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; } }
+
+@media screen and (max-width: 600px) {
+  #varios #categorias .categorias .varios .submenu ul:first-child li {
+    width: 150px; } }
+
+@media screen and (max-width: 380px) {
+  #varios #categorias .categorias .varios .submenu ul:first-child li {
+    width: 265px; } }
 
 #vehiculos {
   margin-bottom: 50px; }

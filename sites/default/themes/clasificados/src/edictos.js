@@ -106,6 +106,12 @@ class Edictos {
     }
   }
 
+  activeCategoria () {
+    const path = window.location.pathname;
+    if(path == '/varios/edictos') {
+      $('#header #block3 .container .opts .edictos').addClass('active');
+    }
+  }
 }
 
 module.exports = Edictos;
