@@ -2463,92 +2463,17 @@ table {
               #Varios__edictos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
-  #Varios__edictos #anunciosEmpleos {
-    position: relative;
-    margin-top: 60px;
-    margin-bottom: 50px; }
-    #Varios__edictos #anunciosEmpleos hr {
-      border-color: #afafaf; }
-    #Varios__edictos #anunciosEmpleos h3 {
-      position: absolute;
-      margin: 0 auto;
-      background-color: #ffffff;
-      left: 0;
-      right: 0;
-      top: -11px;
-      font-size: 1.1rem;
-      font-weight: 700;
-      text-align: center;
-      color: #ffb200;
-      width: 75px; }
-    #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 {
-      margin-top: 30px; }
-      #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content {
-        display: flex;
-        display: -webkit-flex;
-        display: -moz-flex;
-        justify-content: space-around;
-        -webkit-justify-content: space-around;
-        -moz-justify-content: space-around;
-        flex-wrap: wrap; }
-        #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row {
-          background-color: #efefef;
-          padding: 4px;
-          box-sizing: border-box;
-          margin-bottom: 20px;
-          height: 270px;
-          width: 185px; }
-          #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row:hover {
-            height: auto; }
-          #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info {
-            margin: 10px auto;
-            width: 160px; }
-            #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .date {
-              text-align: left;
-              font-weight: 700;
-              font-size: 0.8rem;
-              border-bottom: 1px solid #afafaf;
-              padding-bottom: 8px;
-              margin-bottom: 10px;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              width: 160px; }
-            #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .title {
-              margin-bottom: 5px;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              overflow: hidden; }
-              #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .title a {
-                text-decoration: none;
-                color: #000000; }
-              #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .title:hover {
-                white-space: initial;
-                overflow: visible;
-                width: auto; }
-            #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .phone {
-              font-weight: 700; }
-            #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .section {
-              margin-top: 25px;
-              font-weight: 700;
-              text-transform: uppercase; }
-              #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .section a {
-                text-decoration: none;
-                color: #000000; }
-              #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .section:before {
-                content: url(images/src/img/iconos/estrella.svg);
-                margin-right: 5px; }
   #Varios__edictos .pauta {
     background-color: #dedede;
     height: 90px;
     margin: 0 auto 60px auto;
     width: 728px; }
-  #Varios__edictos #masEmpleos {
+  #Varios__edictos #masEdictos {
     position: relative;
     margin-top: 60px; }
-    #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 {
+    #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 {
       margin-top: 30px; }
-      #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content {
+      #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content {
         display: flex;
         display: -webkit-flex;
         display: -moz-flex;
@@ -2556,19 +2481,19 @@ table {
         -webkit-justify-content: space-around;
         -moz-justify-content: space-around;
         flex-wrap: wrap; }
-        #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row {
+        #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
           box-sizing: border-box;
           margin-bottom: 20px;
           height: 270px;
           width: 185px; }
-          #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row:hover {
+          #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row:hover {
             height: auto; }
-          #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info {
+          #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row .anuncio .info {
             margin: 10px auto;
             width: 160px; }
-            #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .date {
+            #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row .anuncio .info .date {
               text-align: left;
               font-weight: 700;
               font-size: 0.8rem;
@@ -2579,28 +2504,28 @@ table {
               overflow: hidden;
               text-overflow: ellipsis;
               width: 160px; }
-            #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .title {
+            #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row .anuncio .info .title {
               margin-bottom: 5px;
               text-overflow: ellipsis;
               white-space: nowrap;
               overflow: hidden; }
-              #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .title a {
+              #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row .anuncio .info .title a {
                 text-decoration: none;
                 color: #000000; }
-              #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .title:hover {
+              #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row .anuncio .info .title:hover {
                 white-space: initial;
                 overflow: visible;
                 width: auto; }
-            #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .phone {
+            #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row .anuncio .info .phone {
               font-weight: 700; }
-            #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .section {
+            #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row .anuncio .info .section {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
-              #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .section a {
+              #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row .anuncio .info .section a {
                 text-decoration: none;
                 color: #000000; }
-              #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .section:before {
+              #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
   #Varios__edictos #otrosAnuncios {

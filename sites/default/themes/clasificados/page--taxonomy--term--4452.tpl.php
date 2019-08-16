@@ -11,26 +11,14 @@
     </div>
   </article>
 
-  <article id="noticias" class="container">
-    <hr>
-    <h3>Noticias</h3>
-    <?php $view = views_get_view('categorias'); print $view->preview('block_3'); ?>
-  </article>
-
-  <article id="anunciosEmpleos" class="container">
-    <hr>
-    <h3>Empleos</h3>
-    <?php $view = views_get_view('categorias'); print $view->preview('block_8'); ?>
+  <article id="masEdictos" class="container">
+    <?php $view = views_get_view('categorias'); print $view->preview('block_17'); ?>
   </article>
 
   <div class="pauta">
     <?php include_once('dfp/728x90.php'); ?>
     <?php include_once('dfp/320x50.php'); ?>
   </div>
-
-  <article id="masEmpleos" class="container">
-    <?php $view = views_get_view('categorias'); print $view->preview('block_9'); ?>
-  </article>
 
   <article id="otrosAnuncios" class="container">
     <hr>
