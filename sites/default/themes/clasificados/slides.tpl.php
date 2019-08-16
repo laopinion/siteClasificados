@@ -1,6 +1,6 @@
 <section id="slider">
   <div id="publicarAnuncio">
-    <h3><a href="<?php print base_path(); ?>user/register">Publicar anuncio</a></h3>
+    <h3><a href="<?php print base_path(); ?>edictos">Publicar Edicto</a></h3>
   </div>
   <ul class="rslides">
     <li><img id="autosPortada" src="<?php print base_path(); ?>sites/default/themes/clasificados/dist/images/src/img/autos.jpg" alt="autos"></li>

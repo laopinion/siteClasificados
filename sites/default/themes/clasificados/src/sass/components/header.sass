@@ -17,9 +17,12 @@
           margin-right: 5px
         p
           margin: 0
+          display: none
         .date
           display: flex
           align-items: center
+          p
+            display: block
       .user
         display: none
       .user, a
@@ -84,13 +87,13 @@
         .opt
           height: 98px
           text-indent: -99999px
-          width: 124px
+          width: 100px
           a
             display: block
             height: 100%
         .empleos
           background: url('../img/iconos/logosHeader.svg') no-repeat
-          background-position: -73px -173px
+          background-position: -15px -173px
           background-size: 650px
           &:hover
             background-position-y: -9px
@@ -98,7 +101,7 @@
           background-position-y: -9px
         .autos
           background: url('../img/iconos/logosHeader.svg') no-repeat
-          background-position: -198px -173px
+          background-position: -142px -173px
           background-size: 650px
           &:hover
             background-position-y: -9px
@@ -106,7 +109,7 @@
           background-position-y: -9px
         .finca
           background: url('../img/iconos/logosHeader.svg') no-repeat
-          background-position: -328px -173px
+          background-position: -273px -173px
           background-size: 650px
           &:hover
             background-position-y: -9px
@@ -114,12 +117,20 @@
           background-position-y: -9px
         .varios
           background: url('../img/iconos/logosHeader.svg') no-repeat
-          background-position: -455px -173px
+          background-position: -398px -173px
           background-size: 650px
           &:hover
             background-position-y: -9px
         .varios.active
           background-position-y: -9px
+        .edictos
+          background: url('../img/iconos/logosHeader.svg') no-repeat
+          background-position: -505px -173px
+          background-size: 650px
+          &:hover
+            background-position-y: -12px
+        .edictos.active
+          background-position-y: -12px
       .buscador
         background: url('../img/iconos/cintilloBuscador.png') no-repeat
         height: 100%
@@ -130,7 +141,8 @@
         align-items: center
         -webkit-align-items: center
         -moz-align-items: center
-        width: 478px
+        padding-right: 10px
+        width: 380px
         .lupa
           background: url('../img/iconos/lupa.svg') no-repeat
           background-position: 8px 5px

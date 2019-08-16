@@ -330,10 +330,13 @@ table {
         font-weight: 700;
         margin-right: 5px; }
       #header #block1 .container .fecha p {
-        margin: 0; }
+        margin: 0;
+        display: none; }
       #header #block1 .container .fecha .date {
         display: flex;
         align-items: center; }
+        #header #block1 .container .fecha .date p {
+          display: block; }
     #header #block1 .container .user {
       display: none; }
     #header #block1 .container .user, #header #block1 .container a {
@@ -397,13 +400,13 @@ table {
         #header #block3 .container .opts .opt {
           height: 98px;
           text-indent: -99999px;
-          width: 124px; }
+          width: 100px; }
           #header #block3 .container .opts .opt a {
             display: block;
             height: 100%; }
         #header #block3 .container .opts .empleos {
           background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
-          background-position: -73px -173px;
+          background-position: -15px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .empleos:hover {
             background-position-y: -9px; }
@@ -411,7 +414,7 @@ table {
           background-position-y: -9px; }
         #header #block3 .container .opts .autos {
           background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
-          background-position: -198px -173px;
+          background-position: -142px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .autos:hover {
             background-position-y: -9px; }
@@ -419,7 +422,7 @@ table {
           background-position-y: -9px; }
         #header #block3 .container .opts .finca {
           background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
-          background-position: -328px -173px;
+          background-position: -273px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .finca:hover {
             background-position-y: -9px; }
@@ -427,12 +430,20 @@ table {
           background-position-y: -9px; }
         #header #block3 .container .opts .varios {
           background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
-          background-position: -455px -173px;
+          background-position: -398px -173px;
           background-size: 650px; }
           #header #block3 .container .opts .varios:hover {
             background-position-y: -9px; }
         #header #block3 .container .opts .varios.active {
           background-position-y: -9px; }
+        #header #block3 .container .opts .edictos {
+          background: url(images/src/img/iconos/logosHeader.svg) no-repeat;
+          background-position: -505px -173px;
+          background-size: 650px; }
+          #header #block3 .container .opts .edictos:hover {
+            background-position-y: -12px; }
+        #header #block3 .container .opts .edictos.active {
+          background-position-y: -12px; }
       #header #block3 .container .buscador {
         background: url(images/src/img/iconos/cintilloBuscador.png) no-repeat;
         height: 100%;
@@ -443,7 +454,8 @@ table {
         align-items: center;
         -webkit-align-items: center;
         -moz-align-items: center;
-        width: 478px; }
+        padding-right: 10px;
+        width: 380px; }
         #header #block3 .container .buscador .lupa {
           background: url(images/src/img/iconos/lupa.svg) no-repeat;
           background-position: 8px 5px;
@@ -553,6 +565,7 @@ table {
         transition: .2s;
         background: #A81822;
         display: flex;
+        padding: 0;
         z-index: 9;
         width: 100%; }
       #header #block3 .container .opts {
@@ -812,7 +825,7 @@ table {
       width: 100%;
       border: 0; }
   #slider #publicarAnuncio {
-    display: none;
+    display: flex;
     justify-content: center;
     -webkit-justify-content: center;
     -moz-justify-content: center;
@@ -1678,7 +1691,7 @@ table {
       background-color: #efefef;
       width: 312px; }
       #anuncio .anuncioNota .info .pauta {
-        background-color: #000000;
+        background-color: #dedede;
         height: 250px;
         margin: 0 auto 20px auto;
         width: 300px; }
@@ -2228,6 +2241,531 @@ table {
   #Ordenar__edicto .formulario .terminos input {
     margin: 0 25px 0 10px;
     width: 80px; } }
+
+#Varios__edictos {
+  margin-bottom: 50px; }
+  #Varios__edictos #portada img {
+    width: 100%; }
+  #Varios__edictos #categorias .categorias {
+    margin-bottom: 50px;
+    position: relative; }
+    #Varios__edictos #categorias .categorias .right {
+      position: absolute;
+      right: -18px;
+      bottom: 0;
+      height: 100%;
+      background-color: #ffffff;
+      width: 18px; }
+    #Varios__edictos #categorias .categorias .left {
+      position: absolute;
+      left: -18px;
+      bottom: 0;
+      height: 100%;
+      background-color: #ffffff;
+      width: 18px;
+      z-index: 1; }
+    #Varios__edictos #categorias .categorias #titleCategoria {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      margin-bottom: 10px; }
+      #Varios__edictos #categorias .categorias #titleCategoria .nameCategorias {
+        height: 30px;
+        position: relative;
+        margin-right: 25px; }
+        #Varios__edictos #categorias .categorias #titleCategoria .nameCategorias:after {
+          content: url(images/src/img/iconos/flechaCategorias.svg);
+          height: 20px;
+          position: absolute;
+          right: -18px;
+          top: 4px;
+          width: 10px; }
+  #Varios__edictos #categorias .varios .submenu {
+    position: relative;
+    -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16); }
+    #Varios__edictos #categorias .varios .submenu .active {
+      position: relative; }
+      #Varios__edictos #categorias .varios .submenu .active:after {
+        content: url(images/src/img/iconos/flechaCategorias.svg);
+        height: 20px;
+        position: absolute;
+        left: -15px;
+        top: 0px;
+        width: 10px; }
+    #Varios__edictos #categorias .varios .submenu .banda {
+      position: absolute;
+      top: -10px;
+      height: 15px;
+      background-color: #ffffff;
+      width: 100%; }
+    #Varios__edictos #categorias .varios .submenu ul:first-child {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      #Varios__edictos #categorias .varios .submenu ul:first-child li {
+        margin-bottom: 15px;
+        padding: 0;
+        width: 255px; }
+        #Varios__edictos #categorias .varios .submenu ul:first-child li a {
+          text-align: left;
+          display: flex;
+          display: -webkit-flex;
+          display: -moz-flex;
+          justify-content: flex-start;
+          -webkit-justify-content: flex-start;
+          -moz-justify-content: flex-start;
+          text-align: center;
+          text-decoration: none;
+          font-size: 1.125rem;
+          font-weight: 700;
+          margin-bottom: 15px;
+          color: #000000; }
+          #Varios__edictos #categorias .varios .submenu ul:first-child li a:hover {
+            text-decoration: underline; }
+        #Varios__edictos #categorias .varios .submenu ul:first-child li ul {
+          list-style: none;
+          padding: 0; }
+          #Varios__edictos #categorias .varios .submenu ul:first-child li ul li a {
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #afafaf; }
+            #Varios__edictos #categorias .varios .submenu ul:first-child li ul li a:hover {
+              text-decoration: underline; }
+  #Varios__edictos #noticias {
+    position: relative;
+    margin-top: 60px; }
+    #Varios__edictos #noticias hr {
+      border-color: #afafaf; }
+    #Varios__edictos #noticias h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 85px; }
+    #Varios__edictos #noticias .view-id-categorias.view-display-id-block_3 {
+      margin-top: 30px; }
+      #Varios__edictos #noticias .view-id-categorias.view-display-id-block_3 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        flex-wrap: wrap; }
+        #Varios__edictos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
+          width: 240px; }
+          #Varios__edictos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia {
+            width: 240px; }
+            #Varios__edictos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia a {
+              display: block; }
+            #Varios__edictos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia .title {
+              margin-bottom: 5px;
+              font-size: 20px;
+              line-height: 22px;
+              font-weight: 700; }
+              #Varios__edictos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row .noticia .title a {
+                text-decoration: none;
+                color: #000000; }
+  #Varios__edictos #destacados {
+    position: relative;
+    margin-top: 60px; }
+    #Varios__edictos #destacados hr {
+      border-color: #afafaf; }
+    #Varios__edictos #destacados .estrellas {
+      background: url(images/src/img/iconos/estrellas.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -30px; }
+    #Varios__edictos #destacados h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 182px; }
+    #Varios__edictos #destacados .view-id-categorias.view-display-id-block_7 {
+      margin-top: 30px; }
+      #Varios__edictos #destacados .view-id-categorias.view-display-id-block_7 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
+        #Varios__edictos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #Varios__edictos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row:hover {
+            height: auto; }
+          #Varios__edictos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #Varios__edictos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .date {
+              text-align: left;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              width: 160px; }
+            #Varios__edictos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #Varios__edictos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #Varios__edictos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #Varios__edictos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #Varios__edictos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #Varios__edictos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
+              #Varios__edictos #destacados .view-id-categorias.view-display-id-block_7 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #Varios__edictos #anunciosEmpleos {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    #Varios__edictos #anunciosEmpleos hr {
+      border-color: #afafaf; }
+    #Varios__edictos #anunciosEmpleos h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #ffb200;
+      width: 75px; }
+    #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 {
+      margin-top: 30px; }
+      #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
+        #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+          height: 270px;
+          width: 185px; }
+          #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row:hover {
+            height: auto; }
+          #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .date {
+              text-align: left;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              width: 160px; }
+            #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
+              #Varios__edictos #anunciosEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #Varios__edictos .pauta {
+    background-color: #dedede;
+    height: 90px;
+    margin: 0 auto 60px auto;
+    width: 728px; }
+  #Varios__edictos #masEmpleos {
+    position: relative;
+    margin-top: 60px; }
+    #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 {
+      margin-top: 30px; }
+      #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
+        #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+          height: 270px;
+          width: 185px; }
+          #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row:hover {
+            height: auto; }
+          #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .date {
+              text-align: left;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              width: 160px; }
+            #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
+              #Varios__edictos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+  #Varios__edictos #otrosAnuncios {
+    position: relative;
+    margin-top: 60px; }
+    #Varios__edictos #otrosAnuncios hr {
+      border-color: #afafaf; }
+    #Varios__edictos #otrosAnuncios .estrellas {
+      background: url(images/src/img/iconos/estrellas.svg) no-repeat;
+      background-position: 50%;
+      height: 15px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -30px; }
+    #Varios__edictos #otrosAnuncios h3 {
+      position: absolute;
+      margin: 0 auto;
+      background-color: #ffffff;
+      left: 0;
+      right: 0;
+      top: -11px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      color: #454e9b;
+      width: 235px; }
+    #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 {
+      margin-top: 30px; }
+      #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
+        #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
+          background-color: #efefef;
+          padding: 4px;
+          box-sizing: border-box;
+          height: 270px;
+          width: 185px; }
+          #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row:hover {
+            height: auto; }
+          #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info {
+            margin: 10px auto;
+            width: 160px; }
+            #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .date {
+              text-align: left;
+              font-weight: 700;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 8px;
+              margin-bottom: 10px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              width: 160px; }
+            #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title {
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; }
+              #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title a {
+                text-decoration: none;
+                color: #000000; }
+              #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title:hover {
+                white-space: initial;
+                overflow: visible;
+                width: auto; }
+            #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .phone {
+              font-weight: 700; }
+            #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section {
+              margin-top: 25px;
+              font-weight: 700;
+              text-transform: uppercase; }
+              #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
+              #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .section:before {
+                content: url(images/src/img/iconos/estrella.svg);
+                margin-right: 5px; }
+
+@media screen and (max-width: 768px) {
+  #Varios__edictos #noticias {
+    width: 96%; }
+    #Varios__edictos #noticias .view-id-categorias.view-display-id-block_3 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around; }
+      #Varios__edictos #noticias .view-id-categorias.view-display-id-block_3 .view-content .views-row {
+        margin-bottom: 20px; }
+  #Varios__edictos #categorias .categorias #titleCategoria {
+    margin: 0 auto 10px auto;
+    width: 96%; }
+  #Varios__edictos #categorias .categorias .right {
+    display: none; }
+  #Varios__edictos #categorias .categorias .left {
+    display: none; }
+  #Varios__edictos #categorias .categorias .varios .submenu ul:first-child li {
+    width: 180px; }
+    #Varios__edictos #categorias .categorias .varios .submenu ul:first-child li a {
+      text-align: left; }
+  #Varios__edictos #destacados {
+    width: 96%; }
+    #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row {
+        margin-bottom: 20px;
+        height: auto; }
+        #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; }
+  #Varios__edictos .pauta {
+    width: 96%; }
+  #Varios__edictos #anunciosVarios {
+    width: 96%; }
+    #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row {
+        height: auto; }
+        #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; }
+  #Varios__edictos #masVarios {
+    width: 96%; }
+    #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row {
+        height: auto; }
+        #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; }
+  #Varios__edictos #otrosAnuncios {
+    width: 96%; }
+    #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
+        margin-bottom: 20px;
+        height: auto; }
+        #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; } }
+
+@media screen and (max-width: 600px) {
+  #varios #categorias .categorias .varios .submenu ul:first-child li {
+    width: 150px; } }
+
+@media screen and (max-width: 380px) {
+  #varios #categorias .categorias .varios .submenu ul:first-child li {
+    width: 265px; } }
 
 #vehiculos {
   margin-bottom: 50px; }
@@ -5035,7 +5573,7 @@ table {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
   #seccionGeneral .pauta {
-    background-color: #000000;
+    background-color: #dedede;
     height: 90px;
     margin: 0 auto 60px auto;
     width: 728px; }

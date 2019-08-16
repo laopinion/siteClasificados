@@ -39,7 +39,7 @@
     </div>
     <div class="info">
       <aside class="pauta">
-        <?php include_once('./dfp/300x250.php'); ?>
+        <?php include_once('dfp/300x250.php'); ?>
       </aside>
       <article class="container">
         <?php

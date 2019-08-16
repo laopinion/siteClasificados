@@ -61,5 +61,6 @@ $(function() {
   proyectos.slides();
 
   ordenarEdictos.submit();
+  ordenarEdictos.activeCategoria();
 
 });

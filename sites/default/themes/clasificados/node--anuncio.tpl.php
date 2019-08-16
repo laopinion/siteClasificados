@@ -38,7 +38,9 @@
       </div>
     </div>
     <div class="info">
-      <aside class="pauta"></aside>
+      <aside class="pauta">
+        <?php include_once('dfp/300x250.php'); ?>
+      </aside>
       <article class="container">
         <?php
           require_once 'get_time_anuncio.php';
@@ -82,7 +84,10 @@
     <?php $view = views_get_view('anuncios'); print $view->preview('block'); ?>
   </div>
 
-  <div class="pauta"></div>
+  <div class="pauta">
+    <?php include_once('dfp/728x90.php'); ?>
+    <?php include_once('dfp/320x50.php'); ?>
+  </div>
 
   <div id="noticias">
     <hr>
