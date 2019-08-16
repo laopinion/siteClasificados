@@ -34,10 +34,8 @@
   <![endif]-->
   <link rel="stylesheet" href="<?php print base_path(); ?>sites/default/themes/clasificados/dist/app.css">
 
-  <meta name="description" content="Clasificados La Opinión cuenta con el mayor catálogo de anuncios clasificados en las categorias de empleo, venta y arriendo de vivienda, venta de carros, motos usadas, servicios y mucho más."/>
-  <meta name="keywords" content="avisos, clasificados, cúcuta, pamplona, villa del rosario, los patios, norte de santander, colombia, clasificados la opinión" />
-  <meta name="author" content="https://clasificados.laopinion.com.co" />
-  <meta name="ROBOTS" content="FOLLOW">
+  <meta name="description" content="El portal de anuncios clasificados más grande de Norte de Santander, clasificados de compra, venta y arriendo de finca raíz; compra, venta de vehículos; ofertas de empleo y demás en Norte de Santander.">
+  <meta name="keywords" content="vehículos, empleo, arriendos, venta, ofertas, servicios, avisos, clasificados, cúcuta, los patios, villa del rosario, el zulia, pamplona, chinácota, norte de santander, colombia, clasificados la opinión"/>
   <link rel="canonical" href="https://clasificados.laopinion.com.co">
   <link rel="image_src" href="https://clasificados.laopinion.com.co/sites/default/themes/clasificados/images/compartir.jpg" />
 
@@ -47,7 +45,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://clasificados.laopinion.com.co/" />
   <meta property="og:description" content="Clasificados La Opinión cuenta con el mayor catálogo de anuncios clasificados en las categorias de empleo, venta y arriendo de vivienda, venta de carros, motos usadas, servicios y mucho más." />
-  <meta name="author" content="Clasificados La Opinión - Cúcuta"/>
+  <meta name="author" content="La Opinión - Cúcuta"/>
   <meta name="google" content="notranslate" />
   <meta name="geo.region" content="CO" />
   <meta name="geo.placename" content="Colombia" />
@@ -63,6 +61,13 @@
   <meta name="twitter:site" content="@laopinioncucuta" />
   <meta name="twitter:title" content="Anuncios clasificados empleos, finca raíz, vehículos, serivicios y más | Clasificados La Opinión - Cúcuta">
   <meta name="twitter:creator" content="@laopinioncucuta">
+
+  <meta property="fb:admins" content="396392827606512" />
+  <meta property="og:locale:alternate" content="es_CO" />
+  <meta property="og:locale" content="es_CO" />
+  <meta itemprop="genre" content="Website" />
+  <meta itemprop="inLanguage" content="es-ES" />
+  <meta name="fechaprint" content="<?php print date('m/d/Y h:i:s a', time()); ?>" />
   <?php include_once('script_pautas.php'); ?>
   <!-- ANALYTICS CODE -->
   <?php include_once("analyticstracking.php") ?>

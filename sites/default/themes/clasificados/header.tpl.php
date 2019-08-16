@@ -39,6 +39,7 @@
         <li class="autos opt"> <a href="<?php print base_path(); ?>vehiculos">Autos</a> </li>
         <li class="finca opt"> <a href="<?php print base_path(); ?>finca-raiz">Finca raiz</a> </li>
         <li class="varios opt"> <a href="<?php print base_path(); ?>varios">Varios</a> </li>
+        <li class="edictos opt"> <a href="<?php print base_path(); ?>varios/edictos">Edictos</a> </li>
       </ul>
       <button class="hamburger hamburger--arrow" type="button">
         <span class="hamburger-box">

@@ -1,0 +1,454 @@
+#Varios__edictos
+  margin-bottom: 50px
+  #portada 
+    img
+      width: 100%
+  #categorias
+    .categorias
+      margin-bottom: 50px
+      position: relative
+      .right
+        position: absolute
+        right: -18px
+        bottom: 0
+        height: 100%
+        background-color: $blanco
+        width: 18px
+      .left
+        position: absolute
+        left: -18px
+        bottom: 0
+        height: 100%
+        background-color: $blanco
+        width: 18px
+        z-index: 1
+      #titleCategoria
+        display: flex
+        display: -webkit-flex
+        display: -moz-flex
+        margin-bottom: 10px
+        .nameCategorias
+          height: 30px
+          position: relative
+          margin-right: 25px
+          &:after
+            content: url('../img/iconos/flechaCategorias.svg')
+            height: 20px
+            position: absolute
+            right: -18px
+            top: 4px
+            width: 10px
+    .varios
+      .submenu
+        position: relative
+        -webkit-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16)
+        -moz-box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16)
+        box-shadow: 0px 8px 60px -5px rgba(0, 0, 0, 0.16)
+        .active
+          position: relative
+          &:after
+            content: url('../img/iconos/flechaCategorias.svg')
+            height: 20px
+            position: absolute
+            left: -15px
+            top: 0px
+            width: 10px
+        .banda
+          position: absolute
+          top: -10px
+          height: 15px
+          background-color: $blanco
+          width: 100%
+        ul:first-child
+          margin: 0
+          padding: 0
+          list-style: none
+          display: flex
+          display: -webkit-flex
+          display: -moz-flex
+          flex-wrap: wrap
+          justify-content: center
+          li
+            margin-bottom: 15px
+            padding: 0
+            width: 255px
+            a
+              text-align: left
+              display: flex
+              display: -webkit-flex
+              display: -moz-flex
+              justify-content: flex-start
+              -webkit-justify-content: flex-start
+              -moz-justify-content: flex-start
+              text-align: center
+              text-decoration: none
+              font-size: 1.125rem // 18px
+              font-weight: 700
+              margin-bottom: 15px
+              color: $negro
+              &:hover
+                text-decoration: underline
+            ul
+              list-style: none
+              padding: 0
+              li
+                a
+                  text-decoration: none
+                  font-size: 1rem // 18px
+                  font-weight: 400
+                  color: $gris
+                  &:hover
+                    text-decoration: underline
+  #noticias
+    position: relative
+    margin-top: 60px
+    hr
+      border-color: $gris
+    h3
+      position: absolute
+      margin: 0 auto
+      background-color: $blanco
+      left: 0
+      right: 0
+      top: -11px
+      font-size: 1.1rem // 18/16 = 1.1rem -> 18px
+      font-weight: 700
+      text-align: center
+      color: $destacados
+      width: 85px
+    .view-id-categorias.view-display-id-block_3
+      margin-top: 30px
+      .view-content
+        display: flex
+        display: -webkit-flex
+        display: -moz-flex
+        justify-content: space-between
+        -webkit-justify-content: space-between
+        -moz-justify-content: space-between
+        flex-wrap: wrap
+        .views-row
+          width: 240px
+          .noticia
+            width: 240px
+            a
+              display: block
+            .title
+              margin-bottom: 5px
+              font-size: 20px
+              line-height: 22px
+              font-weight: 700
+              a
+                text-decoration: none
+                color: $negro
+  #destacados
+    position: relative
+    margin-top: 60px
+    hr
+      border-color: $gris
+    .estrellas
+      background: url('../img/iconos/estrellas.svg') no-repeat
+      background-position: 50%
+      height: 15px
+      width: 40px
+      position: absolute
+      left: 0
+      right: 0
+      margin: 0 auto
+      top: -30px
+    h3
+      position: absolute
+      margin: 0 auto
+      background-color: $blanco
+      left: 0
+      right: 0
+      top: -11px
+      font-size: 1.1rem // 18/16 = 1.1rem -> 18px
+      font-weight: 700
+      text-align: center
+      color: $destacados
+      width: 182px
+    .view-id-categorias.view-display-id-block_7
+      margin-top: 30px
+      .view-content
+        display: flex
+        display: -webkit-flex
+        display: -moz-flex
+        justify-content: space-around
+        -webkit-justify-content: space-around
+        -moz-justify-content: space-around
+        flex-wrap: wrap
+        .views-row
+          background-color: $grisClaro
+          padding: 4px
+          box-sizing: border-box
+          height: 270px
+          width: 185px
+          &:hover
+            height: auto
+          .anuncio
+            .info
+              margin: 10px auto
+              width: 160px
+              .date
+                text-align: left
+                font-weight: 700
+                font-size: 0.8rem // 14px
+                border-bottom: 1px solid $gris
+                padding-bottom: 8px
+                margin-bottom: 10px
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+                width: 160px
+              .title
+                margin-bottom: 5px
+                text-overflow: ellipsis
+                white-space: nowrap
+                overflow: hidden
+                a
+                  text-decoration: none
+                  color: $negro
+                &:hover
+                  white-space: initial
+                  overflow: visible
+                  width: auto
+              .phone
+                font-weight: 700
+              .section
+                margin-top: 25px
+                font-weight: 700
+                text-transform: uppercase
+                a
+                  text-decoration: none
+                  color: $negro
+                &:before
+                  content: url('../img/iconos/estrella.svg')
+                  margin-right: 5px
+  #anunciosEmpleos
+    position: relative
+    margin-top: 60px
+    margin-bottom: 50px
+    hr
+      border-color: $gris
+    h3
+      position: absolute
+      margin: 0 auto
+      background-color: $blanco
+      left: 0
+      right: 0
+      top: -11px
+      font-size: 1.1rem // 18/16 = 1.1rem -> 18px
+      font-weight: 700
+      text-align: center
+      color: $empleos
+      width: 75px
+    .view-id-categorias.view-display-id-block_8
+      margin-top: 30px
+      .view-content
+        display: flex
+        display: -webkit-flex
+        display: -moz-flex
+        justify-content: space-around
+        -webkit-justify-content: space-around
+        -moz-justify-content: space-around
+        flex-wrap: wrap
+        .views-row
+          background-color: $grisClaro
+          padding: 4px
+          box-sizing: border-box
+          margin-bottom: 20px
+          height: 270px
+          width: 185px
+          &:hover
+            height: auto
+          .anuncio
+            .info
+              margin: 10px auto
+              width: 160px
+              .date
+                text-align: left
+                font-weight: 700
+                font-size: 0.8rem // 14px
+                border-bottom: 1px solid $gris
+                padding-bottom: 8px
+                margin-bottom: 10px
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+                width: 160px
+              .title
+                margin-bottom: 5px
+                text-overflow: ellipsis
+                white-space: nowrap
+                overflow: hidden
+                a
+                  text-decoration: none
+                  color: $negro
+                &:hover
+                  white-space: initial
+                  overflow: visible
+                  width: auto
+              .phone
+                font-weight: 700
+              .section
+                margin-top: 25px
+                font-weight: 700
+                text-transform: uppercase
+                a
+                  text-decoration: none
+                  color: $negro
+                &:before
+                  content: url('../img/iconos/estrella.svg')
+                  margin-right: 5px
+  .pauta
+    background-color: #dedede
+    height: 90px
+    margin: 0 auto 60px auto
+    width: 728px
+  
+  #masEmpleos
+    position: relative
+    margin-top: 60px
+    .view-id-categorias.view-display-id-block_9
+      margin-top: 30px
+      .view-content
+        display: flex
+        display: -webkit-flex
+        display: -moz-flex
+        justify-content: space-around
+        -webkit-justify-content: space-around
+        -moz-justify-content: space-around
+        flex-wrap: wrap
+        .views-row
+          background-color: $grisClaro
+          padding: 4px
+          box-sizing: border-box
+          margin-bottom: 20px
+          height: 270px
+          width: 185px
+          &:hover
+            height: auto
+          .anuncio
+            .info
+              margin: 10px auto
+              width: 160px
+              .date
+                text-align: left
+                font-weight: 700
+                font-size: 0.8rem // 14px
+                border-bottom: 1px solid $gris
+                padding-bottom: 8px
+                margin-bottom: 10px
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+                width: 160px
+              .title
+                margin-bottom: 5px
+                text-overflow: ellipsis
+                white-space: nowrap
+                overflow: hidden
+                a
+                  text-decoration: none
+                  color: $negro
+                &:hover
+                  white-space: initial
+                  overflow: visible
+                  width: auto
+              .phone
+                font-weight: 700
+              .section
+                margin-top: 25px
+                font-weight: 700
+                text-transform: uppercase
+                a
+                  text-decoration: none
+                  color: $negro
+                &:before
+                  content: url('../img/iconos/estrella.svg')
+                  margin-right: 5px
+  
+  #otrosAnuncios
+    position: relative
+    margin-top: 60px
+    hr
+      border-color: $gris
+    .estrellas
+      background: url('../img/iconos/estrellas.svg') no-repeat
+      background-position: 50%
+      height: 15px
+      width: 40px
+      position: absolute
+      left: 0
+      right: 0
+      margin: 0 auto
+      top: -30px
+    h3
+      position: absolute
+      margin: 0 auto
+      background-color: $blanco
+      left: 0
+      right: 0
+      top: -11px
+      font-size: 1.1rem // 18/16 = 1.1rem -> 18px
+      font-weight: 700
+      text-align: center
+      color: $destacados
+      width: 235px
+    .view-id-categorias.view-display-id-block_5
+      margin-top: 30px
+      .view-content
+        display: flex
+        display: -webkit-flex
+        display: -moz-flex
+        justify-content: space-around
+        -webkit-justify-content: space-around
+        -moz-justify-content: space-around
+        flex-wrap: wrap
+        .views-row
+          background-color: $grisClaro
+          padding: 4px
+          box-sizing: border-box
+          height: 270px
+          width: 185px
+          &:hover
+            height: auto
+          .anuncio
+            .info
+              margin: 10px auto
+              width: 160px
+              .date
+                text-align: left
+                font-weight: 700
+                font-size: 0.8rem // 14px
+                border-bottom: 1px solid $gris
+                padding-bottom: 8px
+                margin-bottom: 10px
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+                width: 160px
+              .title
+                margin-bottom: 5px
+                text-overflow: ellipsis
+                white-space: nowrap
+                overflow: hidden
+                a
+                  text-decoration: none
+                  color: $negro
+                &:hover
+                  white-space: initial
+                  overflow: visible
+                  width: auto
+              .phone
+                font-weight: 700
+              .section
+                margin-top: 25px
+                font-weight: 700
+                text-transform: uppercase
+                a
+                  text-decoration: none
+                  color: $negro
+                &:before
+                  content: url('../img/iconos/estrella.svg')
+                  margin-right: 5px
