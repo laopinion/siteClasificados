@@ -84,10 +84,10 @@ class Home {
   hamburgerMenu () {
     $('#header #block3 .hamburger').click(function () {
       if ($(this).hasClass('is-active')) {
-        $('#header #block3 .opts').css({ 'top': '-100px' })
+        $('#header #block3 .opts').css({ 'top': '-100px', 'flex-wrap': 'initial' })
         $(this).removeClass('is-active')
       } else {
-        $('#header #block3 .opts').css({ 'top': '0' })
+        $('#header #block3 .opts').css({ 'top': '0', 'flex-wrap': 'wrap' })
         $(this).addClass('is-active')
 
         if ($('#header .searchMovil').hasClass('active')) {

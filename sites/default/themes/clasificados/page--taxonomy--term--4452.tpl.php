@@ -1,6 +1,9 @@
 <section id="Varios__edictos">
   <div id="portada">
     <img src="<?php print base_path(); ?>sites/default/themes/clasificados/src/img/edictos.jpg" alt="Edictos">
+    <div id="publicarAnuncio">
+      <h3><a href="<?php print base_path(); ?>edictos">Publicar Edicto</a></h3>
+    </div>
   </div>
 
   <article id="categorias" class="container">

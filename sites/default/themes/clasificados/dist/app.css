@@ -553,7 +553,7 @@ table {
     padding-bottom: 10px; }
     #header #block3 .container {
       display: grid;
-      grid-template-columns: 80px 1fr;
+      grid-template-columns: 1fr;
       justify-items: center;
       position: relative; }
       #header #block3 .container .buscador {
@@ -580,13 +580,15 @@ table {
         background: #A81822;
         transition: .2s; }
         #header #block3 .container .opts .empleos {
-          background-position-x: -92px; }
+          background-position-x: -18px; }
         #header #block3 .container .opts .autos {
-          background-position-x: -218px; }
+          background-position-x: -140px; }
         #header #block3 .container .opts .finca {
-          background-position-x: -348px; }
+          background-position-x: -270px; }
         #header #block3 .container .opts .varios {
-          background-position-x: -472px; }
+          background-position-x: -395px; }
+        #header #block3 .container .opts .edictos {
+          background-position-x: -505px; }
     #header #block3 .hamburger {
       padding: 15px 15px;
       display: inline-block;
@@ -2127,6 +2129,12 @@ table {
       font-size: 16px;
       box-sizing: border-box;
       width: 100%; }
+    #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item .description, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item .description {
+      font-style: italic;
+      color: #656565;
+      margin-top: 5px; }
+      #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item .description a, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item .description a {
+        color: #B92025; }
   #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-actions, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-actions {
     display: flex;
     justify-content: center; }
@@ -2244,8 +2252,36 @@ table {
 
 #Varios__edictos {
   margin-bottom: 50px; }
-  #Varios__edictos #portada img {
-    width: 100%; }
+  #Varios__edictos #portada {
+    position: relative; }
+    #Varios__edictos #portada #publicarAnuncio {
+      display: flex;
+      justify-content: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      box-sizing: border-box;
+      height: 60px;
+      position: absolute;
+      background-color: #ffe000;
+      margin: 0 auto;
+      left: 0;
+      bottom: -40px;
+      right: -50%;
+      width: 200px;
+      z-index: 3; }
+      #Varios__edictos #portada #publicarAnuncio h3 {
+        margin: 0;
+        text-align: center; }
+        #Varios__edictos #portada #publicarAnuncio h3 a {
+          text-decoration: none;
+          color: #000000;
+          padding: 10px 20px;
+          text-transform: capitalize; }
+    #Varios__edictos #portada img {
+      width: 100%; }
   #Varios__edictos #categorias .categorias {
     margin-bottom: 50px;
     position: relative; }
@@ -2613,6 +2649,9 @@ table {
                 margin-right: 5px; }
 
 @media screen and (max-width: 768px) {
+  #Varios__edictos #portada #publicarAnuncio {
+    right: 0;
+    left: initial; }
   #Varios__edictos #noticias {
     width: 96%; }
     #Varios__edictos #noticias .view-id-categorias.view-display-id-block_3 .view-content {
