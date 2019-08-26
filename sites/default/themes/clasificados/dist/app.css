@@ -1300,6 +1300,30 @@ table {
     background: url(images/src/img/iconos/flechaDown.svg) no-repeat; }
   #home #empleos .flecha.up, #home #vehiculos .flecha.up, #home #fincaRaiz .flecha.up, #home #varios .flecha.up {
     background: url(images/src/img/iconos/flechaUp.svg) no-repeat; }
+  #home #empleos .view-footer, #home #vehiculos .view-footer, #home #fincaRaiz .view-footer, #home #varios .view-footer {
+    display: none;
+    margin-bottom: 20px; }
+    #home #empleos .view-footer .ver__mas, #home #vehiculos .view-footer .ver__mas, #home #fincaRaiz .view-footer .ver__mas, #home #varios .view-footer .ver__mas {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 0 auto;
+      width: 160px; }
+    #home #empleos .view-footer .mas__empleos, #home #vehiculos .view-footer .mas__empleos, #home #fincaRaiz .view-footer .mas__empleos, #home #varios .view-footer .mas__empleos {
+      background: #ffb200; }
+    #home #empleos .view-footer .mas__vehiculos, #home #vehiculos .view-footer .mas__vehiculos, #home #fincaRaiz .view-footer .mas__vehiculos, #home #varios .view-footer .mas__vehiculos {
+      background: #ae230c; }
+    #home #empleos .view-footer .mas__finca, #home #vehiculos .view-footer .mas__finca, #home #fincaRaiz .view-footer .mas__finca, #home #varios .view-footer .mas__finca {
+      background: #bfcc03; }
+    #home #empleos .view-footer .mas__varios, #home #vehiculos .view-footer .mas__varios, #home #fincaRaiz .view-footer .mas__varios, #home #varios .view-footer .mas__varios {
+      background: #309ad8; }
+    #home #empleos .view-footer a, #home #vehiculos .view-footer a, #home #fincaRaiz .view-footer a, #home #varios .view-footer a {
+      text-decoration: none;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 160px; }
 
 @media screen and (max-width: 768px) {
   #home {

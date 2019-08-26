@@ -18,11 +18,15 @@ class Home {
         $(this).data('activo', 1);
         $(this).removeClass('down');// En la clase down esta la imagen al igual que la clase up
         $(this).addClass('up');
+
+        $('#home #empleos .view-display-id-block_1 .view-footer').slideDown('slow');
       }else{
         $('#home #empleos .views-row-6, #home #empleos .views-row-7, #home #empleos .views-row-8, #home #empleos .views-row-9, #home #empleos .views-row-10').slideUp("slow");
         $(this).data('activo', 0);
         $(this).removeClass('up');
         $(this).addClass('down');
+
+        $('#home #empleos .view-display-id-block_1 .view-footer').slideUp('slow');
       }
     });
     
@@ -33,11 +37,15 @@ class Home {
         $(this).data('activo', 1);
         $(this).removeClass('down');
         $(this).addClass('up');
+
+        $('#home #vehiculos .view-display-id-block_2 .view-footer').slideDown('slow');
       }else{
         $('#home #vehiculos .views-row-6, #home #vehiculos .views-row-7, #home #vehiculos .views-row-8, #home #vehiculos .views-row-9, #home #vehiculos .views-row-10').slideUp("slow");
         $(this).data('activo', 0);
         $(this).removeClass('up');
         $(this).addClass('down');
+
+        $('#home #vehiculos .view-display-id-block_2 .view-footer').slideUp('slow');
       }
     });
     
@@ -48,11 +56,15 @@ class Home {
         $(this).data('activo', 1);
         $(this).removeClass('down');
         $(this).addClass('up');
+
+        $('#home #fincaRaiz .view-display-id-block_3 .view-footer').slideDown('slow');
       }else{
         $('#home #fincaRaiz .views-row-6, #home #fincaRaiz .views-row-7, #home #fincaRaiz .views-row-8, #home #fincaRaiz .views-row-9, #home #fincaRaiz .views-row-10').slideUp("slow");
         $(this).data('activo', 0);
         $(this).removeClass('up');
         $(this).addClass('down');
+
+        $('#home #fincaRaiz .view-display-id-block_3 .view-footer').slideUp('slow');
       }
     });
     
@@ -63,11 +75,15 @@ class Home {
         $(this).data('activo', 1);
         $(this).removeClass('down');
         $(this).addClass('up');
+
+        $('#home #varios .view-display-id-block_4 .view-footer').slideDown('slow');
       }else{
         $('#home #varios .views-row-6, #home #varios .views-row-7, #home #varios .views-row-8, #home #varios .views-row-9, #home #varios .views-row-10').slideUp("slow");
         $(this).data('activo', 0);
         $(this).removeClass('up');
         $(this).addClass('down');
+
+        $('#home #varios .view-display-id-block_4 .view-footer').slideUp('slow');
       }
     });
   }
