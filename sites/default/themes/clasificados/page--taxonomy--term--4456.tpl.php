@@ -17,10 +17,10 @@
     <header class="header__edicto">
       <h3>Ahora podrá publicar aquí sus EDICTOS, remates y otros avisos judiciales por solo: $65.000</h3>
       <ul>
-        <li>Cumplimos con las disposiciones del CGP. (Ley 1564 del 2012)</li>
-        <li>Permanencia del mensaje por 15 días calendario en el sitio web y 1 día en medio impreso</li>
-        <li>Certificado al finalizar el tiempo de publicación</li>
-        <li>Facilidad en la búsqueda y en la consulta</li>
+        <li>Cumplimos con las disposiciones del Código General del Proceso (Ley 1564 del 2012) , Articulo 108. Emplazamiento.</li>
+        <li>Permanencia del edicto emplazatorio por 15 días calendario en el sitio web y 1 día en medio impreso.</li>
+        <li>Certificación enviada al correo electrónico al finalizar la publicación en el medio impreso.</li>
+        <li>Facilidad en la búsqueda y consulta de su edicto emplazatorio.</li>
       </ul>
       <h2>ORDENE SU EDICTO</h2>
     </header>
