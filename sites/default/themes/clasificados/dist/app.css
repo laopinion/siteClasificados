@@ -2050,6 +2050,9 @@ table {
   #Edictos .edicto__body .body {
     font-size: 16px;
     line-height: 20px; }
+    #Edictos .edicto__body .body img {
+      height: auto;
+      width: 100%; }
 
 @media screen and (max-width: 768px) {
   #Edictos {
