@@ -2006,45 +2006,177 @@ table {
   #anuncio .categorias .finca.raíz .submenu ul:first-child .first, #anuncio .categorias .finca.raíz .submenu ul:first-child .last {
     width: 265px; } }
 
-.view-administrar-anuncios {
+.view-administrar-anuncios.view-id-administrar_anuncios {
   margin: 100px auto;
   width: 1000px; }
-  .view-administrar-anuncios .view-header {
+  .view-administrar-anuncios.view-id-administrar_anuncios .view-header {
     margin-bottom: 50px; }
-    .view-administrar-anuncios .view-header h2 {
+    .view-administrar-anuncios.view-id-administrar_anuncios .view-header h2 {
       text-align: center; }
-  .view-administrar-anuncios .view-content {
+  .view-administrar-anuncios.view-id-administrar_anuncios .view-content {
     display: flex;
     display: -webkit-flex;
     display: -moz-flex;
     justify-content: space-around;
     -webkit-justify-content: space-around;
     -moz-justify-content: space-around;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap; }
-    .view-administrar-anuncios .view-content .views-row {
-      margin-bottom: 30px;
-      padding: 5px 20px;
-      box-sizing: content-box;
-      background-color: #f9f9f9;
-      width: 300px; }
-      .view-administrar-anuncios .view-content .views-row a {
-        text-decoration: none;
-        color: #0074BD; }
-        .view-administrar-anuncios .view-content .views-row a:hover {
-          text-decoration: underline; }
-      .view-administrar-anuncios .view-content .views-row .views-field {
-        margin: 10px 0; }
+    flex-wrap: wrap; }
+    .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row {
+      background-color: #efefef;
+      padding: 4px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      width: 185px; }
+      .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row:hover {
+        height: auto; }
+      .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row .anuncio .info {
+        margin: 10px auto;
+        width: 160px; }
+        .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row .anuncio .info .date {
+          text-align: left;
+          font-weight: 700;
+          font-size: 0.8rem;
+          border-bottom: 1px solid #afafaf;
+          padding-bottom: 8px;
+          margin-bottom: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 160px; }
+        .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row .anuncio .info .title {
+          margin-bottom: 5px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden; }
+          .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row .anuncio .info .title a {
+            text-decoration: none;
+            color: #000000; }
+          .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row .anuncio .info .title:hover {
+            white-space: initial;
+            overflow: visible;
+            width: auto; }
+        .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row .anuncio .info .phone {
+          font-weight: 700; }
+        .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row .anuncio .info .edit {
+          height: 30px;
+          background: #A81822;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 10px 0;
+          border-radius: 3px;
+          transition: .2s;
+          width: 70px; }
+          .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row .anuncio .info .edit:hover {
+            opacity: 0.9; }
+          .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row .anuncio .info .edit a {
+            text-decoration: none;
+            color: #ffffff;
+            text-transform: capitalize; }
+        .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row .anuncio .info .section {
+          margin-top: 25px;
+          font-weight: 700;
+          text-transform: uppercase; }
+          .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row .anuncio .info .section a {
+            text-decoration: none;
+            color: #000000; }
+          .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row .anuncio .info .section:before {
+            content: url(images/src/img/iconos/estrella.svg);
+            margin-right: 5px; }
 
 @media screen and (max-width: 768px) {
-  .view-administrar-anuncios {
-    margin: 100px 2%;
+  .view-administrar-anuncios.view-id-administrar_anuncios {
     width: 96%; }
-    .view-administrar-anuncios .view-content {
+    .view-administrar-anuncios.view-id-administrar_anuncios .view-content {
       flex-wrap: wrap;
       -webkit-flex-wrap: wrap;
-      -moz-flex-wrap: wrap; } }
+      -moz-flex-wrap: wrap; }
+      .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row {
+        height: auto; }
+        .view-administrar-anuncios.view-id-administrar_anuncios .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; } }
+
+.view-administrar-proyectos.view-id-administrar_proyectos {
+  margin: 100px auto;
+  width: 1000px; }
+  .view-administrar-proyectos.view-id-administrar_proyectos .view-header {
+    margin-bottom: 50px; }
+    .view-administrar-proyectos.view-id-administrar_proyectos .view-header h2 {
+      text-align: center; }
+  .view-administrar-proyectos.view-id-administrar_proyectos .view-content {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    flex-wrap: wrap; }
+    .view-administrar-proyectos.view-id-administrar_proyectos .view-content .views-row {
+      background-color: #efefef;
+      padding: 4px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      width: 185px; }
+      .view-administrar-proyectos.view-id-administrar_proyectos .view-content .views-row:hover {
+        height: auto; }
+      .view-administrar-proyectos.view-id-administrar_proyectos .view-content .views-row .anuncio .info {
+        margin: 10px auto;
+        width: 160px; }
+        .view-administrar-proyectos.view-id-administrar_proyectos .view-content .views-row .anuncio .info .date {
+          text-align: left;
+          font-weight: 700;
+          font-size: 0.8rem;
+          border-bottom: 1px solid #afafaf;
+          padding-bottom: 8px;
+          margin-bottom: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 160px; }
+        .view-administrar-proyectos.view-id-administrar_proyectos .view-content .views-row .anuncio .info .title {
+          margin-bottom: 5px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden; }
+          .view-administrar-proyectos.view-id-administrar_proyectos .view-content .views-row .anuncio .info .title a {
+            text-decoration: none;
+            color: #000000; }
+          .view-administrar-proyectos.view-id-administrar_proyectos .view-content .views-row .anuncio .info .title:hover {
+            white-space: initial;
+            overflow: visible;
+            width: auto; }
+        .view-administrar-proyectos.view-id-administrar_proyectos .view-content .views-row .anuncio .info .phone {
+          font-weight: 700; }
+        .view-administrar-proyectos.view-id-administrar_proyectos .view-content .views-row .anuncio .info .edit {
+          height: 30px;
+          background: #A81822;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 10px 0;
+          border-radius: 3px;
+          transition: .2s;
+          width: 70px; }
+          .view-administrar-proyectos.view-id-administrar_proyectos .view-content .views-row .anuncio .info .edit:hover {
+            opacity: 0.9; }
+          .view-administrar-proyectos.view-id-administrar_proyectos .view-content .views-row .anuncio .info .edit a {
+            text-decoration: none;
+            color: #ffffff;
+            text-transform: capitalize; }
+
+@media screen and (max-width: 768px) {
+  .view-administrar-proyectos.view-id-administrar_proyectos {
+    width: 96%; }
+    .view-administrar-proyectos.view-id-administrar_proyectos .view-content {
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      .view-administrar-proyectos.view-id-administrar_proyectos .view-content .views-row {
+        height: auto; }
+        .view-administrar-proyectos.view-id-administrar_proyectos .view-content .views-row .anuncio .info .title {
+          white-space: initial;
+          overflow: initial; } }
 
 #Edictos .edicto__title {
   background: #efefef;
