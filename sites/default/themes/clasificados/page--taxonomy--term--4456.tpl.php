@@ -26,8 +26,8 @@
     </header>
 
     <section id="webform__edicto">
-      <?php $block = module_invoke('webform', 'block_view', 'client-block-34');print render($block['content']); ?>
-      <?php //$block = module_invoke('webform', 'block_view', 'client-block-87');print render($block['content']); ?>
+      <?php //$block = module_invoke('webform', 'block_view', 'client-block-34');print render($block['content']); ?>
+      <?php $block = module_invoke('webform', 'block_view', 'client-block-87');print render($block['content']); ?>
     </section>
 
     <section id="formulario" style="display: none;">
