@@ -2839,63 +2839,24 @@ table {
     width: 180px; }
     #Varios__edictos #categorias .categorias .varios .submenu ul:first-child li a {
       text-align: left; }
-  #Varios__edictos #destacados {
-    width: 96%; }
-    #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content {
-      flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-      -moz-flex-wrap: wrap; }
-      #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row {
-        margin-bottom: 20px;
-        padding: 10px;
-        height: auto;
-        width: 48%; }
-        #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row img {
-          height: auto;
-          width: 100%; }
-        #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info, #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .date {
-          width: 100%; }
-        #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .title {
-          white-space: initial;
-          overflow: initial;
-          line-height: 18px; }
   #Varios__edictos .pauta {
     width: 96%; }
-  #Varios__edictos #anunciosVarios {
+  #Varios__edictos #masEdictos {
     width: 96%; }
-    #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content {
+    #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content {
       flex-wrap: wrap;
       -webkit-flex-wrap: wrap;
       -moz-flex-wrap: wrap; }
-      #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row {
+      #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row {
         padding: 10px;
         height: auto;
         width: 48%; }
-        #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row img {
+        #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row img {
           height: auto;
           width: 100%; }
-        #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info, #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .date {
+        #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row .anuncio .info, #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row .anuncio .info .date {
           width: 100%; }
-        #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .title {
-          white-space: initial;
-          overflow: initial;
-          line-height: 18px; }
-  #Varios__edictos #masVarios {
-    width: 96%; }
-    #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content {
-      flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-      -moz-flex-wrap: wrap; }
-      #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row {
-        padding: 10px;
-        height: auto;
-        width: 48%; }
-        #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row img {
-          height: auto;
-          width: 100%; }
-        #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info, #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .date {
-          width: 100%; }
-        #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .title {
+        #Varios__edictos #masEdictos .view-id-categorias.view-display-id-block_17 .view-content .views-row .anuncio .info .title {
           white-space: initial;
           overflow: initial;
           line-height: 18px; }
