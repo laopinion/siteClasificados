@@ -2847,10 +2847,18 @@ table {
       -moz-flex-wrap: wrap; }
       #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row {
         margin-bottom: 20px;
-        height: auto; }
+        padding: 10px;
+        height: auto;
+        width: 48%; }
+        #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row img {
+          height: auto;
+          width: 100%; }
+        #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info, #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .date {
+          width: 100%; }
         #Varios__edictos #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .title {
           white-space: initial;
-          overflow: initial; }
+          overflow: initial;
+          line-height: 18px; }
   #Varios__edictos .pauta {
     width: 96%; }
   #Varios__edictos #anunciosVarios {
@@ -2860,10 +2868,18 @@ table {
       -webkit-flex-wrap: wrap;
       -moz-flex-wrap: wrap; }
       #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row {
-        height: auto; }
+        padding: 10px;
+        height: auto;
+        width: 48%; }
+        #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row img {
+          height: auto;
+          width: 100%; }
+        #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info, #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .date {
+          width: 100%; }
         #Varios__edictos #anunciosVarios .view-id-categorias.view-display-id-block_15 .view-content .views-row .anuncio .info .title {
           white-space: initial;
-          overflow: initial; }
+          overflow: initial;
+          line-height: 18px; }
   #Varios__edictos #masVarios {
     width: 96%; }
     #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content {
@@ -2871,10 +2887,18 @@ table {
       -webkit-flex-wrap: wrap;
       -moz-flex-wrap: wrap; }
       #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row {
-        height: auto; }
+        padding: 10px;
+        height: auto;
+        width: 48%; }
+        #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row img {
+          height: auto;
+          width: 100%; }
+        #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info, #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .date {
+          width: 100%; }
         #Varios__edictos #masVarios .view-id-categorias.view-display-id-block_16 .view-content .views-row .anuncio .info .title {
           white-space: initial;
-          overflow: initial; }
+          overflow: initial;
+          line-height: 18px; }
   #Varios__edictos #otrosAnuncios {
     width: 96%; }
     #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content {
@@ -2883,10 +2907,18 @@ table {
       -moz-flex-wrap: wrap; }
       #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
         margin-bottom: 20px;
-        height: auto; }
+        padding: 10px;
+        height: auto;
+        width: 48%; }
+        #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row img {
+          height: auto;
+          width: 100%; }
+        #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info, #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .date {
+          width: 100%; }
         #Varios__edictos #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title {
           white-space: initial;
-          overflow: initial; } }
+          overflow: initial;
+          line-height: 18px; } }
 
 @media screen and (max-width: 600px) {
   #varios #categorias .categorias .varios .submenu ul:first-child li {
@@ -3412,10 +3444,18 @@ table {
       -moz-flex-wrap: wrap; }
       #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row {
         margin-bottom: 20px;
-        height: auto; }
+        padding: 10px;
+        height: auto;
+        width: 48%; }
+        #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row img {
+          height: auto;
+          width: 100%; }
+        #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row .anuncio .info, #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row .anuncio .info .date {
+          width: 100%; }
         #vehiculos #destacados .view-id-categorias.view-display-id-block_2 .view-content .views-row .anuncio .info .title {
           white-space: initial;
-          overflow: initial; }
+          overflow: initial;
+          line-height: 18px; }
   #vehiculos .pauta {
     width: 96%; }
   #vehiculos #anunciosVehiculos {
@@ -3984,20 +4024,20 @@ table {
           line-height: 18px; }
   #empleos #masEmpleos {
     width: 96%; }
-    #empleos #masEmpleos .view-id-categorias.view-display-id-block_8 .view-content {
+    #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content {
       flex-wrap: wrap;
       -webkit-flex-wrap: wrap;
       -moz-flex-wrap: wrap; }
-      #empleos #masEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row {
+      #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row {
         padding: 10px;
         height: auto;
         width: 48%; }
-        #empleos #masEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row img {
+        #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row img {
           height: auto;
           width: 100%; }
-        #empleos #masEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info, #empleos #masEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .date {
+        #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info, #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .date {
           width: 100%; }
-        #empleos #masEmpleos .view-id-categorias.view-display-id-block_8 .view-content .views-row .anuncio .info .title {
+        #empleos #masEmpleos .view-id-categorias.view-display-id-block_9 .view-content .views-row .anuncio .info .title {
           white-space: initial;
           overflow: initial;
           line-height: 18px; }
@@ -5203,10 +5243,18 @@ table {
       -moz-flex-wrap: wrap; }
       #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row {
         margin-bottom: 20px;
-        height: auto; }
+        padding: 10px;
+        height: auto;
+        width: 48%; }
+        #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row img {
+          height: auto;
+          width: 100%; }
+        #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info, #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .date {
+          width: 100%; }
         #varios #destacados .view-id-categorias.view-display-id-block_14 .view-content .views-row .anuncio .info .title {
           white-space: initial;
-          overflow: initial; }
+          overflow: initial;
+          line-height: 18px; }
   #varios .pauta {
     width: 96%; }
   #varios #anunciosVarios {
