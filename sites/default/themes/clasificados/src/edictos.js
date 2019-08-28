@@ -28,6 +28,26 @@ class Edictos {
       $('#form-edicto #cedula').val(cedula);
     });
 
+    $('#edit-submitted-nombre').change(function () {     
+      const nombres = $(this).val();
+      $('#form-edicto #nombres').val(nombres);
+    });
+
+    $('#edit-submitted-apellido').change(function () {     
+      const apellidos = $(this).val();
+      $('#form-edicto #apellidos').val(apellidos);
+    });
+
+    $('#edit-submitted-telefono-celular').change(function () {     
+      const telefono = $(this).val();
+      $('#form-edicto #tel').val(telefono);
+    });
+
+    $('#edit-submitted-correo-electronico').change(function () {     
+      const email = $(this).val();
+      $('#form-edicto #email').val(email);
+    });
+
     this.signature();
     this.waves();
   }
