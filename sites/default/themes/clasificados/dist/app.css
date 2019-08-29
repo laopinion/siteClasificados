@@ -2284,7 +2284,7 @@ table {
     display: flex;
     flex-direction: column;
     margin: 20px 0; }
-    #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-documento, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-nombre, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-apellido, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-telefono-celular, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-correo-electronico, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item select, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item #edit-submitted-documento, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item #edit-submitted-nombre, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item #edit-submitted-apellido, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item #edit-submitted-telefono-celular, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item #edit-submitted-correo-electronico, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item select {
+    #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-documento, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-nombre, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-apellido, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-telefono-celular, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-correo-electronico, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item .form-managed-file, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item select, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item #edit-submitted-documento, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item #edit-submitted-nombre, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item #edit-submitted-apellido, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item #edit-submitted-telefono-celular, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item #edit-submitted-correo-electronico, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item .form-managed-file, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item select {
       border: none;
       height: 56px;
       background: #eeeef0;
@@ -2294,6 +2294,20 @@ table {
       font-size: 16px;
       box-sizing: border-box;
       width: 100%; }
+    #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item .form-managed-file, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item .form-managed-file {
+      display: flex; }
+    #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-imagen-tabla-upload-button--2, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item #edit-submitted-imagen-tabla-upload-button, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item #edit-submitted-imagen-tabla-upload-button--2, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item #edit-submitted-imagen-tabla-upload-button {
+      border: none;
+      width: 160px;
+      height: 40px;
+      border-radius: 2px;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      background: #bc2024;
+      cursor: pointer;
+      transition: 0.5s;
+      outline: 0; }
     #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-34 .form-item .description, #Ordenar__edicto #webform__edicto #webform-ajax-wrapper-87 .form-item .description {
       font-style: italic;
       color: #656565;
