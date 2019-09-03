@@ -21,6 +21,8 @@
         <li>Permanencia del edicto emplazatorio por 15 días calendario en el sitio web y 1 día en medio impreso.</li>
         <li>Certificación enviada al correo electrónico al finalizar la publicación en el medio impreso.</li>
         <li>Facilidad en la búsqueda y consulta de su edicto emplazatorio.</li>
+        <li>Si efectúa su pago después de las 4:00 p.m., su edicto NO será publicado al día siguiente.</li>
+        <li>Si desea que su edicto sea publicado el DOMINGO, debe hacer el pago hasta el sábado antes de las 10:00 a.m.</li>
       </ul>
       <h2>ORDENE SU EDICTO</h2>
     </header>
