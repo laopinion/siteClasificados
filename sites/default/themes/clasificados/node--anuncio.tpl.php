@@ -36,6 +36,30 @@
           }
         ?>
       </div>
+
+      <div id="newsletter" class="newsletter__desktop">
+        <form id="form_newsletter">
+          <div class="form__item">
+            <input type="text" name="fname" placeholder="Nombre y apellido">
+          </div>
+          <div class="form__item">
+            <input type="email" name="email" placeholder="Correo eléctronico" required>
+          </div>
+          <div class="form__item">
+            <select name="categoria" id="categoria" class="categoria">
+              <option value="Empleos">Empleos</option>
+              <option value="Vehículos">Vehículos</option>
+              <option value="Finca raíz">Finca raíz</option>
+              <option value="Varios">Varios</option>
+            </select>
+          </div>
+          <div id="terminos">
+            <input type="radio" name="terminos" value="Acepta terminos y condiciones" required>
+            <label for="terminos">Acepto los términos y condiciones y he leído la política de tratamiento de los datos personales</label>
+          </div>
+          <button class="btn_enviar">Suscribirme</button>
+        </form>
+      </div>
     </div>
     <div class="info">
       <aside class="pauta">
@@ -76,6 +100,30 @@
       </article>
     </div>
   </article>
+
+  <div id="newsletter" class="newsletter__movil">
+    <form id="form_newsletter">
+      <div class="form__item">
+        <input type="text" name="fname" placeholder="Nombre y apellido">
+      </div>
+      <div class="form__item">
+        <input type="email" name="email" placeholder="Correo eléctronico" required>
+      </div>
+      <div class="form__item">
+        <select name="categoria" id="categoria" class="categoria">
+          <option value="Empleos">Empleos</option>
+          <option value="Vehículos">Vehículos</option>
+          <option value="Finca raíz">Finca raíz</option>
+          <option value="Varios">Varios</option>
+        </select>
+      </div>
+      <div id="terminos">
+        <input type="radio" name="terminos" value="Acepta terminos y condiciones" required>
+        <label for="terminos">Acepto los términos y condiciones y he leído la política de tratamiento de los datos personales</label>
+      </div>
+      <button class="btn_enviar">Suscribirme</button>
+    </form>
+  </div>
 
   <div id="destacados">
     <hr>
