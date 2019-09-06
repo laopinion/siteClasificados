@@ -78,6 +78,7 @@
   </article>
   
   <div id="newsletter">
+    <h3>Recibe anuncios como este en tu buzón</h3>
     <form id="form_newsletter" class="form_newslletter">
       <div class="form__item">
         <input type="text" name="fname" placeholder="Nombre y apellido">
