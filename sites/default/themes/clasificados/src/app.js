@@ -18,6 +18,7 @@ import Varios from './varios';
 import Profile from './profile';
 import Proyectos from './proyectos';
 import Edictos from './edictos';
+require('./mailchimp');
 
 $(function() {
   const home = new Home(autosImg, empleoImg, fincaImg, variosImg);

@@ -1381,6 +1381,52 @@ table {
   margin-top: 30px;
   margin-bottom: 100px;
   position: relative; }
+  #anuncio #newsletter {
+    max-width: 568px;
+    margin: 0 auto 100px; }
+    #anuncio #newsletter h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #a81822; }
+    #anuncio #newsletter #form_newsletter {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 15px;
+      grid-column-gap: 10px; }
+    #anuncio #newsletter .form__item input, #anuncio #newsletter select {
+      outline: none;
+      font-size: 0.9rem;
+      background-color: #efefef;
+      border: 0;
+      height: 38px;
+      width: 170px;
+      padding: 5px;
+      box-sizing: content-box;
+      color: #000000; }
+    #anuncio #newsletter #terminos {
+      display: flex;
+      grid-column: 1/3; }
+      #anuncio #newsletter #terminos input {
+        height: 18px;
+        width: 50px; }
+      #anuncio #newsletter #terminos label {
+        font-size: 12px;
+        text-align: left;
+        line-height: 14px; }
+    #anuncio #newsletter .btn_enviar {
+      background-color: #b92025;
+      border: none;
+      color: #ffffff;
+      border-radius: 2px;
+      cursor: pointer;
+      height: 30px;
+      padding: 5px;
+      box-sizing: content-box;
+      font-size: 1rem;
+      transition: transform .2s;
+      width: 172px; }
+      #anuncio #newsletter .btn_enviar:active {
+        transform: scale(0.8); }
   #anuncio .categorias {
     margin-bottom: 50px;
     position: relative; }
@@ -1932,6 +1978,14 @@ table {
   #anuncio {
     margin: 50px auto 100px auto;
     width: 96%; }
+    #anuncio #newsletter {
+      margin: 0 auto 30px; }
+      #anuncio #newsletter #form_newsletter {
+        grid-template-columns: 1fr; }
+      #anuncio #newsletter .form__item input, #anuncio #newsletter select {
+        width: 96%; }
+      #anuncio #newsletter #terminos {
+        grid-column: initial; }
     #anuncio .anuncioNota {
       flex-wrap: wrap;
       -webkit-flex-wrap: wrap;

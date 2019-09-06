@@ -76,6 +76,32 @@
       </article>
     </div>
   </article>
+  
+  <div id="newsletter">
+    <h3>Recibe anuncios como este en tu buzón</h3>
+    <form id="form_newsletter" class="form_newslletter">
+      <div class="form__item">
+        <input type="text" name="fname" placeholder="Nombre y apellido">
+      </div>
+      <div class="form__item">
+        <input type="email" name="email" placeholder="Correo eléctronico" required>
+      </div>
+      <div class="form__item">
+        <select name="categoria" id="categoria" class="categoria">
+          <option value="Empleos">Empleos</option>
+          <option value="Vehículos">Vehículos</option>
+          <option value="Finca raíz">Finca raíz</option>
+          <option value="Varios">Varios</option>
+        </select>
+      </div>
+      <input type="hidden" name="version" value="desktop">
+      <div id="terminos">
+        <input type="radio" name="terminos" value="Acepta terminos y condiciones" required>
+        <label for="terminos">Acepto los términos y condiciones y he leído la política de tratamiento de los datos personales</label>
+      </div>
+      <button class="btn_enviar">Suscribirme</button>
+    </form>
+  </div>
 
   <div id="destacados">
     <hr>

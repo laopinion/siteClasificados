@@ -17,4 +17,5 @@ stylesheets/
 
 .htaccess
 
+mailchimpkey.tpl.php
 signature.php
