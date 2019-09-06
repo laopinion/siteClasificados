@@ -8,7 +8,8 @@ const $form = document.getElementById('form_newsletter');
 const syncMailchimp = function (event) {
   event.preventDefault();
   // console.log('hola mundo');
-  const data = new FormData($form);
+  // const data = new FormData($form);
+  const data = new FormData(this);
   const email = data.get('email');
   const fname = data.get('fname');
   const lname = data.get('lname');
@@ -19,20 +20,20 @@ const syncMailchimp = function (event) {
   if (path == 'http://docker.clasificados.com'){
     url = 'http://docker.clasificados.com/sites/default/themes/clasificados/mailchimpApi.php';
   } else {
-    url = 'http://mejoresempresas.laopinion.com.co/sites/default/themes/clasificados/mailchimpApi.php';
+    url = 'https://clasificados.laopinion.com.co/sites/default/themes/clasificados/mailchimpApi.php';
   }
 
-  console.log('This is url -> ' + url)
+  // console.log('This is url -> ' + url)
 
-  $.post(url, { 
+  $.post(url, {
     email: email, 
     fname: fname, 
     lname: lname,
     categoria: categoria,
     terminos: terminos
   }, function (data, status) {
-    console.log(data);
-    console.log(status);
+    // console.log(data);
+    // console.log(status);
     if (status == 'success') {
       // $('#message').show();
       if (data == 200) {
