@@ -220,6 +220,202 @@ $(document).ready(function() {
     signature("29000");
   });
 
+  $("#packages #package_11").click(function() {
+    $("#formulario").slideDown();
+
+    $("html, body").animate(
+      {
+        scrollTop: $("#formulario").offset().top
+      },
+      2000
+    );
+
+    cleanOptions();
+
+    $("#formulario #package_option option[value='18']").attr(
+      "selected",
+      true
+    );
+    $("#amount").val("5000");
+    $("#description").val("Busco empleo 4 días Profesión + Telefóno + Correo electrónico");
+    signature("5000");
+  });
+
+  $("#packages #package_12").click(function() {
+    $("#formulario").slideDown();
+
+    $("html, body").animate(
+      {
+        scrollTop: $("#formulario").offset().top
+      },
+      2000
+    );
+
+    cleanOptions();
+
+    $("#formulario #package_option option[value='19']").attr(
+      "selected",
+      true
+    );
+    $("#amount").val("25000");
+    $("#description").val("Oferta de empleo 4 días Destacado en redes sociales");
+    signature("25000");
+  });
+
+  $("#packages #package_1_1").click(function() {
+    // console.log("okk");
+    $("#formulario").slideDown();
+
+    $("html, body").animate(
+      {
+        scrollTop: $("#formulario").offset().top
+      },
+      2000
+    );
+
+    cleanOptions();
+
+    $("#formulario #package_option option[value='11']").attr(
+      "selected",
+      true
+    );
+    $("#amount").val("14000");
+    $("#description").val("0 - 5 Palabras 4 días Qhubo - La opinión");
+    signature("14000");
+  });
+
+  $("#packages #package_2_1").click(function() {
+    // console.log("okk");
+    $("#formulario").slideDown();
+
+    $("html, body").animate(
+      {
+        scrollTop: $("#formulario").offset().top
+      },
+      2000
+    );
+
+    cleanOptions();
+
+    $("#formulario #package_option option[value='12']").attr(
+      "selected",
+      true
+    );
+    $("#amount").val("20000");
+    $("#description").val("6 - 10 Palabras 4 días Qhubo - La opinión");
+    signature("20000");
+  });
+
+  $("#packages #package_3_1").click(function() {
+    // console.log("okk");
+    $("#formulario").slideDown();
+
+    $("html, body").animate(
+      {
+        scrollTop: $("#formulario").offset().top
+      },
+      2000
+    );
+
+    cleanOptions();
+
+    $("#formulario #package_option option[value='13']").attr(
+      "selected",
+      true
+    );
+    $("#amount").val("43000");
+    $("#description").val("11 - 20 Palabras 4 días Qhubo - La opinión");
+    signature("43000");
+  });
+
+  $("#packages #package_4_1").click(function() {
+    // console.log("okk");
+    $("#formulario").slideDown();
+
+    $("html, body").animate(
+      {
+        scrollTop: $("#formulario").offset().top
+      },
+      2000
+    );
+
+    cleanOptions();
+
+    $("#formulario #package_option option[value='14']").attr(
+      "selected",
+      true
+    );
+    $("#amount").val("67000");
+    $("#description").val("21 - 30 Palabras 4 días Qhubo - La opinión");
+    signature("67000");
+  });
+
+  $("#packages #package_6_1").click(function() {
+    // console.log("okk");
+    $("#formulario").slideDown();
+
+    $("html, body").animate(
+      {
+        scrollTop: $("#formulario").offset().top
+      },
+      2000
+    );
+
+    cleanOptions();
+
+    $("#formulario #package_option option[value='15']").attr(
+      "selected",
+      true
+    );
+    $("#amount").val("26000");
+    $("#description").val("0 - 5 Palabras 8 días Qhubo - La opinión");
+    signature("26000");
+  });
+
+  $("#packages #package_7_1").click(function() {
+    // console.log("okk");
+    $("#formulario").slideDown();
+
+    $("html, body").animate(
+      {
+        scrollTop: $("#formulario").offset().top
+      },
+      2000
+    );
+
+    cleanOptions();
+
+    $("#formulario #package_option option[value='16']").attr(
+      "selected",
+      true
+    );
+    $("#amount").val("38000");
+    $("#description").val("6 - 10 Palabras 8 días Qhubo - La opinión");
+    signature("38000");
+  });
+
+  $("#packages #package_8_1").click(function() {
+    // console.log("okk");
+    $("#formulario").slideDown();
+
+    $("html, body").animate(
+      {
+        scrollTop: $("#formulario").offset().top
+      },
+      2000
+    );
+
+    cleanOptions();
+
+    $("#formulario #package_option option[value='17']").attr(
+      "selected",
+      true
+    );
+    $("#amount").val("50000");
+    $("#description").val("0 - 5 Palabras 15 días Qhubo - La opinión");
+    signature("50000");
+  });
+
   function signature(amount) {
     let nuevoAmount = amount;
     const domain = window.location.origin
@@ -287,6 +483,42 @@ $(document).ready(function() {
       $("#amount").val("29000");
       $("#description").val("Facebook e Instagram + Impreso (Qhubo - La Opinión)");
       signature("29000");
+    } else if (option == 11) {
+      $("#amount").val("14000");
+      $("#description").val("0 - 5 Palabras 4 días Qhubo - La opinión");
+      signature("14000");
+    } else if (option == 12) {
+      $("#amount").val("20000");
+      $("#description").val("6 - 10 Palabras 4 días Qhubo - La opinión");
+      signature("20000");
+    } else if (option == 13) {
+      $("#amount").val("43000");
+      $("#description").val("11 - 20 Palabras 4 días Qhubo - La opinión");
+      signature("43000");
+    } else if (option == 14) {
+      $("#amount").val("67000");
+      $("#description").val("21 - 30 Palabras 4 días Qhubo - La opinión");
+      signature("67000");
+    } else if (option == 15) {
+      $("#amount").val("26000");
+      $("#description").val("0 - 5 Palabras 8 días Qhubo - La opinión");
+      signature("26000");
+    } else if (option == 16) {
+      $("#amount").val("38000");
+      $("#description").val("6 - 10 Palabras 8 días Qhubo - La opinión");
+      signature("38000");
+    } else if (option == 17) {
+      $("#amount").val("50000");
+      $("#description").val("0 - 5 Palabras 15 días Qhubo - La opinión");
+      signature("50000");
+    } else if (option == 18) {
+      $("#amount").val("5000");
+      $("#description").val("Busco empleo 4 días Profesión + Telefóno + Correo electrónico");
+      signature("5000");
+    } else if (option == 19) {
+      $("#amount").val("25000");
+      $("#description").val("Oferta de empleo 4 días Destacado en redes sociales");
+      signature("25000");
     }
   }
 
@@ -296,7 +528,7 @@ $(document).ready(function() {
   }
 
   function  cleanOptions() {
-    const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
     // const length_packages = document.getElementById('package_option').length
 
     // https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/from

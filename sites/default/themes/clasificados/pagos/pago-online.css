@@ -80,8 +80,11 @@ body {
   display: grid;
   margin-top: 50px;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(10, 120px);
-  grid-row-gap: 30px;
+  /* grid-template-rows: repeat(19, 110px); */
+  /* grid-template-rows: repeat(auto-fill, 110px); */
+  /* grid-template-rows: minmax(110px, 1fr); */
+  grid-auto-rows: 120px;
+  row-gap: 20px;
 }
 #packages li {
   display: grid;
@@ -90,6 +93,23 @@ body {
   align-items: center;
   background: #eeeef0;
   cursor: pointer;
+}
+
+#packages .sub__package {
+  height: 75px;
+  position: relative;
+  top: -10px;
+}
+#packages .sub__package .words span:first-child, #packages .sub__package .days span:first-child {
+  font-size: 20px;
+}
+#packages .sub__package .value span {
+  font-size: 20px;
+}
+#packages .sub__package .btn button {
+  height: 40px;
+  width: 120px;
+  font-size: 16px;
 }
 #packages li div {
   display: flex;
@@ -108,6 +128,7 @@ body {
 }
 #packages li .words span:last-child {
   font-size: 16px;
+  text-align: center;
 }
 #packages #package_5 .words span:first-child {
   font-size: 20px;
@@ -121,7 +142,7 @@ body {
   font-size: 20px;
   font-weight: bold;
 }
-#packages #package_10 .words span:first-child {
+#packages #package_10 .words span:first-child, #packages #package_11 .words span:first-child, #packages #package_12 .words span:first-child {
   font-size: 20px;
   font-weight: bold;
 }
@@ -153,7 +174,7 @@ body {
   font-weight: bold;
 }
 
-#packages #package_10 .days span:first-child {
+#packages #package_10 .days span:first-child, #packages #package_11 .days span:first-child, #packages #package_12 .days span:first-child {
   font-size: 20px;
   font-weight: bold;
 }
