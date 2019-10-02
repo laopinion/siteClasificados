@@ -53,6 +53,23 @@
           <button>Seleccionar</button>
         </div>
       </li>
+      <li id="package_1_1" class="sub__package">
+        <div class="words">
+          <span>0 - 5</span>
+          <span>Palabras</span>
+          <span>Qhubo - La opinión</span>
+        </div>
+        <div class="days">
+          <span>4</span>
+          <span>Días</span>
+        </div>
+        <div class="value">
+          <span>$14.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
       <li id="package_2">
         <div class="words">
           <span>6 - 10</span>
@@ -64,6 +81,23 @@
         </div>
         <div class="value">
           <span>$18.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+      <li id="package_2_1" class="sub__package">
+        <div class="words">
+          <span>6 - 10</span>
+          <span>Palabras</span>
+          <span>Qhubo - La opinión</span>
+        </div>
+        <div class="days">
+          <span>4</span>
+          <span>Días</span>
+        </div>
+        <div class="value">
+          <span>$20.000</span>
         </div>
         <div class="btn">
           <button>Seleccionar</button>
@@ -85,6 +119,23 @@
           <button>Seleccionar</button>
         </div>
       </li>
+      <li id="package_3_1" class="sub__package">
+        <div class="words">
+          <span>11 - 20</span>
+          <span>Palabras</span>
+          <span>Qhubo - La opinión</span>
+        </div>
+        <div class="days">
+          <span>4</span>
+          <span>Días</span>
+        </div>
+        <div class="value">
+          <span>$43.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
       <li id="package_4">
         <div class="words">
           <span>21 - 30</span>
@@ -96,6 +147,23 @@
         </div>
         <div class="value">
           <span>$65.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+      <li id="package_4_1" class="sub__package">
+        <div class="words">
+          <span>21 - 30</span>
+          <span>Palabras</span>
+          <span>Qhubo - La opinión</span>
+        </div>
+        <div class="days">
+          <span>4</span>
+          <span>Días</span>
+        </div>
+        <div class="value">
+          <span>$67.000</span>
         </div>
         <div class="btn">
           <button>Seleccionar</button>
@@ -117,6 +185,23 @@
           <button>Seleccionar</button>
         </div>
       </li>
+      <li id="package_6_1" class="sub__package">
+        <div class="words">
+          <span>0 - 5</span>
+          <span>Palabras</span>
+          <span>Qhubo - La opinión</span>
+        </div>
+        <div class="days">
+          <span>8</span>
+          <span>Días</span>
+        </div>
+        <div class="value">
+          <span>$26.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
       <li id="package_7">
         <div class="words">
           <span>6 - 10</span>
@@ -133,6 +218,23 @@
           <button>Seleccionar</button>
         </div>
       </li>
+      <li id="package_7_1" class="sub__package">
+        <div class="words">
+          <span>6 - 10</span>
+          <span>Palabras</span>
+          <span>Qhubo - La opinión</span>
+        </div>
+        <div class="days">
+          <span>8</span>
+          <span>Días</span>
+        </div>
+        <div class="value">
+          <span>$38.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
       <li id="package_8">
         <div class="words">
           <span>0 - 5</span>
@@ -144,6 +246,23 @@
         </div>
         <div class="value">
           <span>$48.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+      <li id="package_8_1" class="sub__package">
+        <div class="words">
+          <span>0 - 5</span>
+          <span>Palabras</span>
+          <span>Qhubo - La opinión</span>
+        </div>
+        <div class="days">
+          <span>15</span>
+          <span>Días</span>
+        </div>
+        <div class="value">
+          <span>$50.000</span>
         </div>
         <div class="btn">
           <button>Seleccionar</button>
@@ -192,6 +311,38 @@
         </div>
         <div class="value">
           <span>$29.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+      <li id="package_11">
+        <div class="words">
+          <span>Busco empleo</span>
+          <span>Profesión + Telefóno + Correo electrónico</span>
+        </div>
+        <div class="days">
+          <span>4 días</span>
+          <span>(Lunes, martes, jueves y viernes)</span>
+          <span>Impreso</span>
+        </div>
+        <div class="value">
+          <span>$5.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+      <li id="package_12">
+        <div class="words">
+          <span>Oferta de empleo</span>
+          <span>Destacado en redes sociales</span>
+        </div>
+        <div class="days">
+          <span>4 días</span>
+        </div>
+        <div class="value">
+          <span>$25.000</span>
         </div>
         <div class="btn">
           <button>Seleccionar</button>
@@ -288,10 +439,19 @@
             <option value="4">21 - 30 Palabras 4 días</option>
             <option value="6">0 - 5 Palabras 8 días</option>
             <option value="7">6 - 10 Palabras 8 días</option>
-            <option value="8">0 - 5 Palarbas 15 días</option>
+            <option value="8">0 - 5 Palabras 15 días</option>
             <option value="5">Facebook mascotas</option>
             <option value="9">Facebook e Instragram</option>
             <option value="10">Redes + Impreso</option>
+            <option value="11">0 - 5 Palabras 4 días Qhubo - La opinión</option>
+            <option value="12">6 - 10 Palabras 4 días Qhubo - La opinión</option>
+            <option value="13">11 - 20 Palabras 4 días Qhubo - La opinión</option>
+            <option value="14">21 - 30 Palabras 4 días Qhubo - La opinión</option>
+            <option value="15">0 - 5 Palabras 8 días Qhubo - La opinión</option>
+            <option value="16">6 - 10 Palabras 8 días Qhubo - La opinión</option>
+            <option value="17">0 - 5 Palabras 15 días Qhubo - La opinión</option>
+            <option value="18">Busco empleo 4 días Profesión + Telefóno + Correo electrónico</option>
+            <option value="19">Oferta de empleo 4 días Destacado en redes sociales</option>
           </select>
         </div>
         <div class="form-item terminos">
