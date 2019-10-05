@@ -322,12 +322,12 @@
           <span>Profesión + Telefóno + Correo electrónico</span>
         </div>
         <div class="days">
-          <span>4 días</span>
-          <span>(Lunes, martes, jueves y viernes)</span>
+          <span>10 días</span>
+          <span>Lunes a Viernes</span>
           <span>Impreso</span>
         </div>
         <div class="value">
-          <span>$5.000</span>
+          <span>$9.500</span>
         </div>
         <div class="btn">
           <button>Seleccionar</button>
@@ -450,7 +450,7 @@
             <option value="15">0 - 5 Palabras 8 días Qhubo - La opinión</option>
             <option value="16">6 - 10 Palabras 8 días Qhubo - La opinión</option>
             <option value="17">0 - 5 Palabras 15 días Qhubo - La opinión</option>
-            <option value="18">Busco empleo 4 días Profesión + Telefóno + Correo electrónico</option>
+            <option value="18">Busco empleo 10 días Profesión + Telefóno + Correo electrónico</option>
             <option value="19">Oferta de empleo 4 días Destacado en redes sociales</option>
           </select>
         </div>

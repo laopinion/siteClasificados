@@ -236,9 +236,9 @@ $(document).ready(function() {
       "selected",
       true
     );
-    $("#amount").val("5000");
-    $("#description").val("Busco empleo 4 días Profesión + Telefóno + Correo electrónico");
-    signature("5000");
+    $("#amount").val("9500");
+    $("#description").val("Busco empleo 10 días Profesión + Telefóno + Correo electrónico");
+    signature("9500");
   });
 
   $("#packages #package_12").click(function() {
@@ -512,9 +512,9 @@ $(document).ready(function() {
       $("#description").val("0 - 5 Palabras 15 días Qhubo - La opinión");
       signature("50000");
     } else if (option == 18) {
-      $("#amount").val("5000");
-      $("#description").val("Busco empleo 4 días Profesión + Telefóno + Correo electrónico");
-      signature("5000");
+      $("#amount").val("9500");
+      $("#description").val("Busco empleo 10 días Profesión + Telefóno + Correo electrónico");
+      signature("9500");
     } else if (option == 19) {
       $("#amount").val("25000");
       $("#description").val("Oferta de empleo 4 días Destacado en redes sociales");
