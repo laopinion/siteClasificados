@@ -323,7 +323,6 @@
         </div>
         <div class="days">
           <span>10 días</span>
-          <span>Lunes a Viernes</span>
           <span>Impreso</span>
         </div>
         <div class="value">
