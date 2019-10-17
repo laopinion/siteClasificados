@@ -142,7 +142,7 @@ body {
   font-size: 20px;
   font-weight: bold;
 }
-#packages #package_10 .words span:first-child, #packages #package_11 .words span:first-child, #packages #package_12 .words span:first-child {
+#packages #package_10 .words span:first-child, #packages #package_11 .words span:first-child, #packages #package_12 .words span:first-child, #packages #package_13 .words span:first-child {
   font-size: 20px;
   font-weight: bold;
 }
@@ -174,7 +174,7 @@ body {
   font-weight: bold;
 }
 
-#packages #package_10 .days span:first-child, #packages #package_11 .days span:first-child, #packages #package_12 .days span:first-child {
+#packages #package_10 .days span:first-child, #packages #package_11 .days span:first-child, #packages #package_12 .days span:first-child, #packages #package_13 .days span:first-child {
   font-size: 20px;
   font-weight: bold;
 }
@@ -236,6 +236,7 @@ body {
   grid-column: 2/4;
   justify-self: center;
   flex-direction: initial !important;
+  align-items: center;
 }
 
 .formulario .terminos label {
@@ -389,5 +390,9 @@ body {
   .formulario .terminos input {
     margin: 0 25px 0 10px;
     width: 80px;
+  }
+
+  .formulario input, .formulario select {
+    width: 100%;
   }
 }
