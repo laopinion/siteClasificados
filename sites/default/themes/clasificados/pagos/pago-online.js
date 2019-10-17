@@ -258,7 +258,7 @@ $(document).ready(function() {
       true
     );
     $("#amount").val("25000");
-    $("#description").val("Oferta de empleo 4 días Destacado en redes sociales");
+    $("#description").val("Oferta de empleo 4 días 6 - 10 palabras Destacado en redes sociales");
     signature("25000");
   });
 
@@ -416,6 +416,28 @@ $(document).ready(function() {
     signature("50000");
   });
 
+  $("#packages #package_13").click(function() {
+    // console.log("okk");
+    $("#formulario").slideDown();
+
+    $("html, body").animate(
+      {
+        scrollTop: $("#formulario").offset().top
+      },
+      2000
+    );
+
+    cleanOptions();
+
+    $("#formulario #package_option option[value='20']").attr(
+      "selected",
+      true
+    );
+    $("#amount").val("43000");
+    $("#description").val("Oferta de empleo 8 días 6 - 10 palabras Destacado en redes sociales");
+    signature("43000");
+  });
+
   function signature(amount) {
     let nuevoAmount = amount;
     const domain = window.location.origin
@@ -517,8 +539,12 @@ $(document).ready(function() {
       signature("9500");
     } else if (option == 19) {
       $("#amount").val("25000");
-      $("#description").val("Oferta de empleo 4 días Destacado en redes sociales");
+      $("#description").val("Oferta de empleo 4 días 6 - 10 palabras Destacado en redes sociales");
       signature("25000");
+    } else if (option == 20) {
+      $("#amount").val("43000");
+      $("#description").val("Oferta de empleo 8 días 6 - 10 palabras Destacado en redes sociales");
+      signature("43000");
     }
   }
 
