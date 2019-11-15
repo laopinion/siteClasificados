@@ -10,7 +10,7 @@
         <p>
          <strong>Via telefónica</strong> se ordena el aviso llamando al numero (+57)(7)5899999 ext 108 - 109, el asesor(a) le solicitará la información de su aviso y luego de cotizado le debe indicar un código de pago para efectuarlo via Efecto, Baloto o Apuesta Cúcuta 75.
         </p>
-        <p><strong>Via Whatsapp</strong> se ordena el aviso escribiendo al numero (+57)3166941938, el asesor(a) le solicitará la información de su aviso y luego de cotizado le debe indicar un código de pago para efectuarlo via Efecto, Baloto o Apuesta Cúcuta 75.</p>
+        <p><strong>Via Whatsapp</strong> se ordena el aviso escribiendo al numero (+57)3153934000, el asesor(a) le solicitará la información de su aviso y luego de cotizado le debe indicar un código de pago para efectuarlo via Efecto, Baloto o Apuesta Cúcuta 75.</p>
       </li>
       <li>
         <h3>¿Cómo puedo via Apuestas Cúcuta 75?</h3>
