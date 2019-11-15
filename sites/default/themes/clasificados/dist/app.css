@@ -5945,6 +5945,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
@@ -5964,7 +5967,8 @@ table {
         display: -moz-flex;
         justify-content: space-around;
         -webkit-justify-content: space-around;
-        -moz-justify-content: space-around; }
+        -moz-justify-content: space-around;
+        flex-wrap: wrap; }
         #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row {
           background-color: #efefef;
           padding: 4px;
@@ -6006,6 +6010,9 @@ table {
               margin-top: 25px;
               font-weight: 700;
               text-transform: uppercase; }
+              #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .section a {
+                text-decoration: none;
+                color: #000000; }
               #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .section:before {
                 content: url(images/src/img/iconos/estrella.svg);
                 margin-right: 5px; }
