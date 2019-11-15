@@ -21,9 +21,9 @@
     <i class="icon__tel"></i>
     <h2>
       <a
-        href="https://api.whatsapp.com/send?phone=573166941938&text=Hola,%20quiero%20publicar%20en%20Clasificados%20La%20Opini%C3%B3n%20%C2%BFqu%C3%A9%20debo%20hacer?"
+        href="https://api.whatsapp.com/send?phone=573153934000&text=Hola,%20quiero%20publicar%20en%20Clasificados%20La%20Opini%C3%B3n%20%C2%BFqu%C3%A9%20debo%20hacer?"
         target="_blank"
-        >3166941938</a
+        >3153934000</a
       >
     </h2>
     <h3>Pague en línea su clasificado</h3>

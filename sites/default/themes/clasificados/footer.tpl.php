@@ -8,7 +8,7 @@
     <div class="container">
       <div class="tel">
         <i class="iconTel">
-          <a href="https://api.whatsapp.com/send?phone=573166941938&text=Me%20gustar%C3%ADa%20ordenar%20un%20aviso%20clasificado.">Teléfono (57) 3166941938</a>
+          <a href="https://api.whatsapp.com/send?phone=573153934000&text=Me%20gustar%C3%ADa%20ordenar%20un%20aviso%20clasificado.">Teléfono (57) 3153934000</a>
         </i>
       </div>
       <hr>
