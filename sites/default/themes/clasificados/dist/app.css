@@ -6142,14 +6142,14 @@ table {
           overflow: initial; }
   #seccionGeneral #anunciosGeneral {
     width: 96%; }
-    #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block_10 .view-content {
+    #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block_10 .view-content, #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content {
       flex-wrap: wrap;
       -webkit-flex-wrap: wrap;
       -moz-flex-wrap: wrap; }
-      #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row {
+      #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row, #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row {
         margin-bottom: 20px;
         height: auto; }
-        #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .title {
+        #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .title, #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info .title {
           white-space: initial;
           overflow: initial; }
   #seccionGeneral .pauta {
