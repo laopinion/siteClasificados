@@ -6148,10 +6148,18 @@ table {
       -moz-flex-wrap: wrap; }
       #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row, #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row {
         margin-bottom: 20px;
-        height: auto; }
+        padding: 10px;
+        height: auto;
+        width: 48%; }
+        #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row img, #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row img {
+          height: auto;
+          width: 100%; }
+        #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info, #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .date, #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info, #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info .date {
+          width: 100%; }
         #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .title, #seccionGeneral #anunciosGeneral .view-id-categorias.view-display-id-block .view-content .views-row .anuncio .info .title {
           white-space: initial;
-          overflow: initial; }
+          overflow: initial;
+          line-height: 18px; }
   #seccionGeneral .pauta {
     width: 96%; }
   #seccionGeneral #masGeneral {
@@ -6162,10 +6170,18 @@ table {
       -moz-flex-wrap: wrap; }
       #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row {
         margin-bottom: 20px;
-        height: auto; }
+        padding: 10px;
+        height: auto;
+        width: 48%; }
+        #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row img {
+          height: auto;
+          width: 100%; }
+        #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info, #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .date {
+          width: 100%; }
         #seccionGeneral #masGeneral .view-id-categorias.view-display-id-block_10 .view-content .views-row .anuncio .info .title {
           white-space: initial;
-          overflow: initial; }
+          overflow: initial;
+          line-height: 18px; }
   #seccionGeneral #otrosAnuncios {
     width: 96%; }
     #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content {
@@ -6174,10 +6190,18 @@ table {
       -moz-flex-wrap: wrap; }
       #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row {
         margin-bottom: 20px;
-        height: auto; }
+        padding: 10px;
+        height: auto;
+        width: 48%; }
+        #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row img {
+          height: auto;
+          width: 100%; }
+        #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info, #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .date {
+          width: 100%; }
         #seccionGeneral #otrosAnuncios .view-id-categorias.view-display-id-block_5 .view-content .views-row .anuncio .info .title {
           white-space: initial;
-          overflow: initial; } }
+          overflow: initial;
+          line-height: 18px; } }
 
 @media screen and (max-width: 600px) {
   #seccionGeneral #categorias .categorias .finca.raíz .submenu ul:first-child {
