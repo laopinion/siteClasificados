@@ -270,8 +270,8 @@
       </li> -->
       <li id="package_5">
         <div class="words">
-          <span>Facebook</span>
-          <span>mascotas</span>
+          <span>Mascotas</span>
+          <span>(Facebook e Instagram)</span>
         </div>
         <div class="days">
           <span>1 publicación</span>
@@ -286,8 +286,8 @@
       </li>
       <li id="package_9">
         <div class="words">
-          <span>Facebook</span>
-          <span>Instragram</span>
+          <span>Vehículos</span>
+          <span>(Facebook e Instagram)</span>
         </div>
         <div class="days">
           <span>1 publicación</span>
@@ -302,12 +302,12 @@
       </li>
       <li id="package_10">
         <div class="words">
-          <span>Facebook e Instragram</span>
-          <span>Impreso (Qhubo - La Opinión)</span>
+          <span>Destacado - Redes + Impreso</span>
+          <span>(Qhubo - La Opinión)</span>
         </div>
         <div class="days">
-          <span>1 publicación</span>
-          <span>Feed + Historia (4 días impreso)</span>
+          <span>4 días</span>
+          <span>6 - 10 palabras</span>
         </div>
         <div class="value">
           <span>$29.000</span>
