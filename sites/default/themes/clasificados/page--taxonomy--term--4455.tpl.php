@@ -302,8 +302,8 @@
       </li>
       <li id="package_10">
         <div class="words">
-          <span>Destacado - Redes + Impreso</span>
-          <span>(Qhubo - La Opinión)</span>
+          <span>Destacado - Redes</span>
+          <span>Impreso (Qhubo - La Opinión)</span>
         </div>
         <div class="days">
           <span>4 días</span>
