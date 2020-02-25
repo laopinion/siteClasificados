@@ -442,6 +442,12 @@ body {
     align-items: center;
   }
 
+  #packages header p {
+    flex-wrap: wrap;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+
   #packages .sub__package {
     grid-template-columns: 1fr;
     grid-row-gap: 20px;
