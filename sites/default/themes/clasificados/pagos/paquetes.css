@@ -433,6 +433,15 @@ body {
     padding: 20px 0;
   }
 
+  #packages #vehiculo li, #packages #empleo li {
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+  }
+  
+  #packages #vehiculo li .value, #packages #empleo li .value {
+    align-items: center;
+  }
+
   #packages .sub__package {
     grid-template-columns: 1fr;
     grid-row-gap: 20px;
