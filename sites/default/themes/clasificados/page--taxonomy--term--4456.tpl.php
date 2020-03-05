@@ -15,14 +15,15 @@
   </div>
   <div class="container">
     <header class="header__edicto">
-      <h3>Ahora podrá publicar aquí sus EDICTOS, remates y otros avisos judiciales por solo: $65.000</h3>
+      <h3>Ahora podrá publicar por solo $65.000 Avisos de: Emplazamientos, remates, patrimonio, sucesión y judiciales.</h3>
+      <h4>Código General del Proceso (Ley 1564 del 2012), Artículo 108.</h4>
+      <p>Abstenerse de publicar otro tipo de aviso que no esté estipulado ya que no se hará devolución del dinero.</p>
       <ul>
-        <li>Cumplimos con las disposiciones del Código General del Proceso (Ley 1564 del 2012) , Articulo 108. Emplazamiento.</li>
-        <li>Permanencia del edicto emplazatorio por 15 días calendario en el sitio web y 1 día en medio impreso.</li>
+        <li>Permanencia del aviso por 15 días calendario en el sitio web y 1 día en medio impreso.</li>
         <li>Certificación enviada al correo electrónico al finalizar la publicación en el medio impreso.</li>
-        <li>Facilidad en la búsqueda y consulta de su edicto emplazatorio.</li>
-        <li>Si efectúa su pago después de las 4:00 p.m., su edicto NO será publicado al día siguiente.</li>
-        <li>Si desea que su edicto sea publicado el DOMINGO, debe hacer el pago hasta el sábado antes de las 10:00 a.m.</li>
+        <li>Facilidad en la búsqueda y consulta de su aviso.</li>
+        <li>Si efectúa su pago después de las 4:00 p.m., su aviso NO será publicado al día siguiente.</li>
+        <li>Si desea que su aviso sea publicado el DOMINGO, debe hacer el pago hasta el sábado antes de las 10:00 a.m.</li>
       </ul>
       <h2>ORDENE SU EDICTO</h2>
     </header>
