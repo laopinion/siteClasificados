@@ -195,7 +195,7 @@ $(document).ready(function() {
       true
     );
     $("#amount").val("20000");
-    $("#description").val("Facebook e Instragram");
+    $("#description").val("Mascotas/Vehículos/Etc Facebook - Instagram");
     signature("20000");
   });
 
@@ -258,7 +258,7 @@ $(document).ready(function() {
       true
     );
     $("#amount").val("25000");
-    $("#description").val("Oferta de empleo 4 días 6 - 10 palabras Destacado en redes sociales");
+    $("#description").val("Anuncio + Redes 4 días 6 - 10 palabras Destacado en redes sociales");
     signature("25000");
   });
 
@@ -434,7 +434,7 @@ $(document).ready(function() {
       true
     );
     $("#amount").val("43000");
-    $("#description").val("Oferta de empleo 8 días 6 - 10 palabras Destacado en redes sociales");
+    $("#description").val("Anuncio + Redes 8 días 6 - 10 palabras Destacado en redes sociales");
     signature("43000");
   });
 
@@ -499,7 +499,7 @@ $(document).ready(function() {
       signature("48000");
     } else if (option == 9) {
       $("#amount").val("20000");
-      $("#description").val("Facebook e Instragram");
+      $("#description").val("Mascotas/Vehículos/Etc Facebook - Instagram");
       signature("20000");
     } else if (option == 10) {
       $("#amount").val("29000");
@@ -539,11 +539,11 @@ $(document).ready(function() {
       signature("9500");
     } else if (option == 19) {
       $("#amount").val("25000");
-      $("#description").val("Oferta de empleo 4 días 6 - 10 palabras Destacado en redes sociales");
+      $("#description").val("Anuncio + Redes 4 días 6 - 10 palabras Destacado en redes sociales");
       signature("25000");
     } else if (option == 20) {
       $("#amount").val("43000");
-      $("#description").val("Oferta de empleo 8 días 6 - 10 palabras Destacado en redes sociales");
+      $("#description").val("Anuncio + Redes 8 días 6 - 10 palabras Destacado en redes sociales");
       signature("43000");
     }
   }
