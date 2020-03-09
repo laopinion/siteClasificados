@@ -36,6 +36,93 @@
     <p>
       Pensando en sus necesidades, le ofrecemos diferentes paquetes que se ajustan a la publicación de sus avisos clasificados. Elija la opción más conveniente para usted
     </p>
+
+    <h3>Redes sociales / impreso</h3>
+    <!-- Paquetes #1 -->
+    <ul class="packages__one">
+      <li id="package_9">
+        <div class="words">
+          <span>Mascotas/Vehículos/Etc</span>
+          <span>(Facebook e Instagram)</span>
+        </div>
+        <div class="days">
+          <span>1 publicación</span>
+          <span>Feed + Historia</span>
+        </div>
+        <div class="value">
+          <span>$20.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+      <li id="package_10">
+        <div class="words">
+          <span>Destacado - Redes</span>
+          <span>Impreso (Qhubo - La Opinión)</span>
+        </div>
+        <div class="days">
+          <span>4 días</span>
+          <span>6 - 10 palabras</span>
+        </div>
+        <div class="value">
+          <span>$29.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+      <li id="package_11">
+        <div class="words">
+          <span>Busco empleo</span>
+          <span>Profesión + Telefóno + Correo electrónico</span>
+        </div>
+        <div class="days">
+          <span>25 días</span>
+          <span>Impreso</span>
+        </div>
+        <div class="value">
+          <span>$9.500</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+      <li id="package_12">
+        <div class="words">
+          <span>Anuncio + Redes</span>
+          <span>Destacado en redes sociales</span>
+        </div>
+        <div class="days">
+          <span>4 días</span>          
+          <span>6 - 10 palabras</span>
+        </div>
+        <div class="value">
+          <span>$25.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+      <li id="package_13">
+        <div class="words">
+          <span>Anuncio + Redes</span>
+          <span>Destacado en redes sociales</span>
+        </div>
+        <div class="days">
+          <span>8 días</span>          
+          <span>6 - 10 palabras</span>
+        </div>
+        <div class="value">
+          <span>$43.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+    </ul>
+    
+    <!-- Paquetes #2 -->
     <ul>
       <li id="package_1">
         <div class="words">
@@ -216,86 +303,6 @@
           <button>Seleccionar</button>
         </div>
       </li> -->
-      <li id="package_9">
-        <div class="words">
-          <span>Mascotas/Vehículos/Etc</span>
-          <span>(Facebook e Instagram)</span>
-        </div>
-        <div class="days">
-          <span>1 publicación</span>
-          <span>Feed + Historia</span>
-        </div>
-        <div class="value">
-          <span>$20.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li>
-      <li id="package_10">
-        <div class="words">
-          <span>Destacado - Redes</span>
-          <span>Impreso (Qhubo - La Opinión)</span>
-        </div>
-        <div class="days">
-          <span>4 días</span>
-          <span>6 - 10 palabras</span>
-        </div>
-        <div class="value">
-          <span>$29.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li>
-      <li id="package_11">
-        <div class="words">
-          <span>Busco empleo</span>
-          <span>Profesión + Telefóno + Correo electrónico</span>
-        </div>
-        <div class="days">
-          <span>25 días</span>
-          <span>Impreso</span>
-        </div>
-        <div class="value">
-          <span>$9.500</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li>
-      <li id="package_12">
-        <div class="words">
-          <span>Anuncio + Redes</span>
-          <span>Destacado en redes sociales</span>
-        </div>
-        <div class="days">
-          <span>4 días</span>          
-          <span>6 - 10 palabras</span>
-        </div>
-        <div class="value">
-          <span>$25.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li>
-      <li id="package_13">
-        <div class="words">
-          <span>Anuncio + Redes</span>
-          <span>Destacado en redes sociales</span>
-        </div>
-        <div class="days">
-          <span>8 días</span>          
-          <span>6 - 10 palabras</span>
-        </div>
-        <div class="value">
-          <span>$43.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li>
 
       <li id="package_1_1">
         <div class="words">
