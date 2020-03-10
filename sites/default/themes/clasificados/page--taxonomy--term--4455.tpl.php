@@ -36,194 +36,18 @@
     <p>
       Pensando en sus necesidades, le ofrecemos diferentes paquetes que se ajustan a la publicación de sus avisos clasificados. Elija la opción más conveniente para usted
     </p>
-    <ul>
-      <li id="package_1">
-        <div class="words">
-          <span>0 - 5</span>
-          <span>Palabras</span>
-        </div>
-        <div class="days">
-          <span>4</span>
-          <span>Días</span>
-        </div>
-        <div class="value">
-          <span>$12.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li>
-      <li id="package_2">
-        <div class="words">
-          <span>6 - 10</span>
-          <span>Palabras</span>
-        </div>
-        <div class="days">
-          <span>4</span>
-          <span>Días</span>
-        </div>
-        <div class="value">
-          <span>$18.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li>
-      <li id="package_3">
-        <div class="words">
-          <span>11 - 20</span>
-          <span>Palabras</span>
-        </div>
-        <div class="days">
-          <span>4</span>
-          <span>Días</span>
-        </div>
-        <div class="value">
-          <span>$41.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li>
-      <!-- <li id="package_3_1" class="sub__package">
-        <div class="words">
-          <span>11 - 20</span>
-          <span>Palabras</span>
-          <span>Qhubo - La opinión</span>
-        </div>
-        <div class="days">
-          <span>4</span>
-          <span>Días</span>
-        </div>
-        <div class="value">
-          <span>$43.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li> -->
-      <li id="package_4">
-        <div class="words">
-          <span>21 - 30</span>
-          <span>Palabras</span>
-        </div>
-        <div class="days">
-          <span>4</span>
-          <span>Días</span>
-        </div>
-        <div class="value">
-          <span>$65.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li>
-      <!-- <li id="package_4_1" class="sub__package">
-        <div class="words">
-          <span>21 - 30</span>
-          <span>Palabras</span>
-          <span>Qhubo - La opinión</span>
-        </div>
-        <div class="days">
-          <span>4</span>
-          <span>Días</span>
-        </div>
-        <div class="value">
-          <span>$67.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li> -->
-      <li id="package_6">
-        <div class="words">
-          <span>0 - 5</span>
-          <span>Palabras</span>
-        </div>
-        <div class="days">
-          <span>8</span>
-          <span>Días</span>
-        </div>
-        <div class="value">
-          <span>$24.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li>
-      <li id="package_7">
-        <div class="words">
-          <span>6 - 10</span>
-          <span>Palabras</span>
-        </div>
-        <div class="days">
-          <span>8</span>
-          <span>Días</span>
-        </div>
-        <div class="value">
-          <span>$36.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li>
-      <li id="package_8">
-        <div class="words">
-          <span>0 - 5</span>
-          <span>Palabras</span>
-        </div>
-        <div class="days">
-          <span>15</span>
-          <span>Días</span>
-        </div>
-        <div class="value">
-          <span>$48.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li>
-      <!-- <li id="package_8_1" class="sub__package">
-        <div class="words">
-          <span>0 - 5</span>
-          <span>Palabras</span>
-          <span>Qhubo - La opinión</span>
-        </div>
-        <div class="days">
-          <span>15</span>
-          <span>Días</span>
-        </div>
-        <div class="value">
-          <span>$50.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li> -->
-      <!-- <li id="package_5">
-        <div class="words">
-          <span>Mascotas</span>
-          <span>(Facebook e Instagram)</span>
-        </div>
-        <div class="days">
-          <span>1 publicación</span>
-          <span>Feed + Historia</span>
-        </div>
-        <div class="value">
-          <span>$22.000</span>
-        </div>
-        <div class="btn">
-          <button>Seleccionar</button>
-        </div>
-      </li> -->
+
+    <h3>Redes sociales / impreso</h3>
+    <!-- Paquetes #1 -->
+    <ul class="packages__one">
       <li id="package_9">
         <div class="words">
-          <span>Mascotas/Vehículos/Etc</span>
-          <span>(Facebook e Instagram)</span>
+          <span>Avisos</span>
+          <span>Facebook e Instagram</span>
         </div>
         <div class="days">
-          <span>1 publicación</span>
-          <span>Feed + Historia</span>
+          <span class="day__four">1 publicación</span>
+          <span class="day__one">Feed + Historia</span>
         </div>
         <div class="value">
           <span>$20.000</span>
@@ -234,12 +58,13 @@
       </li>
       <li id="package_10">
         <div class="words">
-          <span>Destacado - Redes</span>
-          <span>Impreso (Qhubo - La Opinión)</span>
+          <span>Aviso + Redes</span>
+          <span>Impreso (La Opinión y Q'hubo) + Facebook e Instagram</span>
         </div>
         <div class="days">
-          <span>4 días</span>
-          <span>6 - 10 palabras</span>
+          <span class="day__one">4 días</span>          
+          <span class="day__two">6 - 10</span>
+          <span class="day__three">palabras</span>
         </div>
         <div class="value">
           <span>$29.000</span>
@@ -254,8 +79,9 @@
           <span>Profesión + Telefóno + Correo electrónico</span>
         </div>
         <div class="days">
-          <span>25 días</span>
-          <span>Impreso</span>
+          <span class="day__one">25 días</span>          
+          <span class="day__two">6 - 10</span>
+          <span class="day__three">palabras</span>
         </div>
         <div class="value">
           <span>$9.500</span>
@@ -266,12 +92,13 @@
       </li>
       <li id="package_12">
         <div class="words">
-          <span>Anuncio + Redes</span>
-          <span>Destacado en redes sociales</span>
+          <span>Aviso + Redes</span>
+          <span>Impreso (La Opinión o Q'hubo) + Facebook e Instagram</span>
         </div>
         <div class="days">
-          <span>4 días</span>          
-          <span>6 - 10 palabras</span>
+          <span class="day__one">4 días</span>          
+          <span class="day__two">6 - 10</span>
+          <span class="day__three">palabras</span>
         </div>
         <div class="value">
           <span>$25.000</span>
@@ -282,12 +109,13 @@
       </li>
       <li id="package_13">
         <div class="words">
-          <span>Anuncio + Redes</span>
-          <span>Destacado en redes sociales</span>
+          <span>Aviso + Redes</span>
+          <span>Impreso (La Opinión o Q'hubo) + Facebook e Instagram</span>
         </div>
         <div class="days">
-          <span>8 días</span>          
-          <span>6 - 10 palabras</span>
+          <span class="day__one">8 días</span>          
+          <span class="day__two">6 - 10</span>
+          <span class="day__three">palabras</span>
         </div>
         <div class="value">
           <span>$43.000</span>
@@ -296,16 +124,16 @@
           <button>Seleccionar</button>
         </div>
       </li>
+    </ul>
 
+    <h3>4 y 8 días en impreso (La Opinión + Q'hubo)</h3>    
+    <!-- Paquetes #2 -->
+    <ul class="packages__two">
       <li id="package_1_1">
-        <div class="words">
-          <span>0 - 5</span>
-          <span>Palabras</span>
-          <span>Qhubo - La opinión</span>
-        </div>
         <div class="days">
-          <span>4</span>
-          <span>Días</span>
+          <span class="day__one">4 días</span>     
+          <span class="day__two">0 - 5</span>
+          <span class="day__three">palabras</span>
         </div>
         <div class="value">
           <span>$14.000</span>
@@ -315,14 +143,10 @@
         </div>
       </li>
       <li id="package_2_1">
-        <div class="words">
-          <span>6 - 10</span>
-          <span>Palabras</span>
-          <span>Qhubo - La opinión</span>
-        </div>
         <div class="days">
-          <span>4</span>
-          <span>Días</span>
+          <span class="day__one">4 días</span>          
+          <span class="day__two">6 - 10</span>
+          <span class="day__three">palabras</span>
         </div>
         <div class="value">
           <span>$20.000</span>
@@ -332,14 +156,10 @@
         </div>
       </li>
       <li id="package_6_1">
-        <div class="words">
-          <span>0 - 5</span>
-          <span>Palabras</span>
-          <span>Qhubo - La opinión</span>
-        </div>
         <div class="days">
-          <span>8</span>
-          <span>Días</span>
+          <span class="day__one">8 días</span>          
+          <span class="day__two">0 - 5</span>
+          <span class="day__three">palabras</span>
         </div>
         <div class="value">
           <span>$26.000</span>
@@ -349,17 +169,114 @@
         </div>
       </li>
       <li id="package_7_1">
-        <div class="words">
-          <span>6 - 10</span>
-          <span>Palabras</span>
-          <span>Qhubo - La opinión</span>
-        </div>
         <div class="days">
-          <span>8</span>
-          <span>Días</span>
+          <span class="day__one">8 días</span>          
+          <span class="day__two">6 - 10</span>
+          <span class="day__three">palabras</span>
         </div>
         <div class="value">
           <span>$38.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+    </ul>
+
+    <h3>4 días en impreso (La Opinión ó Q'hubo)</h3> 
+    <!-- Paquetes #3 -->
+    <ul class="packages__three">
+      <li id="package_1">
+        <div class="days">
+          <span class="day__one">4 días</span>          
+          <span class="day__two">0 - 5</span>
+          <span class="day__three">palabras</span>
+        </div>
+        <div class="value">
+          <span>$12.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+      <li id="package_2">
+        <div class="days">
+          <span class="day__one">4 días</span>          
+          <span class="day__two">6 - 10</span>
+          <span class="day__three">palabras</span>
+        </div>
+        <div class="value">
+          <span>$18.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+      <li id="package_3">
+        <div class="days">
+         <span class="day__one">4 días</span>          
+          <span class="day__two">11 - 20</span>
+          <span class="day__three">palabras</span>
+        </div>
+        <div class="value">
+          <span>$41.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+      <li id="package_4">
+        <div class="days">
+          <span class="day__one">4 días</span>          
+          <span class="day__two">21 - 30</span>
+          <span class="day__three">palabras</span>
+        </div>
+        <div class="value">
+          <span>$65.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+    </ul>
+
+    <h3>8 y 15 días en impreso (La Opinión ó Q'hubo)</h3> 
+    <!-- Paquetes #3 -->
+    <ul class="packages__four">
+      <li id="package_6">
+        <div class="days">
+          <span class="day__one">8 días</span>          
+          <span class="day__two">0 - 5</span>
+          <span class="day__three">palabras</span>
+        </div>
+        <div class="value">
+          <span>$24.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+      <li id="package_7">
+        <div class="days">
+          <span class="day__one">8 días</span>          
+          <span class="day__two">6 - 10</span>
+          <span class="day__three">palabras</span>
+        </div>
+        <div class="value">
+          <span>$36.000</span>
+        </div>
+        <div class="btn">
+          <button>Seleccionar</button>
+        </div>
+      </li>
+      <li id="package_8">
+        <div class="days">
+          <span class="day__one">15 días</span>          
+          <span class="day__two">0 - 5</span>
+          <span class="day__three">palabras</span>
+        </div>
+        <div class="value">
+          <span>$48.000</span>
         </div>
         <div class="btn">
           <button>Seleccionar</button>
@@ -458,18 +375,18 @@
             <option value="7">6 - 10 Palabras 8 días</option>
             <option value="8">0 - 5 Palabras 15 días</option>
             <!-- <option value="5">Facebook mascotas</option> -->
-            <option value="9">Mascotas/Vehículos/Etc Facebook - Instagram</option>
-            <option value="10">Facebook e Instagram + Impreso (Qhubo - La Opinión)</option>
-            <option value="11">0 - 5 Palabras 4 días Qhubo - La opinión</option>
-            <option value="12">6 - 10 Palabras 4 días Qhubo - La opinión</option>
+            <option value="9">Avisos Facebook e Instagram</option>
+            <option value="10">Aviso + Redes Impreso (La Opinión y Q'hubo) + Facebook e Instagram</option>
+            <option value="11">0 - 5 Palabras 4 días - impreso (La Opinión + Q'hubo)</option>
+            <option value="12">6 - 10 Palabras 4 días - impreso (La Opinión + Q'hubo)</option>
             <!-- <option value="13">11 - 20 Palabras 4 días Qhubo - La opinión</option>
             <option value="14">21 - 30 Palabras 4 días Qhubo - La opinión</option> -->
-            <option value="15">0 - 5 Palabras 8 días Qhubo - La opinión</option>
-            <option value="16">6 - 10 Palabras 8 días Qhubo - La opinión</option>
+            <option value="15">0 - 5 Palabras 8 días - impreso (La Opinión + Q'hubo)</option>
+            <option value="16">6 - 10 Palabras 8 días - impreso (La Opinión + Q'hubo)</option>
             <!-- <option value="17">0 - 5 Palabras 15 días Qhubo - La opinión</option> -->
-            <option value="18">Busco empleo 10 días Profesión + Telefóno + Correo electrónico</option>
-            <option value="19">Anuncio + Redes 4 días 6 - 10 palabras Destacado en redes sociales</option>
-            <option value="20">Anuncio + Redes 8 días 6 - 10 palabras Destacado en redes sociales</option>
+            <option value="18">Busco empleo 25 días Profesión + Telefóno + Correo electrónico</option>
+            <option value="19">Aviso + Redes Impreso (La Opinión o Q'hubo) + Facebook e Instagram - 4 días</option>
+            <option value="20">Aviso + Redes Impreso (La Opinión o Q'hubo) + Facebook e Instagram - 8 días</option>
           </select>
         </div>
         <div class="form-item terminos">
