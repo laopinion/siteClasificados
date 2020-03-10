@@ -195,7 +195,7 @@ $(document).ready(function() {
       true
     );
     $("#amount").val("20000");
-    $("#description").val("Mascotas/Vehículos/Etc Facebook - Instagram");
+    $("#description").val("Avisos Facebook e Instagram");
     signature("20000");
   });
 
@@ -216,7 +216,7 @@ $(document).ready(function() {
       true
     );
     $("#amount").val("29000");
-    $("#description").val("Facebook e Instragram + Impreso (Qhubo - La Opinión)");
+    $("#description").val("Aviso + Redes Impreso (La Opinión y Q'hubo) + Facebook e Instagram - 4 días");
     signature("29000");
   });
 
@@ -237,7 +237,7 @@ $(document).ready(function() {
       true
     );
     $("#amount").val("9500");
-    $("#description").val("Busco empleo 10 días Profesión + Telefóno + Correo electrónico");
+    $("#description").val("Busco empleo 25 días Profesión + Telefóno + Correo electrónico");
     signature("9500");
   });
 
@@ -258,7 +258,7 @@ $(document).ready(function() {
       true
     );
     $("#amount").val("25000");
-    $("#description").val("Anuncio + Redes 4 días 6 - 10 palabras Destacado en redes sociales");
+    $("#description").val("Aviso + Redes Impreso (La Opinión o Q'hubo) + Facebook e Instagram - 4 días");
     signature("25000");
   });
 
@@ -280,7 +280,7 @@ $(document).ready(function() {
       true
     );
     $("#amount").val("14000");
-    $("#description").val("0 - 5 Palabras 4 días Qhubo - La opinión");
+    $("#description").val("0 - 5 Palabras 4 días - impreso (La Opinión + Q'hubo)");
     signature("14000");
   });
 
@@ -302,7 +302,7 @@ $(document).ready(function() {
       true
     );
     $("#amount").val("20000");
-    $("#description").val("6 - 10 Palabras 4 días Qhubo - La opinión");
+    $("#description").val("6 - 10 Palabras 4 días - impreso (La Opinión + Q'hubo)");
     signature("20000");
   });
 
@@ -368,7 +368,7 @@ $(document).ready(function() {
       true
     );
     $("#amount").val("26000");
-    $("#description").val("0 - 5 Palabras 8 días Qhubo - La opinión");
+    $("#description").val("0 - 5 Palabras 8 días - impreso (La Opinión + Q'hubo)");
     signature("26000");
   });
 
@@ -390,7 +390,7 @@ $(document).ready(function() {
       true
     );
     $("#amount").val("38000");
-    $("#description").val("6 - 10 Palabras 8 días Qhubo - La opinión");
+    $("#description").val("6 - 10 Palabras 8 días - impreso (La Opinión + Q'hubo)");
     signature("38000");
   });
 
@@ -434,7 +434,7 @@ $(document).ready(function() {
       true
     );
     $("#amount").val("43000");
-    $("#description").val("Anuncio + Redes 8 días 6 - 10 palabras Destacado en redes sociales");
+    $("#description").val("Aviso + Redes Impreso (La Opinión o Q'hubo) + Facebook e Instagram - 8 días");
     signature("43000");
   });
 
@@ -499,19 +499,19 @@ $(document).ready(function() {
       signature("48000");
     } else if (option == 9) {
       $("#amount").val("20000");
-      $("#description").val("Mascotas/Vehículos/Etc Facebook - Instagram");
+      $("#description").val("Avisos Facebook e Instagram");
       signature("20000");
     } else if (option == 10) {
       $("#amount").val("29000");
-      $("#description").val("Facebook e Instagram + Impreso (Qhubo - La Opinión)");
+      $("#description").val("Aviso + Redes Impreso (La Opinión y Q'hubo) + Facebook e Instagram - 4 días");
       signature("29000");
     } else if (option == 11) {
       $("#amount").val("14000");
-      $("#description").val("0 - 5 Palabras 4 días Qhubo - La opinión");
+      $("#description").val("0 - 5 Palabras 4 días - impreso (La Opinión + Q'hubo)");
       signature("14000");
     } else if (option == 12) {
       $("#amount").val("20000");
-      $("#description").val("6 - 10 Palabras 4 días Qhubo - La opinión");
+      $("#description").val("6 - 10 Palabras 4 días - impreso (La Opinión + Q'hubo)");
       signature("20000");
     } else if (option == 13) {
       $("#amount").val("43000");
@@ -523,11 +523,11 @@ $(document).ready(function() {
       signature("67000");
     } else if (option == 15) {
       $("#amount").val("26000");
-      $("#description").val("0 - 5 Palabras 8 días Qhubo - La opinión");
+      $("#description").val("0 - 5 Palabras 8 días - impreso (La Opinión + Q'hubo)");
       signature("26000");
     } else if (option == 16) {
       $("#amount").val("38000");
-      $("#description").val("6 - 10 Palabras 8 días Qhubo - La opinión");
+      $("#description").val("6 - 10 Palabras 8 días - impreso (La Opinión + Q'hubo)");
       signature("38000");
     } else if (option == 17) {
       $("#amount").val("50000");
@@ -535,15 +535,15 @@ $(document).ready(function() {
       signature("50000");
     } else if (option == 18) {
       $("#amount").val("9500");
-      $("#description").val("Busco empleo 10 días Profesión + Telefóno + Correo electrónico");
+      $("#description").val("Busco empleo 25 días Profesión + Telefóno + Correo electrónico");
       signature("9500");
     } else if (option == 19) {
       $("#amount").val("25000");
-      $("#description").val("Anuncio + Redes 4 días 6 - 10 palabras Destacado en redes sociales");
+      $("#description").val("Aviso + Redes Impreso (La Opinión o Q'hubo) + Facebook e Instagram - 4 días");
       signature("25000");
     } else if (option == 20) {
       $("#amount").val("43000");
-      $("#description").val("Anuncio + Redes 8 días 6 - 10 palabras Destacado en redes sociales");
+      $("#description").val("Aviso + Redes Impreso (La Opinión o Q'hubo) + Facebook e Instagram - 8 días");
       signature("43000");
     }
   }
